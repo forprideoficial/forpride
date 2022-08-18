@@ -2,8 +2,6 @@
 display: none;
 }
 
-
-
 @media (max-width: 900px) {
     .BarBottom {
     width: 100%;
@@ -261,7 +259,7 @@ display: none;
   align-items:center;
   justify-content:flex-start;
   width:100%;
-  background-color: var(--Background2)
+  background-color: var(--Background2);
 }
 
 

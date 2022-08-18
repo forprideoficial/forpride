@@ -342,11 +342,6 @@
                 .postTextGroup {
                     width: 100%;
                 }
-/*     
-                .postTextGroup .postTextGroup-data .avatar img {
-                    width: 30px;
-                }
-     */
                 .postTextGroup .postTextGroup-data .postTextGroup-type .buttons {
                   flex-wrap: wrap;
                 }

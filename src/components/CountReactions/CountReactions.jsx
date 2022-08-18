@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
-import "./countReactions.css"
 
 function CountReactions(idPost) {
     const [like, setLike] = useState([]);

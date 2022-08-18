@@ -342,11 +342,6 @@
                 .postEvent {
                     width: 100%;
                 }
-/*     
-                .postEvent .postEvent-data .avatar img {
-                    width: 30px;
-                }
-     */
                 .postEvent .postEvent-data .postEvent-type .buttons {
                   flex-wrap: wrap;
                 }
