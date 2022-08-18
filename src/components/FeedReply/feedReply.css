@@ -1,0 +1,228 @@
+.feedReply {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+    border-top: 1px solid rgb(240, 240, 240);
+    margin-top: 10px;
+    border: 1px solid var(--Background2);
+}
+
+.feedReply .feed-reply {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    color: var(--Gray_font2);
+    background-color: var(--Background3);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 5px;
+}
+
+.feedReply .feed-reply .reply-user {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.feedReply .feed-reply .reply-user a {
+    text-decoration: none;
+}
+
+.feedReply .feed-reply .reply-user .avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.feedReply .feed-reply .reply-user .avatar img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.feedReply .feed-reply .reply-user .name-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+
+.feedReply .feed-reply .reply-user .name-data .selected {
+    color: var(--Primary) ;
+    font-size: 13px;
+}
+
+.feedReply .feed-reply .reply-data {
+    margin: 2px 0;
+    width: 90%;
+}
+
+.feedReply .feed-reply .reply-data p {
+    color: var(--Gray_font);
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.feedReply .feed-reply .reactions-replys {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.feedReply .feed-reply .reactions-replys button {
+    background-color: rgb(250, 250, 250);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--Gray_font2);
+}
+
+.feedReply .feed-reply .reactions-replys button svg {
+    margin-right: 5px;
+}
+
+.feedReply .feed-reply .reactions-replys .selected{
+    color: var(--Primary);   
+}
+
+.feed-reply .reply {
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.feed-reply .reply input {
+    width: 80%;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    color: var(--Primary);
+}
+
+.feed-reply .reply button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: var(--Primary);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    color: var(--White);
+}
+
+.feed-reply .reply button svg {
+    margin-right: 5px;
+}
+
+.feed-reply .replyHidden {
+    display: none;
+}
+
+
+@media (max-width: 1150px) {
+    .feedReply .feed-reply .reactions-replys {
+        width: 25%;
+
+    }
+}
+@media (max-width: 900px) {
+    .feedReply .feed-reply .reactions-replys {
+        width: 35%;
+        justify-content: space-around;
+
+    }
+
+
+@media (max-width: 700px) {
+
+    .feedReply .feed-reply {
+        border-radius: 10px;
+        padding: 5px 0;
+        margin: 5px 0;
+    }
+
+    .feedReply .feed-reply .reply-user {
+    width: 95%;
+    }
+
+    .feedReply .feed-reply .reply-user h4{
+        font-size: 13px;
+    }
+
+    .feedReply .feed-reply .reply-user .name-data {
+        width: 95%;
+    }
+
+    .feedReply .feed-reply .reactions-replys {
+        justify-content: space-evenly;
+        
+    }
+
+    .feedReply .feed-reply .reactions-replys button {
+  font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+        .feedReply .feed-reply .reactions-replys {
+            margin-top: 5px;
+            width: 100%;
+            justify-content: space-around;
+    
+        }
+
+
+    @media (max-width: 380px) {
+
+        .feedReply {
+            width: 90%;
+            margin-bottom: -10px;
+            }
+
+        .feedReply .feed-reply .reply-user {
+            width: 90%;
+            font-size: 13px;
+            }
+            .feedReply .feed-reply .reactions-replys {
+                margin-top: 5px;
+                width: 100%;
+                justify-content: space-around;
+        
+            }
+        
+        .feedReply .feed-reply .reactions-replys button {
+            background-color: var(--Background2);
+            border: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: var(--Gray_font2);
+            font-size: 13px;
+        }
+    }
+    }
+}
+}

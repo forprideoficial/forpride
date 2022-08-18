@@ -1,0 +1,172 @@
+.content-Login1 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-Login1 .recuperation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.content-Login1 .recuperation .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-Login1 .recuperation .form .block {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--White);
+    color:var(--Primary);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.content-Login1 .recuperation .form .title2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.content-Login1 .recuperation .form input:focus {
+    outline: none;
+  }
+
+.content-Login1 .recuperation .form input {
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: var(--Primary);
+    padding:10px 5px;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+
+.content-Login1 .recuperation .form input::placeholder {
+    color: rgba(255, 255, 255, 0.44);
+}
+
+.content-Login1 .recuperation .form .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content-Login1 .recuperation .form .buttons button {
+    background-color: darkturquoise;
+    width: 50%;
+    height: 35PX;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.content-Login1 .recuperation .form .recuperation {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.content-Login1 .recuperation .form .recuperation p {
+    font-weight: bold;
+    color: #fff;
+}
+
+.content-Login1 .recuperation .logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--White);
+}
+
+.content-Login1 .recuperation .logo img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.content-Login1 .recuperation .logo .emoj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-Login1 .recuperation .logo .emoj img{
+        width: 12%;
+        margin-top: 20px;
+}
+
+@media(max-width:800px){
+    .content-Login1 .recuperation .logo img{
+        width: 50%;
+    }
+
+    .content-Login1 .recuperation .form .buttons button {
+        width: 70%;
+    }
+
+    .content-Login1 .recuperation .form .block {
+        width: 70%;
+    }
+    
+    .content-Login1 .recuperation .form .title2 {
+        width: 70%;
+    }
+
+    @media(max-width:600px){
+
+        .content-Login1 .recuperation .logo img{
+            width: 70%;
+        }
+        .content-Login1 .recuperation .form {
+            width: 70%;
+        }
+        .content-Login1 .recuperation .form .buttons button {
+            width: 90%;
+        }
+    
+        .content-Login1 .recuperation .form .block {
+            width: 90%;
+        }
+        
+        .content-Login1 .recuperation .form .title2 {
+            width: 90%;
+        }
+
+        @media(max-width:450px){
+            .content-Login1 .recuperation .logo img{
+                width: 100%;
+            }
+        }
+        
+        
+    }
+    
+    
+}

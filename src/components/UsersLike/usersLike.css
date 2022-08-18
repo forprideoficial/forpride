@@ -1,0 +1,8 @@
+.user a {
+    text-decoration: none;
+    color: var(--Primary);
+}
+ a {
+    text-decoration: none;
+    color: var(--Primary);
+}

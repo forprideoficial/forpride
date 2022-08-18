@@ -1,0 +1,403 @@
+.postEvent {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 5px;
+    margin-top: 20px;
+}
+
+.postEvent .postEvent-data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.postEvent .postEvent-data .avatar {
+    width: 50px;
+    height: 50px;  
+}
+
+.postEvent .postEvent-data .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.postEvent .postEvent-data .postEvent-type {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.postEvent .postEvent-data .postEvent-type .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.postEvent .postEvent-data .postEvent-type .inputs .postEvent-file {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.postEvent .postEvent-data .postEvent-type .inputs .postEvent-file .label-avatar{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.postEvent .postEvent-data .postEvent-type .inputs .postEvent-file .label-avatar input {
+    display: none;
+}
+
+.postEvent .postEvent-data .postEvent-type .inputs .postEvent-file .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.postEvent .postEvent-data .postEvent-type .inputs .postEvent-file .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.postEvent .postEvent-data .postEvent-type .inputs .postEvent-file .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 6%;
+    object-fit: cover;
+}
+
+.postEvent .postEvent-data .postEvent-type .inputs textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid var(--Gray-Border);
+    border-radius: 20px;
+    resize: none;
+    margin-right: 10px;
+}
+
+.postEvent .postEvent-data .postEvent-type .inputs button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 10%;
+    height: 80px;
+    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+    color: var(--White);
+}
+
+.postEvent .postEvent-data .postEvent-type .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.postEvent .postEvent-data .postEvent-type .buttons button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid var(--Gray-Border);
+    padding: 5px;
+    width: 160px;
+    background-color: var(--Background2);
+    margin-right: 10px;
+}
+
+.postEvent .postEvent-data .postEvent-type .buttons .selected {
+    border: 1px solid var(--Primary);
+    color: var(--Primary);
+}
+
+.postEvent .postEvent-data .postEvent-type .buttons button svg {
+    margin-right: 5px;
+}
+
+.postEvent .posts-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.postEvent .posts-feed .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 10px 0;
+}
+
+.postEvent .posts-feed .buttons button {
+    padding: 5px;
+    width: 120px;
+    border: none;
+    border-bottom: 1px solid var(--Gray-Border);
+    background-color: var(--Background2);
+}
+
+.postEvent .posts-feed .buttons .selected {
+    border-bottom: 2px solid var(--Primary);
+    color: var(--Primary);
+}
+
+.postEvent .posts-feed .feed-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    color: var(--Gray_font2);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.postEvent .posts-feed .feed-post .post-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.postEvent .posts-feed .feed-post .post-user img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.postEvent .posts-feed .feed-post .post-user .name-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postEvent .posts-feed .feed-post .post-user .name-data .selected {
+    color: var(--Primary) ;
+}
+
+.postEvent .posts-feed .feed-post .postEvent-data {
+    margin: 5px 0;
+    width: 90%;
+}
+
+.postEvent .posts-feed .feed-post .postEvent-data p {
+    font-size: 18px;
+}
+
+.postEvent .posts-feed .feed-post .reactions {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.postEvent .posts-feed .feed-post .reactions button {
+    background-color: var(--Background2);
+    border: none;
+    font-size: 18px;
+    color: var(--Gray_font2);
+    
+}
+
+.postEvent .posts-feed .feed-post .reactions button svg {
+    margin-right: 5px;
+}
+
+.postEvent .posts-feed .feed-post .reactions .selected{
+    color: var(--Primary);   
+}
+
+
+
+
+
+
+@media (max-width: 1180px) {
+    .postEvent .postEvent-data .postEvent-type .buttons button {
+      width: 150px;
+    }
+
+    .postEvent .postEvent-data .postEvent-type .inputs textarea {
+        width: 85%;
+    }
+
+    .postEvent .postEvent-data .postEvent-type .inputs button {
+        width: 15%;
+    }
+
+    @media (max-width: 950px) {
+
+        .postEvent {
+            width: 90%;
+        }
+        .postEvent .postEvent-data .postEvent-type .buttons button {
+          width: 150px;
+        }
+
+        .postEvent .postEvent-data .postEvent-type .inputs textarea {
+            width: 80%;
+        }
+
+        .postEvent .postEvent-data .postEvent-type .inputs button {
+            width: 20%;
+        }
+      }
+
+      @media (max-width: 850px) {
+        .postEvent .postEvent-data .postEvent-type .buttons button {
+          width: 150px;
+        }
+
+
+        @media (max-width: 750px) {
+            .postEvent {
+                width: 100%;
+            }
+
+            .postEvent .postEvent-data .avatar {
+                width: 30px;
+                height: 30px;
+            }
+
+            .postEvent .postEvent-data .avatar img {
+                height: 30px;
+                width: 30px;
+            }
+
+            .postEvent .postEvent-data .postEvent-type .buttons button {
+                width: 100px;
+              }
+
+            .postEvent .postEvent-data .postEvent-type .buttons {
+              flex-wrap: wrap;
+            }
+
+
+
+            @media (max-width: 620px) {
+                .postEvent {
+                    width: 100%;
+                }
+    
+                .postEvent .postEvent-data .avatar {
+                    display: none;
+                }
+                .postEvent .postEvent-data .avatar img {
+                    display: none;
+                }
+
+                .postEvent .postEvent-data .postEvent-type {
+                    width: 100%;
+                }
+    
+                .postEvent .postEvent-data .postEvent-type .buttons {
+                  flex-wrap: wrap;
+                }
+
+                .postEvent .postEvent-data .postEvent-type .buttons button {
+                    width: 120px;
+                  }
+              }
+
+
+              @media (max-width: 550px) {
+                .postEvent {
+                    width: 100%;
+                }
+/*     
+                .postEvent .postEvent-data .avatar img {
+                    width: 30px;
+                }
+     */
+                .postEvent .postEvent-data .postEvent-type .buttons {
+                  flex-wrap: wrap;
+                }
+
+                .postEvent .postEvent-data .postEvent-type .buttons button {
+                    width: 120px;
+                  }
+
+
+                  @media (max-width: 450px) {
+                    .postEvent {
+                        width: 100%;
+                    }
+   
+                    .postEvent .posts-feed .buttons {
+                        width: 100%;
+                    }
+                    .postEvent .postEvent-data .postEvent-type .buttons {
+                        flex-wrap: wrap;
+                    }
+    
+                    .postEvent .postEvent-data .postEvent-type .buttons button {
+                        width: 90px;
+                      }
+
+
+                      @media (max-width: 380px) {
+                        .postEvent {
+                            width: 100%;
+                        }
+       
+                        .postEvent .posts-feed .buttons {
+                            width: 100%;
+                        }
+                        .postEvent .postEvent-data .postEvent-type .buttons {
+                            flex-wrap: wrap;
+                        }
+        
+                        .postEvent .postEvent-data .postEvent-type .buttons button {
+                            flex-direction: column;
+                            width: 88px;
+                            margin-right: 5px;
+                          }
+                        }
+
+                      
+
+                  }
+
+              }
+          }
+          
+      }
+  }

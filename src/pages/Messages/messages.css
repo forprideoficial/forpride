@@ -1,0 +1,94 @@
+.Messages{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    background-color: var(--Background)
+}
+
+.Messages h2{
+    margin-top: 80px;
+    color: var(--Primary)
+}
+
+.Messages .itensMessages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    border: none;
+    text-decoration: none;
+    background-color: var(--Background);
+    margin-bottom:7px ;
+}
+
+.Messages .itensMessages .rooms {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--Background);
+    text-decoration: none;
+    background-color: var(--Black);
+}
+
+@media (max-width: 900px) {
+    .Messages .itensMessages {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 80%;
+        border: none;
+        text-decoration: none;
+        background-color: var(--Background2);
+        margin-bottom:7px ;
+    }
+    
+    .Messages .itensMessages .rooms {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid var(--Background);
+        text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+        .Messages .itensMessages {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 80%;
+            border: none;
+            text-decoration: none;
+            background-color: var(--Background2);
+            margin-bottom:7px ;
+        }
+        
+        .Messages .itensMessages .rooms {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border: 2px solid var(--Background);
+            text-decoration: none;
+        }
+        
+    }
+    
+    
+}
+
+
+

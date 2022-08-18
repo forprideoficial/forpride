@@ -1,0 +1,28 @@
+.content-lgpd {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.content-lgpd .text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--White);
+    color: var(--Primary);
+    margin-top: 30px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+}
+.content-lgpd .text h2 {
+    text-align: left;
+}
+.content-lgpd .text p {
+    text-align: left;
+}

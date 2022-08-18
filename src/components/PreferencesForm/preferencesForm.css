@@ -1,0 +1,218 @@
+.content-Login .preferencesForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content-Login .preferencesForm .title {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--White);
+}
+
+.content-Login .preferencesForm .title img {
+    width: 150px;
+}
+
+.content-Login .preferencesForm form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 150px 0;
+}
+
+.content-Login .preferencesForm form .proposal {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-Login .preferencesForm form .proposal textarea{
+    resize: none;
+    border-radius: 6px;
+    border: none;
+    color: var(--Primary);
+    padding: 10px;
+    margin: 50px 0;
+    
+}
+
+
+.content-Login .preferencesForm form .data {
+    width: 50%;
+    display: flex;
+    flex-direction: ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.content-Login .preferencesForm form .data  button  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Foursome1);
+    color: var(--White);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 900;
+    margin: 5px;
+    border: 1px solid var(--White);
+}
+
+.content-Login .preferencesForm form .data  button svg {
+    margin-right: 5px;
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 900;
+}
+.content-Login .preferencesForm form .data  .active  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(208, 159, 254);
+    color: var(--Foursome3);
+    border: 1px solid var(--White);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 900;
+    margin: 5px;
+    width: 150px;
+}
+.content-Login .preferencesForm form .data  .active svg {
+    margin-right: 5px;
+    color: var(--Foursome3);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+.content-Login .preferencesForm form .confirmation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-Login .preferencesForm form .confirmation button {
+    width: 150px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--White);
+    border: 1px solid var(--White);
+    color: var(--White);
+    margin: 5px;
+}
+.content-Login .preferencesForm form .confirmation .delete {
+    width: 150px;
+    padding: 18px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: var(--White);
+    margin: 5px;
+}
+
+.content-Login .preferencesForm form .confirmation .confirmation_preferencesForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--White);
+}
+
+.content-Login .preferencesForm form .confirmation .confirmation_preferencesForm span {
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .content-Login .preferencesForm .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--White);
+        margin-bottom: 20px;
+    }
+
+    .content-Login .preferencesForm .title img{
+        margin-bottom: 20px;
+    }
+
+    .content-Login .preferencesForm form .confirmation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-Login .preferencesForm form .confirmation button{
+        margin-top: 20px;
+    }
+
+    @media (max-width: 450px) {
+
+        .content-Login .preferencesForm form {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 5px 0;
+        }
+
+        .content-Login .preferencesForm form .data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .content-Login .preferencesForm form .proposal textarea{
+            resize: none;
+            border-radius: 6px;
+            border: none;
+            color: var(--Primary);
+            padding: 10px;
+            margin: 10px 0;
+            
+        }
+
+        
+.content-Login .preferencesForm form .proposal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+    }
+
+}
+

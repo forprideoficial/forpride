@@ -1,0 +1,240 @@
+.content-invite {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--Background);
+}
+
+.content-invite .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-invite .aside{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-invite .aside .invites {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid var(--Background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.content-invite .aside .invites .invites-selected {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.content-invite .aside .invites .invites-selected button {
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid var(--Gray_font1);
+    color: var(--Gray_font1);
+    background-color: var(--Background);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content-invite .aside .invites .invites-selected .selected{
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+    border: none;
+    border-bottom: 3px solid var(--Primary);
+    color: var(--Primary);
+    background-color: var(--Background2);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content-invite .aside .invites .invites-search {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.content-invite .aside .invites .invites-search input {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid var(--Gray_font1);
+
+}
+
+.content-invite .aside .invites .invites-search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
+    padding: 10px;
+    color: var(--White);
+    margin: 10px;
+}
+
+.content-invite .aside .invites .invites-all {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.content-invite .aside .invites .invites-all .invites-unic {
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.content-invite .aside .invites .invites-all .invites-unic a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-invite .aside .invites .invites-all .invites-unic a svg {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+
+.content-invite .aside .invites .invites-all .invites-unic .buttons {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-invite .aside .invites .invites-all .invites-unic .buttons button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
+    color: var(--White);
+    margin: 10px 5px 0 5px;
+}
+.content-invite .aside .invites .invites-all .invites-unic .buttons button svg {
+    margin-left: 5px;
+}
+
+
+.content-invite .aside .invites .invites-all .invites-unic .informationInvite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--Primary);
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: 100%;
+}
+
+.content-invite .aside .invites .invites-all .invites-unic .informationInvite h4 {
+    font-weight: 500;
+    text-align: left;
+}
+
+.content-invite .aside .invites .invites-all .invites-unic .informationInvite .roles{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--Primary);
+    margin: 10px 0;
+}
+
+.content-invite .aside .invites .invites-all .invites-unic .informationInvite p {
+    text-align: left;
+    font-weight: 500;
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+
+
+
+@media(max-width: 900px) {
+    .content-invite .aside .invites .invites-all {
+        width: 100%;
+    }
+
+    .content-invite .aside .invites .invites-all .invites-unic .buttons {
+        width: 90%;
+    }
+
+    .content-invite .aside .invites .invites-all .invites-unic form {
+        width: 100%;
+    }
+       
+    
+    .content-invite .aside .invites .invites-all .invites-unic form input {
+        width: 70%;
+    }
+
+    @media(max-width: 550px) {
+        .content-invite .aside .invites .invites-all .invites-unic .buttons {
+            width: 100%;
+        }
+
+        .content-invite .aside .invites .invites-all .invites-unic form input {
+            width: 90%;
+        }
+
+        .content-invite .aside .invites .invites-all .invites-unic .inviteUnic {
+            width: 100%;
+        }
+
+        .content-invite .aside .invites .invites-all .invites-unic .informationInvite p {
+            font-size: 12px;
+        }
+    
+    }
+
+} 

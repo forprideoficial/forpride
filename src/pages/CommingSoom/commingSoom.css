@@ -1,0 +1,120 @@
+.content {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .commingsoom {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    color: var(--White);
+}
+
+.content .commingsoom img {
+    width: 250px;
+}
+
+.content .commingsoom h2 {
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.content .commingsoom h3 {
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.content .commingsoom .orientations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content .commingsoom .orientations h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.content .commingsoom .orientations h4 a {
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+    color: var(--White);
+}
+
+.content .commingsoom .orientations h4 a:hover {
+    color: coral;
+}
+
+.content .commingsoom .orientations h4 svg {
+    margin-right: 5px;
+}
+
+.content .commingsoom .button {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .commingsoom button {
+    width: 150px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--White);
+    color: var(--Primary);
+    margin-top: 20px;
+}
+
+.content .commingsoom .convite{
+    width: 150px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--Button);
+    color: var(--White);
+    margin-top: 20px;
+}
+
+@media(max-width: 900px) {
+    .content .commingsoom .button {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media(max-width: 500px) {
+        .content .commingsoom .orientations h4 {
+            font-size: 15px;
+        }
+
+        .content .commingsoom h3 {
+    font-size: 16px;
+}
+
+.content .commingsoom h2 {
+    font-size: 20px;
+}
+    }
+}
+
+
+

@@ -1,0 +1,103 @@
+.listForuns  {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+
+.listForuns .foruns-all {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.listForuns .foruns-all .foruns-unic {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px 5px;
+}
+
+.listForuns .foruns-all .foruns-unic .imageCover {
+    width: 160px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.listForuns .foruns-all .foruns-unic .imageCover img {
+    width: 160px;
+    height: 60px;
+    border-radius: 6px;
+}
+
+.listForuns .foruns-all .foruns-unic .avatarImage {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.listForuns .foruns-all .foruns-unic .avatarImage img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.listForuns .foruns-all .foruns-unic .profile {
+    width: 80px;
+    margin-top: -40px;
+}
+
+.listForuns .foruns-all .foruns-unic .members {
+    width: 120px;
+}
+
+.listForuns .foruns-all .foruns-unic button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--White);
+    font-weight: 500;
+    background-color: var(--Primary);
+    margin-top: 5px;
+}
+.listForuns .foruns-all .foruns-unic a {
+    text-decoration: none;
+}
+
+.listForuns .foruns-all .foruns-unic h4 {
+    font-weight: 500;
+    color: var(--Primary);
+    text-align: center;
+    margin-bottom: 5px;
+}
+.listForuns .foruns-all .foruns-unic h6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--Gray_font1);
+    text-align: center;
+    margin: 2px 0;
+}

@@ -1,0 +1,193 @@
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.content .invitation {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    color: var(--White);
+}
+
+.content .invitation .title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.content .invitation form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.content .invitation form input {
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+    color: var(--Primary);
+    margin: 5px 0;
+}
+
+.content .invitation img {
+    width: 250px;
+}
+
+.content .invitation h2 {
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.content .invitation h3 {
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.content .invitation .orientations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content .invitation .orientations h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.content .invitation .orientations h4 a {
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+    color: var(--White);
+}
+
+.content .invitation .orientations h4 a:hover {
+    color: coral;
+}
+
+.content .invitation .orientations h4 svg {
+    margin-right: 5px;
+}
+
+.content .invitation .button {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .invitation button {
+    width: 150px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--White);
+    color: var(--Primary);
+    margin: 20px 5px 0 5px;
+}
+
+.content .invitation .convite{
+    width: 150px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--Button);
+    color: var(--White);
+    margin-top: 20px;
+}
+
+.content .invitation .buttons{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content .invitation .buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.content .invitation .buttons button:hover {
+    background-color: var(--Button);
+    color: var(--White);
+}
+.content .invitation .buttons button svg{
+    margin-left: 5px;
+}
+.content .invitation .inviteUnic{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid var(--White);
+    padding: 10px;
+}
+
+.content .invitation .inviteUnic .delete{
+    padding: 15px 1px;
+    margin-top: 3px;
+}
+
+
+
+@media(max-width: 900px) {
+    .content .invitation .button {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content .invitation form {
+        width: 100%;
+    }
+    
+    .content .invitation form input {
+        width: 90%;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+        color: var(--Primary);
+        margin: 5px 0;
+    }
+
+    .content .invitation .buttons{
+        width: 70%;
+    }
+}

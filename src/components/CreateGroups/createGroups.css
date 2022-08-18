@@ -1,0 +1,175 @@
+
+.createGroup {
+    width: 80%;
+    color: var(--Primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.createGroup form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    padding: 0px;
+    padding: 10px;
+}
+
+
+
+.createGroup form .label-avatar{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.createGroup form .label-avatar input {
+    display: none;
+}
+
+.createGroup form .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.createGroup form .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.createGroup form .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+
+.createGroup form .label-cover{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.createGroup form .label-cover input {
+    display: none;
+}
+
+.createGroup form .label-cover span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.createGroup form .label-cover span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.createGroup form .label-cover img{
+    margin-bottom: 1em;
+    border-radius: 6px;
+    object-fit: cover;
+    width: 95%;
+    height: 100px;
+}
+
+.createGroup form .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px 0;
+}
+
+
+.createGroup form .data select {
+    width: 80%;
+    background-color: var(--Background2);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    padding: 5px 8px;
+    margin: 3px 0;
+}
+
+.createGroup .data input {
+    width: 80%;
+    background-color: var(--Background2);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    padding: 5px 8px;
+    margin: 3px 0;
+}
+
+.createGroup .data input::placeholder {
+    color: var(--Primary);
+}
+
+
+.createGroup form button {
+    background-color: var(--Primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.createGroup form .SearchCep {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.createGroup form .SearchCep input {
+    background-color: var(--Background2);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+
+.createGroup form .SearchCep button {
+    background-color: var(--Primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 10px;
+    font-size: 14px;
+}

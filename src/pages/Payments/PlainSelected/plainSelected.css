@@ -1,0 +1,110 @@
+﻿.PlainSelected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--Background2);
+}
+.PlainSelected .plains-informations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    background-color: var(--Background2);
+    padding: 100px 0;
+}
+.PlainSelected .plains-informations .plain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 95%;
+    background-color: var(--Primary);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: var(--White);
+}
+
+.PlainSelected .plains-informations .plain .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: var(--White);
+}
+.PlainSelected .plains-informations .plain a {
+    background-color: var(--Background2);
+    color: var(--Primary);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    padding: 7px 40px;
+    text-decoration: none;
+}
+
+.PlainSelected .plains-informations .optionsPayment {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--White);
+    flex-wrap: wrap;
+}
+.PlainSelected .plains-informations .optionsPayment .optionUnic {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--White);
+    background-color: var(--Primary);
+    margin: 10px 0;
+
+}
+
+.PlainSelected .plains-informations .optionsPayment .optionUnic a {
+    background-color: var(--Foursome1);
+    color: var(--White);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.PlainSelected .plains-informations .optionsPayment .optionUnic h4 {
+    margin: 5px 0;
+}
+.PlainSelected .plains-informations .optionsPayment .optionUnic .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--White);
+    background-color: var(--Foursome1);
+
+}
+
+.PlainSelected .plains-informations .optionsPayment .optionUnic .title h3 {
+    font-size: 16px;
+}
+.PlainSelected .plains-informations .optionsPayment .optionUnic .title h5 {
+    margin-left: 5px;
+}

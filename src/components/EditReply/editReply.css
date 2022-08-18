@@ -1,0 +1,71 @@
+.editReply {
+    margin: 10px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editReply input {
+    width: 80%;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    color: var(--Gray_font2);
+    margin-right: 20px;
+}
+
+.editReply button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: var(--Primary);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    color: var(--White);
+}
+
+.editReply button svg {
+    margin-right: 5px;
+}
+
+
+@media (max-width: 400px) {
+    .editReply {
+        margin: 10px 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    
+.editReply input {
+    margin: 5px 0;
+    margin-right: 0px;
+}
+
+    .editReply button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 30px;
+        background-color: var(--Primary);
+        padding: 5px 10px;
+        border: none;
+        border-radius: 6px;
+        color: var(--White);
+    }
+
+
+}

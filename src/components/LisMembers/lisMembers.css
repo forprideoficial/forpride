@@ -1,0 +1,32 @@
+.LisMembers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.LisMembers .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.LisMembers .text h4 {
+    color: var(--Primary);
+    margin: 20px 0;
+}
+.LisMembers .allMembers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+.LisMembers .allMembers .memberUnic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}

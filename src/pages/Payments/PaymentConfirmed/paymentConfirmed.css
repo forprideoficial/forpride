@@ -1,0 +1,49 @@
+﻿.paymentConfirmed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--Background2);
+    color: green;
+}
+.paymentConfirmed .paymentConfirmed-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    background-color: var(--Background2);
+    padding: 100px 0;
+}
+.paymentConfirmed .paymentConfirmed-page .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    background-color: var(--Primary);
+    padding: 20px;
+    border-radius: 6px;
+    color: var(--White);
+    margin: 20px 0;
+    text-align: center;
+}
+.paymentConfirmed .paymentConfirmed-page .text h3 {
+    margin: 5px 0;
+}
+
+.paymentConfirmed .paymentConfirmed-page a {
+    margin: 30px 0;
+    color: var(--Primary);
+}
+.paymentConfirmed .paymentConfirmed-page button {
+    margin: 30px 0;
+    color: var(--Primary);
+    border: none;
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    background-color: var(--Background2);
+    font-size: 16px;
+    padding: 5px 10px;
+}

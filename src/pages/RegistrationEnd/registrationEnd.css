@@ -1,0 +1,108 @@
+.content-registration {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-registration .registrationEnd {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    color: var(--White);
+}
+
+.content-registration .registrationEnd img {
+    width: 250px;
+}
+
+.content-registration .registrationEnd h2 {
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.content-registration .registrationEnd h3 {
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.content-registration .registrationEnd .orientations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.content-registration .registrationEnd .orientations h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.content-registration .registrationEnd .orientations h4 svg {
+    margin-right: 5px;
+    width: 15px;
+}
+
+.content-registration .registrationEnd button {
+    width: 150px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--White);
+    color: var(--Primary);
+    margin-top: 20px;
+}
+.content-registration .registrationEnd .informations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+color: var(--Primary);
+background-color: #fff;
+border-radius: 10px;
+}
+
+
+.content-registration .registrationEnd .informations  a {
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 5px;
+    color: var(--Primary);
+}
+
+
+@media(max-width: 400px) {
+    .content-registration .registrationEnd .orientations h4 {
+        font-size: 14px;
+    }
+    
+    .content-registration .registrationEnd .orientations h4 svg {
+        font-size: 14px;
+    }
+
+    .content-registration .registrationEnd .informations {
+        width: 100%;
+    }
+
+    .content-registration .registrationEnd .informations h3 {
+        font-size: 16px;
+    }
+
+    .content-registration .registrationEnd .informations h4 {
+        text-align: left;
+    }
+    
+}

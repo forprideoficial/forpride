@@ -1,0 +1,121 @@
+.itemReply {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 6px;
+    padding-left: 5%;
+}
+.itemReply .block1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    text-decoration: none;
+
+}
+.itemReply .block1 .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.itemReply .block1 .title  .image{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.itemReply .block1 .title  .image img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.itemUsers  .image svg{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -5px;
+    transform: rotate(-35deg);
+    color: #e0aa3e;
+    color-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+}
+
+.itemReply .block1 .title .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+.itemReply .block1 .title .name h6 {
+    margin-left: 5px;
+    color: var(--Primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+.itemReply .block1 .title .name p {
+    margin-left: 5px;
+    color: var(--Gray_font2);
+    font-size: 12px;
+}
+.itemReply .block1 .title .MyName {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+.itemReply .block1 .title .MyName h6 {
+    margin-left: 5px;
+    color: var(--Primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+.itemReply .block1 .title .MyName p {
+    margin-left: 5px;
+    color: var(--Gray_font2);
+    font-size: 12px;
+}
+
+.itemReply .block1 .title a {
+    text-decoration: none;
+    color: var(--Primary);
+}
+
+.itemReply .block1 .buttonsReply {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-end;
+    
+}
+
+.itemReply .block1 .buttonsReply button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--Background);
+    color: var(--Gray_font2);
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    margin: 0 3px;
+}
+
+.itemReply .Reply-data {
+    margin: 2px 0;
+    width: 90%;
+}
+
+.itemReply .Reply-data p {
+    color: var(--Gray_font);
+    margin-top: 3px;
+    font-size: 12px;
+}

@@ -1,0 +1,266 @@
+
+.settingsInformation {
+    width: 80%;
+    color: var(--Primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.settingsInformation form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    padding: 0px;
+    padding: 10px;
+}
+
+
+
+.settingsInformation form .label-avatar{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.settingsInformation form .label-avatar input {
+    display: none;
+}
+
+.settingsInformation form .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.settingsInformation form .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.settingsInformation form .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+
+.settingsInformation form .label-cover{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.settingsInformation form .label-cover input {
+    display: none;
+}
+
+.settingsInformation form .label-cover span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.settingsInformation form .label-cover span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.settingsInformation form .label-cover img{
+    margin-bottom: 1em;
+    border-radius: 6px;
+    object-fit: cover;
+    width: 95%;
+    height: 100px;
+}
+
+.settingsInformation form .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px 0;
+}
+
+
+.settingsInformation form .data select {
+    width: 50%;
+    background-color: var(--Background2);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+
+.settingsInformation .data input {
+    width: 50%;
+    background-color: var(--Background2);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+
+.settingsInformation .data input::placeholder {
+    color: var(--Primary);
+}
+
+
+.settingsInformation form button {
+    background-color: var(--Primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+
+.settingsInformation form .SearchCep {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.settingsInformation form .SearchCep input {
+    width: 50%;
+    background-color: var(--Background2);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+.settingsInformation form .SearchCep select {
+    width: 50%;
+    background-color: var(--Background2);
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+
+.settingsInformation form .SearchCep button {
+    background-color: var(--Primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 550px) {
+    .settingsInformation {
+        width: 100%;
+        color: var(--Primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .settingsInformation form .data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    
+    .settingsInformation form .data select {
+        width: 90%;
+        background-color: var(--Background2);
+        color: var(--Primary);
+        border: 1px solid var(--Primary);
+        border-radius: 6px;
+        padding: 5px 8px;
+    }
+    
+    .settingsInformation .data input {
+        width: 90%;
+        background-color: var(--Background2);
+        color: var(--Primary);
+        border: 1px solid var(--Primary);
+        border-radius: 6px;
+        padding: 5px 8px;
+    }
+
+    .settingsInformation form .SearchCep {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 10px 0;
+    }
+    
+    .settingsInformation form .SearchCep input {
+        width: 90%;
+        background-color: var(--Background2);
+        color: var(--Primary);
+        border: 1px solid var(--Primary);
+        border-radius: 6px;
+        padding: 5px 8px;
+    }
+    .settingsInformation form .SearchCep select {
+        width: 90%;
+        background-color: var(--Background2);
+        color: var(--Primary);
+        border: 1px solid var(--Primary);
+        border-radius: 6px;
+        padding: 5px 8px;
+    }
+    
+    .settingsInformation form .SearchCep button {
+        background-color: var(--Primary);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: var(--White);
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: none;
+        font-size: 14px;
+        width: 90%;
+    }
+    
+}

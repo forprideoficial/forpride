@@ -1,0 +1,58 @@
+.listFriends{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.listFriends .friendUnics {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+        width: 200px;
+        background-color:var(--Background2) ;
+        padding: 5px;
+}
+
+.listFriends .friendUnics img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.listFriends .friendUnics .name {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.listFriends .friendUnics .name h3 {
+    color: var(--Primary);
+    font-size: 16px;
+}
+
+.listFriends .friendUnics .name a {
+    text-decoration: none;
+}
+
+.listFriends .friendUnics button {
+    background-color: var(--Primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin: 5px 0;
+}

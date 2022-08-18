@@ -1,0 +1,194 @@
+
+.UpdatePlain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--Background2);
+}
+.UpdatePlain .UpdatePlain-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--Background2);
+    padding: 100px 0;
+}
+.UpdatePlain .UpdatePlain-page .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Primary5);
+    padding: 20px 40px;
+    border-radius: 6px;
+    color: var(--Background2);
+    margin: 20px;
+}
+
+.UpdatePlain .UpdatePlain-page .payments{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.UpdatePlain .UpdatePlain-page .payments .vip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 10px;
+    border-radius: 6px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.UpdatePlain .UpdatePlain-page .payments .vip .double{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    color: var(--White);
+    padding: 5px;
+    /* background-color: var(--Primary2); */
+    border-radius: 6px;
+}
+.UpdatePlain .UpdatePlain-page .payments .vip h2 {
+    margin-bottom: 20px;
+}
+
+.UpdatePlain .UpdatePlain-page .payments .vip h3 {
+    margin: 20px 0;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.37);
+    padding: 5px 10px;
+}
+.UpdatePlain .UpdatePlain-page .payments .vip a {
+    margin-top: 20px;
+    color: var(--White);
+    text-decoration: none;
+    background-color: var(--Foursome1);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.UpdatePlain .UpdatePlain-page .payments .vip .double svg {
+    font-size: 24px;
+}
+.UpdatePlain .UpdatePlain-page .payments .premium{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 550px;
+    background-color: var(--Foursome1);
+    color: var(--White);
+    padding: 10px;
+    border-radius: 6px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.UpdatePlain .UpdatePlain-page .payments .premium .double{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    color: var(--White);
+    padding: 5px;
+    /* background-color: var(--Primary2); */
+    border-radius: 6px;
+}
+
+.UpdatePlain .UpdatePlain-page .payments .premium h2 {
+    margin-bottom: 20px;
+}
+.UpdatePlain .UpdatePlain-page .payments .premium h3 {
+    margin: 20px 0;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.37);
+    padding: 5px 10px;
+}
+.UpdatePlain .UpdatePlain-page .payments .premium a {
+    margin-top: 20px;
+    color: var(--White);
+    text-decoration: none;
+    background-color: var(--Primary);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.UpdatePlain .UpdatePlain-page .payments .premium .double svg {
+    font-size: 24px;
+}
+.UpdatePlain .UpdatePlain-page .payments .unic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 20px;
+    border-radius: 6px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.UpdatePlain .UpdatePlain-page .payments .unic h3{
+    margin-bottom: 7px;
+}
+
+.UpdatePlain .UpdatePlain-page .payments .unic a {
+    background-color: var(--Background2);
+    color: var(--Primary);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 7px 40px;
+    text-decoration: none;
+}
+
+.UpdatePlain .UpdatePlain-page .buttons {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.UpdatePlain .UpdatePlain-page .buttons button {
+    background-color: var(--Background2);
+    color: var(--Primary);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 1px solid var(--Primary);
+    font-weight: 500;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+}
+
+.UpdatePlain .UpdatePlain-page .buttons .selected {
+    background-color: var(--Primary);
+    color: var(--White);
+
+}

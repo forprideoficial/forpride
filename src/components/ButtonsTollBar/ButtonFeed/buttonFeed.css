@@ -1,0 +1,123 @@
+﻿
+a {
+    text-decoration: none;
+}
+ .toolIcon .counter{
+    margin-left:55px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: var(--Background2);
+    font-size: 10px;
+    font-weight: bold;
+}
+ .toolIcon a {
+    text-decoration: none;
+
+}
+
+ .toolIcon {
+    width: 90%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 3px 0;
+    padding: 10px;
+    color: var(--White);
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    background-color: var(--Background);
+}
+ .toolIcon svg {
+    margin-right:3px;
+}
+ .toolIcon:hover {
+    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
+    color: var(--Background);
+}
+
+
+ .toolIcon p:hover {
+    color: var(--Background);
+}
+
+ .toolIcon svg:hover {
+    color: var(--Background);
+}
+
+
+
+@media (max-width: 900px) {
+ .toolIcon a {
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+ .toolIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 5px;
+    padding: 3px 0;
+    color: var(--White);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    background-color: var(--Background)
+}
+ .toolIconSelect a {
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+ .toolIcon:hover {
+    background-color: var(--Primary);
+    color: var(--Background);
+}
+
+
+ .toolIcon p:hover {
+    color: var(--Background);
+}
+
+ .toolIcon svg:hover {
+    color: var(--Background);
+}
+
+ .toolIcon .counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--Foursome1);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: var(--Background2);
+    margin-bottom: 35px;
+    margin-left:35px;
+    font-size: 10px;
+}
+}

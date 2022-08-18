@@ -1,0 +1,140 @@
+.load {
+    margin-top: 20px;
+    width: 70%;
+    padding: 20px;
+    background-color: var(--Background);
+    color: var(--Gray_font1);
+    border-radius: 6px;
+    margin-bottom: 300px;
+}
+
+.FeedPostUnic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.FeedPostUnic .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.FeedPostUnic .button a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: var(--Primary);
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--White);
+    font-size: 14px;
+}
+
+.FeedPostUnic .posts-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.FeedPostUnic .posts-feed #sentinela {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.FeedPostUnic .posts-feed #sentinela .image {
+    width: 30px;
+    height: 30px;
+}
+.FeedPostUnic .posts-feed #sentinela .image img{
+    width: 30px;
+    height: 30px;
+}
+
+.FeedPostUnic .posts-feed .preItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.FeedPostUnic .posts-feed .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+.FeedPostUnic .posts-feed .buttons button {
+    padding: 5px;
+    width: 120px;
+    border: none;
+    border-bottom: 1px solid var(--Gray-Border);
+    background-color: var(--Background2);
+}
+
+.FeedPostUnic .posts-feed .buttons .selected {
+    border-bottom: 2px solid var(--Primary);
+    color: var(--Primary);
+}
+
+
+@media (max-width: 900px) {
+    .FeedPostUnic {
+        width: 100%;
+    }
+
+    
+    @media (max-width: 550px) {
+        .FeedPostUnic {
+            width: 100%;
+        }
+
+        .buttons {
+            flex-wrap: wrap;
+        }
+
+        .buttons button {
+            width: 80px;
+        }
+
+        @media (max-width: 500px) {
+
+            .buttons {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .buttons button {
+                width: 110px;
+            }
+
+            @media (max-width: 380px) {
+                .FeedPostUnic {
+                    width: 100%;
+                    margin-left: 3px;
+                }
+            }
+        }
+
+    }
+
+}
+

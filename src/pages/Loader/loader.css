@@ -1,0 +1,14 @@
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Background2);
+    padding: 20px;
+    position: absolute;
+    z-index: 99;
+    margin-top: 500px;
+}
+

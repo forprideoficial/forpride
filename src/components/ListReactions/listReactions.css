@@ -1,0 +1,33 @@
+.reactionsList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.reactionsList h5 {
+    margin-left: -20px;
+    margin-top: 2px;
+}
+
+.reactionsList button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: none;
+    border: none;
+    font-size: 16px;
+    color: var(--Gray_font2);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.reactionsList .selected svg {
+    font-size: 16px;
+    color: var(--White);
+}
+
+.reactionsList .selected{
+    background-color: var(--Primary);
+    color: var(--White);
+}

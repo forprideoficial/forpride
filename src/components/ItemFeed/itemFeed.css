@@ -1,0 +1,600 @@
+.feed-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    color: var(--Gray_font2);
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 10px 0;
+    border: 1px solid var(--Background2);
+    background-color: var(--Background2);
+}
+.feed-post .TextLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    color: var(--Gray_font2);
+    padding: 0 10px;
+}
+.feed-post .TextLink a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    color: var(--Gray_font2);
+}
+.feed-post .TextLink a h5 {
+    font-weight: 500;
+    text-align: left;
+    color: var(--Gray_font2);
+}
+
+.feed-post .post-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.feed-post .post-user a{
+   text-decoration: none;
+}
+.feed-post .post-user h4{
+    font-weight: 500;
+}
+
+.feed-post .post-user .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.feed-post .post-user .avatar img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.feed-post .post-user .name-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feed-post .post-user .name-data .selected {
+    color: var(--Primary) ;
+}
+
+.feed-post .post-data {
+    margin: 5px 0;
+    width: 90%;
+}
+.feed-post .infosReactions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    width: 100%;
+    margin:10px 0;
+}
+
+.feed-post .post-data-media {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+.feed-post .post-data-media .image .marcadagua {
+    width: 425px;
+    height: 425px;
+    position: absolute;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.feed-post .post-data-media .image .marcadagua .black{
+    color: rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    font-weight: 500;
+    object-fit: cover;
+}
+.feed-post .post-data-media .image .marcadagua .white{
+    color: rgba(255, 255, 255, 0.1);
+    margin: 5px;
+    font-weight: 500;
+    object-fit: cover;
+}
+.feed-post .post-data-media .image{
+    width: 425px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.08);
+    background-color: var(--Background2);
+}
+.feed-post .post-data-media .image-video{
+    width: 425px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.03);
+    background-color: var(--Background2);
+}
+
+.feed-post .post-data-media .image-video .blockVideo {
+    width: 425px;
+    height: 425px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 5;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.feed-post .post-data-media .image-video .blockVideo {
+    width: 425px;
+    height: 425px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 5;
+    position: absolute;
+    border-radius: 10px;
+}
+
+
+
+.feed-post .post-data-media .image img{
+    width: 425px;
+    height: 425px;
+     object-fit: contain;
+     border-radius: 10px;
+ }
+
+.feed-post .post-data-media .image .mark h5 {
+    object-fit: cover;
+}
+
+
+.feed-post .post-data-media .image-video .markTop{
+    width:425px;
+    height: 170px;
+    position: absolute;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -250px;
+    
+}
+.feed-post .post-data-media .image-video .markBottom{
+    width:425px;
+    height: 125px;
+    position: absolute;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+.feed-post .post-data-media .image .mark .white{
+    color: rgba(255, 255, 255, 0.1);
+    margin: 2px;
+    font-weight: 500;
+    object-fit: cover;
+}
+
+.feed-post .post-data-media .markTop .white {
+    color: rgba(255, 255, 255, 0.1);
+    margin: 2px;
+    font-weight: 500;
+}
+.feed-post .post-data-media .markBottom .white {
+    color: rgba(255, 255, 255, 0.1);
+    margin: 2px;
+    font-weight: 500;
+    object-fit: cover;
+}
+
+
+.feed-post .post-data-media h1 {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 10px;
+    position: absolute;
+}
+
+
+.feed-post .post-data-media .image-video video{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.feed-post .post-data-media .videoReact{
+   width: 100%;
+   object-fit: contain;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.feed-post .post-data-media .image-video .videoReact .videoReact2{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+ }
+
+
+
+.feed-post .post-data p {
+    color: var(--Gray_font);
+    font-size: 16px;
+    margin-left: 20px;
+    white-space: pre-line;
+}
+
+.feed-post .reactions {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 0;
+}
+
+.feed-post .reactions button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Background);
+    border: none;
+    color: var(--Gray_font2);
+    padding:12px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+
+
+.feed-post .reactions .selected{
+    background-color: var(--Primary);
+    color: var(--White);
+    font-size: 16px;
+}
+
+
+
+.feed-post .reactions .selected svg{
+    font-size: 16px;
+    color: var(--White);
+}
+
+.feed-post .comment {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feed-post .commentHidden {
+    display: none;
+}
+
+.feed-post .edit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feed-post .editHidden {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .feed-post .reactions {
+        width: 95%;
+    }
+
+    @media (max-width: 1000px) {
+        .feed-post .reactions button {
+            font-size: 16px;
+        }
+
+@media (max-width: 900px) {
+
+    .feed-post .reactions button svg {
+        margin-right: 0px;
+    }
+
+
+     
+    
+
+    @media (max-width: 750px) {
+        .feed-post .reactions {
+            width: 90%;
+        }
+
+        .feed-post .post-data-media .image{
+            width: 375px;
+        }
+        .feed-post .post-data-media .image-video{
+            width: 375px;
+        }
+        
+        .feed-post .post-data-media .image img{
+            width: 100%;
+         }
+        
+        .feed-post .post-data-media .image .marcadagua{
+            width: 350px;
+            height: 350px;
+
+        }
+          
+        .feed-post .post-data-media .image-video .markTop{
+            width: 350px;
+            height: 100px;
+ 
+        }
+        .feed-post .post-data-media .image-video .markBottom{
+            width: 350px;
+            height: 100px;
+
+            margin-top: 225px
+        }
+        
+ 
+        @media (max-width: 600px) {
+    
+            .feed-post .reactions {
+                width: 95%;
+            }
+
+
+                .feed-post .post-data-media .image{
+            width: 450px;
+        }
+                .feed-post .post-data-media .image-video{
+            width: 450px;
+        }
+        
+        .feed-post .post-data-media .image img{
+            width: 100%;
+         }
+        
+        .feed-post .post-data-media .image .marcadagua{
+            width: 450px;
+            height: 350px;
+
+        }
+        .feed-post .post-data-media .image-video .mark{
+            width: 450px;
+            height: 350px;
+
+        }
+          
+        }
+
+
+        @media (max-width: 550px) {
+
+            .feed-post .reactions {
+                width: 100%;
+            }
+            .feed-post .reactions button {
+                font-size: 16px;
+            }
+
+            
+        @media (max-width: 500px) {
+
+            .feed-post .reactions {
+                width: 100%;
+
+            }
+            .feed-post .reactions button {
+                font-size: 16px;
+            }
+
+
+            .feed-post .post-data-media .image{
+                width: 400px;
+            }
+            .feed-post .post-data-media .image-video{
+                width: 400px;
+            }
+            
+            .feed-post .post-data-media .image img{
+                width: 100%;
+             }
+            
+            .feed-post .post-data-media .image .marcadagua{
+                width: 400px;
+                height: 350px;
+    
+            }
+              
+            .feed-post .post-data-media .image-video .mark{
+                width: 400px;
+                height: 350px;
+    
+            }
+              
+
+                @media(max-width: 450px) {
+                    .feed-post .post-data-media .image{
+                        width: 350px;
+                    }
+                    .feed-post .post-data-media .image-video{
+                        width: 350px;
+                    }
+                    
+                    .feed-post .post-data-media .image img{
+                        width: 100%;
+                     }
+                    
+                    .feed-post .post-data-media .image .marcadagua{
+                        width: 350px;
+                        height: 300px;
+            
+                    }
+                    .feed-post .post-data-media .image .marcadagua .white{
+                        font-size: 14px;
+                    }
+                    .feed-post .post-data-media .image .marcadagua .black{
+                        font-size: 14px;
+                    }
+                    .feed-post .post-data-media .markTop .black {
+                        color: rgba(0, 0, 0, 0.07);
+                        margin: 2px;
+                        font-weight: 500;
+                    }
+
+                    .feed-post .post-data-media .image-video .markTop{
+                        width: 350px;
+                        height: 100px;
+
+             
+                    }
+                    .feed-post .post-data-media .image-video .markBottom{
+                        width: 350px;
+                        height: 100px;
+
+                        margin-top: 200px
+                    }
+
+                    .feed-post .post-data-media .markBottom .white {
+                        font-size: 14px;
+                    }
+                      
+               
+
+            @media (max-width: 400px) {
+      
+                .feed-post .reactions {
+                    width: 95%;
+                    margin-left: -22px;
+                }
+                .feed-post .reactions button {
+                    font-size: 16px;
+                }
+
+                .feed-post .post-data-media {
+                    width: 100%;
+                }
+
+                .feed-post .infosReactions {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    border:none;
+
+                }
+
+
+                @media (max-width: 380px) {
+        
+                    .feed-post .reactions {
+                        width: 100%;
+                        margin-left: 0px;
+                    }
+                    .feed-post .reactions button {
+                        font-size: 16px;
+                    }
+    
+                    .feed-post .post-data-media {
+                        width: 100%;
+                    }
+
+                    .feed-post .post-data-media .image{
+                        width: 300px;
+                    }
+                    
+                    .feed-post .post-data-media .image-video{
+                        width: 300px;
+                    }
+                    
+                    .feed-post .post-data-media .image img{
+                        width: 100%;
+                     }
+                    
+                    .feed-post .post-data-media .image .marcadagua{
+                        width: 300px;
+                        height: 250px;
+                    }
+                    .feed-post .post-data-media .image .marcadagua .white{
+                        font-size: 12px;
+                    }
+                    .feed-post .post-data-media .image .marcadagua .black{
+                        font-size: 12px;
+                    }
+                    
+                    .feed-post .post-data-media .image-video .markTop{
+                        width: 300px;
+                        height: 150px;
+                        margin-top: -200px
+
+             
+                    }
+                    .feed-post .post-data-media .image-video .markBottom{
+                        width: 300px;
+                        height: 150px;
+
+                        margin-top: 200px;
+                    }
+
+                    .feed-post .post-data-media .markTop .white {
+                        font-size: 14px;
+                    }
+                      
+                         
+    
+                }
+            }
+                
+        }
+     }
+    }
+}
+   }
+}
+}

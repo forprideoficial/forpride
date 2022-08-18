@@ -1,0 +1,204 @@
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--Background2)
+    
+}
+
+.content .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Background2);
+    
+}
+
+.content .main .aside{
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--Background);
+}
+
+.content .aside .feed {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+    margin-right: 25%;
+}
+.content .aside .blocksFeed {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 20px 0 0;
+    background-color: var(--Black);
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    right: 0;
+    z-index: 98;
+}
+
+.content .aside .blocksFeed h3 {
+    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
+    color: var(--White);
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.content .aside .blocksFeed {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 20px 0 0;
+    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    right: 0;
+    z-index: 98;
+}
+
+.content .aside .blocksFeed h3 {
+    background-color: var(--Primary3);
+    color: var(--Background2);
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.content .aside .topScroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: var(--Primary);
+    border-radius: 50%;
+    font-size: 20px;
+    padding:5px;
+    border: none;
+    background-color: var(--Black);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 660px;
+    right: 100px;
+  }
+
+  @media (max-width: 900px) {
+    .content .aside .topScroll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        color: var(--Primary);
+        border-radius: 50%;
+        font-size: 20px;
+        padding:5px;
+        border: none;
+        background-color: var(--Black);
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 580px;
+        right: 20px;
+      }
+
+      .content .main .aside{
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: var(--Background);
+    }
+    
+    .content .aside .feed {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 0;
+        margin-right: 0%;
+    
+    }
+
+      .content .aside .blocksFeed {
+        display: none;
+      }
+    
+
+@media (max-width: 650px) {
+    .content .aside .feed {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+@media (max-width: 550px) {
+    .content .aside .feed {
+        width: 95%;
+        margin-bottom: 100px;
+    }
+    .content .aside .topScroll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        color: var(--Primary);
+        border-radius: 50%;
+        font-size: 20px;
+        padding:5px;
+        border: none;
+        background-color: var(--Background);
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 500px;
+        right: 20px;
+      }
+
+      @media (max-width: 370px) {
+        .content .aside .topScroll {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            color: var(--Primary);
+            border-radius: 50%;
+            font-size: 20px;
+            padding:5px;
+            border: none;
+            background-color: var(--Background);
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            top: 540px;
+            right: 20px;
+          }
+        }
+    }
+}
+}

@@ -1,0 +1,114 @@
+.content-toolbar {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    background-color:var(--Black);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 99;
+    overflow-y: scroll;
+    overflow: auto;
+    padding: 10px 0;
+}
+
+.content-toolbar::-webkit-scrollbar {
+    width: 10px;              
+  }
+  
+ .content-toolbar::-webkit-scrollbar-track {
+    background: var(--Background2);      
+  }
+  
+ .content-toolbar::-webkit-scrollbar-thumb {
+    background-color: var(--Background-man);   
+    border-radius: 20px;      
+    border: 3px solid var(--Background2); 
+  }
+
+
+.content-toolbar .ToolBarLeftSlim {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+.content-toolbar .ToolBarLeftSlim .image {
+    width: 80px;
+    height: 80px; 
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.content-toolbar .ToolBarLeftSlim .image img{
+    width: 80px;
+    height: 80px; 
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.content-toolbar .ToolBarLeftSlim .tools {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.content-toolbar .ToolBarLeftSlim .tools a {
+
+    text-decoration: none;
+}
+
+.content-toolbar .ToolBarLeftSlim .tools .toolIcon a {
+    text-decoration: none;
+
+}
+
+.content-toolbar .ToolBarLeftSlim .tools .toolIcon {
+    width: 120px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 30px;
+    margin: 3px 0;
+    padding: 10px;
+    color: var(--White);
+    cursor: pointer;
+    padding: 15px;
+    font-size: 14px;
+    background-color: var(--Background);
+}
+.content-toolbar .ToolBarLeftSlim .tools .toolIcon svg {
+    margin-right:3px;
+}
+.content-toolbar .ToolBarLeftSlim .tools .toolIcon:hover {
+    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
+    color: var(--White);
+}
+
+
+.content-toolbar .ToolBarLeftSlim .tools .toolIcon p:hover {
+    color: var(--Background);
+}
+
+.content-toolbar .ToolBarLeftSlim .tools .toolIcon svg:hover {
+    color: var(--Background);
+}
+
+@media (max-width: 900px) {
+    .content-toolbar {
+   display: none;
+    }
+  }

@@ -1,0 +1,114 @@
+.listGroups  {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+
+.listGroups .groups-all {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.listGroups .groups-all .group-unic {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px 5px;
+}
+
+.listGroups .groups-all .group-unic .cover {
+    width: 160px;
+}
+
+.listGroups .groups-all .group-unic .profile {
+    width: 80px;
+    margin-top: -40px;
+}
+
+.listGroups .groups-all .group-unic .members {
+    width: 120px;
+}
+
+.listGroups .groups-all .group-unic button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--Background2);
+    font-weight: 500;
+    background-color: var(--Primary);
+    margin-top: 5px;
+}
+
+.listGroups .groups-all .group-unic .Deletar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--Background2);
+    font-weight: 500;
+    background-color: var(--Delete);
+    margin-top: 5px;
+}
+
+.listGroups .groups-all .group-unic h4 {
+    font-weight: 500;
+    color: var(--Primary);
+    text-align: center;
+    margin-bottom: 5px;
+}
+.listGroups .groups-all .group-unic h6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--Gray_font1);
+    text-align: center;
+    margin: 2px 0;
+}
+
+
+.listGroups .groups-all .group-unic .cover {
+    width: 160px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.listGroups .groups-all .group-unic .cover img {
+    width: 160px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.listGroups .groups-all .group-unic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+}

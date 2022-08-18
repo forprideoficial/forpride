@@ -1,0 +1,446 @@
+.complete-informations {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--Primary);
+    color: #fff;
+    text-align: center;
+}
+
+.complete-informations .title {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--White);
+}
+
+.complete-informations .title img {
+    width: 200px;
+}
+
+
+.complete-informations form{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.complete-informations form p{
+    color: #fff;
+    font-weight: bold;
+    font-size:16px;
+}
+
+.complete-informations form .label-avatar{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.complete-informations form .label-avatar input {
+    display: none;
+}
+
+.complete-informations form .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.complete-informations form .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.complete-informations form .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+
+.complete-informations form .label-cover{
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.complete-informations form .label-cover input {
+    display: none;
+}
+
+.complete-informations form .label-cover span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.complete-informations form .label-cover span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.complete-informations form .label-cover img{
+    margin-bottom: 1em;
+    border-radius: 6px;
+    object-fit: cover;
+    height:200px;
+    width: 850px;
+}
+
+.complete-informations form .infoavatar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: var(--Button);
+    padding: 20px;
+    border-radius: 6px;
+}
+.complete-informations form .infoavatar .alert {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px 0;
+    background-color: red;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.complete-informations form .infoavatar h4 {
+    text-align: left;
+}
+.complete-informations form .infoavatar h5 {
+    text-align: left;
+}
+.complete-informations form .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.complete-informations form .data .dataUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.complete-informations form .data .location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.complete-informations form .data .location .uf {
+    width: 150px;
+    padding: 10px 5px;
+    border: none;
+    background-color: var(--Button);
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 5px;
+    color: var(--White);
+    font-weight: bold;
+}
+
+.complete-informations form .SearchCep {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.complete-informations form .digiteCep {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.complete-informations form .digiteCep button {
+    width: 70%;
+}
+
+.complete-informations form .SearchCep input {
+    width: 250px;
+    border: none;
+    background-color: var(--Background2);
+    border-radius: 6px;
+    font-size: 14px;
+    padding:10px;
+    margin: 5px;
+    color: var(--Primary);
+    font-weight: bold;
+}
+
+.complete-informations form .SearchCep input::placeholder {
+    color: var(--Gray_font1);
+}
+
+.complete-informations form .SearchCep button {
+    width: 150px;
+    padding: 10px 5px;
+    border: none;
+    background-color: var(--Background2);
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 5px;
+    color: var(--Primary);
+    font-weight: bold;
+}
+
+
+.complete-informations form .data input {
+    width: 250px;
+    border: none;
+    background-color: var(--Background2);
+    border-radius: 6px;
+    font-size: 14px;
+    padding:10px;
+    margin: 5px;
+    color: var(--Primary);
+    font-weight: bold;
+    margin: 5px;
+}
+.complete-informations form .data select {
+    width: 250px;
+    border: none;
+    background-color: var(--Background2);
+    border-radius: 6px;
+    font-size: 14px;
+    padding:10px;
+    margin: 5px;
+    color: var(--Gray_font1);
+    font-weight: bold;
+}
+.complete-informations form .data .active {
+    width: 250px;
+    border: none;
+    background-color: var(--Background2);
+    border-radius: 6px;
+    font-size: 14px;
+    padding:10px;
+    margin: 5px;
+    color: var(--Primary);
+    font-weight: bold;
+}
+
+.complete-informations form .data input::placeholder {
+    color: var(--Gray_font1);
+}
+
+.complete-informations form .confirmation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.complete-informations form .confirmation button {
+    width: 150px;
+    padding: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--White);
+    color: var(--Primary);
+    margin: 5px;
+}
+.complete-informations form .confirmation .delete {
+    width: 150px;
+    padding: 18px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: var(--White);
+    margin: 5px;
+}
+
+
+.complete-informations form .confirmation .confirmation_informations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--White);
+}
+
+.complete-informations form .confirmation .confirmation_informations span {
+    margin-left: 10px;
+}
+
+.complete-informations form .confirmation  .buttonsInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.complete-informations form .confirmation  .buttonsInformation button {
+    margin: 5px;
+}
+
+
+@media (max-width: 900px) {
+    
+.complete-informations form .data {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+}
+.complete-informations form .data input {
+    width: 90%;
+  
+}
+.complete-informations form .data select {
+    width: 90%;
+}
+
+.complete-informations form .label-cover img {
+    height:150px;
+    width: 650px;
+}
+
+.complete-informations form .label-cover {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+
+    .complete-informations .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--White);
+        text-align: center;
+    }
+
+    .complete-informations .title img {
+        margin-bottom: 10px;
+    }
+
+    .complete-informations form .data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+    .complete-informations form .data input {
+        width: 500px; 
+    }
+
+    .complete-informations form .data select {
+        width: 500px;
+    }
+
+
+    .complete-informations form .label-cover img {
+        height:120px;
+        width: 500px;
+    }
+
+    .complete-informations form .confirmation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--White);
+    }
+
+    .complete-informations form .confirmation .confirmation_informations {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .complete-informations form .SearchCep {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    @media (max-width: 550px) {
+
+        .complete-informations form{
+            margin-top:50px;
+        }
+        .complete-informations form .data input {
+            width: 400px; 
+        }
+    
+        .complete-informations form .data select {
+            width: 400px;
+        }
+
+        .complete-informations form .label-cover img {
+            height:100px;
+            width: 400px;
+        }
+
+        @media (max-width: 450px) {
+            .complete-informations form .data input {
+                width: 300px; 
+            }
+        
+            .complete-informations form .data select {
+                width: 300px;
+            }
+    
+            .complete-informations form .label-cover img {
+                height:70px;
+                width: 300px;
+            }
+        }
+
+    }
+    
+}
+
+}
