@@ -54,7 +54,6 @@
     padding: 0 10px;
 }
 
-<<<<<<< HEAD
 .postFeed2 .postFeed2-data .postFeed2-type  .select {
     width: 100%;
     display: flex;
@@ -67,9 +66,10 @@
 .postFeed2 .postFeed2-data .postFeed2-type  .select select {
     border: none;
     padding: 5px 10px;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    color: var(--White);
-    border-radius: 6px;
+    background-color: var(--Black);
+    border: 1px solid var(--Primary);
+    color: var(--Primary);
+    border-radius: 20px;
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type  .select h6 {
@@ -77,8 +77,6 @@
     margin: 0 5px;
 }
 
-=======
->>>>>>> 92dc7d78bea45d0e00f9337c8b860be63edae8cd
 .postFeed2 .postFeed2-data .postFeed2-type .inputs {
     width: 100%;
     display: flex;

@@ -140,9 +140,10 @@
 .post2 .post2-data .post2-type .select select {
     border: none;
     padding: 5px 10px;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    color: var(--White);
-    border-radius: 6px;
+    background-color: var(--Black);
+    border: 1px solid var(--Primary);
+    color: var(--Primary);
+    border-radius: 20px;
 }
 
 .post2 .post2-data .post2-type .select h6 {
