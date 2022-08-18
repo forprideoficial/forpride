@@ -4,7 +4,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: var(--Background2)
+    background-color: var(--Background)
     
 }
 
@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--Background2);
+    background-color: var(--Background);
     
 }
 
@@ -39,6 +39,7 @@
     padding: 10px 0;
     margin-right: 25%;
 }
+
 .content .aside .blocksFeed {
     width: 25%;
     display: flex;
@@ -58,30 +59,6 @@
 .content .aside .blocksFeed h3 {
     background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
     color: var(--White);
-    font-weight: 700;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 14px;
-}
-.content .aside .blocksFeed {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 10px 20px 0 0;
-    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
-    padding: 20px 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    right: 0;
-    z-index: 98;
-}
-
-.content .aside .blocksFeed h3 {
-    background-color: var(--Primary3);
-    color: var(--Background2);
     font-weight: 700;
     padding: 5px 10px;
     border-radius: 20px;

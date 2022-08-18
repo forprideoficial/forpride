@@ -184,7 +184,7 @@
 }
 
 
-.content-SignUp .bloco .signUp .form input[type="date"]::-webkit-datetime-edit-month-field {
+/* .content-SignUp .bloco .signUp .form input[type="date"]::-webkit-datetime-edit-month-field {
     color: var(--Primary);
   }
   .content-SignUp .bloco .signUp .form input[type="date"]::-webkit-datetime-edit-day-field {
@@ -205,7 +205,7 @@
     align-items: center;
     justify-content: center;
   }
-
+ */
 
 .content-SignUp .bloco .signUp .form select {
     width: 100%;

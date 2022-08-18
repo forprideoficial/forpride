@@ -35,7 +35,7 @@ const online = data?.slice(0,20);
                 <div className="online">
                     <div className="text">
                     <h5><b>Online agora: </b></h5>
-                    <h6><b> {data?.length}</b></h6>
+                    <h6><b> {data?.length === 1 ? 0 : data?.length}</b></h6>
                     </div>
                     <div className="text2">
                     <h5> <a href="/radar"> Ver no radar</a></h5>
