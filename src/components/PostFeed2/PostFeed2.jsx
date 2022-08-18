@@ -391,7 +391,7 @@ function PostFeed2() {
                 </div>
 
                 
-                <div className="select">
+                <div className="selecting">
                     <select value={content} onChange={handleSelectContent}>
                     <option value="">Tipo de conteúdo</option>
                     <option value="livre">Conteúdo livre</option>

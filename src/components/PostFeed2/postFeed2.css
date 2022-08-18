@@ -54,7 +54,7 @@
     padding: 0 10px;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type  .select {
+.postFeed2 .postFeed2-data .postFeed2-type  .selecting {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -63,7 +63,7 @@
     margin-top: 10px;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type  .select select {
+.postFeed2 .postFeed2-data .postFeed2-type  .selecting select {
     border: none;
     padding: 5px 10px;
     background-color: var(--Black);
@@ -72,7 +72,7 @@
     border-radius: 20px;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type  .select h6 {
+.postFeed2 .postFeed2-data .postFeed2-type  .selecting h6 {
     color: var(--White);
     margin: 0 5px;
 }

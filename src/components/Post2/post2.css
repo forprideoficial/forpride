@@ -128,7 +128,7 @@
     margin-top:10px;
 }
 
-.post2 .post2-data .post2-type .select {
+.post2 .post2-data .post2-type .selecting {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -137,7 +137,7 @@
     margin-top: 10px;
 }
 
-.post2 .post2-data .post2-type .select select {
+.post2 .post2-data .post2-type .selecting select {
     border: none;
     padding: 5px 10px;
     background-color: var(--Black);
@@ -146,7 +146,7 @@
     border-radius: 20px;
 }
 
-.post2 .post2-data .post2-type .select h6 {
+.post2 .post2-data .post2-type .selecting h6 {
     color: var(--White);
     margin: 0 5px;
 }

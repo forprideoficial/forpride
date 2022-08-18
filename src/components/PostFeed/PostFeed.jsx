@@ -397,7 +397,7 @@ function PostFeed() {
                   {dailyPost.length === 3 || dataVideo === true ? "" :  <button className={post === "video" ? 'selected' : ""} onClick={postVideo}> <FiVideo /> Vídeo </button> } 
                 </div>
                 
-                <div className="select">
+                <div className="selecting">
                     <select value={content} onChange={handleSelectContent}>
                     <option value="">Tipo de conteúdo</option>
                     <option value="livre">Conteúdo livre</option>
