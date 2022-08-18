@@ -1,114 +1,110 @@
-﻿.Recados{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    background-color: var(--Background2)
+﻿.Recados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--Background2);
 }
-.Recados h3{
-    margin-top: 80px;
-    margin-bottom:10px;
-    color: var(--Primary)
-}
-
-.Recados .listRecados{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    margin-left:20%;
-    margin-rigth:20%;
-    background-color: var(--Background2)
+.Recados h3 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: var(--Primary);
 }
 
+.Recados .listRecados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 20%;
+  margin-rigth: 20%;
+  background-color: var(--Background2);
+}
 
 .Recados .listRecados .new {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 2px solid var(--Background);
-    border-left: 4px solid var(--Button);
-    text-decoration: none;
-    cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid var(--Background);
+  border-left: 4px solid var(--Button);
+  text-decoration: none;
+  cursor: pointer;
 }
 .Recados .listRecados .new .name {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
 }
 .Recados .listRecados .new .name h4 {
-    color: var(--Primary);
+  color: var(--Primary);
 }
 .Recados .listRecados .new .name h5 {
-    color: var(--Gray_font1);
+  color: var(--Gray_font1);
 }
 .Recados .listRecados .new .name a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 .Recados .listRecados .new2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 2px solid var(--Background);
-    border-left: 4px solid var(--Foursome2);
-    text-decoration: none;
-    cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid var(--Background);
+  border-left: 4px solid var(--Foursome2);
+  text-decoration: none;
+  cursor: pointer;
 }
 .Recados .listRecados .new2 .name {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
 }
 .Recados .listRecados .new2 .name h4 {
-    color: var(--Primary);
+  color: var(--Primary);
 }
 .Recados .listRecados .new2 .name h5 {
-    color: var(--Gray_font1);
+  color: var(--Gray_font1);
 }
 .Recados .listRecados .new2 .name a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {
-    .Recados .listRecados{
-        display: flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        width:100%;
-        margin-left:10%;
-        margin-rigth:10%;
-        background-color: var(--Background2)
-    }
+  .Recados .listRecados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 10%;
+    margin-rigth: 10%;
+    background-color: var(--Background2);
+  }
 
-    @media (max-width: 800px) {
-        .Recados .listRecados{
-            display: flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:center;
-            width:100%;
-            margin-left:0%;
-            margin-rigth:0%;
-            background-color: var(--Background2)
-        }
-        
+  @media (max-width: 800px) {
+    .Recados .listRecados {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-left: 0%;
+      margin-rigth: 0%;
+      background-color: var(--Background2);
     }
-    
+  }
 }

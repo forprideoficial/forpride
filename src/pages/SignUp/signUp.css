@@ -1,188 +1,181 @@
 .content-SignUp {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    color: var(--Black);
-    padding: 0px;
-
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--Black);
+  padding: 0px;
 }
 
 .content-SignUp .slide-SignUp {
-    width: 100%;
-    height: 100%;
-    background-color: var(--Primary)
+  width: 100%;
+  height: 100%;
+  background-color: var(--Primary);
 }
 
 .content-SignUp .slide-SignUp .images-SignUp {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .content-SignUp .slide-SignUp .images-SignUp img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .content-SignUp .bloco {
-    width: 800px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px;
-
+  width: 800px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px;
 }
 
 .content-SignUp .bloco .logo {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.content-SignUp .bloco .logo img{
-    width: 90px;
+.content-SignUp .bloco .logo img {
+  width: 90px;
 }
-
 
 .content-SignUp .bloco .signUp {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color:rgb(15, 15, 15);
-    border-radius: 100px 0 0 0;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(15, 15, 15);
+  border-radius: 100px 0 0 0;
 }
 
 .content-SignUp .bloco .signUp h1 {
-    margin-top: 25px;
-    font-weight: 700;
-    color: var(--White);
-    text-align: center;
+  margin-top: 25px;
+  font-weight: 700;
+  color: var(--White);
+  text-align: center;
 }
-
 
 .content-SignUp .bloco .signUp .form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
-    text-align: left;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  text-align: left;
 }
 .content-SignUp .bloco .signUp .form p {
-    color: var(--Gray_font2);
-
+  color: var(--Gray_font2);
 }
 
-
-.content-SignUp .bloco .signUp .form .label-avatar{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    margin: 5px 0;
+.content-SignUp .bloco .signUp .form .label-avatar {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 5px 0;
 }
 
 .content-SignUp .bloco .signUp .form .label-avatar input {
-    display: none;
+  display: none;
 }
 
 .content-SignUp .bloco .signUp .form .label-avatar span {
-    z-index: 99;
-    position: absolute;
-    opacity: 0.7;
-    transition: all .5s;
+  z-index: 99;
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.5s;
 }
 
-.content-SignUp .bloco .signUp .form .label-avatar span:hover{
-    opacity: 1;
-    transform: scale(1.4);
+.content-SignUp .bloco .signUp .form .label-avatar span:hover {
+  opacity: 1;
+  transform: scale(1.4);
 }
 
-.content-SignUp .bloco .signUp .form .label-avatar img{
-    margin-bottom: 1em;
-    border-radius: 50px;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
+.content-SignUp .bloco .signUp .form .label-avatar img {
+  margin-bottom: 1em;
+  border-radius: 50px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
 }
 
-.content-SignUp .bloco .signUp .form .text{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--Gray_font2);
-    text-align: left;
-    margin-top: 20px;
+.content-SignUp .bloco .signUp .form .text {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--Gray_font2);
+  text-align: left;
+  margin-top: 20px;
 }
-.content-SignUp .bloco .signUp .form .text h4{
-    text-align: left;
+.content-SignUp .bloco .signUp .form .text h4 {
+  text-align: left;
 }
-
 
 .content-SignUp .bloco .signUp .form input:focus {
-    outline: none;
-  }
+  outline: none;
+}
 
 .content-SignUp .bloco .signUp .form input {
-    width: 90%;
-    height: 30px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color:rgb(15,15,15);
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    margin-top: 10px;
+  width: 90%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin-top: 10px;
 }
 
 .content-SignUp .bloco .signUp .form input[type="date"] {
-    width: 90%;
-    height: 30px;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color:rgb(15,15,15);
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    margin-top: 10px;
+  width: 90%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin-top: 10px;
 }
 
-.content-SignUp .bloco .signUp .form input[type="date"]::placeholder {
+/* .content-SignUp .bloco .signUp .form input[type="date"]::placeholder {
     color: var(--Primary); 
 }
 .content-SignUp .bloco .signUp .form .empyt[type="date"]::placeholder {
     color: var(--Gray_font2); 
 }
-
+ */
 
 /* .content-SignUp .bloco .signUp .form input[type="date"]::-webkit-datetime-edit-month-field {
     color: var(--Primary);
@@ -208,525 +201,501 @@
  */
 
 .content-SignUp .bloco .signUp .form select {
-    width: 100%;
-    height: 30px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color:rgb(15,15,15);
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    margin: 5px 0;
+  width: 100%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin: 5px 0;
 }
 .content-SignUp .bloco .signUp .form button {
-    width: 50%;
-    height: 30px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: var(--Gray_font2);
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    margin: 5px 0;
-    border-radius: 6px;
-    color: var(--Primary);
+  width: 50%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--Gray_font2);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin: 5px 0;
+  border-radius: 6px;
+  color: var(--Primary);
 }
 
 .content-SignUp .bloco .signUp .form .birthDate {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .content-SignUp .bloco .signUp .form .birthDate select {
-    width: 30%;
-    height: 30px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color:rgb(15,15,15);
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    margin: 5px 0;
+  width: 30%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin: 5px 0;
 }
 
 .content-SignUp .bloco .signUp .form .empyt {
-    color:var(--Gray_font2);
+  color: var(--Gray_font2);
 }
 
 .content-SignUp .bloco .signUp .form h6 {
-    color: var(--Gray_font2);
+  color: var(--Gray_font2);
 }
 .content-SignUp .bloco .signUp .form input::placeholder {
-    color: var(--Gray_font2);
+  color: var(--Gray_font2);
 }
 .content-SignUp .bloco .signUp .form .empyt::placeholder {
-    color: var(--Gray_font2);
+  color: var(--Gray_font2);
 }
 
 .content-SignUp .bloco .signUp .form .inputPassword {
-width: 90%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 5px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
 }
 
 .content-SignUp .bloco .signUp .form .images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 90%;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 10px;
 }
 .content-SignUp .bloco .signUp .form .images .image {
-    width: 100px;
-    height: 80px;
-    object-fit: cover;
-    margin: 10px;
-    
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  margin: 10px;
 }
-.content-SignUp .bloco .signUp .form .images .image img{
-    width: 100px;
-    height: 80px;
-    object-fit: cover;
-    border: 2px solid var(--White);
-    border-radius: 6px;
+.content-SignUp .bloco .signUp .form .images .image img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid var(--White);
+  border-radius: 6px;
 }
-.content-SignUp .bloco .signUp .form .images .image .select{
-    width: 100px;
-    height: 80px;
-    object-fit: cover;
-    border: 2px solid var(--Primary);
-    border-radius: 6px;
+.content-SignUp .bloco .signUp .form .images .image .select {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid var(--Primary);
+  border-radius: 6px;
 }
 
 .content-SignUp .bloco .signUp .form .inputPassword input {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color:rgb(15,15,15);
-    font-size: 14px;
-    padding: 5px 10px;
-    color: var(--Primary);
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  color: var(--Primary);
 }
 
 .content-SignUp .bloco .signUp .form .password {
-    background-color:rgb(15,15,15);
-    width: 50px;
-    height: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    font-size: 15px;
-    color: var(--Primary);
-    margin-top:5px;
+  background-color: rgb(15, 15, 15);
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+  color: var(--Primary);
+  margin-top: 5px;
 }
 
 .content-SignUp .bloco .signUp .form .buttons {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 15px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
 .content-SignUp .bloco .signUp .form .buttons button {
-    background-color: var(--Primary);
-    width: 100%;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 5px;
+  background-color: var(--Primary);
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
 }
 .content-SignUp .bloco .signUp .form .buttons button:hover {
-    background-color: var(--Primary);
+  background-color: var(--Primary);
 }
 .content-SignUp .bloco .signUp .form .buttons .btn {
-    background-color: var(--White);
-    width: 100%;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: var(--Primary);
-    margin-bottom: 5px;
+  background-color: var(--White);
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: var(--Primary);
+  margin-bottom: 5px;
 }
 .content-SignUp .bloco .signUp .form .buttons .btn:hover {
-    background-color: var(--Gray-Border);
+  background-color: var(--Gray-Border);
 }
 .content-SignUp .bloco .signUp .form .buttons .google {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #D0021B;
-    width: 100%;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0021b;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 .content-SignUp .bloco .signUp .form .buttons .google svg {
-    margin-right: 3px;
-    font-size: 17px;
+  margin-right: 3px;
+  font-size: 17px;
 }
 
 .content-SignUp .bloco .signUp .form .buttons .facebook {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #3B5998;
-    width: 100%;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b5998;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 .content-SignUp .bloco .signUp .form .buttons .facebook svg {
-    margin-right: 3px;
-    font-size: 17px;
+  margin-right: 3px;
+  font-size: 17px;
 }
 
 .content-SignUp .bloco .signUp .form .buttons .twitter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5BAAF4;
-    width: 100%;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5baaf4;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 .content-SignUp .bloco .signUp .form .buttons .twitter svg {
-    margin-right: 3px;
-    font-size: 17px;
+  margin-right: 3px;
+  font-size: 17px;
 }
 
 .content-SignUp .bloco .signUp .form .buttons p {
-    font-weight: bold;
-    color: #fff;
+  font-weight: bold;
+  color: #fff;
 }
 
 .content-SignUp .bloco .signUp .form .buttons a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .content-SignUp .bloco .signUp .form .links {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction:row;
-    font-size: 14px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-size: 14px;
 }
 .content-SignUp .bloco .signUp .form .create {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:row;
-    font-size: 14px;
-    margin-top: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 14px;
+  margin-top: 20px;
 }
 .content-SignUp .bloco .signUp .form .links p {
-    color: #fff;
-    margin: 5px 0;
-    font-size: 14px;
+  color: #fff;
+  margin: 5px 0;
+  font-size: 14px;
 }
 .content-SignUp .bloco .signUp .form .create p {
-    color: #fff;
-    margin: 5px 0;
-    font-size: 14px;
+  color: #fff;
+  margin: 5px 0;
+  font-size: 14px;
 }
 
 .content-SignUp .bloco .signUp .form .links a {
-    text-decoration: none;
-    font-size: 14px;
+  text-decoration: none;
+  font-size: 14px;
 }
 .content-SignUp .bloco .signUp .form .create a {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
 }
 .content-SignUp .bloco .signUp .form .create a:hover {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--Primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--Primary);
 }
 .content-SignUp .bloco .signUp .form .whatsapp {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 10px;
-    border-radius: 6px;
-    background: rgba(0, 247, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(18, 22, 87, 0.37);
-    backdrop-filter: blur(4px);
-    border: 2px solid rgba(0, 157, 162, 0.18);
-    margin-top: 20px;
-    cursor: pointer;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(0, 247, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(18, 22, 87, 0.37);
+  backdrop-filter: blur(4px);
+  border: 2px solid rgba(0, 157, 162, 0.18);
+  margin-top: 20px;
+  cursor: pointer;
 }
 .content-SignUp .bloco .signUp .form .whatsapp h4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--White);
 }
 .content-SignUp .bloco .signUp .form .whatsapp h4 svg {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
-
 .content-SignUp .bloco .signUp .form .terms {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--White);
-    margin-top: -10px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--White);
+  margin-top: -10px;
 }
 
 .content-SignUp .bloco .signUp .form .terms p a {
-    font-weight: 900;
-    color: var(--White);
-    text-decoration: none;
-    margin-left: 3px;
+  font-weight: 900;
+  color: var(--White);
+  text-decoration: none;
+  margin-left: 3px;
 }
 
-.content-SignUp .bloco .signUp .form .terms .pointer{
+.content-SignUp .bloco .signUp .form .terms .pointer {
   cursor: pointer;
 }
 
 .content-SignUp .bloco .signUp .form .terms input[type="checkbox"] {
-    margin-right: 10px;
-    color: var(--Primary);
-    width: 12px;
+  margin-right: 10px;
+  color: var(--Primary);
+  width: 12px;
 }
-
-
 
 .content-SignUp .bloco .signUp .footer {
-    position: relative;
-    bottom: 0;
-    margin-top: 150px;
+  position: relative;
+  bottom: 0;
+  margin-top: 150px;
 }
-.content-SignUp .bloco .signUp .footer img{
-    width: 70px;
-    margin-bottom: px;
+.content-SignUp .bloco .signUp .footer img {
+  width: 70px;
+  margin-bottom: px;
 }
-
-
 
 @media (max-width: 1024px) {
+  .content-SignUp .bloco .signUp .form {
+    width: 90%;
+  }
 
+  .content-SignUp .bloco .signUp .form input {
+    width: 100%;
+  }
+
+  .content-SignUp .bloco .signUp .form .inputPassword {
+    width: 100%;
+  }
+
+  .content-SignUp .bloco .signUp .form .buttons {
+    width: 100%;
+  }
+
+  .content-SignUp .bloco .signUp .logo img {
+    width: 45%;
+  }
+
+  @media (max-width: 900px) {
     .content-SignUp .bloco .signUp .form {
-        width: 90%;
+      width: 90%;
     }
 
     .content-SignUp .bloco .signUp .form input {
-        width: 100%;
+      width: 100%;
     }
 
     .content-SignUp .bloco .signUp .form .inputPassword {
+      width: 100%;
+    }
+
+    .content-SignUp .bloco .signUp .logo img {
+      width: 50%;
+    }
+
+    @media (max-width: 700px) {
+      .content-SignUp .bloco .signUp .form {
+        width: 90%;
+      }
+
+      .content-SignUp .bloco .signUp .form input {
         width: 100%;
-    }
+      }
 
-    .content-SignUp .bloco .signUp .form .buttons {
+      .content-SignUp .bloco .signUp .form .whatsapp {
         width: 100%;
-    }
+      }
 
-    .content-SignUp .bloco .signUp .logo img{
-        width: 45%;
-    }
+      .content-SignUp .bloco .signUp .form .inputPassword {
+        width: 100%;
+      }
+      .content-SignUp .bloco .signUp .logo img {
+        width: 90%;
+      }
 
-    @media (max-width: 900px) {
+      .content-SignUp .bloco .signUp .form .links {
+        width: 100%;
+      }
 
-
+      @media (max-width: 550px) {
+        .content-SignUp .slide-SignUp {
+          display: none;
+        }
 
         .content-SignUp .bloco .signUp .form {
-            width: 90%;
+          width: 90%;
         }
-    
+
         .content-SignUp .bloco .signUp .form input {
-            width: 100%;
+          width: 100%;
         }
 
         .content-SignUp .bloco .signUp .form .inputPassword {
+          width: 100%;
+        }
+        .content-SignUp .bloco .signUp .logo img {
+          width: 80%;
+        }
+
+        .content-SignUp .bloco .signUp .form .buttons p {
+          text-align: right;
+        }
+
+        .content-SignUp .bloco .signUp .footer {
+          position: relative;
+          bottom: 0;
+          margin-top: 180px;
+        }
+        .content-SignUp .bloco .signUp .footer img {
+          width: 70px;
+          margin-bottom: 20px;
+        }
+
+        .content-SignUp .bloco .signUp .form .links {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        @media (max-width: 400px) {
+          .content-SignUp .bloco .signUp .form {
+            width: 90%;
+          }
+
+          .content-SignUp .bloco .signUp .form input {
             width: 100%;
-        }
+            font-size: 14px;
+          }
 
-        .content-SignUp .bloco .signUp .logo img{
-            width: 50%;
-        }
+          .content-SignUp .bloco .signUp .form .inputPassword {
+            width: 100%;
+          }
+          .content-SignUp .bloco .signUp .form .inputPassword input {
+            width: 100%;
+            font-size: 14px;
+          }
+          .content-SignUp .bloco .signUp .logo img {
+            width: 100%;
+          }
 
-        @media (max-width: 700px) {
+          .content-SignUp .bloco .signUp .form .buttons {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
 
+          .content-SignUp .bloco .signUp .form .buttons p {
+            margin: 10px;
+            font-size: 12px;
+            text-align: right;
+          }
 
-            .content-SignUp .bloco .signUp .form {
-                width: 90%;
-            }
-        
+          @media (max-width: 350px) {
             .content-SignUp .bloco .signUp .form input {
-                width: 100%;
-            }
-
-            .content-SignUp .bloco .signUp .form .whatsapp {
-                width: 100%;
+              font-size: 14px;
             }
 
             .content-SignUp .bloco .signUp .form .inputPassword {
-                width: 100%;
+              width: 100%;
+              font-size: 14px;
             }
-            .content-SignUp .bloco .signUp .logo img{
-                width: 90%;
+            .content-SignUp .bloco .signUp .form .buttons p {
+              margin-left: 30px;
+              font-size: 12px;
             }
-
-            .content-SignUp .bloco .signUp .form .links {
-                width: 100%;
-            }
-
-            @media (max-width: 550px) {
-
-
-                .content-SignUp .slide-SignUp {
-                    display: none;
-                }
-            
-                .content-SignUp .bloco .signUp .form {
-                    width: 90%;
-                }
-            
-                .content-SignUp .bloco .signUp .form input {
-                    width: 100%;
-                }
-
-                .content-SignUp .bloco .signUp .form .inputPassword {
-                    width: 100%;
-                }
-                .content-SignUp .bloco .signUp .logo img{
-                    width: 80%;
-                }
-
-                
-                .content-SignUp .bloco .signUp .form .buttons p {
-                    text-align: right;
-                }
-
-                .content-SignUp .bloco .signUp .footer {
-                    position: relative;
-                    bottom: 0;
-                    margin-top: 180px;
-                }
-                .content-SignUp .bloco .signUp .footer img{
-                    width: 70px;
-                    margin-bottom: 20px;
-                }
-
-                .content-SignUp .bloco .signUp .form .links {
-                    width: 100%;
-                    flex-direction: column;
-                }
-
-                @media (max-width: 400px) {
-
-                    .content-SignUp .bloco .signUp .form {
-                        width: 90%;
-                    }
-                
-                    .content-SignUp .bloco .signUp .form input {
-                        width: 100%;
-                        font-size: 14px;
-                    }
-
-                    .content-SignUp .bloco .signUp .form .inputPassword {
-                        width: 100%;
-                    }
-                    .content-SignUp .bloco .signUp .form .inputPassword input {
-                        width: 100%;
-                        font-size: 14px;
-                    }
-                    .content-SignUp .bloco .signUp .logo img{
-                        width: 100%;
-                    }
-
-                    .content-SignUp .bloco .signUp .form .buttons {
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                    }
-
-                    .content-SignUp .bloco .signUp .form .buttons p {
-                        margin: 10px;
-                        font-size: 12px;
-                        text-align: right;
-                    }
-
-                    @media (max-width: 350px) {
-
-
-                        .content-SignUp .bloco .signUp .form input {
-                            font-size: 14px;
-                        }
-
-                        .content-SignUp .bloco .signUp .form .inputPassword {
-                            width: 100%;
-                            font-size: 14px;
-                        }
-                        .content-SignUp .bloco .signUp .form .buttons p {
-                            margin-left: 30px;
-                            font-size: 12px;
-                        }
-                    }
-                    
-                }
-                
-            }
-
-            
+          }
         }
-        
+      }
     }
-    
+  }
 }

@@ -1,72 +1,69 @@
 .inviteUnic {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: none;
-    color: var(--Primary);
-    background-color: var(--Background);
-    border-radius: 6px;
-    margin: 5px 0;
-    text-align: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  color: var(--Primary);
+  background-color: var(--Background);
+  border-radius: 6px;
+  margin: 5px 0;
+  text-align: center;
 }
 .inviteUnic .linkInvite {
-    width: 50%;
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    color: var(--White);
-    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
-    border-radius: 6px;
-    margin: 5px 0;
-    text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: var(--White);
+  background-image: linear-gradient(to right, var(--Primary), var(--Primary2));
+  border-radius: 6px;
+  margin: 5px 0;
+  text-align: center;
 }
 .inviteUnic .linkInvite h5 {
-    font-weight: 700;
-    text-align: center;
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    justify-content: center;
-    margin: 6px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
 }
-.inviteUnic .linkInvite h5 a{
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    color: var(--White);
+.inviteUnic .linkInvite h5 a {
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: var(--White);
 }
-.inviteUnic h5{
-    text-align: center;
+.inviteUnic h5 {
+  text-align: center;
 }
-.inviteUnic p{
-    text-align: center;
-    color: var(--Gray_font1);
-    margin-bottom:10px;
-}
-
-
-.inviteUnic button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 6px;
-    color: var(--White);
-    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
-    padding: 5px 10px;
-    margin-top: 5px;
+.inviteUnic p {
+  text-align: center;
+  color: var(--Gray_font1);
+  margin-bottom: 10px;
 }
 
+.inviteUnic button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  color: var(--White);
+  background-image: linear-gradient(to right, var(--Primary), var(--Primary2));
+  padding: 5px 10px;
+  margin-top: 5px;
+}
 
-
-@media(max-width: 600px) {
-    .inviteUnic .linkInvite {
-        width: 90%;
-    }
+@media (max-width: 600px) {
+  .inviteUnic .linkInvite {
+    width: 90%;
+  }
 }

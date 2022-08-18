@@ -1,108 +1,105 @@
 .content-Welcome {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .content-Welcome .Welcome {
-    width: 80%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 50px;
-    color: var(--White);
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+  color: var(--White);
 }
 
 .content-Welcome .Welcome img {
-    width: 250px;
+  width: 250px;
 }
 
 .content-Welcome .Welcome h2 {
-    font-weight: 900;
-    margin: 20px 0;
+  font-weight: 900;
+  margin: 20px 0;
 }
 
 .content-Welcome .Welcome h3 {
-    font-weight: 700;
-    margin: 0 0 10px 0;
+  font-weight: 700;
+  margin: 0 0 10px 0;
 }
 
 .content-Welcome .Welcome .orientations {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-Welcome .Welcome .orientations h4 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .content-Welcome .Welcome .orientations h4 svg {
-    margin-right: 5px;
-    width: 15px;
+  margin-right: 5px;
+  width: 15px;
 }
 
 .content-Welcome .Welcome a {
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--White);
-    color: var(--Primary);
-    margin-top: 20px;
-    text-decoration: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--White);
+  color: var(--Primary);
+  margin-top: 20px;
+  text-decoration: none;
 }
 .content-Welcome .Welcome .informations {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
-color: var(--Primary);
-background-color: #fff;
-border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  color: var(--Primary);
+  background-color: #fff;
+  border-radius: 10px;
 }
 
-
-.content-Welcome .Welcome .informations  a {
-    text-decoration: none;
-    font-weight: 900;
-    margin-left: 5px;
-    color: var(--Primary);
+.content-Welcome .Welcome .informations a {
+  text-decoration: none;
+  font-weight: 900;
+  margin-left: 5px;
+  color: var(--Primary);
 }
 
+@media (max-width: 400px) {
+  .content-Welcome .Welcome .orientations h4 {
+    font-size: 14px;
+  }
 
-@media(max-width: 400px) {
-    .content-Welcome .Welcome .orientations h4 {
-        font-size: 14px;
-    }
-    
-    .content-Welcome .Welcome .orientations h4 svg {
-        font-size: 14px;
-    }
+  .content-Welcome .Welcome .orientations h4 svg {
+    font-size: 14px;
+  }
 
-    .content-Welcome .Welcome .informations {
-        width: 100%;
-    }
+  .content-Welcome .Welcome .informations {
+    width: 100%;
+  }
 
-    .content-Welcome .Welcome .informations h3 {
-        font-size: 16px;
-    }
+  .content-Welcome .Welcome .informations h3 {
+    font-size: 16px;
+  }
 
-    .content-Welcome .Welcome .informations h4 {
-        text-align: left;
-    }
-    
+  .content-Welcome .Welcome .informations h4 {
+    text-align: left;
+  }
 }

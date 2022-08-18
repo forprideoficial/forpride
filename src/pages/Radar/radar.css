@@ -1,495 +1,517 @@
 .content {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    background-color: var(--Background);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--Background);
 }
 
-
-
-.content .main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--Background)
+.content .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Background);
 }
 
 .content .main .messageLoad {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 20px;
-    border-radius: 6px;
-    background-color: var(--Background);
-    color: var(--Gray_font1);
-    margin-top: 50px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: var(--Background);
+  color: var(--Gray_font1);
+  margin-top: 50px;
 }
 
 .content .main .messageLoad h4 {
-    color: var(--Gray_font1);
+  color: var(--Gray_font1);
 }
 
-.content .aside{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.content .aside {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .content .aside .radar {
-    width: 100%;
-    border-right: 2px solid var(--Background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 20px;
+  width: 100%;
+  border-right: 2px solid var(--Background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
 }
 
 .content .aside .radar .filtroGeral {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    border-radius: 6px;
-    margin: 10px 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  border-radius: 6px;
+  margin: 10px 0;
 }
 
 .content .aside .radar h1 {
-    color: var(--Background2);
+  color: var(--Background2);
 }
 
 .content .aside .radar .radar-selected {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
 .content .aside .radar .radar-selected button {
-    width: 100%;
-    text-align: left;
-    padding: 5px;
-    border: none;
-    border-bottom: 2px solid var(--Gray_font1);
-    color: var(--Gray_font1);
-    background-color: var(--Background);
-    font-size: 16px;
-    font-weight: 500;
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid var(--Gray_font1);
+  color: var(--Gray_font1);
+  background-color: var(--Background);
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.content .aside .radar .radar-selected .selected{
-    width: 100%;
-    text-align: left;
-    padding: 5px;
-    border: none;
-    border-bottom: 3px solid var(--Primary);
-    color: var(--Primary);
-    background-color: var(--Background);
-    font-size: 16px;
-    font-weight: 500;
+.content .aside .radar .radar-selected .selected {
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  border: none;
+  border-bottom: 3px solid var(--Primary);
+  color: var(--Primary);
+  background-color: var(--Background);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .content .aside .radar .filtroGeral .selectFilter {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 0;
-    margin-top: -10px;
-    margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px 0;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .content .aside .radar .filtroGeral .selectFilter .onOff {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
 }
 .content .aside .radar .filtroGeral .selectFilter .onOff button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 10px 20px;
-    background-color: var(--White);
-    border: none;
-    color: var(--Primary);
-    cursor: pointer;
-    border-radius:6px;
-    margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px 20px;
+  background-color: var(--White);
+  border: none;
+  color: var(--Primary);
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 0 5px;
 }
 .content .aside .radar .filtroGeral .selectFilter .onOff .selected {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 10px 20px;
-    background-color: var(--Foursome1);
-    border: none;
-    color: var(--White);
-    cursor: pointer;
-    border-radius:6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px 20px;
+  background-color: var(--Foursome1);
+  border: none;
+  color: var(--White);
+  cursor: pointer;
+  border-radius: 6px;
 }
-
 
 .content .aside .radar .filtroGeral .selectFilter select {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 0;
-    margin: 5px;
-    border: 1px solid var(--Primary);
-    color: var(--Primary);
-    background-color: var(--Background2);
-    border-radius: 6px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px 0;
+  margin: 5px;
+  border: 1px solid var(--Primary);
+  color: var(--Primary);
+  background-color: var(--Background2);
+  border-radius: 6px;
 }
 .content .aside .radar .mySelections {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--White);
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    border-radius: 6px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--White);
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  border-radius: 6px;
 }
 .content .aside .radar .mySelections .selections {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px 0;
 }
 .content .aside .radar .mySelections .recolher {
-    display: none;
+  display: none;
 }
 
 .content .aside .radar .mySelections .selections select {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 0;
-    margin: 5px;
-    border: 1px solid var(--Primary);
-    color: var(--Primary);
-    background-color: var(--White);
-    border-radius: 6px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px 0;
+  margin: 5px;
+  border: 1px solid var(--Primary);
+  color: var(--Primary);
+  background-color: var(--White);
+  border-radius: 6px;
 }
 .content .aside .radar .mySelections .selections button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius:6px;
-    background-color: var(--White);
-    color: var(--Primary);
-    border: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 6px;
+  background-color: var(--White);
+  color: var(--Primary);
+  border: none;
+  cursor: pointer;
 }
 
 .content .aside .radar .mySelections .text {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    padding: 5px 0;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 5px 0;
 }
 .content .aside .radar .mySelections .text button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius:6px;
-    background-color: var(--White);
-    color: var(--Primary);
-    border: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 6px;
+  background-color: var(--White);
+  color: var(--Primary);
+  border: none;
+  cursor: pointer;
 }
 .content .aside .radar .filtroGeral .selectFilter select {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 10px 20px;
-    margin: 5px;
-    border: 1px solid var(--Primary);
-    color: var(--Primary);
-    background-color: var(--White);
-    border-radius: 6px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid var(--Primary);
+  color: var(--Primary);
+  background-color: var(--White);
+  border-radius: 6px;
 }
-
 
 .content .aside .radar .filtroGeral .radar-range {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 5px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px 0;
 }
 
-
-.content .aside .radar .filtroGeral .radar-range input[type=range] {
-    width: 80%;
-    border-radius: 20px;
-    padding: 10px;
-    border: none;
-    color: var(--Primary);
-    background-color: var(--Primary);
-
+.content .aside .radar .filtroGeral .radar-range input[type="range"] {
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  color: var(--Primary);
+  background-color: var(--Primary);
 }
 
 .content .aside .radar .filtroGeral .radar-range h4 {
-    color: var(--White);
-    font-weight: 600;
+  color: var(--White);
+  font-weight: 600;
 }
 
 .content .aside .radar .radar-search button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--Primary);
-    padding: 10px;
-    color: var(--White);
-    margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--Primary);
+  padding: 10px;
+  color: var(--White);
+  margin: 10px;
 }
 
 .content .aside .radar .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
 }
 
-.content .aside .radar .button button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    color: var(--White);
-    border-radius: 6px;
-    border:none;
-    padding: 10px 20px;
-    font-weight: bold;
-    margin: 5px 5px 70px 5px;
+.content .aside .radar .button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  color: var(--White);
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 5px 5px 70px 5px;
 }
 .content .aside .radar .top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    color: var(--White);
-    border-radius: 50%;
-    font-size: 20px;
-    padding:5px;
-    border: none;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    right: 0;
-    bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--White);
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  bottom: 100px;
 }
 .content .aside .radar .radar-all {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 5px 0;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5px 0;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
-.content .aside .radar .filterActive{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 80%;  
-    height: 50px;  
-    margin: 10px 0;
+.content .aside .radar .filterActive {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 80%;
+  height: 50px;
+  margin: 10px 0;
 }
 .content .aside .radar .filterActive button {
-    width: 40px;  
-    height: 40px; 
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    border-radius: 6px;
-    Border: none;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    color: var(--White);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: none;
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  color: var(--White);
 }
 
 .content .aside .radar .filterActive button svg {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .content .aside .radar .radar-all .radar-unic {
-    width: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    flex-wrap: wrap;
-    margin: 5px 0
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
 }
 
 .content .aside .radar .radar-all .radar-unic h4 {
-    margin-top:-55px;
-    margin-left:-5px;
-    position: absolute;
+  margin-top: -55px;
+  margin-left: -5px;
+  position: absolute;
 }
 .content .aside .radar .radar-all .radar-unic h5 svg {
-    color: rgb(110, 218, 2);
-    font-size: 10px;
-    border: 1px solid var(--Background2);
-    border-radius: 50%;
-    background-color: var(--Background2);
-    margin-left: 40px;
-    margin-top: -15px;
-    position: absolute;
-  }
+  color: rgb(110, 218, 2);
+  font-size: 10px;
+  border: 1px solid var(--Background2);
+  border-radius: 50%;
+  background-color: var(--Background2);
+  margin-left: 40px;
+  margin-top: -15px;
+  position: absolute;
+}
 
 .content .aside .radar .radar-all .radar-unic .img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 .content .aside .radar .radar-all .radar-unic .img img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .content .aside .radar .radar-all .radar-unic .cover {
-    width: 260px;
+  width: 260px;
 }
 
 .content .aside .radar .radar-all .radar-unic .profile {
-    width: 80px;
+  width: 80px;
 }
 
 .content .aside .radar .radar-all .radar-unic .members {
-    width: 120px;
+  width: 120px;
 }
 
 .content .aside .radar .radar-all .radar-unic button {
-    border: 1px solid var(--Primary);
-    padding: 5px;
-    border-radius: 20px;
-    width: 100%;
-    font-size: 14px;
-    color: var(--Primary);
-    font-weight: 600;
-    background-color: var(--Background2);
-    margin: 5px 0;
+  border: 1px solid var(--Primary);
+  padding: 5px;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 14px;
+  color: var(--Primary);
+  font-weight: 600;
+  background-color: var(--Background2);
+  margin: 5px 0;
 }
 
 .content .aside .radar .radar-all .radar-unic img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .content .aside .radar .radar-all .radar-unic a {
-    text-decoration: none;
-    font-size: 14px;
-    color: var(--Primary);
-    font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--Primary);
+  font-weight: 600;
 }
 
-
-
 .content .aside .radar .radar-all .radar-unic h6 {
-    font-weight: 500;
-    color: var(--Gray_font1);
-    margin: 2px 0px 0px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content:center;
-    text-align: center;
+  font-weight: 500;
+  color: var(--Gray_font1);
+  margin: 2px 0px 0px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
 }
 
 .content .aside .radar .radar-all .radar-unic h6 svg {
-    color: var(--Gray_font1);
+  color: var(--Gray_font1);
 }
-
 
 .distance {
-    color: var(--Gray_font1)
+  color: var(--Gray_font1);
 }
 
-@media(max-width: 850px) {
+@media (max-width: 850px) {
+  .content .aside .radar {
+    padding: 30px 1px;
+  }
 
-    .content .aside .radar {
-        padding: 30px 1px;
+  .content .aside .radar .radar-all {
+    width: 100%;
+  }
 
-    }
-    
-    .content .aside .radar .radar-all {
-        width: 100%;    
-}
-
-.content .aside .radar .radar-all .radar-unic {
+  .content .aside .radar .radar-all .radar-unic {
     width: 80px;
     text-align: center;
+  }
 
-}
-
-.content .aside .radar .radar-all .radar-unic h5 svg {
+  .content .aside .radar .radar-all .radar-unic h5 svg {
     margin-left: 15px;
   }
 
-.content .aside .radar .radar-all .radar-unic .img {
+  .content .aside .radar .radar-all .radar-unic .img {
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
-}
-.content .aside .radar .radar-all .radar-unic .img img {
+  }
+  .content .aside .radar .radar-all .radar-unic .img img {
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
-}
+  }
 
-
-.content .aside .radar .radar-all .radar-unic button {
+  .content .aside .radar .radar-all .radar-unic button {
     border: 1px solid var(--Primary);
     padding: 5px;
     border-radius: 20px;
@@ -499,163 +521,156 @@
     font-weight: 600;
     background-color: var(--Background2);
     margin: 5px 0;
-}
+  }
 
-
-@media(max-width: 650px) {
+  @media (max-width: 650px) {
     .content .aside .radar .radar-all {
-        width: 100%;    
-}
-.content .aside .radar .filtroGeral {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px;
-    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
-    border-radius: 6px;
-    margin: 10px 0;
-}
+      width: 100%;
+    }
+    .content .aside .radar .filtroGeral {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px;
+      background-image: linear-gradient(
+        to right,
+        var(--Primary),
+        var(--Primary2)
+      );
+      border-radius: 6px;
+      margin: 10px 0;
+    }
 
+    .content .aside .radar .mySelections {
+      width: 95%;
+    }
+    .content .aside .radar .mySelections .selections {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 5px 0;
+      flex-wrap: wrap;
+    }
+    .content .aside .radar .mySelections .recolher {
+      display: none;
+    }
 
+    .content .aside .radar .mySelections .selections select {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 5px 0;
+      margin: 5px;
+      border: 1px solid var(--Primary);
+      color: var(--Primary);
+      background-color: var(--Background2);
+      border-radius: 6px;
+      font-size: 12px;
+    }
+    .content .aside .radar .mySelections .selections button {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 6px;
+      background-color: var(--Primary);
+      color: var(--White);
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+    }
 
-.content .aside .radar .mySelections {
-    width: 95%;
-}
-.content .aside .radar .mySelections .selections {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 0;
-    flex-wrap: wrap;
-}
-.content .aside .radar .mySelections .recolher {
-    display: none;
-}
+    .content .aside .radar .mySelections .text {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 5px;
+      text-align: center;
+    }
+    .content .aside .radar .mySelections .text button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 6px;
+      background-color: var(--Primary);
+      color: var(--White);
+      border: none;
+      cursor: pointer;
+      flex-wrap: wrap;
+      font-size: 12px;
+    }
 
-.content .aside .radar .mySelections .selections select {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 0;
-    margin: 5px;
-    border: 1px solid var(--Primary);
-    color: var(--Primary);
-    background-color: var(--Background2);
-    border-radius: 6px;
-    font-size: 12px;
-}
-.content .aside .radar .mySelections .selections button {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius:6px;
-    background-color: var(--Primary);
-    color: var(--White);
-    border: none;
-    cursor: pointer;
-    font-size: 12px;
-}
+    .content .aside .radar .filtroGeral .radar-range {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 5px 0;
+    }
+    .content .aside .radar .filtroGeral .radar-range h4 {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
 
-.content .aside .radar .mySelections .text {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 5px;
-    text-align: center;
-}
-.content .aside .radar .mySelections .text button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius:6px;
-    background-color: var(--Primary);
-    color: var(--White);
-    border: none;
-    cursor: pointer;
-    flex-wrap: wrap;
-    font-size: 12px;
-}
+    .content .aside .radar .filtroGeral .selectFilter {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px 0;
+    }
 
+    .content .aside .radar .filtroGeral .selectFilter select {
+      width: 100%;
+    }
 
+    .content .aside .radar .radar-all .radar-unic {
+      width: 80px;
+      text-align: center;
+    }
 
+    .content .aside .radar .radar-all .radar-unic .img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .content .aside .radar .radar-all .radar-unic .img img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
 
-
-.content .aside .radar .filtroGeral .radar-range {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 5px 0;
-}
-.content .aside .radar .filtroGeral .radar-range h4 {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.content .aside .radar .filtroGeral .selectFilter {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px 0;
-}
-
-.content .aside .radar .filtroGeral .selectFilter select {
-    width: 100%;
-}
-
-
-.content .aside .radar .radar-all .radar-unic {
-    width: 80px;
-    text-align: center;
-
-}
-
-.content .aside .radar .radar-all .radar-unic .img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%
-}
-.content .aside .radar .radar-all .radar-unic .img img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%
-}
-
-
-.content .aside .radar .radar-all .radar-unic button {
-    border: 1px solid var(--Primary);
-    padding: 5px;
-    border-radius: 20px;
-    width: 80%;
-    font-size: 14px;
-    color: var(--Primary);
-    font-weight: 600;
-    background-color: var(--Background2);
-    margin: 5px 0;
-}
-
-}
+    .content .aside .radar .radar-all .radar-unic button {
+      border: 1px solid var(--Primary);
+      padding: 5px;
+      border-radius: 20px;
+      width: 80%;
+      font-size: 14px;
+      color: var(--Primary);
+      font-weight: 600;
+      background-color: var(--Background2);
+      margin: 5px 0;
+    }
+  }
 }

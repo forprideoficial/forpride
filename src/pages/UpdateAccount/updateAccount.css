@@ -1,916 +1,541 @@
 .content-Login {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-Login .UpdateAccount {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .content-Login .UpdateAccount .top {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: #fff; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff;
 }
 
 .content-Login .UpdateAccount .top h1 {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
-.content-Login .UpdateAccount .top img{
-    width: 250px;
+.content-Login .UpdateAccount .top img {
+  width: 250px;
 }
 .content-Login .UpdateAccount .flags {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: #fff; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
 }
-.content-Login .UpdateAccount .flags img{
-    width: 200px;
-    height: 125px;
-    margin: 20px;
-    cursor: pointer;
-    border: 3px solid #fff;
-    border-radius: 6px;
+.content-Login .UpdateAccount .flags img {
+  width: 200px;
+  height: 125px;
+  margin: 20px;
+  cursor: pointer;
+  border: 3px solid #fff;
+  border-radius: 6px;
 }
 
 .content-Login .UpdateAccountBrasil {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.content-Login .UpdateAccountBrasil  .top {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: #fff; 
-    margin-top: 40px;
+.content-Login .UpdateAccountBrasil .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff;
+  margin-top: 40px;
 }
 
-.content-Login .UpdateAccountBrasil  .top h2 {
-    text-align: center;
-    margin: 20px;
+.content-Login .UpdateAccountBrasil .top h2 {
+  text-align: center;
+  margin: 20px;
 }
 
-.content-Login .UpdateAccountBrasil  .top img{
-    width: 250px;
+.content-Login .UpdateAccountBrasil .top img {
+  width: 250px;
 }
-
 
 .content-Login .UpdateAccountBrasil .form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
-    margin-bottom:40px;
-    padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  margin-bottom: 40px;
+  padding: 20px;
 }
-.content-Login .UpdateAccountBrasil .form .dataUser{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
+.content-Login .UpdateAccountBrasil .form .dataUser {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
 }
 
 .content-Login .UpdateAccountBrasil .form .data {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .content-Login .UpdateAccountBrasil .form .data .location {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 .content-Login .UpdateAccountBrasil .form .data .digiteCep {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 .content-Login .UpdateAccountBrasil .form .data .digiteCep button {
-    background-color: var(--Foursome2);
-    width: 250px;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-    margin: 10px;
+  background-color: var(--Foursome2);
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
 }
 .content-Login .UpdateAccountBrasil .form .location {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 .content-Login .UpdateAccountBrasil .form .location button {
-    background-color: var(--Foursome3);
-    width: 250px;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-    margin: 10px;
+  background-color: var(--Foursome3);
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
 }
 .content-Login .UpdateAccountBrasil .form .location .btn {
-    background-color: var(--Background2);
-    width: 70%;
-    height: 40px;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: var(--Primary);
-    margin: 5px;
+  background-color: var(--Background2);
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: var(--Primary);
+  margin: 5px;
 }
 .content-Login .UpdateAccountBrasil .form .SearchCep {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 .content-Login .UpdateAccountBrasil .form .dataUser input {
-    width: 70%;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color: var(--White);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    font-weight: bold;
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: var(--White);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  font-weight: bold;
 }
 
-
-.content-Login .UpdateAccountBrasil .form .label-avatar{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    margin: 5px 0;
+.content-Login .UpdateAccountBrasil .form .label-avatar {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 5px 0;
 }
 
 .content-Login .UpdateAccountBrasil .form .label-avatar input {
-    display: none;
+  display: none;
 }
 
 .content-Login .UpdateAccountBrasil .form .label-avatar span {
-    z-index: 99;
-    position: absolute;
-    opacity: 0.7;
-    transition: all .5s;
+  z-index: 99;
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.5s;
 }
 
-.content-Login .UpdateAccountBrasil .form .label-avatar span:hover{
-    opacity: 1;
-    transform: scale(1.4);
+.content-Login .UpdateAccountBrasil .form .label-avatar span:hover {
+  opacity: 1;
+  transform: scale(1.4);
 }
 
-.content-Login .UpdateAccountBrasil .form .label-avatar img{
-    margin-bottom: 1em;
-    border-radius: 50px;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
+.content-Login .UpdateAccountBrasil .form .label-avatar img {
+  margin-bottom: 1em;
+  border-radius: 50px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
 }
 
-
-.content-Login .UpdateAccountBrasil .form  .infoavatar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    background-color: var(--Button);
-    padding: 20px;
-    border-radius: 6px;
+.content-Login .UpdateAccountBrasil .form .infoavatar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: var(--Button);
+  padding: 20px;
+  border-radius: 6px;
 }
-.content-Login .UpdateAccountBrasil .form  .infoavatar .alert {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 5px 0;
-    background-color: red;
-    padding: 10px;
-    border-radius: 6px;
+.content-Login .UpdateAccountBrasil .form .infoavatar .alert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 5px 0;
+  background-color: red;
+  padding: 10px;
+  border-radius: 6px;
 }
 .content-Login .UpdateAccountBrasil .form .alert {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 5px 0;
-    background-color: red;
-    padding: 10px;
-    border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 5px 0;
+  background-color: red;
+  padding: 10px;
+  border-radius: 6px;
 }
 .content-Login .UpdateAccountBrasil .form .alert2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 5px 0;
-    background-color: var(--Foursome2);
-    padding: 10px;
-    border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 5px 0;
+  background-color: var(--Foursome2);
+  padding: 10px;
+  border-radius: 6px;
 }
 
-.content-Login .UpdateAccountBrasil .form  .infoavatar h4 {
-    text-align: left;
+.content-Login .UpdateAccountBrasil .form .infoavatar h4 {
+  text-align: left;
 }
-.content-Login .UpdateAccountBrasil .form  .infoavatar h5 {
-    text-align: left;
+.content-Login .UpdateAccountBrasil .form .infoavatar h5 {
+  text-align: left;
 }
-
-
 
 .content-Login .UpdateAccountBrasil .form .titleInput {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .content-Login .UpdateAccountBrasil .form .titleInput p {
-   font-weight: bold;
-   text-align: left;
-   margin-bottom: 3px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 3px;
 }
 
 .content-Login .UpdateAccountBrasil .form .title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 70%;
-    color: var(--White);
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 70%;
+  color: var(--White);
+  margin-bottom: 10px;
 }
 
-.content-Login .UpdateAccountBrasil .form input:focus{
-    outline: none;
-  }
+.content-Login .UpdateAccountBrasil .form input:focus {
+  outline: none;
+}
 
-  .content-Login .UpdateAccountBrasil .form option:focus{
-    outline: none;
-  }
-  .content-Login .UpdateAccountBrasil .form select:focus{
-    outline: none;
-  }
-
+.content-Login .UpdateAccountBrasil .form option:focus {
+  outline: none;
+}
+.content-Login .UpdateAccountBrasil .form select:focus {
+  outline: none;
+}
 
 .content-Login .UpdateAccountBrasil .form input {
-    width: 70%;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color: var(--White);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    font-weight: bold;
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: var(--White);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  font-weight: bold;
 }
 
 .content-Login .UpdateAccountBrasil .form select {
-    width: 70%;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color: var(--White);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:5px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    font-weight: bold;
-
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: var(--White);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  font-weight: bold;
 }
 
-
 .content-Login .UpdateAccountBrasil .form option {
-    width: 70%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
-    padding:10px 5px;
-    margin-bottom: 10px;
-    color: var(--Primary);
-
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  color: var(--Primary);
 }
 
 .content-Login .UpdateAccountBrasil .form input::placeholder {
-    color: var(--Gray_font1);
+  color: var(--Gray_font1);
 }
 
 .content-Login .UpdateAccountBrasil .form .inputPassword {
-    width: 70%;
-    height: 45px;
-    display: flex;
-    
-    }
+  width: 70%;
+  height: 45px;
+  display: flex;
+}
 
-    
-    .content-Login .UpdateAccountBrasil .form .inputPassword input {
-        width: 100%;
-        border-radius: 6px 0 0 6px;
-    }
-    
-    .content-Login .UpdateAccountBrasil .form .password {
-        background-color: var(--White);
-        height: 40px;
-        width: 50px;
-        border: none;
-        border-radius: 0 6px 6px 0;
-        font-size: 20px;
-        color: var(--Primary);
-    }
-    
+.content-Login .UpdateAccountBrasil .form .inputPassword input {
+  width: 100%;
+  border-radius: 6px 0 0 6px;
+}
 
+.content-Login .UpdateAccountBrasil .form .password {
+  background-color: var(--White);
+  height: 40px;
+  width: 50px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  font-size: 20px;
+  color: var(--Primary);
+}
 
 .content-Login .UpdateAccountBrasil .form .buttons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .content-Login .UpdateAccountBrasil .form .buttons button {
-    background-color: var(--Button);
-    width: 250px;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-    margin: 10px;
+  background-color: var(--Button);
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
 }
 .content-Login .UpdateAccountBrasil .form .buttons .btn {
-    background-color: var(--White);
-    width: 250px;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: var(--Primary);
-    margin: 10px;
+  background-color: var(--White);
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: var(--Primary);
+  margin: 10px;
 }
 
 .content-Login .UpdateAccountBrasil .form .terms {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--White);
-    margin-top: 10px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--White);
+  margin-top: 10px;
 }
 
 .content-Login .UpdateAccountBrasil .form .terms p a {
-    font-weight: 900;
-    color: var(--White);
-    text-decoration: none;
-    margin-left: 3px;
+  font-weight: 900;
+  color: var(--White);
+  text-decoration: none;
+  margin-left: 3px;
 }
 
-.content-Login .UpdateAccountBrasil .form .terms .pointer{
+.content-Login .UpdateAccountBrasil .form .terms .pointer {
   cursor: pointer;
   margin-left: 3px;
 }
 
 .content-Login .UpdateAccountBrasil .form .terms input[type="checkbox"] {
-    margin-left: 5px;
-    margin-right: 10px;
-    color: var(--Primary);
-    width: 15px;
+  margin-left: 5px;
+  margin-right: 10px;
+  color: var(--Primary);
+  width: 15px;
 }
-
 
 .content-Login .UpdateAccountBrasil .logo {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--White);
-    text-align: center;
-    padding: 30px 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--White);
+  text-align: center;
+  padding: 30px 5px;
 }
 
-.content-Login .UpdateAccountBrasil .logo img{
-    width: 250px;
-    margin-bottom: 20px;
+.content-Login .UpdateAccountBrasil .logo img {
+  width: 250px;
+  margin-bottom: 20px;
 }
 
 .content-Login .UpdateAccountBrasil .footer {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
-.content-Login .UpdateAccountBrasil .footer img{
-    width: 70px;
-    margin-bottom: 20px;
+.content-Login .UpdateAccountBrasil .footer img {
+  width: 70px;
+  margin-bottom: 20px;
 }
-
-
-
 
 .content-modal {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    color: var(--Background);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: var(--Background);
 }
 .content-modal h3 {
-    color: var(--Gray_font1);
+  color: var(--Gray_font1);
 }
 
 .content-modal .itensModalMessages {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
 }
 .content-modal .itensModalMessages h2 {
-    color: var(--Primary);
-    text-align: center;
-    font-weight:700;
+  color: var(--Primary);
+  text-align: center;
+  font-weight: 700;
 }
 .content-modal .itensModalMessages .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 .content-modal .itensModalMessages .buttons button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 150px;
-    height: 80px;
-    flex-wrap: wrap;
-    margin: 10px;
-    font-size: 25px;
-    border-radius: 6px;
-    border: none;
-    background-color: green;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 150px;
+  height: 80px;
+  flex-wrap: wrap;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 6px;
+  border: none;
+  background-color: green;
+  color: white;
 }
 .content-modal .itensModalMessages .buttons button svg {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .content-modal .itensModalMessages .buttons .down {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 150px;
-    height: 80px;
-    flex-wrap: wrap;
-    margin: 10px;
-    font-size: 25px;
-    border-radius: 6px;
-    border: none;background-color: red;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 150px;
+  height: 80px;
+  flex-wrap: wrap;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 6px;
+  border: none;
+  background-color: red;
+  color: white;
 }
 .content-modal .itensModalMessages .buttons button svg {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 @media (max-width: 800px) {
-    .content-Login .UpdateAccountBrasil {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .content-Login .UpdateAccountBrasil .logo {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: var(--White);
-        text-align: center;
-    }
-
-    .content-Login .UpdateAccountBrasil .form {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: var(--White);
-       margin-top: 30px;
-    }
-
-    .content-Login .UpdateAccountBrasil .logo img{
-        width: 50%;
-        margin-bottom: 20px;
-    }
-
-    .content-Login .UpdateAccountBrasil .footer {
-        position: relative;
-        bottom: 0;
-    }
-    .content-Login .UpdateAccountBrasil .footer img{
-        margin-top: 40px;
-        width: 70px;
-        margin-bottom: 20px;
-    }
-    
-
-    @media (max-width: 500px) {
-        .content-Login .UpdateAccountBrasil {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-    
-        .content-Login .UpdateAccountBrasil .logo {
-            width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: var(--White);
-            text-align: center;
-        }
-    
-        .content-Login .UpdateAccountBrasil .form {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--White);
-           margin-top: 30px;
-        }
-
-        
-    .content-Login .UpdateAccountBrasil .form .titleInput {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .content-Login .UpdateAccountBrasil .form .dataUser select {
-        width: 90%;
-        height: 40px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        background-color: var(--White);
-        border-radius: 6px;
-        font-size: 14px;
-        padding:10px;
-        margin-bottom: 5px;
-        color: var(--Primary);
-        font-weight: bold;
-    }
-    .content-Login .UpdateAccountBrasil .form .dataUser input {
-        width: 90%;
-        height: 40px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        background-color: var(--White);
-        border-radius: 6px;
-        font-size: 14px;
-        padding:10px;
-        margin-bottom: 5px;
-        color: var(--Primary);
-        font-weight: bold;
-    }
-
-    
-    .content-Login .UpdateAccountBrasil .form input {
-        width: 90%;
-        height: 40px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        background-color: var(--White);
-        border-radius: 6px;
-        font-size: 14px;
-        padding:10px;
-        margin-bottom: 5px;
-        color: var(--Primary);
-        font-weight: bold;
-    }
-    
-    .content-Login .UpdateAccountBrasil .form select {
-        width: 90%;
-        height: 40px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        background-color: var(--White);
-        border-radius: 6px;
-        font-size: 14px;
-        padding:5px;
-        margin-bottom: 5px;
-        color: var(--Primary);
-        font-weight: bold;
-    
-    }
-    
-    .content-Login .UpdateAccountBrasil .form option {
-        width: 90%;
-        border: none;
-        border-bottom: 1px solid #fff;
-        background-color: #fff;
-        padding:10px 5px;
-        margin-bottom: 10px;
-        color: var(--Primary);
-    
-    }
-.content-Login .UpdateAccountBrasil .form .inputPassword {
-    width: 90%;
-    height: 45px;
-    display: flex;
-    
-    }
-
-        .content-Login .UpdateAccountBrasil .form .titleInput p {
-           font-weight: bold;
-        }
-
-        .content-Login .UpdateAccountBrasil .logo img{
-            width: 60%;
-            margin-bottom: 20px;
-        }
-
-        .content-Login .UpdateAccountBrasil .form .terms {
-            width: 70%;
-        }
-
-        .content-Login .UpdateAccountBrasil .form .terms span {
-            font-size: 14px;
-        }
-        
-    }
-    
-}
-
-
-
-.content-Login {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content-Login .UpdateAccountPortugal {
+  .content-Login .UpdateAccountBrasil {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-}
-
-.content-Login .UpdateAccountPortugal .form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
-    margin-bottom:40px;
-}
-.content-Login .UpdateAccountPortugal .form .titleInput {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.content-Login .UpdateAccountPortugal .form .titleInput p {
-   font-weight: bold;
-   text-align: left;
-   margin-bottom: 3px;
-}
-
-.content-Login .UpdateAccountPortugal .form .title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 70%;
-    color: var(--White);
-    margin-bottom: 10px;
-}
-
-.content-Login .UpdateAccountPortugal .form input:focus{
-    outline: none;
   }
 
-  .content-Login .UpdateAccountPortugal .form option:focus{
-    outline: none;
-  }
-  .content-Login .UpdateAccountPortugal .form select:focus{
-    outline: none;
-  }
-
-
-.content-Login .UpdateAccountPortugal .form input {
-    width: 70%;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color: var(--White);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    font-weight: bold;
-}
-
-.content-Login .UpdateAccountPortugal .form select {
-    width: 70%;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color: var(--White);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:5px;
-    margin-bottom: 5px;
-    color: var(--Primary);
-    font-weight: bold;
-
-}
-
-.content-Login .UpdateAccountPortugal .form option {
-    width: 70%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
-    padding:10px 5px;
-    margin-bottom: 10px;
-    color: var(--Primary);
-
-}
-
-.content-Login .UpdateAccountPortugal .form input::placeholder {
-    color: var(--Gray_font1);
-}
-
-.content-Login .UpdateAccountPortugal .form .inputPassword {
-    width: 70%;
-    height: 45px;
-    display: flex;
-    
-    }
-    
-    .content-Login .UpdateAccountPortugal .form .inputPassword input {
-        width: 100%;
-        border-radius: 6px 0 0 6px;
-    }
-    
-    .content-Login .UpdateAccountPortugal .form .password {
-        background-color: var(--White);
-        height: 40px;
-        width: 50px;
-        border: none;
-        border-radius: 0 6px 6px 0;
-        font-size: 20px;
-        color: var(--Primary);
-    }
-    
-
-
-.content-Login .UpdateAccountPortugal .form .buttons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.content-Login .UpdateAccountPortugal .form .buttons button {
-    background-color: var(--Button);
-    width: 250px;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-}
-.content-Login .UpdateAccountPortugal .form .buttons .btn {
-    background-color: var(--White);
-    width: 250px;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: var(--Primary);
-    margin: 10px;
-}
-
-.content-Login .UpdateAccountPortugal .form .terms {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--White);
-    margin-top: 10px;
-}
-
-.content-Login .UpdateAccountPortugal .form .terms p a {
-    font-weight: 900;
-    color: var(--White);
-    text-decoration: none;
-    margin-left: 3px;
-}
-
-.content-Login .UpdateAccountPortugal .form .terms .pointer{
-  cursor: pointer;
-  margin-left: 3px;
-}
-
-.content-Login .UpdateAccountPortugal .form .terms input[type="checkbox"] {
-    margin-left: 5px;
-    margin-right: 10px;
-    color: var(--Primary);
-    width: 15px;
-}
-
-
-.content-Login .UpdateAccountPortugal .logo {
+  .content-Login .UpdateAccountBrasil .logo {
     width: 80%;
     display: flex;
     align-items: center;
@@ -918,240 +543,576 @@
     flex-direction: column;
     color: var(--White);
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+  }
+
+  .content-Login .UpdateAccountBrasil .form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    margin-top: 30px;
+  }
+
+  .content-Login .UpdateAccountBrasil .logo img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .content-Login .UpdateAccountBrasil .footer {
+    position: relative;
+    bottom: 0;
+  }
+  .content-Login .UpdateAccountBrasil .footer img {
+    margin-top: 40px;
+    width: 70px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 500px) {
+    .content-Login .UpdateAccountBrasil {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .content-Login .UpdateAccountBrasil .logo {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: var(--White);
+      text-align: center;
+    }
+
+    .content-Login .UpdateAccountBrasil .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--White);
+      margin-top: 30px;
+    }
+
+    .content-Login .UpdateAccountBrasil .form .titleInput {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .content-Login .UpdateAccountBrasil .form .dataUser select {
+      width: 90%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: var(--White);
+      border-radius: 6px;
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 5px;
+      color: var(--Primary);
+      font-weight: bold;
+    }
+    .content-Login .UpdateAccountBrasil .form .dataUser input {
+      width: 90%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: var(--White);
+      border-radius: 6px;
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 5px;
+      color: var(--Primary);
+      font-weight: bold;
+    }
+
+    .content-Login .UpdateAccountBrasil .form input {
+      width: 90%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: var(--White);
+      border-radius: 6px;
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 5px;
+      color: var(--Primary);
+      font-weight: bold;
+    }
+
+    .content-Login .UpdateAccountBrasil .form select {
+      width: 90%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: var(--White);
+      border-radius: 6px;
+      font-size: 14px;
+      padding: 5px;
+      margin-bottom: 5px;
+      color: var(--Primary);
+      font-weight: bold;
+    }
+
+    .content-Login .UpdateAccountBrasil .form option {
+      width: 90%;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: #fff;
+      padding: 10px 5px;
+      margin-bottom: 10px;
+      color: var(--Primary);
+    }
+    .content-Login .UpdateAccountBrasil .form .inputPassword {
+      width: 90%;
+      height: 45px;
+      display: flex;
+    }
+
+    .content-Login .UpdateAccountBrasil .form .titleInput p {
+      font-weight: bold;
+    }
+
+    .content-Login .UpdateAccountBrasil .logo img {
+      width: 60%;
+      margin-bottom: 20px;
+    }
+
+    .content-Login .UpdateAccountBrasil .form .terms {
+      width: 70%;
+    }
+
+    .content-Login .UpdateAccountBrasil .form .terms span {
+      font-size: 14px;
+    }
+  }
 }
 
-.content-Login .UpdateAccountPortugal .logo img{
-    width: 250px;
-    margin-bottom: 20px;
+.content-Login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-Login .UpdateAccountPortugal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.content-Login .UpdateAccountPortugal .form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  margin-bottom: 40px;
+}
+.content-Login .UpdateAccountPortugal .form .titleInput {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content-Login .UpdateAccountPortugal .form .titleInput p {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.content-Login .UpdateAccountPortugal .form .title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 70%;
+  color: var(--White);
+  margin-bottom: 10px;
+}
+
+.content-Login .UpdateAccountPortugal .form input:focus {
+  outline: none;
+}
+
+.content-Login .UpdateAccountPortugal .form option:focus {
+  outline: none;
+}
+.content-Login .UpdateAccountPortugal .form select:focus {
+  outline: none;
+}
+
+.content-Login .UpdateAccountPortugal .form input {
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: var(--White);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  font-weight: bold;
+}
+
+.content-Login .UpdateAccountPortugal .form select {
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: var(--White);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  font-weight: bold;
+}
+
+.content-Login .UpdateAccountPortugal .form option {
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  color: var(--Primary);
+}
+
+.content-Login .UpdateAccountPortugal .form input::placeholder {
+  color: var(--Gray_font1);
+}
+
+.content-Login .UpdateAccountPortugal .form .inputPassword {
+  width: 70%;
+  height: 45px;
+  display: flex;
+}
+
+.content-Login .UpdateAccountPortugal .form .inputPassword input {
+  width: 100%;
+  border-radius: 6px 0 0 6px;
+}
+
+.content-Login .UpdateAccountPortugal .form .password {
+  background-color: var(--White);
+  height: 40px;
+  width: 50px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  font-size: 20px;
+  color: var(--Primary);
+}
+
+.content-Login .UpdateAccountPortugal .form .buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.content-Login .UpdateAccountPortugal .form .buttons button {
+  background-color: var(--Button);
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+}
+.content-Login .UpdateAccountPortugal .form .buttons .btn {
+  background-color: var(--White);
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: var(--Primary);
+  margin: 10px;
+}
+
+.content-Login .UpdateAccountPortugal .form .terms {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--White);
+  margin-top: 10px;
+}
+
+.content-Login .UpdateAccountPortugal .form .terms p a {
+  font-weight: 900;
+  color: var(--White);
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.content-Login .UpdateAccountPortugal .form .terms .pointer {
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.content-Login .UpdateAccountPortugal .form .terms input[type="checkbox"] {
+  margin-left: 5px;
+  margin-right: 10px;
+  color: var(--Primary);
+  width: 15px;
+}
+
+.content-Login .UpdateAccountPortugal .logo {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--White);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.content-Login .UpdateAccountPortugal .logo img {
+  width: 250px;
+  margin-bottom: 20px;
 }
 
 .content-Login .UpdateAccountPortugal .footer {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
-.content-Login .UpdateAccountPortugal .footer img{
-    width: 70px;
-    margin-bottom: 20px;
+.content-Login .UpdateAccountPortugal .footer img {
+  width: 70px;
+  margin-bottom: 20px;
 }
-
-
-
 
 .content-modal {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    color: var(--Background);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: var(--Background);
 }
 .content-modal h3 {
-    color: var(--Gray_font1);
+  color: var(--Gray_font1);
 }
 
 .content-modal .itensModalMessages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+.content-modal .itensModalMessages h1 {
+  color: var(--Primary);
+  text-align: center;
+  font-weight: 700;
+}
+.content-modal .itensModalMessages .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.content-modal .itensModalMessages .buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 150px;
+  height: 80px;
+  flex-wrap: wrap;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 6px;
+  border: none;
+  background-color: green;
+  color: white;
+}
+.content-modal .itensModalMessages .buttons button svg {
+  margin-right: 10px;
+}
+.content-modal .itensModalMessages .buttons .down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 150px;
+  height: 80px;
+  flex-wrap: wrap;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 6px;
+  border: none;
+  background-color: red;
+  color: white;
+}
+.content-modal .itensModalMessages .buttons button svg {
+  margin-right: 10px;
+}
+@media (max-width: 800px) {
+  .content-Login .UpdateAccountPortugal {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;padding: 20px;
-}
-.content-modal .itensModalMessages h1 {
-    color: var(--Primary);
+    flex-wrap: wrap;
+  }
+
+  .content-Login .UpdateAccountPortugal .logo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--White);
     text-align: center;
-    font-weight:700;
-}
-.content-modal .itensModalMessages .buttons {
+  }
+
+  .content-Login .UpdateAccountPortugal .form {
+    width: 80%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-.content-modal .itensModalMessages .buttons button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 150px;
-    height: 80px;
-    flex-wrap: wrap;
-    margin: 10px;
-    font-size: 25px;
-    border-radius: 6px;
-    border: none;background-color: green;
-    color: white;
-}
-.content-modal .itensModalMessages .buttons button svg {
-    margin-right: 10px;
-}
-.content-modal .itensModalMessages .buttons .down {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 150px;
-    height: 80px;
-    flex-wrap: wrap;
-    margin: 10px;
-    font-size: 25px;
-    border-radius: 6px;
-    border: none;background-color: red;
-    color: white;
-}
-.content-modal .itensModalMessages .buttons button svg {
-    margin-right: 10px;
-}
-@media (max-width: 800px) {
+    color: var(--White);
+    margin-top: 30px;
+  }
+
+  .content-Login .UpdateAccountPortugal .logo img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .content-Login .UpdateAccountPortugal .footer {
+    position: relative;
+    bottom: 0;
+  }
+  .content-Login .UpdateAccountPortugal .footer img {
+    margin-top: 40px;
+    width: 70px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 500px) {
     .content-Login .UpdateAccountPortugal {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
 
     .content-Login .UpdateAccountPortugal .logo {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: var(--White);
-        text-align: center;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: var(--White);
+      text-align: center;
     }
 
     .content-Login .UpdateAccountPortugal .form {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: var(--White);
-       margin-top: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--White);
+      margin-top: 30px;
     }
 
-    .content-Login .UpdateAccountPortugal .logo img{
-        width: 50%;
-        margin-bottom: 20px;
-    }
-
-    .content-Login .UpdateAccountPortugal .footer {
-        position: relative;
-        bottom: 0;
-    }
-    .content-Login .UpdateAccountPortugal .footer img{
-        margin-top: 40px;
-        width: 70px;
-        margin-bottom: 20px;
-    }
-    
-
-    @media (max-width: 500px) {
-        .content-Login .UpdateAccountPortugal {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-    
-        .content-Login .UpdateAccountPortugal .logo {
-            width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: var(--White);
-            text-align: center;
-        }
-    
-        .content-Login .UpdateAccountPortugal .form {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--White);
-           margin-top: 30px;
-        }
-
-        
     .content-Login .UpdateAccountPortugal .form .titleInput {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
     .content-Login .UpdateAccountPortugal .form input {
-        width: 90%;
-        height: 40px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        background-color: var(--White);
-        border-radius: 6px;
-        font-size: 14px;
-        padding:10px;
-        margin-bottom: 5px;
-        color: var(--Primary);
-        font-weight: bold;
+      width: 90%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: var(--White);
+      border-radius: 6px;
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 5px;
+      color: var(--Primary);
+      font-weight: bold;
     }
-    
+
     .content-Login .UpdateAccountPortugal .form select {
-        width: 90%;
-        height: 40px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        background-color: var(--White);
-        border-radius: 6px;
-        font-size: 14px;
-        padding:5px;
-        margin-bottom: 5px;
-        color: var(--Primary);
-        font-weight: bold;
-    
+      width: 90%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: var(--White);
+      border-radius: 6px;
+      font-size: 14px;
+      padding: 5px;
+      margin-bottom: 5px;
+      color: var(--Primary);
+      font-weight: bold;
     }
-    
+
     .content-Login .UpdateAccountPortugal .form option {
-        width: 90%;
-        border: none;
-        border-bottom: 1px solid #fff;
-        background-color: #fff;
-        padding:10px 5px;
-        margin-bottom: 10px;
-        color: var(--Primary);
-    
+      width: 90%;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: #fff;
+      padding: 10px 5px;
+      margin-bottom: 10px;
+      color: var(--Primary);
     }
-.content-Login .UpdateAccountPortugal .form .inputPassword {
-    width: 90%;
-    height: 45px;
-    display: flex;
-    
+    .content-Login .UpdateAccountPortugal .form .inputPassword {
+      width: 90%;
+      height: 45px;
+      display: flex;
     }
 
-        .content-Login .UpdateAccountPortugal .form .titleInput p {
-           font-weight: bold;
-        }
-
-        .content-Login .UpdateAccountPortugal .logo img{
-            width: 60%;
-            margin-bottom: 20px;
-        }
-
-        .content-Login .UpdateAccountPortugal .form .terms {
-            width: 70%;
-        }
-
-        .content-Login .UpdateAccountPortugal .form .terms span {
-            font-size: 14px;
-        }
-        
+    .content-Login .UpdateAccountPortugal .form .titleInput p {
+      font-weight: bold;
     }
-    
+
+    .content-Login .UpdateAccountPortugal .logo img {
+      width: 60%;
+      margin-bottom: 20px;
+    }
+
+    .content-Login .UpdateAccountPortugal .form .terms {
+      width: 70%;
+    }
+
+    .content-Login .UpdateAccountPortugal .form .terms span {
+      font-size: 14px;
+    }
+  }
 }

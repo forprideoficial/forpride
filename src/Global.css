@@ -4,39 +4,37 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --Primary: #f57303;
-  --Primary3: #8124F2;
-  --Primary2: #8124D0;
-  --Primary3: #8124C0;
-  --Primary5: #8124A0;
+  --Primary3: #8124f2;
+  --Primary2: #8124d0;
+  --Primary3: #8124c0;
+  --Primary5: #8124a0;
   --Background: #202020;
   --Background-man: #ececff;
   --Background-woman: #ffecfc;
   --Background-preferences: #ffffec;
   --Background2: #000000;
-  --Gray_font1: #FFEACF;
-  --Gray_font2: #DFE0DF;
+  --Gray_font1: #ffeacf;
+  --Gray_font2: #dfe0df;
   --Black: #000000;
   --White: #ffffff;
-  --Button: #FE8B00;
-  --Gray-Border: #BFC4D3;
-  --Delete:#d01616;
-  --Foursome1:#FD5D5C;
-  --Foursome2:#de0053;
-  --Foursome3:#ffc200;
-
+  --Button: #fe8b00;
+  --Gray-Border: #bfc4d3;
+  --Delete: #d01616;
+  --Foursome1: #fd5d5c;
+  --Foursome2: #de0053;
+  --Foursome3: #ffc200;
 }
 
 html {
   @media (max-width: 1080px) {
     font-size: 93.75%;
-    
+
     @media (max-width: 720px) {
       font-size: 87.5%;
     }
   }
-  
 }
 
 body {
@@ -56,57 +54,65 @@ body {
 .content {
   background: var(--Black);
   width: 100%;
-    height: 100%;
-    display: flex;
-
+  height: 100%;
+  display: flex;
 }
 .content-Login {
   background: var(--Black);
   width: 100vw;
-    height: 100vh;
-    display: flex;
-
+  height: 100vh;
+  display: flex;
 }
 .content-SignUp {
   background: var(--Black);
   width: 100vw;
-    height: 100vh;
-    display: flex;
-
+  height: 100vh;
+  display: flex;
 }
 
-body, input, textarea, button {
-  font-family: 'Ubuntu', sans-serif;
+body,
+input,
+textarea,
+button {
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
-  
-  
 }
-body, input, textarea, button :focus{
+body,
+input,
+textarea,
+button :focus {
   outline: none;
-  }
+}
 
-  body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: var(--Background2);        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--Background-man);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid var(--Background2);  /* creates padding around scroll thumb */
-  }
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
 
-  textarea {
-    padding: 10px;
-  }
-  input, textarea {
-    color: var(--Primary);
-  }
+body::-webkit-scrollbar-track {
+  background: var(--Background2); /* color of the tracking area */
+}
 
-h1, h2, h3, h4, h5, h6, strong {
+body::-webkit-scrollbar-thumb {
+  background-color: var(--Background-man); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid var(--Background2); /* creates padding around scroll thumb */
+}
+
+textarea {
+  padding: 10px;
+}
+input,
+textarea {
+  color: var(--Primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
   font-weight: 400;
 }
 
@@ -118,10 +124,8 @@ button {
   cursor: pointer;
 }
 
-
-
 .react-modal-overlay {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -133,9 +137,9 @@ button {
   justify-content: center;
 }
 
-.react-modal-overlay:focus{
+.react-modal-overlay:focus {
   outline: none;
-  }
+}
 
 .react-modal-content {
   width: 100%;
@@ -147,9 +151,9 @@ button {
   border: none;
 }
 
-.react-modal-content:focus{
+.react-modal-content:focus {
   outline: none;
-  }
+}
 
 .react-modal-button {
   width: 15px;
@@ -157,7 +161,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:var(--White);
+  background-color: var(--White);
   position: absolute;
   right: 0;
   top: 0;
@@ -165,9 +169,13 @@ button {
   border: none;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
   .container {
-      background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
+    background-image: linear-gradient(
+      to right,
+      var(--Primary),
+      var(--Primary2)
+    );
     width: 100%;
     height: 100%;
     display: flex;
@@ -175,6 +183,3 @@ button {
     justify-content: center;
   }
 }
-
-
-

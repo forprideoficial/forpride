@@ -1,191 +1,185 @@
-.listEvents  {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    flex-wrap: wrap;
+.listEvents {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  flex-wrap: wrap;
 }
 
-
 .listEvents .events-all {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px 0;
-    flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 .listEvents .events-all .events-unic {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    margin: 10px 5px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  margin: 10px 5px;
 }
 
 .listEvents .events-all .events-unic .imageCover {
-    width: 160px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 6px;
+  width: 160px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .listEvents .events-all .events-unic .imageCover img {
-    width: 160px;
-    height: 60px;
-    border-radius: 6px;
+  width: 160px;
+  height: 60px;
+  border-radius: 6px;
 }
 
 .listEvents .events-all .events-unic .profile {
-    width: 80px;
-    margin-top: -40px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid var(--Background2);
+  width: 80px;
+  margin-top: -40px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--Background2);
 }
 
 .listEvents .events-all .events-unic .members {
-    width: 120px;
+  width: 120px;
 }
 
 .listEvents .events-all .events-unic a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    border: 1px solid var(--Primary);;
-    border-radius: 20px;
-    width: 100%;
-    font-size: 14px;
-    color: var(--Primary);
-    font-weight: 500;
-    background-color: var(--Background2);
-    margin-top: 5px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid var(--Primary);
+  border-radius: 20px;
+  width: 100%;
+  font-size: 14px;
+  color: var(--Primary);
+  font-weight: 500;
+  background-color: var(--Background2);
+  margin-top: 5px;
 }
 
 .listEvents .events-all .events-unic h4 {
-    font-weight: 500;
-    color: var(--Primary);
-    text-align: center;
-    margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--Primary);
+  text-align: center;
+  margin-bottom: 5px;
 }
 .listEvents .events-all .events-unic h6 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    color: var(--Gray_font1);
-    text-align: center;
-    margin: 2px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--Gray_font1);
+  text-align: center;
+  margin: 2px 0;
 }
 
-
-
-
-
-.listEvents2  {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.listEvents2 {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 
 .listEvents2 .events-all2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px 0;
-    flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 .listEvents2 .events-all2 .events-unic2 {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    margin:5px;
-    background-color: var(--Background);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  background-color: var(--Background);
 }
 
 .listEvents2 .events-all2 .events-unic2 .imageCover {
-    width: 160px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 6px;
+  width: 160px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .listEvents2 .events-all2 .events-unic2 .imageCover img {
-    width: 160px;
-    height: 60px;
-    border-radius: 6px;
+  width: 160px;
+  height: 60px;
+  border-radius: 6px;
 }
 
 .listEvents2 .events-all2 .events-unic2 .profile {
-    width: 80px;
-    margin-top: -40px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid var(--Background2);
+  width: 80px;
+  margin-top: -40px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--Background2);
 }
 
 .listEvents2 .events-all2 .events-unic2 .members {
-    width: 120px;
+  width: 120px;
 }
 
 .listEvents2 .events-all2 .events-unic2 a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    border: 1px solid var(--Primary);
-    border-radius: 20px;
-    width: 100%;
-    font-size: 14px;
-    color: var(--Background2);
-    font-weight: 500;
-    background-color: var(--Primary);
-    margin-top: 5px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid var(--Primary);
+  border-radius: 20px;
+  width: 100%;
+  font-size: 14px;
+  color: var(--Background2);
+  font-weight: 500;
+  background-color: var(--Primary);
+  margin-top: 5px;
 }
 
 .listEvents2 .events-all2 .events-unic2 h4 {
-    font-weight: 500;
-    color: var(--Primary);
-    text-align: center;
-    margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--Primary);
+  text-align: center;
+  margin-bottom: 5px;
 }
 .listEvents2 .events-all2 .events-unic2 h6 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    color: var(--Primary);
-    text-align: center;
-    margin: 2px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--Primary);
+  text-align: center;
+  margin: 2px 0;
 }

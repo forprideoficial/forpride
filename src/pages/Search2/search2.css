@@ -1,323 +1,308 @@
+.SearchPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--Background2);
+  height: 100%;
+}
+.SearchPage h2 {
+  margin-top: 80px;
+  color: var(--Primary);
+}
+.SearchPage .main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 55px 100px 40px 120px;
+  background-color: var(--Background2);
+  height: 100%;
+}
 
-.SearchPage{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    background-color: var(--Background2);
-    height: 100%
+.SearchPage .searchButton {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to right, var(--Primary), var(--Primary2));
+  height: 100%;
+  color: var(--Background2);
+  border-radius: 6px;
 }
-.SearchPage h2{
-    margin-top: 80px;
-    color: var(--Primary)
-}
-.SearchPage .main{
-    display: flex;
-    flex-direction:row;
-    align-items:flex-start;
-    justify-content:center;
-    width:100%;
-    padding: 55px 100px 40px 120px ;
-    background-color: var(--Background2);
-    height: 100%
-}
-
-.SearchPage .searchButton{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;  
-    padding: 10px;
-    margin-bottom: 10px;
-    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
-    height: 100%;
-    color: var(--Background2);
-    border-radius: 6px;
-}
-.SearchPage .filterActive{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    width: 50px;  
-    height: 50px;  
-    background-color: var(--Background);
-    margin: 10px;
+.SearchPage .filterActive {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--Background);
+  margin: 10px;
 }
 .SearchPage .filterActive button {
-    width: 50px;  
-    height: 50px; 
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    border-radius: 6px;
-    Border: none;
-    background-color: var(--Foursome1);
-    color: var(--White);
-
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--Foursome1);
+  color: var(--White);
 }
 
 .SearchPage .filterActive button svg {
-    font-size: 20px;
+  font-size: 20px;
 }
-.SearchPage .searchButton input{
-    padding: 7px;
-    background-color: var(--Background);
-    border: 1px solid var(--Primary);
-    color: var(--Primary);
-    font-size: 14px;
-    border-radius: 6px;
-    margin: 3px;
-    width: 90%
+.SearchPage .searchButton input {
+  padding: 7px;
+  background-color: var(--Background);
+  border: 1px solid var(--Primary);
+  color: var(--Primary);
+  font-size: 14px;
+  border-radius: 6px;
+  margin: 3px;
+  width: 90%;
 }
 
 .SearchPage .searchButton .buttons {
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    width: 100%;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .SearchPage .searchButton .buttons button {
-    width: 80px;
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    padding: 10px;
-    margin:5px;
-    border-radius: 6px;
-    Border: none;
-    background-color: var(--Background2);
-    color: var(--Primary);
-
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--Background2);
+  color: var(--Primary);
 }
 .SearchPage .searchButton .buttons .select {
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    padding: 10px;
-    margin: 2px;
-    border-radius: 6px;
-    Border: none;
-    background-color: var(--Foursome1);
-    color: var(--Background2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--Foursome1);
+  color: var(--Background2);
 }
 
-
-.SearchPage .searchButton h3{
-    font-weight:700;
-    margin: 10px 10px 3px 10px ;
-    color: var(--Background2);
+.SearchPage .searchButton h3 {
+  font-weight: 700;
+  margin: 10px 10px 3px 10px;
+  color: var(--Background2);
 }
 
 .SearchPage .searchButton input::placeholder {
-    color: var(--Gray_font2);
+  color: var(--Gray_font2);
 }
 
 .SearchPage .searchButton .filter {
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .SearchPage .searchButton .filter h5 {
-    font-weight:700;
-    margin: 10px 10px 3px 10px ;
-    color: var(--Background2);
-    text-align: center;
+  font-weight: 700;
+  margin: 10px 10px 3px 10px;
+  color: var(--Background2);
+  text-align: center;
 }
 .SearchPage .searchButton .filter .buttons {
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    width: 100%;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .SearchPage .searchButton .filter .buttons button {
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 6px;
-    Border: none;
-    background-color: var(--Background2);
-    color: var(--Primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--Background2);
+  color: var(--Primary);
 }
 
 .SearchPage .searchButton .filter button {
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    padding: 10px;
-    margin: 50px 10px 10px 10px;
-    border-radius: 6px;
-    Border: none;
-    background-color: var(--Foursome1);
-    color: var(--Background2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 50px 10px 10px 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--Foursome1);
+  color: var(--Background2);
 }
 .SearchPage .searchButton .filter .buttons .select {
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    padding: 10px;
-    margin: 2px;
-    border-radius: 6px;
-    Border: none;
-    background-color: var(--Foursome1);
-    color: var(--Background2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--Foursome1);
+  color: var(--Background2);
 }
 
-
-
-
 .SearchPage .itensSearch {
-    display: flex;
-    flex-direction:row;
-    align-items:flex-start;
-    justify-content:center;
-    width:70%;
-    background-color: var(--Background2);
-    height: 100%;
-    flex-wrap: wrap;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;
+  background-color: var(--Background2);
+  height: 100%;
+  flex-wrap: wrap;
 }
 
 .SearchPage .itensSearch h3 {
-    color: var(--Primary);
-    margin-top: 20px;
-    text-align: center;
+  color: var(--Primary);
+  margin-top: 20px;
+  text-align: center;
 }
 
 .SearchPage .itensSearch .pages {
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content:center;
-    width:100%;
-    background-color: var(--Background2);
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    color: var(--Primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--Background2);
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: var(--Primary);
 }
 .SearchPage .itensSearch .pages h5 {
-    font-weight:500;
-    margin: 5px;
+  font-weight: 500;
+  margin: 5px;
 }
 
 .SearchPage .itensSearch .pages button {
-    display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 6px;
-    Border: none;
-    background-color: var(--Foursome1);
-    color: var(--Background2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--Foursome1);
+  color: var(--Background2);
 }
 .SearchPage .itensSearch .accounts {
-    display: flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:center;
-    width: 150px;
-    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
-    margin: 5px;
-    border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 150px;
+  background-image: linear-gradient(to right, var(--Primary), var(--Primary2));
+  margin: 5px;
+  border-radius: 6px;
 }
 .SearchPage .itensSearch .accounts .image {
-    width: 150px;
-    border-radius: 6px 6px 0 0 ;
-    height: 120px;
-    border-radius: 6px 6px 0 0 ;
-    object-fit: cover;
+  width: 150px;
+  border-radius: 6px 6px 0 0;
+  height: 120px;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
 }
 .SearchPage .itensSearch .accounts img {
-    width: 150px;
-    border-radius: 6px 6px 0 0 ;
-    height: 120px;
-    border-radius: 6px 6px 0 0 ;
-    object-fit: cover;
+  width: 150px;
+  border-radius: 6px 6px 0 0;
+  height: 120px;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
 }
 .SearchPage .itensSearch .accounts .infos2 {
-    display: flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:center;
-    width: 100%;
-    padding: 5px;
-    color: var(--Background2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  color: var(--Background2);
 }
 .SearchPage .itensSearch .accounts .infos2 a {
-    text-decoration: none;
-    color: var(--Background2);
+  text-decoration: none;
+  color: var(--Background2);
 }
 .SearchPage .itensSearch .accounts .infos2 h5 {
-    font-weight:700;
+  font-weight: 700;
 }
 .SearchPage .itensSearch .accounts .infos2 .moreInfos2 h6 {
-    font-weight:500;
+  font-weight: 500;
 }
 .SearchPage .itensSearch .accounts .infos2 .moreInfos2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  color: var(--Background2);
+}
+
+@media (max-width: 899px) {
+  .SearchPage .main {
     display: flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
-    padding: 5px 0;
-    color: var(--Background2);
-}
+    padding: 55px 0px;
+    background-color: var(--Background2);
+    height: 100%;
+  }
 
-
-@media (max-width:899px) {
-   
-    .SearchPage .main{
-        display: flex;
-        flex-direction:row;
-        align-items:flex-start;
-        justify-content:center;
-        width:100%;
-        padding: 55px 0px ;
-        background-color: var(--Background2);
-        height: 100%
+  @media (max-width: 899px) {
+    .SearchPage .main {
+      flex-direction: column-reverse;
     }
 
-    @media (max-width:899px) {
-   
-        .SearchPage .main{
-            flex-direction:column-reverse;
-        }
-
-        .SearchPage .itensSearch {
-            width:100%;
-            
-        }
-
-        .SearchPage .searchButton{
-            width: 90%;  
-            margin-left:5%;
-        }
-        .SearchPage .filterActive{
-            margin-left:5%;
-        }
-        
+    .SearchPage .itensSearch {
+      width: 100%;
     }
+
+    .SearchPage .searchButton {
+      width: 90%;
+      margin-left: 5%;
+    }
+    .SearchPage .filterActive {
+      margin-left: 5%;
+    }
+  }
 }
-
-

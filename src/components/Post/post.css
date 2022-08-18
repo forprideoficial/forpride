@@ -1,438 +1,421 @@
 .post {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 5px;
-    margin-top: 20px;
-    height: 100%;
-    background-color: var(--background);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 5px;
+  margin-top: 20px;
+  height: 100%;
+  background-color: var(--background);
 }
 .post .counter {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 5px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px;
 }
 
 .post .counter h5 {
-    color: var(--Gray_font2);
-    margin-right: 10px;
+  color: var(--Gray_font2);
+  margin-right: 10px;
 }
 
 .post .post-data {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .post .post-data .avatar {
-    width: 50px;
-    height: 50px;  
+  width: 50px;
+  height: 50px;
 }
 
 .post .post-data .avatar img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .post .post-data .post-type {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 10px;
 }
 
 .post .post-data .post-type .inputs {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .post .post-data .post-type .inputs .post-file {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
 }
 
-.post .post-data .post-type .inputs .post-file .label-avatar{
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    margin: 5px 0;
+.post .post-data .post-type .inputs .post-file .label-avatar {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 5px 0;
 }
 
 .post .post-data .post-type .inputs .post-file .label-avatar input {
-    display: none;
+  display: none;
 }
 
 .post .post-data .post-type .inputs .post-file .label-avatar span {
-    z-index: 99;
-    position: absolute;
-    opacity: 0.7;
-    transition: all .5s;
+  z-index: 99;
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.5s;
 }
 
-.post .post-data .post-type .inputs .post-file .label-avatar span:hover{
-    opacity: 1;
-    transform: scale(1.4);
+.post .post-data .post-type .inputs .post-file .label-avatar span:hover {
+  opacity: 1;
+  transform: scale(1.4);
 }
 
-.post .post-data .post-type .inputs .post-file .label-avatar img{
-    margin-bottom: 1em;
-    border-radius: 6%;
-    object-fit: cover;
+.post .post-data .post-type .inputs .post-file .label-avatar img {
+  margin-bottom: 1em;
+  border-radius: 6%;
+  object-fit: cover;
 }
 
 .post .post-data .post-type .inputs textarea {
-    width: 100%;
-    height: 80px;
-    border-radius: 20px;
-    resize: none;
-    margin-right: 10px;
-    background-color: var(--Background);
+  width: 100%;
+  height: 80px;
+  border-radius: 20px;
+  resize: none;
+  margin-right: 10px;
+  background-color: var(--Background);
 }
 
 .post .post-data .post-type button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 20px;
-    padding: 5px;
-    width: 100%;
-    height: 60px;
-    background-color: var(--Primary);
-    color: var(--White);
-    margin-top:10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  width: 100%;
+  height: 60px;
+  background-color: var(--Primary);
+  color: var(--White);
+  margin-top: 10px;
 }
 
 .post .post-data .post-type .buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 .post .post-data .post-type .selecting {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .post .post-data .post-type .selecting select {
-    border: none;
-    padding: 5px 10px;
-    background-color: var(--Black);
-    border: 1px solid var(--Primary);
-    color: var(--Primary);
-    border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  background-color: var(--Black);
+  border: 1px solid var(--Primary);
+  color: var(--Primary);
+  border-radius: 20px;
 }
 
 .post .post-data .post-type .selecting h6 {
-    color: var(--White);
-    margin: 0 5px;
+  color: var(--White);
+  margin: 0 5px;
 }
 
 .post .post-data .post-type .buttons button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    border: 1px solid var(--Background);
-    padding: 5px;
-    width: 30%;
-    background-color: var(--Background);
-    margin: 3px;
-    color: var(--Gray_font2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid var(--Background);
+  padding: 5px;
+  width: 30%;
+  background-color: var(--Background);
+  margin: 3px;
+  color: var(--Gray_font2);
 }
 
 .post .post-data .post-type .buttons .selected {
-    border: 1px solid var(--Primary);
-    color: var(--Primary);
+  border: 1px solid var(--Primary);
+  color: var(--Primary);
 }
 
 .post .post-data .post-type .buttons button svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .post .posts-feed {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .post .posts-feed .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 10px 0;
 }
 
 .post .posts-feed .buttons button {
-    padding: 5px;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--Gray-Border);
-    background-color: var(--Background);
+  padding: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--Gray-Border);
+  background-color: var(--Background);
 }
 
 .post .posts-feed .buttons .selected {
-    border-bottom: 2px solid var(--Primary);
-    color: var(--Primary);
+  border-bottom: 2px solid var(--Primary);
+  color: var(--Primary);
 }
 
 .post .posts-feed .feed-post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    color: var(--Gray_font2);
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 20px 0;
-    margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--Gray_font2);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px 0;
+  margin: 10px 0;
 }
 
 .post .posts-feed .feed-post .post-user {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
 }
 
 .post .posts-feed .feed-post .post-user img {
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
 .post .posts-feed .feed-post .post-user .name-data {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .post .posts-feed .feed-post .post-user .name-data .selected {
-    color: var(--Primary) ;
+  color: var(--Primary);
 }
 
 .post .posts-feed .feed-post .post-data {
-    margin: 5px 0;
-    width: 90%;
+  margin: 5px 0;
+  width: 90%;
 }
 
 .post .posts-feed .feed-post .post-data p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .post .posts-feed .feed-post .reactions {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .post .posts-feed .feed-post .reactions button {
-    background-color: var(--Background2);
-    border: none;
-    font-size: 18px;
-    color: var(--Gray_font2);
-    
+  background-color: var(--Background2);
+  border: none;
+  font-size: 18px;
+  color: var(--Gray_font2);
 }
 
 .post .posts-feed .feed-post .reactions button svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
-.post .posts-feed .feed-post .reactions .selected{
-    color: var(--Primary);   
+.post .posts-feed .feed-post .reactions .selected {
+  color: var(--Primary);
 }
-
-
-
 
 @media (max-width: 1180px) {
+  .post .post-data .post-type .buttons button {
+    width: 30%;
+  }
+
+  .post .post-data .post-type .inputs textarea {
+    width: 100%;
+  }
+
+  .post .post-data .post-type .inputs button {
+    width: 15%;
+  }
+
+  @media (max-width: 950px) {
+    .post {
+      width: 90%;
+    }
     .post .post-data .post-type .buttons button {
       width: 30%;
     }
 
     .post .post-data .post-type .inputs textarea {
-        width: 100%;
+      width: 100%;
     }
 
     .post .post-data .post-type .inputs button {
-        width: 15%;
+      width: 20%;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .post .post-data .post-type .buttons button {
+      width: 30%;
     }
 
-    @media (max-width: 950px) {
+    @media (max-width: 750px) {
+      .post {
+        width: 100%;
+      }
 
+      .post .post-data .avatar {
+        width: 30px;
+        height: 30px;
+      }
+
+      .post .post-data .avatar img {
+        height: 30px;
+        width: 30px;
+      }
+      .post .post-data .post-type .buttons button {
+        width: 30%;
+      }
+
+      .post .post-data .post-type .buttons {
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 620px) {
         .post {
-            width: 90%;
+          width: 100%;
         }
+
+        .post .post-data .avatar {
+          display: none;
+        }
+        .post .post-data .avatar img {
+          display: none;
+        }
+
+        .post .post-data .post-type {
+          width: 100%;
+        }
+
+        .post .post-data .post-type .buttons {
+          flex-wrap: wrap;
+        }
+
         .post .post-data .post-type .buttons button {
-            width: 30%;
-        }
-
-        .post .post-data .post-type .inputs textarea {
-            width: 100%;
-        }
-
-        .post .post-data .post-type .inputs button {
-            width: 20%;
+          width: 30%;
         }
       }
 
-      @media (max-width: 850px) {
-        .post .post-data .post-type .buttons button {
-            width: 30%;
+      @media (max-width: 550px) {
+        .post {
+          width: 100%;
         }
-
-
-        @media (max-width: 750px) {
-            .post {
-                width: 100%;
-            }
-
-            .post .post-data .avatar {
-                width: 30px;
-                height: 30px;
-            }
-
-            .post .post-data .avatar img {
-                height: 30px;
-                width: 30px;
-            }
-            .post .post-data .post-type .buttons button {
-                width: 30%;
-              }
-
-            .post .post-data .post-type .buttons {
-              flex-wrap: wrap;
-            }
-
-
-
-            @media (max-width: 620px) {
-                .post {
-                    width: 100%;
-                }
-    
-                .post .post-data .avatar {
-                    display: none;
-                }
-                .post .post-data .avatar img {
-                    display: none;
-                }
-
-                .post .post-data .post-type {
-                    width: 100%;
-                }
-    
-                .post .post-data .post-type .buttons {
-                  flex-wrap: wrap;
-                }
-
-                .post .post-data .post-type .buttons button {
-                    width: 30%;
-                  }
-              }
-
-
-              @media (max-width: 550px) {
-                .post {
-                    width: 100%;
-                }
-/*     
+        /*     
                 .post .post-data .avatar img {
                     width: 30px;
                 }
      */
-                .post .post-data .post-type .buttons {
-                  flex-wrap: wrap;
-                }
+        .post .post-data .post-type .buttons {
+          flex-wrap: wrap;
+        }
 
-                .post .post-data .post-type .buttons button {
-                    width: 30%;
-                  }
+        .post .post-data .post-type .buttons button {
+          width: 30%;
+        }
 
-
-                  @media (max-width: 450px) {
-                    .post {
-                        width: 100%;
-                    }
-   
-                    .post .posts-feed .buttons {
-                        width: 100%;
-                    }
-                    .post .post-data .post-type .buttons {
-                        flex-wrap: wrap;
-                    }
-    
-                    .post .post-data .post-type .buttons button {
-                        width: 30%;
-                      }
-
-
-                      @media (max-width: 380px) {
-                        .post {
-                            width: 100%;
-                        }
-       
-                        .post .posts-feed .buttons {
-                            width: 100%;
-                        }
-                        .post .post-data .post-type .buttons {
-                            flex-wrap: wrap;
-                        }
-        
-                        .post .post-data .post-type .buttons button {
-                            flex-direction: column;
-                            width: 30%;
-                            margin-right: 5px;
-                          }
-                        }
-
-                      
-
-                  }
-
-              }
+        @media (max-width: 450px) {
+          .post {
+            width: 100%;
           }
-          
+
+          .post .posts-feed .buttons {
+            width: 100%;
+          }
+          .post .post-data .post-type .buttons {
+            flex-wrap: wrap;
+          }
+
+          .post .post-data .post-type .buttons button {
+            width: 30%;
+          }
+
+          @media (max-width: 380px) {
+            .post {
+              width: 100%;
+            }
+
+            .post .posts-feed .buttons {
+              width: 100%;
+            }
+            .post .post-data .post-type .buttons {
+              flex-wrap: wrap;
+            }
+
+            .post .post-data .post-type .buttons button {
+              flex-direction: column;
+              width: 30%;
+              margin-right: 5px;
+            }
+          }
+        }
       }
+    }
   }
+}

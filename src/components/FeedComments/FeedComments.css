@@ -1,258 +1,245 @@
 .feedComments {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 95%;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  margin-bottom: 10px;
 }
 
 .feedComments .feed-comment {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    color: var(--Gray_font2);
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin-top: 5px;
-    background-color: var(--Black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--Gray_font2);
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  background-color: var(--Black);
 }
 .feedComments .feed-comment .block1Comment {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .feedComments .feed-comment .block1Comment .comment-user {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .feedComments .feed-comment .block1Comment .comment-user a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .feedComments .feed-comment .block1Comment .buttonsComment {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-        
-    }
-    
-    .feedComments .feed-comment .block1Comment .buttonsComment button {
-        width: 30px;
-        height: 30px;
-        background-color: var(--Background);
-        color: var(--Gray_font2);
-        border: none;
-        border-radius: 6px;
-        font-size: 12px;
-        margin: 0 3px;
-    }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.feedComments .feed-comment .block1Comment .buttonsComment button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--Background);
+  color: var(--Gray_font2);
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  margin: 0 3px;
+}
 
 .feedComments .feed-comment .block1Comment .comment-user .avatar {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
 .feedComments .feed-comment .block1Comment .comment-user .avatar img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
 .feedComments .feed-comment .block1Comment .comment-user .name-data {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
 }
 
-
 .feedComments .feed-comment .block1Comment .comment-user .name-data .selected {
-    color: var(--Primary) ;
-    font-size: 13px;
+  color: var(--Primary);
+  font-size: 13px;
 }
 
 .feedComments .feed-comment .comment-data {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 2px 0;
-    width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 2px 0;
+  width: 90%;
 }
 
 .feedComments .feed-comment .comment-data p {
-    color: var(--Gray_font);
-    margin-top: 3px;
-    font-size: 14px;
-    text-align: left;
-    font-weight: 500;
+  color: var(--Gray_font);
+  margin-top: 3px;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 500;
 }
 
 .feedComments .feed-comment .block1Comment .reactions-comments {
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .feedComments .feed-comment .block1Comment .reactions-comments button {
-    background-color: rgb(250, 250, 250);
-    border: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: var(--Gray_font2);
+  background-color: rgb(250, 250, 250);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--Gray_font2);
 }
 
 .feedComments .feed-comment .block1Comment .reactions-comments button svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
-.feedComments .feed-comment .block1Comment .reactions-comments .selected{
-    color: var(--Primary);   
+.feedComments .feed-comment .block1Comment .reactions-comments .selected {
+  color: var(--Primary);
 }
 
 .feed-comment .block1Comment .comment {
-    margin-top: 10px;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  margin-top: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .feed-comment .block1Comment .comment input {
-    width: 80%;
-    height: 30px;
-    border-radius: 6px;
-    border: none;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
-    padding: 5px;
-    color: var(--Primary);
+  width: 80%;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  color: var(--Primary);
 }
 
 .feed-comment .block1Comment .comment button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    background-color: var(--Primary);
-    padding: 5px 10px;
-    border: none;
-    border-radius: 6px;
-    color: var(--White);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  background-color: var(--Primary);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  color: var(--White);
 }
 
 .feed-comment .block1Comment .comment button svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .feed-comment .block1Comment .commentHidden {
-    display: none;
+  display: none;
 }
-
 
 @media (max-width: 1150px) {
-    .feedComments .feed-comment .block1Comment .reactions-comments {
-        width: 25%;
-
-    }
+  .feedComments .feed-comment .block1Comment .reactions-comments {
+    width: 25%;
+  }
 }
 @media (max-width: 900px) {
-    .feedComments .feed-comment .block1Comment .reactions-comments {
-        width: 35%;
-        justify-content: space-around;
+  .feedComments .feed-comment .block1Comment .reactions-comments {
+    width: 35%;
+    justify-content: space-around;
+  }
 
-    }
-
-
-@media (max-width: 700px) {
-
+  @media (max-width: 700px) {
     .feedComments .feed-comment .block1Comment {
-        border-radius: 10px;
-        padding: 5px 0;
-        margin: 5px 0;
+      border-radius: 10px;
+      padding: 5px 0;
+      margin: 5px 0;
     }
 
     .feedComments .feed-comment .block1Comment .comment-user {
-    width: 95%;
+      width: 95%;
     }
 
-    .feedComments .feed-comment .block1Comment .comment-user h4{
-        font-size: 13px;
+    .feedComments .feed-comment .block1Comment .comment-user h4 {
+      font-size: 13px;
     }
 
     .feedComments .feed-comment .block1Comment .comment-user .name-data {
-        width: 95%;
+      width: 95%;
     }
 
     .feedComments .feed-comment .block1Comment .reactions-comments {
-        justify-content: space-evenly;
-        
+      justify-content: space-evenly;
     }
 
     .feedComments .feed-comment .block1Comment .reactions-comments button {
-  font-size: 13px;
+      font-size: 13px;
     }
 
     @media (max-width: 900px) {
-        .feedComments .feed-comment .block1Comment .reactions-comments {
-            margin-top: 5px;
-            width: 100%;
-            justify-content: space-around;
-    
-        }
+      .feedComments .feed-comment .block1Comment .reactions-comments {
+        margin-top: 5px;
+        width: 100%;
+        justify-content: space-around;
+      }
 
-
-    @media (max-width: 380px) {
-
+      @media (max-width: 380px) {
         .feedComments {
-            width: 90%;
-            margin-bottom: -10px;
-            }
+          width: 90%;
+          margin-bottom: -10px;
+        }
 
         .feedComments .feed-comment .block1Comment .comment-user {
-            width: 90%;
-            font-size: 13px;
-            }
-            .feedComments .feed-comment .block1Comment .reactions-comments {
-                margin-top: 5px;
-                width: 100%;
-                justify-content: space-around;
-        
-            }
-        
-        .feedComments .feed-comment .block1Comment .reactions-comments button {
-            background-color: var(--Background2);
-            border: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            color: var(--Gray_font2);
-            font-size: 13px;
+          width: 90%;
+          font-size: 13px;
         }
+        .feedComments .feed-comment .block1Comment .reactions-comments {
+          margin-top: 5px;
+          width: 100%;
+          justify-content: space-around;
+        }
+
+        .feedComments .feed-comment .block1Comment .reactions-comments button {
+          background-color: var(--Background2);
+          border: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          color: var(--Gray_font2);
+          font-size: 13px;
+        }
+      }
     }
-    }
-}
+  }
 }

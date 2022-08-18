@@ -1,197 +1,194 @@
 .topBar {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color:var(--Black);
-    border-bottom: 3px solid var(--Background);
-    position: fixed;
-    top: 0;
-    z-index: 98;
-   padding: 0 20px; 
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Black);
+  border-bottom: 3px solid var(--Background);
+  position: fixed;
+  top: 0;
+  z-index: 98;
+  padding: 0 20px;
 }
 
 .topBar svg {
-    color: var(--Primary);
+  color: var(--Primary);
 }
 
-.topBar .logo{
-    padding: 10px;
-    height: 50px;
+.topBar .logo {
+  padding: 10px;
+  height: 50px;
 }
-.topBar .logo img{
-    height: 30px;
+.topBar .logo img {
+  height: 30px;
 }
 
-.topBar .logo2 img{
-    padding: 10px;
-    height: 50px;
-    position: absolute;
-    margin-top: -100px;
+.topBar .logo2 img {
+  padding: 10px;
+  height: 50px;
+  position: absolute;
+  margin-top: -100px;
 }
 
 .topBar .links {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .topBar .links .link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 50%;
-   
-    padding: 8px;
-    margin: 0 2px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50%;
+
+  padding: 8px;
+  margin: 0 2px;
+  cursor: pointer;
 }
 
-.topBar .links .link svg{
-    color: var(--White);
+.topBar .links .link svg {
+  color: var(--White);
 }
 .topBar .links .linkSelect {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 50%;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    color: var(--White);
-    padding: 8px;
-    margin: 0 2px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  color: var(--White);
+  padding: 8px;
+  margin: 0 2px;
+  cursor: pointer;
 }
-.topBar .links .linkSelect svg{
-    color: var(--White);
+.topBar .links .linkSelect svg {
+  color: var(--White);
 }
-.topBar .links .link .counter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    color: var(--Background2);
-    margin-top: 15px;
-    margin-left: 15px;
-    font-size: 10px;
-    font-weight: bold;
+.topBar .links .link .counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: var(--Background2);
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .topBar .links .account {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--Primary);
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Primary);
+  cursor: pointer;
 }
 
 .avatar {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 10px;
 }
 
 .topBar .links .account img {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50px;
-
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50px;
 }
 
 .topBar .links .account h4 {
-    font-weight: 600;
-    color: var(--Primary);
+  font-weight: 600;
+  color: var(--Primary);
 }
 
 .topBar .links .account a {
-    text-decoration: none;
-    color: var(--Primary);
+  text-decoration: none;
+  color: var(--Primary);
 }
 
+@media (max-width: 900px) {
+  .topBar {
+    padding: 0 0 0 0;
+  }
+  .topBar .logo {
+    display: none;
+  }
 
+  .topBar .chat {
+    display: none;
+  }
 
+  .topBar .logo2 img {
+    height: 55px;
+    margin-top: 5px;
+    position: inherit;
+  }
 
-    @media (max-width: 900px) {
-                .topBar {
-                    padding: 0 0 0 0;
-                }
-                .topBar .logo{
-                    display: none;
-                }
-
-                .topBar .chat{
-                    display: none;
-                }
-                
-                
-   
-                .topBar .logo2 img{
-                    height: 55px;
-                    margin-top: 5px;
-                    position: inherit;
-                }
-
-
-                @media (max-width: 850px) {
-
-                    .topBar .links .account h4 {
-                        display: none;
-                    }
-
-                    .topBar .links {
-                        width: 60%;
-                    }
-
-
-                    @media (max-width: 650px) {
-                        .topBar .links {
-                            width: 65%;
-                           padding: 10px 5px 10px 0 ;
-                        }
-
-                        .topBar .links .link {
-                            margin-right: 5px;
-                        }
-    
-                        @media (max-width: 550px) {
-                            @media(max-width: 400px ) {
-                                .topBar .links .account {
-                                    display: none;
-                                }
-
-                                .topBar .logo2 img{
-                                    margin-right: -20px;
-                                    height: 50px;
-                                }
-
-                                .topBar .links {
-                                   margin-left: -10px;
-                                }
-        
-                            }
-        
-                    }
-
-                    
-                }
-
-        }
-        
+  @media (max-width: 850px) {
+    .topBar .links .account h4 {
+      display: none;
     }
 
+    .topBar .links {
+      width: 60%;
+    }
 
+    @media (max-width: 650px) {
+      .topBar .links {
+        width: 65%;
+        padding: 10px 5px 10px 0;
+      }
+
+      .topBar .links .link {
+        margin-right: 5px;
+      }
+
+      @media (max-width: 550px) {
+        @media (max-width: 400px) {
+          .topBar .links .account {
+            display: none;
+          }
+
+          .topBar .logo2 img {
+            margin-right: -20px;
+            height: 50px;
+          }
+
+          .topBar .links {
+            margin-left: -10px;
+          }
+        }
+      }
+    }
+  }
+}

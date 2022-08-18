@@ -1,140 +1,137 @@
-
 .plains {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--Background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--Background);
 }
 .plains .plains-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 95%;
-    background-color: var(--Background);
-    padding: 100px 0;
-    margin-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  background-color: var(--Background);
+  padding: 100px 0;
+  margin-left: 120px;
 }
 .plains .plains-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 95%;
-    background-color: var(--Background);
-    padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  background-color: var(--Background);
+  padding: 100px 0;
 }
 .plains .plains-page .myPlain {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    width: 85%;
-    background-color: var(--Primary);
-    color: var(--White);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  background-color: var(--Primary);
+  color: var(--White);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .plains .plains-page .myPlain a {
-    background-color: var(--Background);
-    color: var(--Primary);
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    border-radius: 20px;
-    border: 1px solid var(--Primary);
-    font-weight: 500;
-    margin-top: 20px;
+  background-color: var(--Background);
+  color: var(--Primary);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid var(--Primary);
+  font-weight: 500;
+  margin-top: 20px;
 }
 .plains .plains-page .myPayment {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    width: 85%;
-    background-color: var(--Primary);
-    color: var(--White);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  background-color: var(--Primary);
+  color: var(--White);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
 .plains .plains-page .myPayment .unic {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
 }
-.plains .plains-page .myPayment .unic hr{
-    width: 100%;
-    margin: 5px 0;
-    border: 1px solid var(--White);
-    color: var(--White);
-    background: var(--White);
+.plains .plains-page .myPayment .unic hr {
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid var(--White);
+  color: var(--White);
+  background: var(--White);
 }
 .plains .plains-page .myPayment .unic .dadosList {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5px 0;
 }
 .plains .plains-page .myPayment .unic .dadosList .dados {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
 }
 .plains .plains-page .myPayment .unic .dadosList .dados a {
-    text-direction: none;
-    color: var(--White);
+  text-direction: none;
+  color: var(--White);
 }
 
 .plains .plains-page .buttons {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .plains .plains-page .buttons button {
-    background-color: var(--Background);
-    color: var(--Primary);
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    border-radius: 20px;
-    border: 1px solid var(--Primary);
-    font-weight: 500;
-    width: 120px;
-    height: 40px;
-    margin: 5px;
+  background-color: var(--Background);
+  color: var(--Primary);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid var(--Primary);
+  font-weight: 500;
+  width: 120px;
+  height: 40px;
+  margin: 5px;
 }
 
 .plains .plains-page .buttons .selected {
-    background-color: var(--Primary);
-    color: var(--White);
-
+  background-color: var(--Primary);
+  color: var(--White);
 }
 
-
 @media (max-width: 768px) {
-    .plains .plains-page {
-        margin-left: 0px;
-    }
+  .plains .plains-page {
+    margin-left: 0px;
+  }
 }

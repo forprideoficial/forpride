@@ -1,53 +1,58 @@
 form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
-
-
 
 form input {
-    width: 50%;
-    font-size: 14px;
-    padding: 5px;
-    margin: 5px 0;
-    border: 1px solid var(--Primary);
-    border-radius: 6px;
-    color: var(--Primary);
+  width: 50%;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid var(--Primary);
+  border-radius: 6px;
+  color: var(--Primary);
 }
 form select {
-    width: 50%;
-    font-size: 14px;
-    padding: 5px;
-    margin: 5px 0;
-    border: 1px solid var(--Primary);
-    border-radius: 6px;
-    color: var(--Gray_font1);
+  width: 50%;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid var(--Primary);
+  border-radius: 6px;
+  color: var(--Gray_font1);
 }
 form .active {
-    width: 50%;
-    font-size: 14px;
-    padding: 5px;
-    margin: 5px 0;
-    border: 1px solid var(--Primary);
-    border-radius: 6px;
-    color: var(--Primary);
+  width: 50%;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid var(--Primary);
+  border-radius: 6px;
+  color: var(--Primary);
 }
 
 form input::placeholder {
-    color: var(--Gray_font1);
+  color: var(--Gray_font1);
 }
 
 form button {
-    width: 150px;
-    padding: 10px 5px;
-    font-size: 14px;
-    border: none;
-    border-radius: 8px;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    color: var(--White);
-    margin-top: 10px;
+  width: 150px;
+  padding: 10px 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  color: var(--White);
+  margin-top: 10px;
 }

@@ -1,159 +1,161 @@
 .BarBottom {
-display: none;
+  display: none;
 }
 
 @media (max-width: 900px) {
-    .BarBottom {
+  .BarBottom {
     width: 100%;
     height: 80px;
     display: flex;
     align-items: flex-start;
-    justify-content:center;
-    flex-direction: row;    
+    justify-content: center;
+    flex-direction: row;
     background-color: var(--Background2);
     position: fixed;
     margin-top: 90vh;
     bottom: 0;
     z-index: 99;
     border-top: 1px solid var(--Background);
-    }
-
-
-    .BarBottom .BarBottomBlock {
-        width: 90%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content:space-between;
-        flex-direction: row;
-    }
-
-    .BarBottom .BarBottomBlock .profile {
-        display: none;
-    }
-
-    .BarBottom .BarBottomBlock .Buttons {
-        display: flex;
-        align-items: center;
-        justify-content:space-between;
-        flex-direction: row;
-        width: 100%;
-        height: 100%;
-        padding: 10px 0;
-        text-decoration: none;
-    }
-    .BarBottom .BarBottomBlock .Buttons2 {
-        display: flex;
-        align-items: center;
-        justify-content:flex-start;
-        flex-direction: row;
-        width: 100%;
-        height: 100%;
-        padding: 10px 0;
-        text-decoration: none;
-    }
-    .BarBottom .BarBottomBlock .Buttons a {
-
-      text-decoration: none;
   }
-    .BarBottom .BarBottomBlock .Buttons2 a {
 
-      text-decoration: none;
+  .BarBottom .BarBottomBlock {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
   }
-  
+
+  .BarBottom .BarBottomBlock .profile {
+    display: none;
+  }
+
+  .BarBottom .BarBottomBlock .Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+  .BarBottom .BarBottomBlock .Buttons2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+  .BarBottom .BarBottomBlock .Buttons a {
+    text-decoration: none;
+  }
+  .BarBottom .BarBottomBlock .Buttons2 a {
+    text-decoration: none;
+  }
+
   .BarBottom .BarBottomBlock .Buttons .ButtonsUnic a {
-      text-decoration: none;
-  
+    text-decoration: none;
   }
-  
+
   .BarBottom .BarBottomBlock .Buttons .ButtonsUnic {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 6px;
-      margin: 0 5px;
-      padding: 3px 0;
-      color: var(--White);
-      cursor: pointer;
-      padding: 5px;
-      font-size: 12px;
-      border: none;
-      background-color: var(--Background)
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 5px;
+    padding: 3px 0;
+    color: var(--White);
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    background-color: var(--Background);
   }
   .BarBottom .BarBottomBlock .Buttons2 .ButtonsUnic {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 6px;
-      margin: 0 5px;
-      padding: 3px 0;
-      color: var(--White);
-      cursor: pointer;
-      padding: 5px;
-      font-size: 12px;
-      border: none;
-      background-color: var(--Background)
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 5px;
+    padding: 3px 0;
+    color: var(--White);
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    background-color: var(--Background);
   }
   .BarBottom .BarBottomBlock .Buttons .ButtonsUnicSelect a {
-      text-decoration: none;
-  
+    text-decoration: none;
   }
-  
+
   .BarBottom .BarBottomBlock .Buttons .ButtonsUnicSelect {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 6px;
-      margin: 0 5px;
-      padding: 3px 0;
-      background-color: var(--Primary);
-      color: var(--White);
-      cursor: pointer;
-      padding: 5px;
-      font-size: 12px;
-      border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 0 5px;
+    padding: 3px 0;
+    background-color: var(--Primary);
+    color: var(--White);
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
   }
   .BarBottom .BarBottomBlock .Buttons .ButtonsUnicBig {
-      width: 60px;
-      height: 60px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-      margin: 0 5px;
-      padding: 3px 0;
-   background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-      color: var(--White);
-      cursor: pointer;
-      margin: 5px;
-      font-size: 12px;
-      border: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 3px 0;
+    background-image: linear-gradient(
+      to right bottom,
+      #fe8b00,
+      #f57303,
+      #ea590a,
+      #de3d11,
+      #d01616
+    );
+    color: var(--White);
+    cursor: pointer;
+    margin: 5px;
+    font-size: 12px;
+    border: none;
   }
   .BarBottom .BarBottomBlock .Buttons2 .divUser {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      margin: 0 5px;
-      padding: 3px 0;
-      cursor: pointer;
-      padding: 5px;
-      font-size: 12px;
-      border: none;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 3px 0;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
   }
 
   .BarBottom .BarBottomBlock .Buttons2 .divUser .image {
@@ -182,39 +184,36 @@ display: none;
     background-color: var(--Background2);
   }
 
-  .BarBottom .BarBottomBlock .Buttons2 .divUser a{
+  .BarBottom .BarBottomBlock .Buttons2 .divUser a {
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
   }
   .BarBottom .BarBottomBlock .Buttons .ButtonsUnic:hover {
-      background-color: var(--Primary);
-      color: var(--Background);
+    background-color: var(--Primary);
+    color: var(--Background);
   }
-  
-  
+
   .BarBottom .BarBottomBlock .Buttons .ButtonsUnic p:hover {
-      color: var(--Background);
+    color: var(--Background);
   }
-  
+
   .BarBottom .BarBottomBlock .Buttons .ButtonsUnic svg:hover {
-      color: var(--Background);
+    color: var(--Background);
   }
 
   .BarBottom .BarBottomBlock .Buttons2.ButtonsUnic:hover {
-      background-color: var(--Primary);
-      color: var(--Background);
-  }
-  
-  
-  .BarBottom .BarBottomBlock .Buttons2 .ButtonsUnic p:hover {
-      color: var(--Background);
-  }
-  
-  .BarBottom .BarBottomBlock .Buttons2 .ButtonsUnic svg:hover {
-      color: var(--Background);
+    background-color: var(--Primary);
+    color: var(--Background);
   }
 
+  .BarBottom .BarBottomBlock .Buttons2 .ButtonsUnic p:hover {
+    color: var(--Background);
+  }
+
+  .BarBottom .BarBottomBlock .Buttons2 .ButtonsUnic svg:hover {
+    color: var(--Background);
+  }
 
   @media (max-width: 600px) {
     .BarBottom .BarBottomBlock .Buttons .selectRemove {
@@ -227,46 +226,32 @@ display: none;
       }
     }
   }
+}
 
-
-  }
-
-
-  
 .content-modal h5 {
   text-align: center;
   margin: 0px auto;
   color: var(--Gray_font2);
 }
 .content-modal .itensModalPost::-webkit-scrollbar {
-  width: 12px;              
+  width: 12px;
 }
 
 .content-modal .itensModalPost::-webkit-scrollbar-track {
-  background: var(--Background2);      
+  background: var(--Background2);
 }
 
 .content-modal .itensModalPost::-webkit-scrollbar-thumb {
-  background-color: var(--Background-man);   
-  border-radius: 20px;      
-  border: 3px solid var(--Background2); 
+  background-color: var(--Background-man);
+  border-radius: 20px;
+  border: 3px solid var(--Background2);
 }
-
 
 .content-modal .itensModalPost {
   display: flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-start;
-  width:100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
   background-color: var(--Background2);
 }
-
-
-
-
-
-
-
-
-

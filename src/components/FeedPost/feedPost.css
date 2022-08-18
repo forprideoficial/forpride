@@ -1,139 +1,133 @@
 .load {
-    margin-top: 20px;
-    width: 70%;
-    padding: 20px;
-    background-color: var(--Background);
-    color: var(--Gray_font1);
-    border-radius: 6px;
-    margin-bottom: 300px;
+  margin-top: 20px;
+  width: 70%;
+  padding: 20px;
+  background-color: var(--Background);
+  color: var(--Gray_font1);
+  border-radius: 6px;
+  margin-bottom: 300px;
 }
 
 .feedPost {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 80%;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  margin-top: 20px;
 }
 
 .feedPost .settingsFeed {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
 }
 
 .feedPost .settingsFeed button {
-    border: none;
-    border-radius: 6px;
-    background-color: var(--Primary);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    color: var(--White);
-    font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--Primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: var(--White);
+  font-size: 20px;
 }
 
 .feedPost .posts-feed {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .feedPost .posts-feed #sentinela {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .feedPost .posts-feed #sentinela .image {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
-.feedPost .posts-feed #sentinela .image img{
-    width: 30px;
-    height: 30px;
+.feedPost .posts-feed #sentinela .image img {
+  width: 30px;
+  height: 30px;
 }
 
 .feedPost .posts-feed .preItem {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .feedPost .posts-feed .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 10px 0;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0;
+  width: 100%;
 }
 
 .feedPost .posts-feed .buttons button {
-    padding: 5px;
-    width: 120px;
-    border: none;
-    border-bottom: 1px solid var(--Gray-Border);
-    background-color: var(--Background2);
+  padding: 5px;
+  width: 120px;
+  border: none;
+  border-bottom: 1px solid var(--Gray-Border);
+  background-color: var(--Background2);
 }
 
 .feedPost .posts-feed .buttons .selected {
-    border-bottom: 2px solid var(--Primary);
-    color: var(--Primary);
+  border-bottom: 2px solid var(--Primary);
+  color: var(--Primary);
 }
-
 
 @media (max-width: 900px) {
+  .feedPost {
+    width: 100%;
+  }
+
+  @media (max-width: 550px) {
     .feedPost {
+      width: 100%;
+    }
+
+    .buttons {
+      flex-wrap: wrap;
+    }
+
+    .buttons button {
+      width: 80px;
+    }
+
+    @media (max-width: 500px) {
+      .buttons {
         width: 100%;
-    }
+        flex-wrap: wrap;
+      }
 
-    
-    @media (max-width: 550px) {
+      .buttons button {
+        width: 110px;
+      }
+
+      @media (max-width: 380px) {
         .feedPost {
-            width: 100%;
+          width: 100%;
+          margin-left: 3px;
         }
-
-        .buttons {
-            flex-wrap: wrap;
-        }
-
-        .buttons button {
-            width: 80px;
-        }
-
-        @media (max-width: 500px) {
-
-            .buttons {
-                width: 100%;
-                flex-wrap: wrap;
-            }
-
-            .buttons button {
-                width: 110px;
-            }
-
-            @media (max-width: 380px) {
-                .feedPost {
-                    width: 100%;
-                    margin-left: 3px;
-                }
-            }
-        }
-
+      }
     }
-
+  }
 }
-

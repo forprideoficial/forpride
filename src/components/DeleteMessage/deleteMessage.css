@@ -1,38 +1,38 @@
 .delete {
-    width: 90%;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    color: var(--White);
-    margin-top: 10px;
-    margin-right: 5%;
+  width: 90%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--White);
+  margin-top: 10px;
+  margin-right: 5%;
 }
 .delete .buttonDelete {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .delete button {
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    color: var(--White);
-    background-color: var(--Foursome2);
-    border: none;
-    border-radius: 6px;
-    font-size: 12px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--White);
+  background-color: var(--Foursome2);
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
 }
 
 .delete button svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 .delete svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }

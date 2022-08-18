@@ -1,291 +1,313 @@
 .postFeed2 {
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 10px 5px;
-    margin-top: 20px;
-    border: 1px solid var(--Background);
-    background-color: var(--Background2);
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 5px;
+  margin-top: 20px;
+  border: 1px solid var(--Background);
+  background-color: var(--Background2);
 }
 .postFeed2 .counter {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 5px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px;
 }
 
 .postFeed2 .counter h5 {
-    color: var(--Gray_font2);
-    margin-right: 10px;
+  color: var(--Gray_font2);
+  margin-right: 10px;
 }
 
 .postFeed2 .postFeed2-data {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .postFeed2 .postFeed2-data .avatar {
-    width: 50px;
-    height: 50px;  
+  width: 50px;
+  height: 50px;
 }
 
 .postFeed2 .postFeed2-data .avatar img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 10px;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type  .selecting {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
+.postFeed2 .postFeed2-data .postFeed2-type .selecting {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type  .selecting select {
-    border: none;
-    padding: 5px 10px;
-    background-color: var(--Black);
-    border: 1px solid var(--Primary);
-    color: var(--Primary);
-    border-radius: 20px;
+.postFeed2 .postFeed2-data .postFeed2-type .selecting select {
+  border: none;
+  padding: 5px 10px;
+  background-color: var(--Black);
+  border: 1px solid var(--Primary);
+  color: var(--Primary);
+  border-radius: 20px;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type  .selecting h6 {
-    color: var(--White);
-    margin: 0 5px;
+.postFeed2 .postFeed2-data .postFeed2-type .selecting h6 {
+  color: var(--White);
+  margin: 0 5px;
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type .inputs {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .postFeed2 .postFeed2-data .postFeed2-type .inputs .post-file {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type .inputs .post-file .label-avatar{
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    margin: 5px 0;
+.postFeed2 .postFeed2-data .postFeed2-type .inputs .post-file .label-avatar {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 5px 0;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type .inputs .post-file .label-avatar input {
-    display: none;
+.postFeed2
+  .postFeed2-data
+  .postFeed2-type
+  .inputs
+  .post-file
+  .label-avatar
+  input {
+  display: none;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type .inputs .post-file .label-avatar span {
-    z-index: 99;
-    position: absolute;
-    opacity: 0.7;
-    transition: all .5s;
+.postFeed2
+  .postFeed2-data
+  .postFeed2-type
+  .inputs
+  .post-file
+  .label-avatar
+  span {
+  z-index: 99;
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.5s;
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type .inputs .post-file .label-avatar span:hover{
-    opacity: 1;
-    transform: scale(1.4);
+.postFeed2
+  .postFeed2-data
+  .postFeed2-type
+  .inputs
+  .post-file
+  .label-avatar
+  span:hover {
+  opacity: 1;
+  transform: scale(1.4);
 }
 
-.postFeed2 .postFeed2-data .postFeed2-type .inputs .post-file .label-avatar img{
-    margin-bottom: 1em;
-    border-radius: 6%;
-    object-fit: cover;
+.postFeed2
+  .postFeed2-data
+  .postFeed2-type
+  .inputs
+  .post-file
+  .label-avatar
+  img {
+  margin-bottom: 1em;
+  border-radius: 6%;
+  object-fit: cover;
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type .inputs textarea {
-    width: 100%;
-    height: 80px;
-    border: 1px solid var(--Gray_font1);
-    border-radius: 20px;
-    resize: none;
-    margin-right: 10px;
+  width: 100%;
+  height: 80px;
+  border: 1px solid var(--Gray_font1);
+  border-radius: 20px;
+  resize: none;
+  margin-right: 10px;
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type .inputs button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 20px;
-    padding: 5px;
-    width: 10%;
-    height: 80px;
-    background-color: var(--Primary);
-    color: var(--White);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  width: 10%;
+  height: 80px;
+  background-color: var(--Primary);
+  color: var(--White);
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type .buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type .buttons button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    border: 1px solid var(--Primary);
-    padding: 5px;
-    width: 33%;
-    background-color: var(--Background2);
-    margin-right: 10px;
-    color: var(--Primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid var(--Primary);
+  padding: 5px;
+  width: 33%;
+  background-color: var(--Background2);
+  margin-right: 10px;
+  color: var(--Primary);
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type .buttons .selected {
-    background-image: linear-gradient(to right, var(--Primary) , var(--Primary2));
-    color: var(--White);
+  background-image: linear-gradient(to right, var(--Primary), var(--Primary2));
+  color: var(--White);
 }
 
 .postFeed2 .postFeed2-data .postFeed2-type .buttons button svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .postFeed2 .posts-feed {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .postFeed2 .posts-feed .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 10px 0;
 }
 
 .postFeed2 .posts-feed .buttons button {
-    padding: 5px;
-    width: 120px;
-    border: none;
-    border-bottom: 1px solid var(--Gray-Border);
-    background-color: var(--Background2);
+  padding: 5px;
+  width: 120px;
+  border: none;
+  border-bottom: 1px solid var(--Gray-Border);
+  background-color: var(--Background2);
 }
 
 .postFeed2 .posts-feed .buttons .selected {
-    border-bottom: 2px solid var(--Primary);
-    color: var(--Primary);
+  border-bottom: 2px solid var(--Primary);
+  color: var(--Primary);
 }
 
 .postFeed2 .posts-feed .feed-post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    color: var(--Gray_font2);
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 20px 0;
-    margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--Gray_font2);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px 0;
+  margin: 10px 0;
 }
 
 .postFeed2 .posts-feed .feed-post .post-user {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
 }
 
 .postFeed2 .posts-feed .feed-post .post-user img {
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
 .postFeed2 .posts-feed .feed-post .post-user .name-data {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .postFeed2 .posts-feed .feed-post .post-user .name-data .selected {
-    color: var(--Primary) ;
+  color: var(--Primary);
 }
 
 .postFeed2 .posts-feed .feed-post .postFeed2-data {
-    margin: 5px 0;
-    width: 90%;
+  margin: 5px 0;
+  width: 90%;
 }
 
 .postFeed2 .posts-feed .feed-post .postFeed2-data p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .postFeed2 .posts-feed .feed-post .reactions {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .postFeed2 .posts-feed .feed-post .reactions button {
-    background-color: var(--Background2);
-    border: none;
-    font-size: 18px;
-    color: var(--Gray_font2);
-    
+  background-color: var(--Background2);
+  border: none;
+  font-size: 18px;
+  color: var(--Gray_font2);
 }
 
 .postFeed2 .posts-feed .feed-post .reactions button svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
-.postFeed2 .posts-feed .feed-post .reactions .selected{
-    color: var(--Primary);   
+.postFeed2 .posts-feed .feed-post .reactions .selected {
+  color: var(--Primary);
 }
-
-
 
 @media (max-width: 900px) {
-    .postFeed2 {display: none; }
+  .postFeed2 {
+    display: none;
+  }
 }

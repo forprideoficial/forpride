@@ -1,156 +1,162 @@
 .links {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .links .link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 50%;
-    background-color: var(--Background);
-    padding: 8px;
-    margin: 0 2px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50%;
+  background-color: var(--Background);
+  padding: 8px;
+  margin: 0 2px;
+  cursor: pointer;
 }
-.links .link .counter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-image: linear-gradient(to right bottom, #fe8b00, #f57303, #ea590a, #de3d11, #d01616);
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    color: var(--Background2);
-    margin-top: 15px;
-    margin-left: 15px;
-    font-size: 10px;
+.links .link .counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: var(--Background2);
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 10px;
 }
 
 .links .account {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--Primary);
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Primary);
+  cursor: pointer;
 }
 
 .avatar {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 10px;
 }
 
 .links .account img {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50px;
-
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50px;
 }
 
 .links .account h4 {
-    font-weight: 600;
-    color: var(--Primary);
+  font-weight: 600;
+  color: var(--Primary);
 }
 
 .links .account a {
-    text-decoration: none;
-    color: var(--Primary);
+  text-decoration: none;
+  color: var(--Primary);
 }
 
 .content-modal {
-    border: none;
-    height: 300px;
+  border: none;
+  height: 300px;
 }
 
 .content-modal .itensModalFriend {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    height: 80%;
-    border: none;
-    overflow-y: scroll;
-    text-decoration: none;
-    background-color: var(--Background2);
-    margin-bottom:7px ;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 80%;
+  border: none;
+  overflow-y: scroll;
+  text-decoration: none;
+  background-color: var(--Background2);
+  margin-bottom: 7px;
 }
 
 .content-modal .itensModalFriend::-webkit-scrollbar {
-    width: 12px;              
-  }
-  
- .content-modal .itensModalFriend::-webkit-scrollbar-track {
-    background: var(--Background2);      
-  }
-  
- .content-modal .itensModalFriend::-webkit-scrollbar-thumb {
-    background-color: var(--Background-man);   
-    border-radius: 20px;      
-    border: 3px solid var(--Background2); 
-  }
+  width: 12px;
+}
 
-  .content-modal .itensModalFriend .friend .buttons {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: var(--Background);
+.content-modal .itensModalFriend::-webkit-scrollbar-track {
+  background: var(--Background2);
+}
+
+.content-modal .itensModalFriend::-webkit-scrollbar-thumb {
+  background-color: var(--Background-man);
+  border-radius: 20px;
+  border: 3px solid var(--Background2);
+}
+
+.content-modal .itensModalFriend .friend .buttons {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: var(--Background);
 }
 .content-modal .itensModalFriend .friend .buttons .Acept {
-    padding: 10px;
-    background-color: var(--Primary);
-    color: var(--Background2);
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 6px;
-    border: none;
-    margin: 0px 3px;
+  padding: 10px;
+  background-color: var(--Primary);
+  color: var(--Background2);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 6px;
+  border: none;
+  margin: 0px 3px;
 }
 .content-modal .itensModalFriend .friend .buttons .Refuse {
-    padding: 10px;
-    background-color: rgb(204, 0, 0);
-    color: var(--Background2);
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 6px;
-    border: none;
-    margin: 0px 3px;
+  padding: 10px;
+  background-color: rgb(204, 0, 0);
+  color: var(--Background2);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 6px;
+  border: none;
+  margin: 0px 3px;
 }
 
 .content-modal .itensModalFriend .friend {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--Background);
-    margin: 5px;
-    padding: 5px 10px;
-    border-radius: 6px;
-    text-decoration: none;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--Background);
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 .content-modal .itensModalFriend .friend .name {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
 }

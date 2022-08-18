@@ -1,90 +1,87 @@
-.Notifications{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    background-color: var(--Background)
+.Notifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--Background);
 }
-.Notifications h2{
-    margin-top: 80px;
-    margin-bottom:10px;
-    color: var(--Primary)
-}
-
-.Notifications .listNotifications{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    width:80%;
-    background-color: var(--Background)
+.Notifications h2 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: var(--Primary);
 }
 
+.Notifications .listNotifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background-color: var(--Background);
+}
 
 .Notifications .listNotifications .notification {
-    width: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid var(--Background);
+  text-decoration: none;
+  background-color: var(--Black);
+}
+.Notifications .listNotifications .notification .name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.Notifications .listNotifications .notification .name a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .Notifications .listNotifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: var(--Background2);
+  }
+
+  .Notifications .listNotifications .notification {
+    width: 90%;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     border: 2px solid var(--Background);
     text-decoration: none;
-    background-color: var(--Black);
-}
-.Notifications .listNotifications .notification .name {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-}
+  }
 
-.Notifications .listNotifications .notification .name a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@media (max-width: 900px) {
-    .Notifications .listNotifications{
-        display: flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        width:90%;
-        background-color: var(--Background2)
+  @media (max-width: 700px) {
+    .Notifications .listNotifications {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background-color: var(--Background2);
     }
-    
-    
+
     .Notifications .listNotifications .notification {
-        width: 90%;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 2px solid var(--Background);
-        text-decoration: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 2px solid var(--Background);
+      text-decoration: none;
     }
-
-    @media (max-width: 700px) {
-        .Notifications .listNotifications{
-            display: flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:center;
-            width:100%;
-            background-color: var(--Background2)
-        }
-        
-        
-        .Notifications .listNotifications .notification {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-            border: 2px solid var(--Background);
-            text-decoration: none;
-        }
-    }
+  }
 }

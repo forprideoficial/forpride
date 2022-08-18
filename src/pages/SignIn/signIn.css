@@ -1,465 +1,440 @@
 .content-Login {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    color: var(--Black);
-    padding: 0px;
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--Black);
+  padding: 0px;
 }
 
 .content-Login .slide {
-    width: 100%;
-    height: 100%;
-    background-color: var(--Primary)
+  width: 100%;
+  height: 100%;
+  background-color: var(--Primary);
 }
 
 .content-Login .slide .images {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .content-Login .slide .images img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .content-Login .bloco2 {
-    width: 800px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px;
-
+  width: 800px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px;
 }
 
 .content-Login .bloco2 .logo {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.content-Login .bloco2 .logo img{
-    width: 150px;
+.content-Login .bloco2 .logo img {
+  width: 150px;
 }
-
 
 .content-Login .bloco2 .signIn {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color:rgb(15, 15, 15);
-    border-radius: 100px 0 0 0;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(15, 15, 15);
+  border-radius: 100px 0 0 0;
 }
 
 .content-Login .bloco2 .signIn h1 {
-    margin-top: 25px;
-    font-weight: 700;
-    color: var(--White);
-    text-align: center;
+  margin-top: 25px;
+  font-weight: 700;
+  color: var(--White);
+  text-align: center;
 }
-
 
 .content-Login .bloco2 .signIn .form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.content-Login1 .signIn .form  h5 {
-    text-align: left;
-    color: var(--White);
-    font-weight: 700;
+.content-Login1 .signIn .form h5 {
+  text-align: left;
+  color: var(--White);
+  font-weight: 700;
 }
 
-
-.content-Login1 .signIn .form  .infoavatar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    background-color: var(--Foursome1);
-    padding: 10px;
-    border-radius: 6px;
-    color: var(--White);
-    width: 70%;
+.content-Login1 .signIn .form .infoavatar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: var(--Foursome1);
+  padding: 10px;
+  border-radius: 6px;
+  color: var(--White);
+  width: 70%;
 }
 
-.content-Login1 .signIn .form  .infoavatar h5 {
-    text-align: left;
+.content-Login1 .signIn .form .infoavatar h5 {
+  text-align: left;
 }
-.content-Login1 .signIn .form  .infoavatar h6 {
-    text-align: left;
+.content-Login1 .signIn .form .infoavatar h6 {
+  text-align: left;
 }
 
 .content-Login1 .signIn .form .register {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
-
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
 }
 .content-Login1 .signIn .form .register h4 {
-    color: var(--White);
-    font-size:14px;
-    border-radius: 6px;
-    padding:5px 10px;
+  color: var(--White);
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 5px 10px;
 }
 .content-Login1 .signIn .form .register h4 a {
-    color: var(--White);
-    text-decoration: none;
+  color: var(--White);
+  text-decoration: none;
 }
 
 .content-Login .bloco2 .signIn .form input:focus {
-    outline: none;
-  }
+  outline: none;
+}
 
 .content-Login .bloco2 .signIn .form input {
-    width: 70%;
-    height: 30px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color:rgb(15, 15, 15);
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
+  width: 70%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
 }
 
 .content-Login .bloco2 .signIn .form input::placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 .content-Login .bloco2 .signIn .form .inputPassword {
-width: 70%;
-display: flex;
-margin-top: 10px;
+  width: 70%;
+  display: flex;
+  margin-top: 10px;
 }
 
 .content-Login .bloco2 .signIn .form .inputPassword input {
-    width: 100%;
-    height: 30px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background-color:rgb(15, 15, 15);
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color: var(--Primary);
+  width: 100%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
 }
 
 .content-Login .bloco2 .signIn .form .password {
-    background-color:rgb(15, 15, 15);
-    width: 50px;
-    height: 30px;
-    border: none;
-    border: none;
-    border-bottom: 1px solid #fff;
-    font-size: 15px;
-    color: var(--Primary);
+  background-color: rgb(15, 15, 15);
+  width: 50px;
+  height: 30px;
+  border: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+  color: var(--Primary);
 }
 
 .content-Login .bloco2 .signIn .form .buttons {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 25px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
 }
 
 .content-Login .bloco2 .signIn .form .buttons button {
-    background-color: var(--Button);
-    width: 100%;
-    height: 35PX;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 5px;
+  background-color: var(--Button);
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 .content-Login .bloco2 .signIn .form .buttons p {
-    font-weight: bold;
-    color: #fff;
+  font-weight: bold;
+  color: #fff;
 }
 
 .content-Login .bloco2 .signIn .form .buttons a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .content-Login .bloco2 .signIn .form .links {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction:row;
-    font-size: 14px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-size: 14px;
 }
 .content-Login .bloco2 .signIn .form .create {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:row;
-    font-size: 14px;
-    margin-top: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 14px;
+  margin-top: 50px;
 }
 .content-Login .bloco2 .signIn .form .links p {
-    color: #fff;
-    margin: 5px 0;
-    font-size: 14px;
+  color: #fff;
+  margin: 5px 0;
+  font-size: 14px;
 }
 .content-Login .bloco2 .signIn .form .create p {
-    color: #fff;
-    margin: 5px 0;
-    font-size: 14px;
+  color: #fff;
+  margin: 5px 0;
+  font-size: 14px;
 }
 
 .content-Login .bloco2 .signIn .form .links a {
-    text-decoration: none;
-    font-size: 14px;
+  text-decoration: none;
+  font-size: 14px;
 }
 .content-Login .bloco2 .signIn .form .create a {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
 }
 .content-Login .bloco2 .signIn .form .whatsapp {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 10px;
-    border-radius: 6px;
-    background: rgba(0, 247, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(18, 22, 87, 0.37);
-    backdrop-filter: blur(4px);
-    border: 2px solid rgba(0, 157, 162, 0.18);
-    margin-top: 20px;
-    cursor: pointer;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(0, 247, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(18, 22, 87, 0.37);
+  backdrop-filter: blur(4px);
+  border: 2px solid rgba(0, 157, 162, 0.18);
+  margin-top: 20px;
+  cursor: pointer;
 }
 .content-Login .bloco2 .signIn .form .whatsapp h4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--White);
 }
 .content-Login .bloco2 .signIn .form .whatsapp h4 svg {
-    margin-left: 5px;
+  margin-left: 5px;
 }
-
 
 .content-Login .bloco2 .signIn .footer {
-    position: relative;
-    bottom: 0;
-    margin-top: 150px;
+  position: relative;
+  bottom: 0;
+  margin-top: 150px;
 }
-.content-Login .bloco2 .signIn .footer img{
-    width: 70px;
-    margin-bottom: px;
+.content-Login .bloco2 .signIn .footer img {
+  width: 70px;
+  margin-bottom: px;
 }
 
 @media (max-width: 1024px) {
+  .content-Login .bloco2 .signIn .form {
+    width: 50%;
+  }
 
+  .content-Login .bloco2 .signIn .form input {
+    width: 100%;
+  }
+
+  .content-Login .bloco2 .signIn .form .inputPassword {
+    width: 100%;
+  }
+
+  .content-Login .bloco2 .signIn .form .buttons {
+    width: 100%;
+  }
+
+  .content-Login .bloco2 .signIn .logo img {
+    width: 45%;
+  }
+
+  @media (max-width: 900px) {
     .content-Login .bloco2 .signIn .form {
-        width: 50%;
+      width: 70%;
     }
 
     .content-Login .bloco2 .signIn .form input {
-        width: 100%;
+      width: 100%;
     }
 
     .content-Login .bloco2 .signIn .form .inputPassword {
+      width: 100%;
+    }
+
+    .content-Login .bloco2 .signIn .logo img {
+      width: 50%;
+    }
+
+    @media (max-width: 700px) {
+      .content-Login .bloco2 .signIn .form {
+        width: 70%;
+      }
+
+      .content-Login1 .signIn .form .infoavatar {
         width: 100%;
-    }
+      }
 
-    .content-Login .bloco2 .signIn .form .buttons {
+      .content-Login1 .signIn .form input {
         width: 100%;
-    }
+      }
 
-    .content-Login .bloco2 .signIn .logo img{
-        width: 45%;
-    }
+      .content-Login .bloco2 .signIn .form .whatsapp {
+        width: 100%;
+      }
 
-    @media (max-width: 900px) {
+      .content-Login .bloco2 .signIn .form .inputPassword {
+        width: 100%;
+      }
+      .content-Login .bloco2 .signIn .logo img {
+        width: 70%;
+      }
 
+      .content-Login .bloco2 .signIn .form .links {
+        width: 100%;
+      }
 
-
-        .content-Login .bloco2 .signIn .form {
-            width: 70%;
+      @media (max-width: 550px) {
+        .content-Login .slide {
+          display: none;
         }
-    
+        .content-Login .bloco2 .signIn .form {
+          width: 70%;
+        }
+
         .content-Login .bloco2 .signIn .form input {
-            width: 100%;
+          width: 100%;
         }
 
         .content-Login .bloco2 .signIn .form .inputPassword {
+          width: 100%;
+        }
+        .content-Login .bloco2 .signIn .logo img {
+          width: 80%;
+        }
+
+        .content-Login .bloco2 .signIn .form .buttons p {
+          text-align: right;
+        }
+
+        .content-Login .bloco2 .signIn .footer {
+          position: relative;
+          bottom: 0;
+          margin-top: 180px;
+        }
+        .content-Login .bloco2 .signIn .footer img {
+          width: 70px;
+          margin-bottom: 20px;
+        }
+
+        .content-Login .bloco2 .signIn .form .links {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        @media (max-width: 400px) {
+          .content-Login .bloco2 .signIn .form {
+            width: 70%;
+          }
+
+          .content-Login .bloco2 .signIn .form input {
             width: 100%;
-        }
+            font-size: 14px;
+          }
 
-        .content-Login .bloco2 .signIn .logo img{
-            width: 50%;
-        }
+          .content-Login .bloco2 .signIn .form .inputPassword {
+            width: 100%;
+          }
+          .content-Login .bloco2 .signIn .form .inputPassword input {
+            width: 100%;
+            font-size: 14px;
+          }
+          .content-Login .bloco2 .signIn .logo img {
+            width: 100%;
+          }
 
-        @media (max-width: 700px) {
+          .content-Login .bloco2 .signIn .form .buttons {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
 
+          .content-Login .bloco2 .signIn .form .buttons p {
+            margin: 10px;
+            font-size: 12px;
+            text-align: right;
+          }
 
-            .content-Login .bloco2 .signIn .form {
-                width: 70%;
-            }
-
-            .content-Login1 .signIn .form  .infoavatar {
-                width: 100%;
-            }
-            
-            .content-Login1 .signIn .form input {
-                width: 100%;
-            }
-
-            .content-Login .bloco2 .signIn .form .whatsapp {
-                width: 100%;
+          @media (max-width: 350px) {
+            .content-Login .bloco2 .signIn .form input {
+              font-size: 14px;
             }
 
             .content-Login .bloco2 .signIn .form .inputPassword {
-                width: 100%;
+              width: 100%;
+              font-size: 14px;
             }
-            .content-Login .bloco2 .signIn .logo img{
-                width: 70%;
+            .content-Login .bloco2 .signIn .form .buttons p {
+              margin-left: 30px;
+              font-size: 12px;
             }
-
-            .content-Login .bloco2 .signIn .form .links {
-                width: 100%;
-            }
-
-            @media (max-width: 550px) {
-
-                .content-Login .slide {
-                        display: none;
-                    }
-                .content-Login .bloco2 .signIn .form {
-                    width: 70%;
-                }
-            
-                .content-Login .bloco2 .signIn .form input {
-                    width: 100%;
-                }
-
-                .content-Login .bloco2 .signIn .form .inputPassword {
-                    width: 100%;
-                }
-                .content-Login .bloco2 .signIn .logo img{
-                    width: 80%;
-                }
-
-                
-                .content-Login .bloco2 .signIn .form .buttons p {
-                    text-align: right;
-                }
-
-                .content-Login .bloco2 .signIn .footer {
-                    position: relative;
-                    bottom: 0;
-                    margin-top: 180px;
-                }
-                .content-Login .bloco2 .signIn .footer img{
-                    width: 70px;
-                    margin-bottom: 20px;
-                }
-
-                .content-Login .bloco2 .signIn .form .links {
-                    width: 100%;
-                    flex-direction: column;
-                }
-
-                @media (max-width: 400px) {
-
-                    .content-Login .bloco2 .signIn .form {
-                        width: 70%;
-                    }
-                
-                    .content-Login .bloco2 .signIn .form input {
-                        width: 100%;
-                        font-size: 14px;
-                    }
-
-                    .content-Login .bloco2 .signIn .form .inputPassword {
-                        width: 100%;
-                    }
-                    .content-Login .bloco2 .signIn .form .inputPassword input {
-                        width: 100%;
-                        font-size: 14px;
-                    }
-                    .content-Login .bloco2 .signIn .logo img{
-                        width: 100%;
-                    }
-
-                    .content-Login .bloco2 .signIn .form .buttons {
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                    }
-
-                    .content-Login .bloco2 .signIn .form .buttons p {
-                        margin: 10px;
-                        font-size: 12px;
-                        text-align: right;
-                    }
-
-                    @media (max-width: 350px) {
-
-
-                        .content-Login .bloco2 .signIn .form input {
-                            font-size: 14px;
-                        }
-
-                        .content-Login .bloco2 .signIn .form .inputPassword {
-                            width: 100%;
-                            font-size: 14px;
-                        }
-                        .content-Login .bloco2 .signIn .form .buttons p {
-                            margin-left: 30px;
-                            font-size: 12px;
-                        }
-                    }
-                    
-                }
-                
-            }
-
-            
+          }
         }
-        
+      }
     }
-    
+  }
 }

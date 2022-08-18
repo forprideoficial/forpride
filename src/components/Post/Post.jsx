@@ -71,7 +71,7 @@ function Post() {
         searchInformations()
         searchCharacteristcs()
         searchPreferences()
-       }, [])
+       }, [logout, id])
 
 
 

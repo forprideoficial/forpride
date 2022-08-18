@@ -1,86 +1,83 @@
 .itemComment {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-decoration: none;
-    border-radius: 6px;
-    padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 5px;
 }
 .itemComment .block1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    text-decoration: none;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  text-decoration: none;
 }
 .itemComment .block1 .title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
 }
 
-.itemComment .block1 .title  .image{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 5px;
+.itemComment .block1 .title .image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
 }
-.itemComment .block1 .title  .image img{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
+.itemComment .block1 .title .image img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.itemComment  .image svg{
-    position: absolute;
-    margin-left: -40px;
-    margin-top: -5px;
-    transform: rotate(-35deg);
-    color: #e0aa3e;
-    color-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+.itemComment .image svg {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -5px;
+  transform: rotate(-35deg);
+  color: #e0aa3e;
+  color-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
 }
 
 .itemComment .block1 .title .name {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 .itemComment .block1 .title .name h4 {
-    margin-left: 5px;
-    color: var(--Primary);
-    text-decoration: none;
-    font-weight: 600;
-    text-align: left;
-    font-size: 14px;
+  margin-left: 5px;
+  color: var(--Primary);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  font-size: 14px;
 }
 .itemComment .block1 .title .name p {
-    margin-left: 5px;
-    color: var(--Gray_font2);
+  margin-left: 5px;
+  color: var(--Gray_font2);
 }
 
 .itemComment .block1 .title a {
-    text-decoration: none;
-    color: var(--Primary);
+  text-decoration: none;
+  color: var(--Primary);
 }
 
-
-
 .itemComment .comment-data {
-    margin: 2px 0;
-    width: 90%;
+  margin: 2px 0;
+  width: 90%;
 }
 
 .itemComment .comment-data p {
-    color: var(--Gray_font);
-    margin-top: 3px;
-    font-size: 13px;
+  color: var(--Gray_font);
+  margin-top: 3px;
+  font-size: 13px;
 }

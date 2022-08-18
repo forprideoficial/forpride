@@ -1,397 +1,382 @@
 ﻿.updateAccount {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: var(--Foursome1);
-    color: #fff;
-    text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--Foursome1);
+  color: #fff;
+  text-align: center;
 }
 
 .updateAccount .title {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--White);
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--White);
 }
 
 .updateAccount .title img {
-    width: 200px;
+  width: 200px;
 }
 
-
-.updateAccount form{
-    height: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.updateAccount form {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-.updateAccount form p{
-    color: #fff;
-    font-weight: bold;
-    font-size:16px;
+.updateAccount form p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.updateAccount form .label-avatar{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    margin: 5px 0;
+.updateAccount form .label-avatar {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 5px 0;
 }
 
 .updateAccount form .label-avatar input {
-    display: none;
+  display: none;
 }
 
 .updateAccount form .label-avatar span {
-    z-index: 99;
-    position: absolute;
-    opacity: 0.7;
-    transition: all .5s;
+  z-index: 99;
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.5s;
 }
 
-.updateAccount form .label-avatar span:hover{
-    opacity: 1;
-    transform: scale(1.4);
+.updateAccount form .label-avatar span:hover {
+  opacity: 1;
+  transform: scale(1.4);
 }
 
-.updateAccount form .label-avatar img{
-    margin-bottom: 1em;
-    border-radius: 50px;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
-}
-
-
-.updateAccount form .label-cover{
-    width: 1000px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
-.updateAccount form .label-cover input {
-    display: none;
-}
-
-.updateAccount form .label-cover span {
-    z-index: 99;
-    position: absolute;
-    opacity: 0.7;
-    transition: all .5s;
-}
-
-.updateAccount form .label-cover span:hover{
-    opacity: 1;
-    transform: scale(1.4);
-}
-
-.updateAccount form .label-cover img{
-    margin-bottom: 1em;
-    border-radius: 6px;
-    object-fit: cover;
-    height:200px;
-    width: 850px;
-}
-
-.updateAccount form .data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-.updateAccount form .data .location {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.updateAccount form .data .dataUser {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.updateAccount form .SearchCep {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-
-.updateAccount form .SearchCep input {
-    width: 250px;
-    border: none;
-    background-color: var(--Background2);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:10px;
-    margin: 5px;
-    color: var(--Primary);
-    font-weight: bold;
-}
-
-.updateAccount form .SearchCep input::placeholder {
-    color: var(--Gray_font1);
-}
-
-.updateAccount form .SearchCep button {
-    width: 150px;
-    padding: 10px 5px;
-    border: none;
-    background-color: var(--Background2);
-    border-radius: 6px;
-    font-size: 14px;
-    margin: 5px;
-    color: var(--Primary);
-    font-weight: bold;
-}
-
-
-.updateAccount form .data input {
-    width: 250px;
-    border: none;
-    background-color: var(--Background2);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:10px;
-    margin: 5px;
-    color: var(--Primary);
-    font-weight: bold;
-    margin: 5px;
-}
-.updateAccount form .data select {
-    width: 250px;
-    border: none;
-    background-color: var(--Background2);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:10px;
-    margin: 5px;
-    color: var(--Gray_font1);
-    font-weight: bold;
-}
-.updateAccount form .data .active {
-    width: 250px;
-    border: none;
-    background-color: var(--Background2);
-    border-radius: 6px;
-    font-size: 14px;
-    padding:10px;
-    margin: 5px;
-    color: var(--Primary);
-    font-weight: bold;
-}
-
-.updateAccount form .data input::placeholder {
-    color: var(--Gray_font1);
-}
-
-.updateAccount form .confirmation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-}
-
-.updateAccount form .confirmation button {
-    width: 150px;
-    padding: 10px 5px;
-    font-size: 14px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--White);
-    color: var(--Primary);
-    margin: 5px;
-}
-.updateAccount form .confirmation .delete {
-    width: 150px;
-    padding: 18px 5px;
-    font-size: 14px;
-    border: none;
-    border-radius: 8px;
-    background-color: red;
-    color: var(--White);
-    margin: 5px;
-}
-
-
-.updateAccount form .confirmation .confirmation_informations {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: var(--White);
-}
-
-.updateAccount form .confirmation .confirmation_informations span {
-    margin-left: 10px;
-}
-
-.updateAccount form .confirmation  .buttonsInformation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.updateAccount form .confirmation  .buttonsInformation button {
-    margin-left: 10px;
-}
-
-
-@media (max-width: 900px) {
-    
-.updateAccount form .data {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-  
-}
-.updateAccount form .data .location input {
-    width: 90%;
-  
-}
-.updateAccount form .data .dataUser input {
-    width: 90%;
-}
-.updateAccount form .data .dataUser select {
-    width: 90%;
-}
-
-.updateAccount form .label-cover img {
-    height:150px;
-    width: 650px;
+.updateAccount form .label-avatar img {
+  margin-bottom: 1em;
+  border-radius: 50px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
 }
 
 .updateAccount form .label-cover {
-    width: 100%;
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 10px 0;
 }
 
-@media (max-width: 800px) {
+.updateAccount form .label-cover input {
+  display: none;
+}
 
+.updateAccount form .label-cover span {
+  z-index: 99;
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.updateAccount form .label-cover span:hover {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+.updateAccount form .label-cover img {
+  margin-bottom: 1em;
+  border-radius: 6px;
+  object-fit: cover;
+  height: 200px;
+  width: 850px;
+}
+
+.updateAccount form .data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.updateAccount form .data .location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.updateAccount form .data .dataUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.updateAccount form .SearchCep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.updateAccount form .SearchCep input {
+  width: 250px;
+  border: none;
+  background-color: var(--Background2);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px;
+  color: var(--Primary);
+  font-weight: bold;
+}
+
+.updateAccount form .SearchCep input::placeholder {
+  color: var(--Gray_font1);
+}
+
+.updateAccount form .SearchCep button {
+  width: 150px;
+  padding: 10px 5px;
+  border: none;
+  background-color: var(--Background2);
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 5px;
+  color: var(--Primary);
+  font-weight: bold;
+}
+
+.updateAccount form .data input {
+  width: 250px;
+  border: none;
+  background-color: var(--Background2);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px;
+  color: var(--Primary);
+  font-weight: bold;
+  margin: 5px;
+}
+.updateAccount form .data select {
+  width: 250px;
+  border: none;
+  background-color: var(--Background2);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px;
+  color: var(--Gray_font1);
+  font-weight: bold;
+}
+.updateAccount form .data .active {
+  width: 250px;
+  border: none;
+  background-color: var(--Background2);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px;
+  color: var(--Primary);
+  font-weight: bold;
+}
+
+.updateAccount form .data input::placeholder {
+  color: var(--Gray_font1);
+}
+
+.updateAccount form .confirmation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.updateAccount form .confirmation button {
+  width: 150px;
+  padding: 10px 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--White);
+  color: var(--Primary);
+  margin: 5px;
+}
+.updateAccount form .confirmation .delete {
+  width: 150px;
+  padding: 18px 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: red;
+  color: var(--White);
+  margin: 5px;
+}
+
+.updateAccount form .confirmation .confirmation_informations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--White);
+}
+
+.updateAccount form .confirmation .confirmation_informations span {
+  margin-left: 10px;
+}
+
+.updateAccount form .confirmation .buttonsInformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.updateAccount form .confirmation .buttonsInformation button {
+  margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+  .updateAccount form .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .updateAccount form .data .location input {
+    width: 90%;
+  }
+  .updateAccount form .data .dataUser input {
+    width: 90%;
+  }
+  .updateAccount form .data .dataUser select {
+    width: 90%;
+  }
+
+  .updateAccount form .label-cover img {
+    height: 150px;
+    width: 650px;
+  }
+
+  .updateAccount form .label-cover {
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
     .updateAccount .title {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        color: var(--White);
-        text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--White);
+      text-align: center;
     }
 
     .updateAccount .title img {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     .updateAccount form .data {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-        width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      width: 100%;
     }
     .updateAccount form .data input {
-        width: 90%; 
+      width: 90%;
     }
 
     .updateAccount form .data select {
-        width: 90%;
+      width: 90%;
     }
 
-
     .updateAccount form .label-cover img {
-        height:120px;
-        width: 500px;
+      height: 120px;
+      width: 500px;
     }
 
     .updateAccount form .confirmation {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        color: var(--White);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      color: var(--White);
     }
 
     .updateAccount form .confirmation .confirmation_informations {
-        margin-bottom: 10px;
-        width: 100%;
+      margin-bottom: 10px;
+      width: 100%;
     }
 
     .updateAccount form .SearchCep {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
     }
 
     @media (max-width: 550px) {
+      .updateAccount form {
+        margin-top: 50px;
+      }
+      .updateAccount form .data input {
+        width: 400px;
+      }
 
-        .updateAccount form{
-            margin-top:50px;
-        }
+      .updateAccount form .data select {
+        width: 400px;
+      }
+
+      .updateAccount form .label-cover img {
+        height: 100px;
+        width: 400px;
+      }
+
+      @media (max-width: 450px) {
         .updateAccount form .data input {
-            width: 400px; 
+          width: 300px;
         }
-    
+
         .updateAccount form .data select {
-            width: 400px;
+          width: 300px;
         }
 
         .updateAccount form .label-cover img {
-            height:100px;
-            width: 400px;
+          height: 70px;
+          width: 300px;
         }
-
-        @media (max-width: 450px) {
-            .updateAccount form .data input {
-                width: 300px; 
-            }
-        
-            .updateAccount form .data select {
-                width: 300px;
-            }
-    
-            .updateAccount form .label-cover img {
-                height:70px;
-                width: 300px;
-            }
-        }
-
+      }
     }
-    
-}
-
+  }
 }
