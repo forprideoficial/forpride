@@ -53,7 +53,7 @@
   border: none;
   border-bottom: 2px solid var(--Gray_font1);
   color: var(--Gray_font1);
-  background-color: var(--Background);
+  background-color: var(--Primary);
   font-size: 16px;
   font-weight: 500;
 }
@@ -127,6 +127,7 @@
   border-radius: 20px;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
+  background-color: var(--Black);
 }
 
 .content-invite .aside .invites .invites-all .invites-unic a {

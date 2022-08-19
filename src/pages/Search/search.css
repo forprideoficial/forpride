@@ -39,7 +39,7 @@
     #d01616
   );
   height: 100%;
-  color: var(--Background2);
+  color: var(--White);
   border-radius: 6px;
 }
 .SearchPage .filterActive {
@@ -117,7 +117,7 @@
 .SearchPage .searchButton h3 {
   font-weight: 700;
   margin: 10px 10px 3px 10px;
-  color: var(--Background2);
+  color: var(--Background);
 }
 
 .SearchPage .searchButton input::placeholder {
@@ -134,7 +134,7 @@
 .SearchPage .searchButton .filter h5 {
   font-weight: 700;
   margin: 10px 10px 3px 10px;
-  color: var(--Background2);
+  color: var(--Background);
   text-align: center;
 }
 .SearchPage .searchButton .filter .buttons {
@@ -168,7 +168,7 @@
   border-radius: 6px;
   border: none;
   background-color: var(--White);
-  color: var(--Background2);
+  color: var(--Primary);
 }
 .SearchPage .searchButton .filter .buttons .select {
   display: flex;
@@ -189,7 +189,7 @@
   align-items: flex-start;
   justify-content: center;
   width: 70%;
-  background-color: var(--Background2);
+  background-color: var(--Background);
   height: 100%;
   flex-wrap: wrap;
 }
@@ -206,7 +206,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: var(--Background2);
+  background-color: var(--Background);
   flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -298,7 +298,7 @@
     justify-content: center;
     width: 100%;
     padding: 55px 0px;
-    background-color: var(--Background2);
+    background-color: var(--Background);
     height: 100%;
   }
 
