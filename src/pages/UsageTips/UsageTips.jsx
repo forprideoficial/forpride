@@ -32,7 +32,7 @@ function UsageTips() {
                     <div className="orientations">
                     <br /><br />
                     <h4><b>Qualquer problema ou dúvida. Entra em conato:</b></h4>
-                    <h4><b>Whatsapp</b> (22)99791-0510</h4>
+                    <h4><b>Whatsapp</b> (22)99783-5288</h4>
                     <h4><b>E-mail:</b> contato@forpride.com.br</h4>
                     </div>
                 </div> 

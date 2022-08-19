@@ -51,7 +51,7 @@ function Invite() {
                                         <p><FiCheck /> Você se torna amplamente responsável pelos atos de seu convidado, podendo sofrer as mesmas punições que ele, em caso de má conduta.</p>
                                         <br />
                                         <p><b>Qualquer problema ou dúvida. Entra em conato:</b></p>
-                                        <p><b>Whatsapp</b> (22)99791-0510</p>
+                                        <p><b>Whatsapp</b> (22)99783-5288</p>
                                         <p><b>E-mail:</b> contato@forpride.com.br</p>
                                        </div>
                                     </div>
