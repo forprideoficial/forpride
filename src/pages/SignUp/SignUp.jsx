@@ -10,7 +10,7 @@ import image1 from '../../assets/images/slider/7.jpg';
 import { v4 as uuidv4} from 'uuid'
 import { mask as masker, unMask } from "remask";
 import { toast } from 'react-toastify';
-// import './signUp.css';
+import './signUp.css';
 import { storage } from '../../services/firebaseConnection';
 import { ref, getDownloadURL, uploadBytes} from 'firebase/storage';
 import buscaCepPortugal from '../../services/api-buscaCepPortugal';

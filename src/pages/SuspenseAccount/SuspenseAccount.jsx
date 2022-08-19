@@ -1,4 +1,4 @@
-// import './suspenseAccount.css'
+import './suspenseAccount.css'
 import logo from '../../assets/images/logo.png';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/Auth';

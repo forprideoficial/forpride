@@ -2,7 +2,7 @@
 import logoImg from '../../assets/images/logo.png';
 import { storage } from '../../services/firebaseConnection';
 import { ref, getDownloadURL, uploadBytes} from 'firebase/storage';
-// import './updateAccounts.css'
+import './updateAccounts.css'
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../contexts/Auth';
 import { v4 as uuidv4 } from 'uuid'
