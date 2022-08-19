@@ -1,4 +1,4 @@
-// import './welcome.css'
+import './welcome.css'
 import logo from '../../assets/images/logo.png';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/Auth';

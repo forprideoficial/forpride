@@ -1,7 +1,7 @@
 ﻿import { BarBottomMenu } from "../../components/BarBottomMenu/BarBottomMenu";
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim";
 import { TopBar } from "../../components/TopBar/TopBar";
-// import "./userNotFound.css"
+import "./userNotFound.css"
 
 function UserNotFound() {
     const profile = "https://firebasestorage.googleapis.com/v0/b/foursome4-b925c.appspot.com/o/avatar.png?alt=media&token=f3b1f0bc-3885-4296-8363-ec1c3d43e240"

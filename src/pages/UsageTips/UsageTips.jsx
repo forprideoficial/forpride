@@ -1,4 +1,4 @@
-// import './usageTips.css'
+import './usageTips.css'
 import logo from '../../assets/images/logo.png';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/Auth';
