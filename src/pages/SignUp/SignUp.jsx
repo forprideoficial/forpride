@@ -44,7 +44,7 @@ function SignUp() {
   const [cep, setCep] = useState("");
   const [codigoPostal, setCodigoPostal] = useState("");
   const [sign, setSign] = useState("");
-  const [birthDate, setBirthDate] = useState("");
+  const [birthDateUser, setBirthDateUser] = useState("");
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
@@ -60,11 +60,11 @@ function SignUp() {
   const [flag, setFlag] = useState(false);
   const [districtAll, setDistrictAll] = useState([]);
 
-  const nascimento = new Date(birthDate);
+  const nascimento = new Date(birthDateUser);
   const hoje = new Date();
   let idadeAtual = 0;
   
-  if(birthDate !== "") {
+  if(birthDateUser !== "") {
       idadeAtual = Math.floor(Math.ceil(Math.abs(nascimento.getTime() - hoje.getTime()) / (1000 * 3600 * 24)) / 365.25) ;
       console.log(idadeAtual);
   }
@@ -192,6 +192,7 @@ function SignUp() {
             const online = false;
             const mylatitude = latitude2 === "" ? latitude : latitude2
             const mylongitude = longitude2 === "" ? longitude : longitude2
+            const birthDate = `${year}-${month}-${day}`
           
             console.log({ id, país, username:username.toLowerCase(), role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
               birthDate, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
@@ -241,15 +242,15 @@ function SignUp() {
 }
   function handleSelectDay(e) {
     setDay(e.target.value);
-    setBirthDate(`${year}-${month}-${day}`)
+    setBirthDateUser(`${year}-${month}-${day}`)
 }
   function handleSelectMonth(e) {
     setMonth(e.target.value)
-    setBirthDate(`${year}-${month}-${day}`)
+    setBirthDateUser(`${year}-${month}-${day}`)
 }
   function handleSelectYear(e) {
     setYear(e.target.value)
-    setBirthDate(`${year}-${month}-${day}`)
+    setBirthDateUser(`${year}-${month}-${day}`)
 }
 
 function handleRelationship(e) {
@@ -476,14 +477,14 @@ function ChangeMaskCEPPortugal(e) {
     }
   }
   function handleChangeSex(e) {
-    if(checked === false) {
+    if(checkedSex === false) {
       setCheckedSex(true)
     } else {
       setCheckedSex(false)
     }
   }
   function handleChangeOptionSexual(e) {
-    if(checked === false) {
+    if(checkedOptionSexual === false) {
       setCheckedOptionSexual(true)
     } else {
       setCheckedOptionSexual(false)
@@ -775,7 +776,7 @@ function handleSelectRecomendation(e) {
 
                       
                     </div>
-                    {birthDate !== "" ?
+                    {birthDateUser !== "" ?
                          idadeAtual >= 18 ? 
                      <h6>Sua idade é {idadeAtual} anos</h6>:
                      <h6>Sua idade é {idadeAtual} anos</h6>
