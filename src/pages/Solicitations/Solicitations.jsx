@@ -4,7 +4,7 @@ import {IoCheckboxOutline, IoHeartOutline, IoTrashOutline} from 'react-icons/io5
 import { useFetch } from '../../hooks/useFetch';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/Auth';
-import "./solicitations.css"
+// import "./solicitations.css"
 import { TopBar } from '../../components/TopBar/TopBar';
 import { ChatSlim } from '../../components/ChatSlim/ChatSlim';
 import { Footer } from '../../components/Footer/Footer';

@@ -3,7 +3,7 @@ import { TopBar } from "../../components/TopBar/TopBar"
 import { IoCalendarOutline, IoList, IoRadio,IoMailUnreadOutline, IoPersonOutline, IoCashOutline, IoSettingsOutline, IoPeopleOutline, IoMenuOutline, IoCameraOutline, IoArrowBackOutline,
     IoInformationCircleOutline, IoLogOutOutline, IoChatbubblesOutline, IoMailOutline, IoTrashOutline, IoBusinessOutline, IoMailOpenOutline, IoStatsChartOutline, IoCloseOutline, IoWalletOutline } from "react-icons/io5"
 import {FaCrown} from "react-icons/fa"
-import "./menu.css"
+// import "./menu.css"
 
 function Menu() {
     const Local = localStorage.getItem("forpride");

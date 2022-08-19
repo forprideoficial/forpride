@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { CharacteristcsForm } from "../../components/CharacteristcsForm/CharacteristcsForm"
-import './characteristcs.css'
+// import './characteristcs.css'
 
 function Characteristcs() {
     const {idAccount, email, type, username} = useParams()

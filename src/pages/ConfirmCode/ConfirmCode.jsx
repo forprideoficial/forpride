@@ -3,7 +3,7 @@ import logoImg from '../../assets/images/logo.png'
 import { AuthContext } from '../../contexts/Auth';
 import { useNavigate } from 'react-router-dom';
 
-import './confirmCode.css';
+// import './confirmCode.css';
 
 function ConfirmCode() {
   const  {} = useContext(AuthContext)

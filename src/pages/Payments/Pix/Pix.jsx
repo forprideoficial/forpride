@@ -1,4 +1,4 @@
-﻿import "./pix.css"
+﻿// import "./pix.css"
 import imagePìx from '../../../assets/pix/29.jpeg';
 import { useParams } from "react-router-dom";
 import { TopBar } from "../../../components/TopBar/TopBar";

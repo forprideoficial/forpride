@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import image1 from '../../assets/images/slider/6.jpg';
 
 
-import './signIn.css';
+// import './signIn.css';
 import { SliderImages } from '../../components/SliderImages/SliderImages';
 
 function SignIn() {

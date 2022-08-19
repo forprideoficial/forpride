@@ -1,4 +1,4 @@
-﻿import "./paymentNotice.css";
+﻿// import "./paymentNotice.css";
 import { TopBar } from "../../../components/TopBar/TopBar";
 
 function PaymentNotice(){

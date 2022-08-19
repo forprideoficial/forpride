@@ -5,7 +5,7 @@ import { ChatSlim } from "../../components/ChatSlim/ChatSlim";
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim";
 import { TopBar } from "../../components/TopBar/TopBar";
 import api from "../../services/api";
-import "./messages.css"
+// import "./messages.css"
 
 function Messages() {
     const Local = localStorage.getItem("forpride");

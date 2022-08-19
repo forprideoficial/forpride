@@ -4,7 +4,7 @@ import { ReplyNews } from "../../components/ReplyNews/ReplyNews";
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim";
 import { TopBar } from "../../components/TopBar/TopBar";
 import { useFetch } from "../../hooks/useFetch";
-import "./recadoUnic.css"
+// import "./recadoUnic.css"
 
 function RecadoUnic() {
     const {id} = useParams();

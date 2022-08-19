@@ -3,7 +3,7 @@ import logoImg from '../../assets/images/logo.png'
 import { AuthContext } from '../../contexts/Auth';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import './recoverPassword.css';
+// import './recoverPassword.css';
 
 function RecoverPassword() {
   const {email} = useParams()

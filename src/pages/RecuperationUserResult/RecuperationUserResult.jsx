@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import logoImg from '../../assets/images/logo.png'
 
-import './recuperationUserResult.css';
+// import './recuperationUserResult.css';
 
 function RecuperationUserResult() {
   const {username} = useParams()

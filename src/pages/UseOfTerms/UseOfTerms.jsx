@@ -1,4 +1,4 @@
-import './useOfTerms.css';
+// import './useOfTerms.css';
 
 function UseOfTerms() {
 

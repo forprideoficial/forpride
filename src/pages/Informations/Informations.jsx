@@ -2,7 +2,7 @@ import { BarBottomMenu } from "../../components/BarBottomMenu/BarBottomMenu";
 import { ChatSlim } from "../../components/ChatSlim/ChatSlim";
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim";
 import { TopBar } from "../../components/TopBar/TopBar";
-import './informations.css'
+// import './informations.css'
 import { useContext } from "react"
 import { AuthContext } from "../../contexts/Auth"
 

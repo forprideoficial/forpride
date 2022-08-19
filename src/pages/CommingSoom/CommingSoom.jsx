@@ -1,7 +1,7 @@
 
 import { useContext } from 'react'
 import { AuthContext } from '../../contexts/Auth'
-import './commingSoom.css'
+// import './commingSoom.css'
 import logo from '../../assets/images/logo.png'
 import { FiCheckCircle } from 'react-icons/fi'
 import { useNavigate } from 'react-router-dom';

@@ -3,7 +3,7 @@ import { DateFormat } from "../../components/DateFormat/DateFormat";
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim";
 import { TopBar } from "../../components/TopBar/TopBar";
 import { useFetch } from "../../hooks/useFetch";
-import './plains.css'
+// import './plains.css'
 
 function Plains() {
     const Local = localStorage.getItem("forpride");

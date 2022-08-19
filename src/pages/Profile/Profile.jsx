@@ -2,7 +2,7 @@ import { ToolbarLeftSlim } from '../../components/ToolBarLeftSlim/ToolbarLeftSli
 import { TopBar } from '../../components/TopBar/TopBar'
 import {FiHome, FiImage, FiVideo, FiUser, FiHeart} from 'react-icons/fi'
 import {IoShieldCheckmark} from 'react-icons/io5'
-import './profile.css'
+// import './profile.css'
 import { Post } from '../../components/Post/Post'
 import { Photos } from '../../components/Photos/Photos'
 import { Video } from '../../components/Video/Video'

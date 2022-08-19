@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { PreferencesForm } from "../../components/PreferencesForm/PreferencesForm"
-import './preferences.css'
+// import './preferences.css'
 
 function Preferences() {
     const {idAccount, email, username} = useParams()

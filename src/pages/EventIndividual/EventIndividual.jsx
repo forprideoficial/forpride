@@ -1,7 +1,7 @@
 import { ToolbarLeftSlim } from '../../components/ToolBarLeftSlim/ToolbarLeftSlim'
 import { TopBar } from '../../components/TopBar/TopBar'
 import { FiCheckSquare, FiHome, FiInfo, FiUser, FiXSquare} from 'react-icons/fi'
-import './eventIndividual.css'
+// import './eventIndividual.css'
 import { toast } from 'react-toastify';
 import { useEffect, useState, useContext } from 'react'
 import api from '../../services/api'

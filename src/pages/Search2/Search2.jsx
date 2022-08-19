@@ -4,16 +4,12 @@ import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSli
 import { TopBar } from "../../components/TopBar/TopBar";
 import { Link } from "react-router-dom"
 import api from "../../services/api"
-import "./search2.css"
+// import "./search2.css"
 import { IoOptionsOutline, IoCloseCircleOutline } from "react-icons/io5";
 import { useFetch } from "../../hooks/useFetch";
 
 function Search2() {
-<<<<<<< HEAD
     const Local = localStorage.getItem("forpride");
-=======
-    const Local = localStorage.getItem("foursome");
->>>>>>> 92dc7d78bea45d0e00f9337c8b860be63edae8cd
     const userData = JSON.parse(Local);
 
     const [online, setOnline] = useState([])

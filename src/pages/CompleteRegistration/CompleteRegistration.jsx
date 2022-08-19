@@ -1,5 +1,5 @@
 import { InformationsForm } from "../../components/InformationsForm/InformationsForm";
-import './completeRegistration.css'
+// import './completeRegistration.css'
 
 function CompleteRegistration() {
     return (

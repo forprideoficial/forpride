@@ -1,7 +1,7 @@
 
 import { useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../../contexts/Auth'
-import './invitation.css'
+// import './invitation.css'
 import logo from '../../assets/images/logo.png'
 import { v4 as uuidv4} from 'uuid'
 import { FiMail, FiSend } from 'react-icons/fi'

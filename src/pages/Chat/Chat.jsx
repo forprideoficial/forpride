@@ -2,7 +2,7 @@ import { ChatSlim } from '../../components/ChatSlim/ChatSlim'
 import { ToolbarLeftSlim } from '../../components/ToolBarLeftSlim/ToolbarLeftSlim'
 import { TopBar } from '../../components/TopBar/TopBar'
 import { DateFormatChat } from '../../components/DateFormatChat/DateFormatChat'
-import './chat.css';
+// import './chat.css';
 import { useState, useContext, useRef } from "react"
 import { AuthContext } from "../../contexts/Auth"
 import { Link, useParams } from 'react-router-dom'

@@ -1,6 +1,6 @@
 import { TopBar } from "../../components/TopBar/TopBar"
 import { UsersPending } from "../../components/ButtonsTopBar/SolicitationsFriend/UsersPending/UsersPending"
-import './ranking.css'
+// import './ranking.css'
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim"
 import api from "../../services/api"
 import { BarBottomMenu } from "../../components/BarBottomMenu/BarBottomMenu"

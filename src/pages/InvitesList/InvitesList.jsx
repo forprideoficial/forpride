@@ -1,5 +1,5 @@
 import { TopBar } from "../../components/TopBar/TopBar"
-import './invitesList.css'
+// import './invitesList.css'
 import { ChatSlim } from "../../components/ChatSlim/ChatSlim"
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim"
 import { BarBottomMenu } from "../../components/BarBottomMenu/BarBottomMenu"
