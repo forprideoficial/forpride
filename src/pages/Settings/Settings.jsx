@@ -7,7 +7,7 @@ import { SettingsInformations } from "../../components/SettingsInformations/Sett
 import { SettingsPreferences } from "../../components/SettingsPreferences/SettingsPreferences";
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim";
 import { TopBar } from "../../components/TopBar/TopBar";
-// import './settings.css'
+import './settings.css'
 
 function Settings() {
     const [informations, setInformations] = useState("informations");

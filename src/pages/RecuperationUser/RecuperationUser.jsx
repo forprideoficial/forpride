@@ -3,6 +3,7 @@ import logoImg from '../../assets/images/logo.png'
 import { AuthContext } from '../../contexts/Auth';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
+import image1 from '../../assets/images/slider/9.jpg';
 
 import './recuperationUser.css';
 
@@ -26,7 +27,8 @@ function RecuperationUser() {
   }
 
   return (
-    <div className="content-Login1">
+    <div className="content-Login">
+      <div className="bloco2">
       <div className="signIn">
       <div className="logo">
         <img src={logoImg} alt="Logo Foursome" />
@@ -41,8 +43,13 @@ function RecuperationUser() {
           <div className="buttons">
           <button onClick={handleCreateCodeRecuperation}> Receber por e-mail </button>
 
-
           </div>
+          </div>
+        </div>
+      </div>
+      <div className="slide">
+      <div className="images" key={image1}>
+            <img src={image1} alt="" />
         </div>
       </div>
     </div>

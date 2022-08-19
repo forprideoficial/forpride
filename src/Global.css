@@ -63,6 +63,12 @@ body {
   height: 100vh;
   display: flex;
 }
+.content-Login1 {
+  background: var(--Black);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
 .content-SignUp {
   background: var(--Black);
   width: 100vw;

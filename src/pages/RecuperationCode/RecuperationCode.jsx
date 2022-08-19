@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import logoImg from '../../assets/images/logo.png'
 import { AuthContext } from '../../contexts/Auth';
+import image1 from '../../assets/images/slider/9.jpg';
 
 import './recuperationCode.css';
 
@@ -18,7 +19,13 @@ function RecuperationCode() {
   }
 
   return (
-    <div className="content-Login1">
+    <div className="content-Login">
+                  <div className="slide">
+      <div className="images" key={image1}>
+            <img src={image1} alt="" />
+        </div>
+      </div>
+      <div className="bloco2">
       <div className="signIn">
       <div className="logo">
         <img src={logoImg} alt="Logo forpride" />
@@ -37,6 +44,7 @@ function RecuperationCode() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

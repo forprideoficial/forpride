@@ -4,6 +4,7 @@ import { AuthContext } from '../../contexts/Auth';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import './recoverPassword.css';
+import image1 from '../../assets/images/slider/10.jpg';
 
 function RecoverPassword() {
   const {email} = useParams()
@@ -26,7 +27,13 @@ function RecoverPassword() {
   }
 
   return (
-    <div className="content-Login1">
+    <div className="content-Login">
+                  <div className="slide">
+      <div className="images" key={image1}>
+            <img src={image1} alt="" />
+        </div>
+      </div>
+      <div className="bloco2">
       <div className="signIn">
       <div className="logo">
         <img src={logoImg} alt="Logo Foursome" />
@@ -42,7 +49,7 @@ function RecoverPassword() {
           <div className="buttons">
           <button onClick={handleCreateAccount}> Alterar senha </button>
 
-
+          </div>
           </div>
         </div>
       </div>

@@ -77,18 +77,15 @@ function SignIn() {
                         </div>
 
 
-          <div className="buttons">
-            <button onClick={handleCreateAccount}> Entrar </button>
-
-          </div>
           <div className="links">
           <a href="/recuperation"><p> Esqueceu a senha?</p></a>
+          <a href="/recuperationuser"><p> Esqueceu seu usuário?</p></a>
           </div>
           <div className="buttons">
           <button onClick={handleCreateAccount}> Entrar </button>
           </div>
           <div className="create">
-          <p>Não possui conta? <a href="/signup"> Criar agora</a></p>
+          <p><a href="/signup"> Crie sua conta agora</a></p>
           </div>
 
         </div>

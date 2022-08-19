@@ -555,7 +555,7 @@ function handleSelectRecomendation(e) {
           </div>
           </div>
           <div className="create">
-          <p>Já possui conta? <a href="/"> Entre agora</a></p>
+          <p><a href="/"> Faça seu login</a></p>
           </div>
         </div>
         : ""}
