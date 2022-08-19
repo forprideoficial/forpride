@@ -4,7 +4,7 @@ import { AuthContext } from '../../contexts/Auth';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
 
-// import './recuperation.css';
+import './recuperation.css';
 
 function Recuperation() {
   const  {gerateCodeRecuperation} = useContext(AuthContext)

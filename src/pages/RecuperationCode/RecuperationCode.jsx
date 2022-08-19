@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import logoImg from '../../assets/images/logo.png'
 import { AuthContext } from '../../contexts/Auth';
 
-// import './recuperationCode.css';
+import './recuperationCode.css';
 
 function RecuperationCode() {
   const {email} = useParams()

@@ -4,7 +4,7 @@ import { AuthContext } from '../../contexts/Auth';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid'
 
-// import './recuperationUser.css';
+import './recuperationUser.css';
 
 function RecuperationUser() {
   const  {recuperationUserForEmail} = useContext(AuthContext)
