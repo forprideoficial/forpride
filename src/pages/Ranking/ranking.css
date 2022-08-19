@@ -78,14 +78,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(
-    to right bottom,
-    #fe8b00,
-    #f57303,
-    #ea590a,
-    #de3d11,
-    #d01616
-  );
+  background-color: var(--Primary);
   border: none;
   border-radius: 20px;
   color: var(--White);
@@ -94,26 +87,7 @@
   font-weight: 600;
 }
 
-.content .aside .ranking .filterMonth select::[option] {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(
-    to right bottom,
-    #fe8b00,
-    #f57303,
-    #ea590a,
-    #de3d11,
-    #d01616
-  );
-  border: none;
-  border-radius: 20px;
-  color: var(--White);
-  width: 30%;
-  padding: 5px 10px;
-  font-weight: 600;
-}
+
 .content .aside .ranking .buttons {
   width: 50%;
   display: flex;

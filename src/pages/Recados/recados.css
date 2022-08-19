@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: var(--Background2);
+  background-color: var(--Background);
 }
 .Recados h3 {
   margin-top: 80px;
@@ -20,7 +20,7 @@
   width: 100%;
   margin-left: 20%;
   margin-rigth: 20%;
-  background-color: var(--Background2);
+  background-color: var(--Background);
 }
 
 .Recados .listRecados .new {
@@ -92,7 +92,7 @@
     width: 100%;
     margin-left: 10%;
     margin-rigth: 10%;
-    background-color: var(--Background2);
+    background-color: var(--Background);
   }
 
   @media (max-width: 800px) {
@@ -104,7 +104,7 @@
       width: 100%;
       margin-left: 0%;
       margin-rigth: 0%;
-      background-color: var(--Background2);
+      background-color: var(--Background);
     }
   }
 }

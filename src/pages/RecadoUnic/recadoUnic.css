@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: var(--Background2);
+  background-color: var(--Background);
   padding: 100px 0;
 }
 
@@ -16,7 +16,7 @@
   width: 100%;
   padding-left: 15%;
   padding-rigth: 10%;
-  background-color: var(--Background2);
+  background-color: var(--Background);
 }
 
 .RecadoUnic .listRecadoUnic .title {
@@ -91,7 +91,7 @@
 @media (max-width: 900px) {
   .RecadoUnic .listRecadoUnic {
     width: 100%;
-    background-color: var(--Background2);
+    background-color: var(--Background);
   }
 
   .RecadoUnic .listRecadoUnic img {
@@ -102,7 +102,7 @@
     .RecadoUnic .listRecadoUnic {
       width: 100%;
       padding: 0 10px;
-      background-color: var(--Background2);
+      background-color: var(--Background);
     }
 
     .RecadoUnic .listRecadoUnic img {
@@ -113,7 +113,7 @@
       .RecadoUnic .listRecadoUnic {
         width: 100%;
         padding: 0 10px;
-        background-color: var(--Background2);
+        background-color: var(--Background);
       }
 
       .RecadoUnic .listRecadoUnic img {
