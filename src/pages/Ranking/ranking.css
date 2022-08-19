@@ -4,14 +4,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-image: linear-gradient(
-    to right bottom,
-    #fe8b00,
-    #f57303,
-    #ea590a,
-    #de3d11,
-    #d01616
-  );
+  background-color: var(--Background);
 }
 
 .content .main {
@@ -115,14 +108,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(
-    to right bottom,
-    #fe8b00,
-    #f57303,
-    #ea590a,
-    #de3d11,
-    #d01616
-  );
+  background-color: var(--Primary);
   border-radius: 20px;
   color: var(--White);
   width: 40%;
@@ -182,7 +168,7 @@
   border: 2px solid var(--Gray_font1);
 }
 
-.content .aside .ranking .ranking-search button {
+/* .content .aside .ranking .ranking-search button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,7 +185,7 @@
   padding: 10px;
   color: var(--White);
   margin: 10px;
-}
+} */
 
 .content .aside .ranking .ranking-all {
   width: 80%;
@@ -209,6 +195,9 @@
   justify-content: space-evenly;
   padding: 5px 0;
   flex-wrap: wrap;
+}
+.content .aside .ranking .ranking-all h4 {
+  color: var(--White);
 }
 
 .content .aside .ranking .ranking-all .ranking-unic {
@@ -348,7 +337,7 @@
   width: 120px;
 }
 
-.content .aside .ranking .ranking-all .ranking-unic button {
+/* .content .aside .ranking .ranking-all .ranking-unic button {
   padding: 5px;
   border-radius: 20px;
   width: 100%;
@@ -364,7 +353,7 @@
     #d01616
   );
   margin: 5px 0;
-}
+} */
 
 .content .aside .ranking .ranking-all .ranking-unic h5 {
   font-weight: 600;
@@ -468,17 +457,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    background-image: linear-gradient(
-      to right bottom,
-      #fe8b00,
-      #f57303,
-      #ea590a,
-      #de3d11,
-      #d01616
-    );
+    background-color: var(--Primary);
     border-radius: 20px;
-    color: var(--Primary);
+    color: var(--White);
     padding: 5px 10px;
     margin: 5px;
   }
@@ -488,17 +469,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    background-image: linear-gradient(
-      to right bottom,
-      #fe8b00,
-      #f57303,
-      #ea590a,
-      #de3d11,
-      #d01616
-    );
+    background-color: var(--Primary);
     border-radius: 20px;
-    color: var(--Primary);
+    color: var(--White);
     width: 80%;
     padding: 5px 10px;
     font-weight: 600;

@@ -59,6 +59,9 @@
 .infos .info .name h3 {
   color: var(--Primary);
 }
+.infos .info .name h4 {
+  color: var(--Primary);
+}
 
 .infos .info .name h6 {
   color: var(--Gray_font2);
@@ -110,7 +113,7 @@
 }
 
 .infos .info .info-user-man .info-user-data p {
-  color: var(--Gray_font2);
+  color: var(--Black);
 }
 
 .infos .info .info-user-woman {
@@ -242,7 +245,7 @@
 }
 
 .infos .info .info-user-woman .info-user-data p {
-  color: var(--Gray_font2);
+  color: var(--Black);
 }
 
 .infos .info .info-social {

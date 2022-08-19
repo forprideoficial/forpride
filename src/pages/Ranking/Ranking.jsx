@@ -29,7 +29,8 @@ function Ranking() {
 
     res.data.forEach((photos) => {
          async function loadReactions() {
-             const result = await api.get(`/informations/${photos.idAccount}`)
+            console.log(photos.idAccount)
+             const result = await api.get(`/accounts/filter/${photos.idAccount}`)
           const res =  await api.get(`/reactions/counter/${photos.id}`)
             console.log(res.data)
             console.log(result.data)
@@ -61,7 +62,7 @@ function Ranking() {
 
             res.data.forEach((videos) => {
                 async function loadReactions() {
-                    const result = await api.get(`/informations/${videos.idAccount}`)
+                    const result = await api.get(`/accounts/filter/${videos.idAccount}`)
                 const res = await api.get(`/reactions/counter/${videos.id}`)
                 console.log(result.data[0])
                     console.log(res.data)
@@ -124,6 +125,8 @@ function Ranking() {
         console.log(photo)
     }
 const limit = filterPhotos.slice(0,10);
+console.log("limit")
+console.log(limit)
 
     if(filterVideos) {
         filterVideos.sort(function(a,b) {
@@ -183,7 +186,7 @@ const limitVideo = filterVideos.slice(0,10);
                                 <div className="ranking-all">
                                 {
                                 
-                                photo.length === 0 || video.length === 0?
+                                photo.length === 0 ?
                                 <h4>Carregando Ranking</h4>
                                 : limit.length === 0 ?
                                 <h4>Sem fotos para o mês selecionado</h4>
@@ -236,9 +239,11 @@ const limitVideo = filterVideos.slice(0,10);
                             type === "Video" ?
                             <div className="ranking-all">
                             {
-                             limitVideo.length === 0 ?
-                             <h4>Carregando Ranking</h4>
-                             :
+                              video.length === 0 ?
+                              <h4>Carregando Ranking</h4>
+                              : limitVideo.length === 0 ?
+                              <h4>Sem fotos para o mês selecionado</h4>
+                              :
                              limitVideo.map((videos) => {
                                 return(
                                     <div className="ranking-unic" key={videos.id}>

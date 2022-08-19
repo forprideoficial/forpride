@@ -411,6 +411,7 @@
   .name
   h4 {
   font-weight: 500;
+  color: var(--Primary);
 }
 
 .content-profileFriend
@@ -470,6 +471,7 @@
   z-index: 80;
   position: absolute;
   margin-bottom: 40px;
+  color: var(--Primary);
 }
 
 .content-profileFriend
@@ -525,7 +527,7 @@
   .info-users-man
   .info-users-data
   p {
-  color: var(--Gray_font2);
+  color: var(--Black);
 }
 
 .content-profileFriend
@@ -801,7 +803,7 @@
   .info-users-woman
   .info-users-data
   p {
-  color: var(--Gray_font2);
+    color: var(--Black);
 }
 
 .content-profileFriend
