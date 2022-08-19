@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// import './Global.css';
+import './Global.css';
 import { useContext } from 'react';
 
 
