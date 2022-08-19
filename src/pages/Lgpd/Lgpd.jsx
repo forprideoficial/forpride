@@ -1,4 +1,4 @@
-// import './lgpd.css';
+import './lgpd.css';
 
 function Lgpd() {
 

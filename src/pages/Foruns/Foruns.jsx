@@ -1,6 +1,6 @@
 import { TopBar } from "../../components/TopBar/TopBar"
 import { FiPlusCircle} from 'react-icons/fi'
-// import './foruns.css'
+import './foruns.css'
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim"
 import { ChatSlim } from "../../components/ChatSlim/ChatSlim"
 import { useState, useContext } from "react"

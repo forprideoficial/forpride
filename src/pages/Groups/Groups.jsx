@@ -1,6 +1,6 @@
 import { TopBar } from "../../components/TopBar/TopBar"
 import { FiPlusCircle} from 'react-icons/fi'
-// import './groups.css'
+import './groups.css'
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim"
 import { ListGroups } from "../../components/ListGroups/ListGroups"
 import { ChatSlim } from "../../components/ChatSlim/ChatSlim"

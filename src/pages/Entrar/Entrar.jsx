@@ -5,7 +5,7 @@ import Portugal from '../../assets/images/flags/Portugal.png'
 import { AuthContext } from '../../contexts/Auth';
 import { useParams } from 'react-router';
 import { useNavigate } from 'react-router-dom';
-// import './entrar.css';
+import './entrar.css';
 import { toast } from 'react-toastify';
 import { FiEye, FiEyeOff, FiThumbsUp, FiThumbsDown } from 'react-icons/fi';
 import {IoCloseOutline } from 'react-icons/io5';

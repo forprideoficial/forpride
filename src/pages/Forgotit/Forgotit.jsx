@@ -3,7 +3,7 @@ import logoImg from '../../assets/images/logo.png'
 import { AuthContext } from '../../contexts/Auth';
 import { useNavigate } from 'react-router-dom';
 
-// import './forgotit.css';
+import './forgotit.css';
 
 function Forgotit() {
   const  {loginSession} = useContext(AuthContext)

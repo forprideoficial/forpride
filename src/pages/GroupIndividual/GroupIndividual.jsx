@@ -1,7 +1,7 @@
 import { ToolbarLeftSlim } from '../../components/ToolBarLeftSlim/ToolbarLeftSlim'
 import { TopBar } from '../../components/TopBar/TopBar'
 import {FiHome, FiMoreVertical, FiUser} from 'react-icons/fi'
-// import './groupIndividual.css'
+import './groupIndividual.css'
 
 import { useEffect, useState, useContext } from "react"
 import { AuthContext } from "../../contexts/Auth"

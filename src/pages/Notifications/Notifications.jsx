@@ -4,7 +4,7 @@ import { ChatSlim } from "../../components/ChatSlim/ChatSlim";
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim";
 import { TopBar } from "../../components/TopBar/TopBar";
 import { useFetch } from "../../hooks/useFetch";
-// import "./notifications.css"
+import "./notifications.css"
 
 function Notifications() {
     const Local = localStorage.getItem("forpride");
