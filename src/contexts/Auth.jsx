@@ -1452,7 +1452,7 @@ async function updateUserOnline( id, idAccount, username, type ,nickname, avatar
         const data = {
             idAccount: user.id,
             username: user.username,
-            type: user.type,
+            type: user.sex,
             nickname: user.nickname,
             avatar: user.avatar,
             relationship: user.relationship,
