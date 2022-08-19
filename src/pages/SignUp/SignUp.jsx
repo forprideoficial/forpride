@@ -129,6 +129,11 @@ function SignUp() {
         return
     }
 
+    if(day === "" || month === ""  || year === "" ) {
+      toast.error("Favor definir data de nascimento");
+      return
+  }
+
     if(city === "" ) {
         toast.error("Defina sua cidade");
         return
@@ -184,7 +189,7 @@ function SignUp() {
             const idGenerate = uuidv4();
             const id = idGenerate.substring(0, 8);
             const avatar = avatar1;
-            const cover = "https://firebasestorage.googleapis.com/v0/b/foursome4-b925c.appspot.com/o/capa%20foursome2.png?alt=media&token=6124db20-1954-47d4-9444-73b3fee41ce0"
+            const cover = "https://firebasestorage.googleapis.com/v0/b/foursome4-b925c.appspot.com/o/capa.png?alt=media&token=f49f4132-c3ba-4914-add5-150a4ffdbe29"
             const cep = ""
             const patron = "0000"
             const status = "active"
