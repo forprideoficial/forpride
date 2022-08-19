@@ -22,46 +22,15 @@ function Search() {
     const [typeSearch, setTypeSearch] = useState('Nickname');
     const [text, setText] = useState('Carregando usuários');
 
-    const searchLower = search.toLowerCase()
+    const searchLower = search.toLowerCase();
+    
 
     useEffect(() => {
         async function loadUsersONline() {
-            const res = await api.get("/accounts");
+            await api.get("/accounts").then((users) => {
+                setOnline(users.data)
+            })
 
-            res.data.forEach((user) => {
-                async function loadInformations() {
-                    await api.get(`/informations/${user.id}`).then((res) => {
-                        if(res.data[0] === undefined) {
-                            console.log(user.id)
-                            console.log(user)
-                            console.log(res.data)
-                        }
-                        if(res.data[0] === undefined) {
-                            return
-                        }
-                          const dados = {
-                              idAccount: user.id,
-                              status: user.status,
-                              username: user.username,
-                              type: user.type,
-                              país: user.país === null || user.país === undefined ? "" : user.país,
-                              avatar: res.data[0].avatar,
-                              nickname: res.data[0].nickname === null || res.data[0].nickname === undefined ? "" : res.data[0].nickname,     
-                              city: res.data[0].city === null || res.data[0].city === undefined ? "" : res.data[0].city,     
-                              uf: res.data[0].uf === null || res.data[0].uf === undefined ? "" : res.data[0].uf,         
-                          }
-                          
-                          setOnline(oldOnline => [...oldOnline, dados])
-                          setText("Nenhum resultado para sua busca!")
-      
-                      }).catch((error) => {
-                          console.log(error)
-                      })  
-                }
-
-                loadInformations()
- 
-       })
         }
         loadUsersONline();   
      }, [])
@@ -182,7 +151,7 @@ function handleSetFilter(data) {
                     : typeSearch === "Uf" ? online?.filter((informations) => informations.uf.toLowerCase().includes(searchLower))
                     : typeSearch === "Id" ? online?.filter((informations) => informations.idAccount.toLowerCase().includes(searchLower)) : ""
 
-                    const userFilter = online?.filter((onlines) => onlines.type === type )
+                    const userFilter = online?.filter((onlines) => onlines.sex === type )
                     const paísFilter = online?.filter((onlines) => onlines.país === país )
 
     const SearchUsersFilterTpe = online?.filter((informations) => informations.nickname.toLowerCase().includes(searchLower)
@@ -190,7 +159,7 @@ function handleSetFilter(data) {
                                                                 ||  informations.city.toLowerCase().includes(searchLower)
                                                                 ||  informations.uf.toLowerCase().includes(searchLower)
                                                                 ||  informations.idAccount.toLowerCase().includes(searchLower)
-                                                                && informations.type === type)
+                                                                && informations.sex === type)
 
     const SearchUsersFilterPaís = online?.filter((informations) => informations.nickname.toLowerCase().includes(searchLower)
                                                                 ||  informations.username.toLowerCase().includes(searchLower)
@@ -199,14 +168,14 @@ function handleSetFilter(data) {
                                                                 ||  informations.idAccount.toLowerCase().includes(searchLower)
                                                                 && informations.país === país)
 
-    const FilterPaísType = online?.filter((informations) => informations.type === type && informations.país === país)
+    const FilterPaísType = online?.filter((informations) => informations.sex === type && informations.país === país)
 
     const SearchUsersFilter = online?.filter((informations) => informations.nickname.toLowerCase().includes(searchLower)
                                                                 ||  informations.username.toLowerCase().includes(searchLower)
                                                                 ||  informations.city.toLowerCase().includes(searchLower)
                                                                 ||  informations.uf.toLowerCase().includes(searchLower)
                                                                 ||  informations.idAccount.toLowerCase().includes(searchLower)
-                                                                && informations.type === type
+                                                                && informations.sex === type
                                                                 && informations.país === país)
 
     const usersNewArray = type === "" && search !== "" && país === "" ? SearchUsers :
@@ -283,13 +252,13 @@ if(!limitData) {
             </div>
 
 
-            <div className="filterActive">
+            {/* <div className="filterActive">
                 {filtro === "false" ?
             <button onClick={() => handleSetFilter("true")}> <IoOptionsOutline/></button>
                 :
             <button onClick={() => handleSetFilter("false")}><IoCloseCircleOutline/></button>
                 }
-            </div>
+            </div> */}
             {filtro === "false" ? "" :
             <div className="searchButton">
             <h3>Filtro de busca</h3>

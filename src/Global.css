@@ -150,7 +150,7 @@ button {
 .react-modal-content {
   width: 100%;
   max-width: 576px;
-  background-color: var(--White);
+  background-color: var(--Background);
   padding: 20px 0;
   position: relative;
   border-radius: 8px;

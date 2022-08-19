@@ -30,7 +30,14 @@
   width: 30%;
   padding: 10px;
   margin-bottom: 10px;
-  background-image: linear-gradient(to right, var(--Primary), var(--Primary2));
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
   height: 100%;
   color: var(--Background2);
   border-radius: 6px;
@@ -54,7 +61,7 @@
   justify-content: center;
   border-radius: 6px;
   border: none;
-  background-color: var(--Foursome1);
+  background-color: var(--White);
   color: var(--White);
 }
 
@@ -91,7 +98,7 @@
   margin: 5px;
   border-radius: 6px;
   border: none;
-  background-color: var(--Background2);
+  background-color: var(--White);
   color: var(--Primary);
 }
 .SearchPage .searchButton .buttons .select {
@@ -103,8 +110,8 @@
   margin: 2px;
   border-radius: 6px;
   border: none;
-  background-color: var(--Foursome1);
-  color: var(--Background2);
+  background-color: var(--Primary);
+  color: var(--White);
 }
 
 .SearchPage .searchButton h3 {
@@ -147,7 +154,7 @@
   margin: 5px;
   border-radius: 6px;
   border: none;
-  background-color: var(--Background2);
+  background-color: var(--White);
   color: var(--Primary);
 }
 
@@ -160,7 +167,7 @@
   margin: 50px 10px 10px 10px;
   border-radius: 6px;
   border: none;
-  background-color: var(--Foursome1);
+  background-color: var(--White);
   color: var(--Background2);
 }
 .SearchPage .searchButton .filter .buttons .select {
@@ -172,8 +179,8 @@
   margin: 2px;
   border-radius: 6px;
   border: none;
-  background-color: var(--Foursome1);
-  color: var(--Background2);
+  background-color: var(--Primary);
+  color: var(--White);
 }
 
 .SearchPage .itensSearch {
@@ -219,8 +226,8 @@
   margin: 5px;
   border-radius: 6px;
   border: none;
-  background-color: var(--Foursome1);
-  color: var(--Background2);
+  background-color: var(--White);
+  color: var(--Primary);
 }
 .SearchPage .itensSearch .accounts {
   display: flex;
@@ -228,7 +235,14 @@
   align-items: flex-start;
   justify-content: center;
   width: 150px;
-  background-image: linear-gradient(to right, var(--Primary), var(--Primary2));
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
   margin: 5px;
   border-radius: 6px;
 }
@@ -253,11 +267,11 @@
   justify-content: center;
   width: 100%;
   padding: 5px;
-  color: var(--Background2);
+  color: var(--White);
 }
 .SearchPage .itensSearch .accounts .infos2 a {
   text-decoration: none;
-  color: var(--Background2);
+  color: var(--White);
 }
 .SearchPage .itensSearch .accounts .infos2 h5 {
   font-weight: 700;
@@ -273,7 +287,7 @@
   width: 100%;
   flex-wrap: wrap;
   padding: 5px 0;
-  color: var(--Background2);
+  color: var(--White);
 }
 
 @media (max-width: 899px) {
