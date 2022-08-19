@@ -1,4 +1,4 @@
-﻿// import "./plainSelected.css"
+﻿import "./plainSelected.css"
 import { useParams } from "react-router-dom";
 import { useFetch } from "../../../hooks/useFetch";
 import { TopBar } from "../../../components/TopBar/TopBar";

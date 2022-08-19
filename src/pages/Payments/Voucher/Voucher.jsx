@@ -1,4 +1,4 @@
-﻿// import "./voucher.css"
+﻿import "./voucher.css"
 import { BarBottomMenu } from "../../../components/BarBottomMenu/BarBottomMenu";
 import { ChatSlim } from "../../../components/ChatSlim/ChatSlim";
 import { ToolbarLeftSlim } from "../../../components/ToolBarLeftSlim/ToolbarLeftSlim";

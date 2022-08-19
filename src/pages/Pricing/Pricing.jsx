@@ -2,7 +2,7 @@ import { BarBottomMenu } from "../../components/BarBottomMenu/BarBottomMenu";
 import { TopBar } from "../../components/TopBar/TopBar";
 import { useFetch } from "../../hooks/useFetch";
 import {IoCheckmarkOutline, IoCloseOutline} from 'react-icons/io5'
-// import './pricing.css'
+import './pricing.css'
 import { FaCrown } from "react-icons/fa";
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim";
 

@@ -1,7 +1,7 @@
 import { FeedPostUnic } from "../../components/FeedPostUnic/FeedPostUnic"
 import { ToolbarLeftSlim } from "../../components/ToolBarLeftSlim/ToolbarLeftSlim"
 import { TopBar } from "../../components/TopBar/TopBar"
-// import './postIndividual.css';
+import './postIndividual.css';
 import { useContext, useEffect } from "react"
 import { AuthContext } from "../../contexts/Auth"
 import { BarBottomMenu } from "../../components/BarBottomMenu/BarBottomMenu"

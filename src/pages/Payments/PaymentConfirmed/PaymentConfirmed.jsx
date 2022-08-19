@@ -1,4 +1,4 @@
-﻿// import "./paymentConfirmed.css";
+﻿import "./paymentConfirmed.css";
 import {IoCheckmarkCircleOutline} from "react-icons/io5"
 import { TopBar } from "../../../components/TopBar/TopBar"
 import { AuthContext } from "../../../contexts/Auth";

@@ -1,4 +1,4 @@
-// import './periodTeste.css'
+import './periodTeste.css'
 import { parseISO, format} from 'date-fns';
 import logo from '../../assets/images/logo.png';
 import { useContext } from 'react';

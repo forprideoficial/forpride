@@ -1,4 +1,4 @@
-// import './privacityPolice.css';
+import './privacityPolice.css';
 
 function PrivacityPolice() {
 
