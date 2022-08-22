@@ -11,6 +11,7 @@ import buscaDistrito from "../../services/api-buscaDistrito";
 import buscaCepPortugal from "../../services/api-buscaCepPortugal";
 import { mask as masker, unMask } from "remask";
 import apiGoogleReverse from "../../services/apiGoogleReverse";
+import { IoCalendarOutline } from "react-icons/io5";
 
 function SettingsInformations() {
     const {NewUpdateInformationsAccount} = useContext(AuthContext)
@@ -24,21 +25,42 @@ function SettingsInformations() {
     const [coverUrl, setCoverUrl] = useState(null);
     const [imageAvatar, setImageAvatar] = useState('');
     const [imageCover, setImageCover] = useState('');
-    const [city, setCity] = useState("");
+    const [city, setCity] = useState(user.city);
+    const [uf, setUf] = useState(user.uf);
     const [district, setDistrict] = useState("");
     const [districtAll, setDistrictAll] = useState([]);
-    const [uf, setUf] = useState("");
     const [codigoPostal, setCodigoPostal] = useState("");
     const [relationship, setRelationship] = useState(user.relationship);
-    const [nickname, setNickname] = useState("")
+    const [nickname, setNickname] = useState(user.nickname)
     const [loadding, setLoadding] = useState(false);
     const [textError, setTextError] = useState(false);
     const [latitude2, setLatitude2] = useState("");
     const [longitude2, setLongitude2] = useState("");
-    const [city2, setCity2] = useState("");
-    const [uf2, setUf2] = useState("");
     const [lat, setLat] = useState("");
     const [long, setLong] = useState("");
+    const [preferenceOption, setPreferenceOption] = useState(user.preferenceOption);
+    const [preference, setPreference] = useState(user.preference);
+    const [birthDateUser, setBirthDateUser] = useState("");
+    const [day, setDay] = useState("");
+    const [month, setMonth] = useState("");
+    const [year, setYear] = useState("");
+    const [sex, setSex] = useState(user.sex);
+    const [sexualOption, setSexualOption] = useState(user.sexualOption);
+    const [checked, setChecked] = useState(false);
+    const [checkedSex, setCheckedSex] = useState(false);
+    const [checkedOptionSexual, setCheckedOptionSexual] = useState(false);
+    const [maxAge, setMaxAge] = useState("");
+    const [minAge, setMinAge] = useState("");
+    const [editAddress, setEditAddress] = useState(false);
+
+    const nascimento = new Date(birthDateUser);
+    const hoje = new Date();
+    let idadeAtual = 0;
+    
+    if(birthDateUser !== "") {
+        idadeAtual = Math.floor(Math.ceil(Math.abs(nascimento.getTime() - hoje.getTime()) / (1000 * 3600 * 24)) / 365.25) ;
+        console.log(idadeAtual);
+    }
 
     useEffect(() => {
         function getLocation() {
@@ -56,18 +78,7 @@ function SettingsInformations() {
             console.log("long1");
             console.log(long1);
   
-            reverseGeolocalization(lat1, long1);
           }
-  
-          async function reverseGeolocalization(lat, long) {
-            console.log(lat, long)
-            const address = await apiGoogleReverse.get(`json?latlng=${lat},${long}&key=AIzaSyCZllXD0czNd_oeF0u_o9LUVJ2bCd1K4p8`);
-           console.log(address.data.results[0])
-            setCity2(address.data.results[0].address_components[3].long_name)
-            setUf2(address.data.results[0].address_components[4].short_name) 
-            return
-         }
-  
               
       function error() {
         console.log('Unable to retrieve your location');
@@ -168,7 +179,19 @@ function SettingsInformations() {
         setLoadding(false);
         
     }
-
+    function handleSelectDay(e) {
+        setDay(e.target.value);
+        setBirthDateUser(`${year}-${month}-${day}`)
+    }
+      function handleSelectMonth(e) {
+        setMonth(e.target.value)
+        setBirthDateUser(`${year}-${month}-${day}`)
+    }
+      function handleSelectYear(e) {
+        setYear(e.target.value)
+        setBirthDateUser(`${year}-${month}-${day}`)
+    }
+    
 
     async function handleUploadAvatar(e) {
         e.preventDefault();
@@ -314,6 +337,88 @@ function SettingsInformations() {
         setCodigoPostal(maskedValue)
       }
 
+      function handleSetectCity(e) {
+        setCity(e.target.value)
+        console.log(e.target.value)
+      }
+      function handleSetectUf(e) {
+        setUf(e.target.value)
+        console.log(e.target.value)
+      }
+
+      async function handleSearchDistrict() {
+        try {
+          const res = await buscaDistrito.get(`${uf}/distritos`) 
+            console.log(res.data)
+            setDistrictAll(res.data)
+            console.log(res.data[0].municipio.nome);
+            return;
+          }catch{
+            console.log("error")
+            toast.error("Escolha um estado e clica em buscar cidades")
+        }
+        return
+    }
+
+    function ChangeMaskCEPPortugal(e) {
+        const originalValue = unMask(e.target.value);
+        const maskedValue = masker(originalValue, [
+          "9999999",
+        ]);
+    
+        setCodigoPostal(maskedValue)
+      }
+
+      if(codigoPostal.length === 7) {
+        handleSearchCepPortugal()
+    } else {
+        
+    }
+  
+    async function handleSearchCepPortugal() {
+            try {
+                const res = await buscaCepPortugal.get(`${codigoPostal}`);
+                console.log(res.data[0])
+                console.log(res.data[0].Distrito)
+                setCity(res.data[0].Distrito)
+                setUf("")
+                setLatitude2(parseFloat(res.data[0].Latitude));
+                setLongitude2(parseFloat(res.data[0].Longitude));
+                return
+            }catch{
+                console.log("error")
+                toast.error("Código Postal não encontrado. Por favor, digite sua Cidade e sua Província")
+                setTextError(true)
+            }
+            return
+        }
+
+        function handlePreference(e) {
+            setPreference(e.target.value)
+          }
+          function handlePreferenceSexualOption(e) {
+            setPreferenceOption(e.target.value)
+          }
+         
+          
+          function handleSelectMaxAge(e) {
+            setMaxAge(e.target.value)
+          }
+          function handleSelectMinAge(e) {
+            setMinAge(e.target.value)
+          }
+          
+
+          function handleEditAdress(e) {
+            e.preventDefault()
+            if(editAddress === false ) {
+                setEditAddress(true)
+            } else {
+                setEditAddress(false)
+
+            }
+          }
+
 
     return (
         <div className="settingsInformation">
@@ -328,9 +433,72 @@ function SettingsInformations() {
 
                 <br />
                 <br />
+
+
+                <div className="data">  
+            <div className="text">
+                    <h4>Eu sou</h4>
+                </div>   
+                <select className={sex === "" ? "empyt" : ""} value={sex} onChange={handlePreference} required>
+                <option value="">Selecione</option>
+                <option value="Homem">Homem</option>
+                <option value="Mulher">Mulher</option>
+                <option value="Homem trans">Homem trans</option>
+                <option value="Mulher trans">Mulher trans</option>
+                <option value="Pessoa não binária">Pessoa não binária</option>
+            </select>                 
+                <select className={sexualOption === "" ? "empyt" : ""} value={sexualOption} onChange={handlePreferenceSexualOption} required>
+                <option value="">Selecione</option>
+                <option value="Gay">Gay</option>
+                <option value="Lésbica">Lésbica</option>
+                <option value="Trans/travesti">Trans/travesti</option>
+                <option value="Bissexual">Bissexual</option>
+                <option value="Assexual">Assexual</option>
+                <option value="Demissexual">Demissexual</option>
+                <option value="Pansexual">Pansexual</option>
+                <option value="Queer">Queer</option>
+                <option value="Intersexual">Intersexual</option>
+                <option value="Questionando">Questionando</option>
+            </select>
+
+
+            </div>
+
+
+
+
+
+<div className="data">
+        <div className="text">
+                    <h4>Relacionamento</h4>
+        </div>
+        <select value={relationship} onChange={handleRelationship}>
+                        <option value="">Status de Relacionamento</option>
+                        <option value="Solteir@">Solteir@ </option>
+                        <option value="Casad@">Casad@</option>
+                        <option value="Enrolad@">Enrolad@</option>
+                        <option value="Relacionamento Aberto">Relacionamento Aberto</option>
+                    </select>
+</div>
+
+
+
+
+            <div className="data">
+            <div className="text">
+                    <h4>Dados de endereço</h4>
+                </div>                   
+                    <input type="text" placeholder={user.uf} value={uf} onChange={(e) => setUf(e.target.value)} disabled/>
+                    <input type="text" placeholder={user.city} value={city} onChange={(e) => setCity(e.target.value)} disabled/>
+                    <input type="text" placeholder={user.nickname} value={nickname} onChange={(e) => setNickname(e.target.value)}/>
+            <button className="uf" onClick={handleEditAdress}>Alterar Endereço</button>
+            </div>
+
+            {editAddress === false ? "" :
+            <div className="data"> 
                 {user.país === "Brasil" ? 
-                <div className="SearchCep">
-                                      <select value={uf} onChange={handleSetectUf}> 
+               <>
+                             <select value={uf} onChange={handleSetectUf}> 
                                       <option value="">Escolha seu estado</option>
                                       <option value="AC">Acre</option>
                                       <option value="AL">Alagoas</option>
@@ -370,33 +538,295 @@ function SettingsInformations() {
                                           <option autocomplete="off" key={district.id} value={district.nome}>{district.nome}</option>
                                       )
                                   })}
-                              </select>
+                              </select></>
+                : 
+                <>
+                <div className="text">
+                <h5></h5>
                 </div>
-                :
-                <div className="SearchCep">
-                <input type="text" placeholder='Digite seu Código Postal' value={codigoPostal} onChange={ChangeMaskCEPPortugal} />
-                <br />
-                <input type="text" autoComplete='off' placeholder='Cidade' value={city} onChange={(e) => setCity(e.target.value)} required disabled/>
-                        <input type="text" autoComplete='off' placeholder='Província / Região' value={uf} onChange={(e) => setUf(e.target.value)}  required/>
-                </div>
+                <input type="text" placeholder='Digite seu Código Postal' value={codigoPostal} onChange={ChangeMaskCEPPortugal}/>
+                      <input type="text" autoComplete='off' placeholder='Cidade' value={city} onChange={(e) => setCity(e.target.value)} required/>
+                      <input type="text" autoComplete='off' placeholder='Província / Vila / Região' value={uf} onChange={(e) => setUf(e.target.value)}  required/>
+                        </>
                 }
+                </div>
+             }
 
 
+            <div className="data">  
+            <div className="text">
+                    <h4>Preferências</h4>
+                </div>   
+                <select className={preference === "" ? "empyt" : ""} value={preference} onChange={handlePreference} required>
+                <option value="">Selecione</option>
+                <option value="All">Todos</option>
+                <option value="Homem">Homem</option>
+                <option value="Mulher">Mulher</option>
+                <option value="Homem e Mulher">Home  e Mulher</option>
+                <option value="Homem trans">Homem trans</option>
+                <option value="Mulher trans">Mulher trans</option>
+                <option value="Homem trans e Mulher trans">Homem trans e Mulher trans</option>
+                <option value="Pessoa não binária">Pessoa não binária</option>
+            </select>                 
+                <select className={preferenceOption === "" ? "empyt" : ""} value={preferenceOption} onChange={handlePreferenceSexualOption} required>
+                <option value="">Selecione</option>
+                <option value="Gay">Gay</option>
+                <option value="Lésbica">Lésbica</option>
+                <option value="Trans/travesti">Trans/travesti</option>
+                <option value="Bissexual">Bissexual</option>
+                <option value="Assexual">Assexual</option>
+                <option value="Demissexual">Demissexual</option>
+                <option value="Pansexual">Pansexual</option>
+                <option value="Queer">Queer</option>
+                <option value="Intersexual">Intersexual</option>
+                <option value="Questionando">Questionando</option>
+                <option value="All">Tanto faz</option>
+            </select>
 
-            <div className="data">                      
-                    <input type="text" placeholder={user.uf} value={uf} onChange={(e) => setUf(e.target.value)} disabled/>
-                    <input type="text" placeholder={user.city} value={city} onChange={(e) => setCity(e.target.value)} disabled/>
-                    <input type="text" placeholder={user.nickname} value={nickname} onChange={(e) => setNickname(e.target.value)}/>
-                    <select value={relationship} onChange={handleRelationship}>
-                        <option value="">Status de Relacionamento</option>
-                        <option value="Solteir@">Solteir@ </option>
-                        <option value="Casad@">Casad@</option>
-                        <option value="Enrolad@">Enrolad@</option>
-                        <option value="Relacionamento Aberto">Relacionamento Aberto</option>
+            <div className="inputsAge"> 
+            <select value={minAge} onChange={handleSelectMinAge} required>
+                      <option>Idade Mínima</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                      <option value="32">32</option>
+                      <option value="33">33</option>
+                      <option value="34">34</option>
+                      <option value="35">35</option>
+                      <option value="36">36</option>
+                      <option value="37">37</option>
+                      <option value="38">38</option>
+                      <option value="39">39</option>
+                      <option value="40">40</option>
+                      <option value="41">41</option>
+                      <option value="42">42</option>
+                      <option value="43">43</option>
+                      <option value="44">44</option>
+                      <option value="45">45</option>
+                      <option value="46">46</option>
+                      <option value="47">47</option>
+                      <option value="48">48</option>
+                      <option value="49">49</option>
+                      <option value="50">50</option>
+                      <option value="51">51</option>
+                      <option value="52">52</option>
+                      <option value="53">53</option>
+                      <option value="54">54</option>
+                      <option value="55">55</option>
+                      <option value="56">56</option>
+                      <option value="57">57</option>
+                      <option value="58">58</option>
+                      <option value="59">59</option>
+                      <option value="60">60</option>
+                      <option value="61">61</option>
+                      <option value="62">62</option>
+                      <option value="63">63</option>
+                      <option value="64">64</option>
+                      <option value="65">65</option>
+                      <option value="66">66</option>
+                      <option value="67">67</option>
+                      <option value="68">68</option>
+                      <option value="69">69</option>
+                      <option value="70">70</option>
+                      <option value="71">71</option>
+                      <option value="72">72</option>
+                      <option value="73">73</option>
+                      <option value="74">74</option>
+                      <option value="75">75</option>
+                      <option value="76">76</option>
+                      <option value="77">77</option>
+                      <option value="78">78</option>
+                      <option value="79">79</option>
+                      <option value="80">80</option>
+                    </select>
+            <select value={maxAge} onChange={handleSelectMaxAge} required>
+                      <option>Idade Máxima</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                      <option value="32">32</option>
+                      <option value="33">33</option>
+                      <option value="34">34</option>
+                      <option value="35">35</option>
+                      <option value="36">36</option>
+                      <option value="37">37</option>
+                      <option value="38">38</option>
+                      <option value="39">39</option>
+                      <option value="40">40</option>
+                      <option value="41">41</option>
+                      <option value="42">42</option>
+                      <option value="43">43</option>
+                      <option value="44">44</option>
+                      <option value="45">45</option>
+                      <option value="46">46</option>
+                      <option value="47">47</option>
+                      <option value="48">48</option>
+                      <option value="49">49</option>
+                      <option value="50">50</option>
+                      <option value="51">51</option>
+                      <option value="52">52</option>
+                      <option value="53">53</option>
+                      <option value="54">54</option>
+                      <option value="55">55</option>
+                      <option value="56">56</option>
+                      <option value="57">57</option>
+                      <option value="58">58</option>
+                      <option value="59">59</option>
+                      <option value="60">60</option>
+                      <option value="61">61</option>
+                      <option value="62">62</option>
+                      <option value="63">63</option>
+                      <option value="64">64</option>
+                      <option value="65">65</option>
+                      <option value="66">66</option>
+                      <option value="67">67</option>
+                      <option value="68">68</option>
+                      <option value="69">69</option>
+                      <option value="70">70</option>
+                      <option value="71">71</option>
+                      <option value="72">72</option>
+                      <option value="73">73</option>
+                      <option value="74">74</option>
+                      <option value="75">75</option>
+                      <option value="76">76</option>
+                      <option value="77">77</option>
+                      <option value="78">78</option>
+                      <option value="79">79</option>
+                      <option value="80">80</option>
+                    </select>
+          </div>
+
+          <div className="data">
+          <div className="text">
+                            <h5>DATA DE NASCIMENTO <IoCalendarOutline /></h5>
+                        </div>
+                    <div className="birthDate">
+
+                    <select value={year} onChange={handleSelectYear} required>
+                          <option>Ano</option>
+                          <option>1960</option>
+                          <option>1961</option>
+                          <option>1962</option>
+                          <option>1963</option>
+                          <option>1964</option>
+                          <option>1965</option>
+                          <option>1966</option>
+                          <option>1967</option>
+                          <option>1968</option>
+                          <option>1969</option>
+                          <option>1970</option>
+                          <option>1971</option>
+                          <option>1972</option>
+                          <option>1973</option>
+                          <option>1974</option>
+                          <option>1975</option>
+                          <option>1976</option>
+                          <option>1977</option>
+                          <option>1978</option>
+                          <option>1979</option>
+                          <option>1980</option>
+                          <option>1981</option>
+                          <option>1982</option>
+                          <option>1983</option>
+                          <option>1984</option>
+                          <option>1985</option>
+                          <option>1986</option>
+                          <option>1987</option>
+                          <option>1988</option>
+                          <option>1989</option>
+                          <option>1990</option>
+                          <option>1991</option>
+                          <option>1992</option>
+                          <option>1993</option>
+                          <option>1994</option>
+                          <option>1995</option>
+                          <option>1996</option>
+                          <option>1997</option>
+                          <option>1998</option>
+                          <option>1999</option>
+                          <option>2000</option>
+                          <option>2001</option>
+                          <option>2002</option>
+                          <option>2003</option>
+                          <option>2004</option>
+                      </select>
+
+                    <select value={month} onChange={handleSelectMonth} required>
+                      <option>Mês</option>
+                      <option value="01">Janeiro</option>
+                      <option value="02">Fevereiro</option>
+                      <option value="03">Março</option>
+                      <option value="04">Abril</option>
+                      <option value="05">Maio</option>
+                      <option value="06">Junho</option>
+                      <option value="07">Julho</option>
+                      <option value="08">Agosto</option>
+                      <option value="09">Setembro</option>
+                      <option value="10">Outubro</option>
+                      <option value="11">Novembro</option>
+                      <option value="12">Dezembro</option>
                     </select>
 
+                    <select value={day} onChange={handleSelectDay} required>
+                      <option>Dia</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+          </div>
+          </div>
             </div>
-                <button onClick={handleUploadAccount}>Atualizar</button>
+                <button onClick={handleUploadAccount}>Atualizar dados</button>
 
                 <br />
                 <br />

@@ -16,8 +16,8 @@
   border-radius: 20px;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
-  padding: 0px;
   padding: 10px;
+  background-color: var(--Black);
 }
 
 .settingsInformation form .label-avatar {
@@ -102,7 +102,7 @@
 
 .settingsInformation form .data select {
   width: 50%;
-  background-color: var(--Background2);
+  background-color: var(--Background);
   color: var(--Primary);
   border: 1px solid var(--Primary);
   border-radius: 6px;
@@ -111,7 +111,7 @@
 
 .settingsInformation .data input {
   width: 50%;
-  background-color: var(--Background2);
+  background-color: var(--Background);
   color: var(--Primary);
   border: 1px solid var(--Primary);
   border-radius: 6px;

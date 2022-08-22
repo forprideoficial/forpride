@@ -58,8 +58,10 @@ function SignUp() {
   const [location, setLocation] = useState(false);
   const [textError, setTextError] = useState(false);
   const [flag, setFlag] = useState(false);
+  const [maxAge, setMaxAge] = useState("");
+  const [minAge, setMinAge] = useState("");
   const [districtAll, setDistrictAll] = useState([]);
-
+  
   const nascimento = new Date(birthDateUser);
   const hoje = new Date();
   let idadeAtual = 0;
@@ -201,12 +203,12 @@ function SignUp() {
             const age = idadeAtual
           
             console.log({ id, país, username:username.toLowerCase(), role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
-              birthDate, age, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
+              birthDate, age, minAge, maxAge, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
               latitude: mylatitude, longitude: mylongitude, recommendation})
           
-              createAccount({ id, país, username:username.toLowerCase(), role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
-              birthDate, age, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
-              latitude: mylatitude, longitude: mylongitude, recommendation})
+              // createAccount({ id, país, username:username.toLowerCase(), role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
+              // birthDate, age, minAge, maxAge, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
+              // latitude: mylatitude, longitude: mylongitude, recommendation})
 
       } else {
             toast.error("As senhas não combinam!")
@@ -527,6 +529,14 @@ function handleSelectRecomendation(e) {
   setRecommendation(e.target.value)
 }
 
+ 
+function handleSelectMaxAge(e) {
+  setMaxAge(e.target.value)
+}
+function handleSelectMinAge(e) {
+  setMinAge(e.target.value)
+}
+
 
 
   return (
@@ -642,6 +652,146 @@ function handleSelectRecomendation(e) {
                 <option value="Questionando">Questionando</option>
                 <option value="All">Tanto faz</option>
             </select>
+
+            <div className="text">
+            <h5>IDADE</h5>
+            </div>
+            <div className="inputsAge"> 
+            <select value={minAge} onChange={handleSelectMinAge} required>
+                      <option>Idade Mínima</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                      <option value="32">32</option>
+                      <option value="33">33</option>
+                      <option value="34">34</option>
+                      <option value="35">35</option>
+                      <option value="36">36</option>
+                      <option value="37">37</option>
+                      <option value="38">38</option>
+                      <option value="39">39</option>
+                      <option value="40">40</option>
+                      <option value="41">41</option>
+                      <option value="42">42</option>
+                      <option value="43">43</option>
+                      <option value="44">44</option>
+                      <option value="45">45</option>
+                      <option value="46">46</option>
+                      <option value="47">47</option>
+                      <option value="48">48</option>
+                      <option value="49">49</option>
+                      <option value="50">50</option>
+                      <option value="51">51</option>
+                      <option value="52">52</option>
+                      <option value="53">53</option>
+                      <option value="54">54</option>
+                      <option value="55">55</option>
+                      <option value="56">56</option>
+                      <option value="57">57</option>
+                      <option value="58">58</option>
+                      <option value="59">59</option>
+                      <option value="60">60</option>
+                      <option value="61">61</option>
+                      <option value="62">62</option>
+                      <option value="63">63</option>
+                      <option value="64">64</option>
+                      <option value="65">65</option>
+                      <option value="66">66</option>
+                      <option value="67">67</option>
+                      <option value="68">68</option>
+                      <option value="69">69</option>
+                      <option value="70">70</option>
+                      <option value="71">71</option>
+                      <option value="72">72</option>
+                      <option value="73">73</option>
+                      <option value="74">74</option>
+                      <option value="75">75</option>
+                      <option value="76">76</option>
+                      <option value="77">77</option>
+                      <option value="78">78</option>
+                      <option value="79">79</option>
+                      <option value="80">80</option>
+                    </select>
+            <select value={maxAge} onChange={handleSelectMaxAge} required>
+                      <option>Idade Máxima</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                      <option value="32">32</option>
+                      <option value="33">33</option>
+                      <option value="34">34</option>
+                      <option value="35">35</option>
+                      <option value="36">36</option>
+                      <option value="37">37</option>
+                      <option value="38">38</option>
+                      <option value="39">39</option>
+                      <option value="40">40</option>
+                      <option value="41">41</option>
+                      <option value="42">42</option>
+                      <option value="43">43</option>
+                      <option value="44">44</option>
+                      <option value="45">45</option>
+                      <option value="46">46</option>
+                      <option value="47">47</option>
+                      <option value="48">48</option>
+                      <option value="49">49</option>
+                      <option value="50">50</option>
+                      <option value="51">51</option>
+                      <option value="52">52</option>
+                      <option value="53">53</option>
+                      <option value="54">54</option>
+                      <option value="55">55</option>
+                      <option value="56">56</option>
+                      <option value="57">57</option>
+                      <option value="58">58</option>
+                      <option value="59">59</option>
+                      <option value="60">60</option>
+                      <option value="61">61</option>
+                      <option value="62">62</option>
+                      <option value="63">63</option>
+                      <option value="64">64</option>
+                      <option value="65">65</option>
+                      <option value="66">66</option>
+                      <option value="67">67</option>
+                      <option value="68">68</option>
+                      <option value="69">69</option>
+                      <option value="70">70</option>
+                      <option value="71">71</option>
+                      <option value="72">72</option>
+                      <option value="73">73</option>
+                      <option value="74">74</option>
+                      <option value="75">75</option>
+                      <option value="76">76</option>
+                      <option value="77">77</option>
+                      <option value="78">78</option>
+                      <option value="79">79</option>
+                      <option value="80">80</option>
+                    </select>
+          </div>
+
+
           <div className="buttons">
           <button onClick={() => handleSelectEtapa("3")}> Avançar </button>
           <button className='btn' onClick={() => handleSelectEtapa("1")}> Voltar </button>
@@ -650,7 +800,11 @@ function handleSelectRecomendation(e) {
         </div>
         : ""}
 
+
+
                 {/* Passo  3 */}
+
+
                 {etapa === "3" ?
         <div className="form">
  

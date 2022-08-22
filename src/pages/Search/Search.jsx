@@ -149,7 +149,7 @@ function handleSetFilter(data) {
                     : typeSearch === "City" ? online?.filter((informations) => informations.city.toLowerCase().includes(searchLower))
                     : typeSearch === "Username" ? online?.filter((informations) => informations.username.toLowerCase().includes(searchLower))
                     : typeSearch === "Uf" ? online?.filter((informations) => informations.uf.toLowerCase().includes(searchLower))
-                    : typeSearch === "Id" ? online?.filter((informations) => informations.idAccount.toLowerCase().includes(searchLower)) : ""
+                    : typeSearch === "Id" ? online?.filter((informations) => informations.id.toLowerCase().includes(searchLower)) : ""
 
                     const userFilter = online?.filter((onlines) => onlines.sex === type )
                     const paísFilter = online?.filter((onlines) => onlines.país === país )
@@ -158,14 +158,14 @@ function handleSetFilter(data) {
                                                                 ||  informations.username.toLowerCase().includes(searchLower)
                                                                 ||  informations.city.toLowerCase().includes(searchLower)
                                                                 ||  informations.uf.toLowerCase().includes(searchLower)
-                                                                ||  informations.idAccount.toLowerCase().includes(searchLower)
+                                                                ||  informations.id.toLowerCase().includes(searchLower)
                                                                 && informations.sex === type)
 
     const SearchUsersFilterPaís = online?.filter((informations) => informations.nickname.toLowerCase().includes(searchLower)
                                                                 ||  informations.username.toLowerCase().includes(searchLower)
                                                                 ||  informations.city.toLowerCase().includes(searchLower)
                                                                 ||  informations.uf.toLowerCase().includes(searchLower)
-                                                                ||  informations.idAccount.toLowerCase().includes(searchLower)
+                                                                ||  informations.id.toLowerCase().includes(searchLower)
                                                                 && informations.país === país)
 
     const FilterPaísType = online?.filter((informations) => informations.sex === type && informations.país === país)
@@ -174,7 +174,7 @@ function handleSetFilter(data) {
                                                                 ||  informations.username.toLowerCase().includes(searchLower)
                                                                 ||  informations.city.toLowerCase().includes(searchLower)
                                                                 ||  informations.uf.toLowerCase().includes(searchLower)
-                                                                ||  informations.idAccount.toLowerCase().includes(searchLower)
+                                                                ||  informations.id.toLowerCase().includes(searchLower)
                                                                 && informations.sex === type
                                                                 && informations.país === país)
 
@@ -212,9 +212,9 @@ if(!limitData) {
             {limitData.map((information) => {
                 return(
                     information.status === "pending" ? "" :
-                    <div className="accounts" key={information.idAccount}>
+                    <div className="accounts" key={information.id}>
                         <div className="image">
-                            <a href={information.idAccount === userData.id ? "/profile" : `/profile-friend/${information.idAccount}` } target="_blank">
+                            <a href={information.id === userData.id ? "/profile" : `/profile-friend/${information.id}` } target="_blank">
                         <img 
                         src={information.avatar}
                         onError={({ currentTarget }) => {
@@ -225,7 +225,7 @@ if(!limitData) {
                         </a>
                         </div>
                         <div className="infos2">
-                        <a href={information.idAccount === userData.id ? "/profile" : `/profile-friend/${information.idAccount}` } target="_blank">
+                        <a href={information.id === userData.id ? "/profile" : `/profile-friend/${information.id}` } target="_blank">
                             <h5>{information.nickname} {information.país === "Brasil" ? "🇧🇷" : information.país === "Portugal" ? "🇵🇹" : ""}</h5>
                             </a>
                             <h6>{information.username}</h6>

@@ -48,28 +48,8 @@ function Settings() {
                  <BarBottomMenu />
                  <TopBar />
             <div className="settings-page">
-
-            <div className="buttons">
-                <button className={informations === "informations" ? "selected" : ""} onClick={handleInformations}>Informations</button>
-                <button className={characteristcs === "characteristcs" ? "selected" : ""}  onClick={handleCaracteristicas}>Caracteristicas</button>
-                <button className={preferences === "preferences" ? "selected" : ""}  onClick={handlePreferencias}>Preferências</button>
-                <button className={dataAccess === "dataAccess" ? "selected" : ""}  onClick={handleDadosAcesso}>Conta</button>
-
-            </div>
-            {informations === "informations" ?
+                <h2>Minha conta</h2>
             <SettingsInformations />
-            :
-        characteristcs === "characteristcs" ?
-        <SettingsCharacteristcs />
-        :
-        preferences === "preferences" ?
-        <SettingsPreferences />
-        :
-        dataAccess === "dataAccess" ?
-        <SettingsDataAccess />
-        :
-            "Nada para mostrar ainda"
-            }
         </div>
         </div>
     )

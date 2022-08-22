@@ -150,6 +150,29 @@
   color: var(--Primary);
   margin-top: 10px;
 }
+.content-SignUp .bloco .signUp .form .inputsAge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.content-SignUp .bloco .signUp .form .inputsAge select {
+  width: 40%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 10px;
+  color: var(--Primary);
+}
 
 .content-SignUp .bloco .signUp .form input[type="date"] {
   width: 90%;
