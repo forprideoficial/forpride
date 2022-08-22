@@ -206,9 +206,9 @@ function SignUp() {
               birthDate, age, minAge, maxAge, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
               latitude: mylatitude, longitude: mylongitude, recommendation})
           
-              // createAccount({ id, país, username:username.toLowerCase(), role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
-              // birthDate, age, minAge, maxAge, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
-              // latitude: mylatitude, longitude: mylongitude, recommendation})
+              createAccount({ id, país, username:username.toLowerCase(), role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
+              birthDate, age, minAge, maxAge, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
+              latitude: mylatitude, longitude: mylongitude, recommendation})
 
       } else {
             toast.error("As senhas não combinam!")
