@@ -198,13 +198,14 @@ function SignUp() {
             const mylatitude = latitude2 === "" ? latitude : latitude2
             const mylongitude = longitude2 === "" ? longitude : longitude2
             const birthDate = `${year}-${month}-${day}`
+            const age = idadeAtual
           
             console.log({ id, país, username:username.toLowerCase(), role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
-              birthDate, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
+              birthDate, age, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
               latitude: mylatitude, longitude: mylongitude, recommendation})
           
               createAccount({ id, país, username:username.toLowerCase(), role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
-              birthDate, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
+              birthDate, age, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
               latitude: mylatitude, longitude: mylongitude, recommendation})
 
       } else {
@@ -576,8 +577,8 @@ function handleSelectRecomendation(e) {
                 <option value="">Selecione</option>
                 <option value="Homem">Homem</option>
                 <option value="Mulher">Mulher</option>
-                <option value="Homem trans ou transmasculino">Homem trans ou transmasculino</option>
-                <option value="Mulher trans ou transfeminino">Mulher trans ou transfeminino</option>
+                <option value="Homem trans">Homem trans</option>
+                <option value="Mulher trans">Mulher trans</option>
                 <option value="Pessoa não binária">Pessoa não binária</option>
             </select>
             <div className="terms">
@@ -614,10 +615,13 @@ function handleSelectRecomendation(e) {
 
             <select className={preference === "" ? "empyt" : ""} value={preference} onChange={handlePreference} required>
                 <option value="">Selecione</option>
+                <option value="All">Todos</option>
                 <option value="Homem">Homem</option>
                 <option value="Mulher">Mulher</option>
-                <option value="Homem trans ou transmasculino">Homem trans ou transmasculino</option>
-                <option value="Mulher trans ou transfeminino">Mulher trans ou transfeminino</option>
+                <option value="Homem e Mulher">Home  e Mulher</option>
+                <option value="Homem trans">Homem trans</option>
+                <option value="Mulher trans">Mulher trans</option>
+                <option value="Homem trans e Mulher trans">Homem trans e Mulher trans</option>
                 <option value="Pessoa não binária">Pessoa não binária</option>
             </select>
             <div className="text">
@@ -636,6 +640,7 @@ function handleSelectRecomendation(e) {
                 <option value="Queer">Queer</option>
                 <option value="Intersexual">Intersexual</option>
                 <option value="Questionando">Questionando</option>
+                <option value="All">Tanto faz</option>
             </select>
           <div className="buttons">
           <button onClick={() => handleSelectEtapa("3")}> Avançar </button>
