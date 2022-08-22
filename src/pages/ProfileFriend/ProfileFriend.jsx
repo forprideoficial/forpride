@@ -475,9 +475,9 @@ widthView()
 
                        <div className="info-user-preferences">
                         <div className="informations">
-                            <h5 className='title'>Preferencias</h5>
+                            <h5 className='title'>Preferencia</h5>
                           <div className="selects">
-                          <div className="itens"><h5><FiCheck /> {userInformations.preference} - {userInformations.preferenceOption}</h5></div>
+                          <div className="itens"><h5><FiCheck /> Sexo: {user.preference === "All" ? "Todos" : user.preference} - Que seja: {userInformations.preferenceOption}</h5></div>
                           </div>
                           {/* <div className="proposal">
                             <h5 className='title'>Proposta</h5>

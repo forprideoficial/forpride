@@ -106,9 +106,9 @@ return (
 
     <div className="info-user-preferences">
         <div className="informations">
-            <h5 className='title'>Preferências</h5>
+            <h5 className='title'>Preferência</h5>
           <div className="selects">
-              <div className="itens"><h5><FiCheck />{user.preference} - {user.preferenceOption}</h5> </div>
+              <div className="itens"><h5><FiCheck />Sexo: {user.preference === "All" ? "Todos" : user.preference} - Que seja: {user.preferenceOption}</h5> </div>
           </div>
           {/* <div className="proposal">
             <h5 className='title'>Proposta</h5>
