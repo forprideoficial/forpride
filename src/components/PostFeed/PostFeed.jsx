@@ -273,10 +273,10 @@ function PostFeed() {
                     newPost({
                         idAccount: user.id,
                         age: user.age,
-                        link: "",
                         username: user.username,
                         nickname: user.nickname,
                         avatar: user.avatar,
+                        link: "",
                         typeAccount: user.sex,
                         nameGroup: "",
                         nameForum: "",
