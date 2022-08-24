@@ -35,6 +35,7 @@ function FeedPostUnicComponent({id}) {
                                            date={postsData.created_at} text={postsData.text}
                                            type={postsData.type} id={postsData.id}
                                            username={postsData.username} group={postsData.nameGroup}
+                                           content={postsData.content}
                                            forum={postsData.nameForum}/>
                                            : "" }
    

@@ -77,6 +77,7 @@ function FeedPostComponent2() {
                                            forum={postsData.nameForum}
                                            idGroup={postsData.idGroup}
                                            idForum={postsData.idForum}
+                                           content={postsData.content}
                                            />
                                            : "" }
    

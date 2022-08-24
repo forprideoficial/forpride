@@ -9,9 +9,10 @@ import './itemFeed.css'
 import { AuthContext } from '../../contexts/Auth'
 import { ListCommentsAndReactions } from '../ListCommentsAndReactions/ListCommentsAndReactions'
 import { ListComments } from '../ListComments/ListComments'
+import { ViewPostSensible } from '../ViewPostSensible/ViewPostSensible';
 
 
-function ItemFeedComponent({idAccount, link, date, text, type, id, username, group, forum, idGroup, idForum, typeAccount}) {
+function ItemFeedComponent({idAccount, link, date, text, type, id, username, group, forum, idGroup, idForum, typeAccount, content}) {
     const Local = localStorage.getItem("forpride");
     const userData = JSON.parse(Local);
 
@@ -74,6 +75,9 @@ function ItemFeedComponent({idAccount, link, date, text, type, id, username, gro
              {type === "post-photo"  ?
                  <div className="post-data-media" >
                   <div className='image'>
+                  {content === "sensible" ?
+                      <ViewPostSensible />
+                    : ""}
                      <div className="marcadagua">
                      <h3 className='white'>{`${dateActual.getDate()}/${dateActual.getMonth()+1}/${dateActual.getFullYear()} -`}</h3>
                          <h3 className='white'>{userData.id}</h3>
@@ -115,7 +119,9 @@ function ItemFeedComponent({idAccount, link, date, text, type, id, username, gro
              type === "post-video"  ?
              <div className="post-data-media"  >
                   <div className='image-video'>
-
+                    {content === "sensible" ?
+                      <ViewPostSensible />
+                    : ""}
                     {userData.status === "essencial" ?
                                          <div className="blockVideo" onClick={handleBockVideo}>
                                       </div>

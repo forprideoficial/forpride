@@ -108,6 +108,7 @@ function FeedPostComponent() {
                                            idGroup={postsData.idGroup}
                                            idForum={postsData.idForum}
                                            typeAccount={postsData.typeAccount}
+                                           content={postsData.content}
                                            />
                                            : "" }
    

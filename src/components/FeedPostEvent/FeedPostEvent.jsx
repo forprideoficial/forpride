@@ -29,6 +29,7 @@ import { useFetch } from '../../hooks/useFetch';
                                            type={postsData.type} id={postsData.id}
                                            username={postsData.username} group={postsData.nameGroup}
                                            typeAccount={postsData.typeAccount}
+                                           content={postsData.content}
                                            forum={postsData.nameForum}/>
                                 </div>
                             )
