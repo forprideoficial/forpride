@@ -14,7 +14,7 @@ import apiGoogleReverse from "../../services/apiGoogleReverse";
 import { IoCalendarOutline } from "react-icons/io5";
 
 function SettingsInformations() {
-    const {NewUpdateInformationsAccount} = useContext(AuthContext)
+    const {updateAccount, updateAvatarCover} = useContext(AuthContext)
 
     const Local = localStorage.getItem("forpride");
     const user = JSON.parse(Local);
@@ -41,19 +41,28 @@ function SettingsInformations() {
     const [preferenceOption, setPreferenceOption] = useState(user.preferenceOption);
     const [preference, setPreference] = useState(user.preference);
     const [birthDateUser, setBirthDateUser] = useState("");
-    const [day, setDay] = useState("");
-    const [month, setMonth] = useState("");
-    const [year, setYear] = useState("");
+    const [birthDate, setBirthDate] = useState("");
+    const [phone, setPhone] = useState("");
+    const [day, setDay] = useState(user.birthDate.substring(user.birthDate.length -2));
+    const [month, setMonth] = useState(user.birthDate.slice(5,-3));
+    const [year, setYear] = useState(user.birthDate.substring(0,4));
     const [sex, setSex] = useState(user.sex);
     const [sexualOption, setSexualOption] = useState(user.sexualOption);
     const [checked, setChecked] = useState(false);
-    const [checkedSex, setCheckedSex] = useState(false);
-    const [checkedOptionSexual, setCheckedOptionSexual] = useState(false);
-    const [maxAge, setMaxAge] = useState("");
-    const [minAge, setMinAge] = useState("");
+    const [checkedSex, setCheckedSex] = useState(user.viweSex);
+    const [checkedOptionSexual, setCheckedOptionSexual] = useState(user.viewSexualOption);
+    const [maxAge, setMaxAge] = useState(user.maxAge);
+    const [minAge, setMinAge] = useState(user.maxAge);
     const [editAddress, setEditAddress] = useState(false);
+    const [país, setPaís] = useState(user.país);
+    const [age, setAge] = useState("");
+    const [sign, setSign] = useState(user.sign);
+    const [cep, setCep] = useState(user.cep);
 
-    const nascimento = new Date(birthDateUser);
+    
+
+    const nascimento = new Date(`${year}-${month}-${day}`)
+    console.log(nascimento);
     const hoje = new Date();
     let idadeAtual = 0;
     
@@ -126,58 +135,58 @@ function SettingsInformations() {
        }
     }
 
-    async function handleUploadAccount(e) {
+    async function handleUploadAvatar(e) {
         e.preventDefault();
-        toast.info("Atualizando informações. Aguarde...")
+        toast.info("Enviando imagem. Aguarde...")
 
         //Avatar
         setLoadding(true);
         console.log(imageAvatar)
+        let photoUrlAvatar
+        if(imageAvatar !== "") {
+
+          console.log(loadding);
+          const uuid = uuidv4();
+  
+          let newAvatarUrlFirebase = ref(storage, `images/avatar/${uuid}`);
+          let uploadAvatar = await uploadBytes(newAvatarUrlFirebase, imageAvatar);
+          photoUrlAvatar = await getDownloadURL(uploadAvatar.ref);
+              
+          console.log(uploadAvatar.ref.name, photoUrlAvatar);
+        }
         
-
-
-            console.log(loadding);
-            const uuid = uuidv4();
-    
-            let newAvatarUrlFirebase = ref(storage, `images/avatar/${uuid}`);
-            let uploadAvatar = await uploadBytes(newAvatarUrlFirebase, imageAvatar);
-            let photoUrlAvatar = await getDownloadURL(uploadAvatar.ref);
-                
-            console.log(uploadAvatar.ref.name, photoUrlAvatar);
-
-
-        
-
+        let photoUrl
         // Cover
         console.log(imageCover)
-        
+        if(imageCover !== "") {
+          const uuid2 = uuidv4();
+  
+          let newCoverUrlFirebase = ref(storage, `images/cover/${uuid2}`);
+          let upload = await uploadBytes(newCoverUrlFirebase, imageCover);
+          photoUrl = await getDownloadURL(upload.ref);
+  
+          console.log(upload.ref.name, photoUrl);
+        }
 
-        const uuid2 = uuidv4();
 
-        let newCoverUrlFirebase = ref(storage, `images/cover/${uuid2}`);
-        let upload = await uploadBytes(newCoverUrlFirebase, imageCover);
-        let photoUrl = await getDownloadURL(upload.ref);
-
-        console.log(upload.ref.name, photoUrl);
-    
-
-        
+      const avatar = photoUrlAvatar === "" ? user.avatar : photoUrlAvatar
+      const cover = photoUrl === "" ? user.cover : photoUrl
         //Salvando no banco de dados
-        NewUpdateInformationsAccount({id: user.id,
-            idAccount: user.idAccount,
-            avatar: user.avatar,
-            cover: user.cover,
-            city: city === "" ? user.city : city,
-            uf: uf === "" ? user.uf : uf,
-            relationship: relationship === "" ? user.relationship : relationship ,
-            nickname: nickname === "" ? user.nickname : nickname,
-            idPatrono: user.patron,
-            username: user.username,
-            created_at: user.created_at
-        });
+        updateImageAvatarCover(avatar, cover)
         console.log(loadding);
         setLoadding(false);
         
+    }
+
+    function updateImageAvatarCover(avatar, cover) {
+        console.log({id: user.id,
+          avatar: avatar === undefined ? user.avatar : avatar,
+          cover: cover === undefined ? user.cover : cover,
+        })
+        updateAvatarCover({id: user.id,
+          avatar: avatar === undefined ? user.avatar : avatar,
+          cover: cover === undefined ? user.cover : cover,
+        })
     }
     function handleSelectDay(e) {
         setDay(e.target.value);
@@ -191,80 +200,41 @@ function SettingsInformations() {
         setYear(e.target.value)
         setBirthDateUser(`${year}-${month}-${day}`)
     }
-    
 
-    async function handleUploadAvatar(e) {
+function handleUpdateAccount(e) {
+    e.preventDefault();
+
+    const avatar = user.avatar;
+    const cover = user.cover;
+    const phone = user.phone;
+    const birthDate = `${year}-${month}-${day}`
+    const age = idadeAtual === 0 || idadeAtual === NaN ? user.age : idadeAtual
+
+
+    console.log({id: user.id,
+        país, viweSex: checkedSex, sex, age,
+        sexualOption, 
+        viewSexualOption: checkedOptionSexual, 
+        preference, 
+        preferenceOption,
+        birthDate, sign, phone, 
+        nickname, avatar, cover, relationship, city, uf, cep, maxAge, minAge
+    });
+     updateAccount({id: user.id,
+         país, viweSex: checkedSex, sex, age,
+         sexualOption, 
+         viewSexualOption: checkedOptionSexual, 
+         preference, 
+         preferenceOption,
+         birthDate, sign, phone, 
+         nickname, avatar, cover, relationship, city, uf, cep, maxAge, minAge
+     });
+  }
+
+
+
+    async function handleSearchDistrict(e) {
         e.preventDefault();
-        toast.info("Atualizando informações. Aguarde...")
-        
-        //Avatar
-        setLoadding(true);
-        console.log(imageAvatar)
-
-            console.log(loadding);
-            const uuid = uuidv4();
-    
-            let newAvatarUrlFirebase = ref(storage, `images/avatar/${uuid}`);
-            let uploadAvatar = await uploadBytes(newAvatarUrlFirebase, imageAvatar);
-            let photoUrlAvatar = await getDownloadURL(uploadAvatar.ref);
-                
-            console.log(uploadAvatar.ref.name, photoUrlAvatar);
-        
-        //Salvando no banco de dados
-        NewUpdateInformationsAccount({id: user.id,
-            idAccount: user.idAccount,
-            avatar: photoUrlAvatar === "" ? user.avatar : photoUrlAvatar,
-            cover: user.cover,
-            city: city === "" ? user.city : city,
-            uf: uf === "" ? user.uf : uf,
-            relationship: relationship === "" ? user.relationship : relationship ,
-            nickname: nickname === "" ? user.nickname : nickname,
-            idPatrono: user.patron,
-            username: user.username,
-            created_at: user.created_at,
-        });
-        console.log(loadding);
-        setLoadding(false);
-        
-    }
-
-    async function handleUploadCover(e) {
-        e.preventDefault();
-        toast.info("Atualizando informações. Aguarde...")
-        //Avatar
-        setLoadding(true);
-         // Cover
-         console.log(imageCover)
-        
-
-         const uuid2 = uuidv4();
- 
-         let newCoverUrlFirebase = ref(storage, `images/cover/${uuid2}`);
-         let upload = await uploadBytes(newCoverUrlFirebase, imageCover);
-         let photoUrl = await getDownloadURL(upload.ref);
- 
-         console.log(upload.ref.name, photoUrl);
-        
-        //Salvando no banco de dados
-        NewUpdateInformationsAccount({id: user.id,
-            idAccount: user.idAccount,
-            avatar: user.avatar,
-            cover: photoUrl === "" ? user.cover : photoUrl,
-            city: city === "" ? user.city : city,
-            uf: uf === "" ? user.uf : uf,
-            relationship: relationship === "" ? user.relationship : relationship ,
-            nickname: nickname === "" ? user.nickname : nickname,
-            idPatrono: user.patron,
-            username: user.username,
-            created_at: user.created_at,
-        });
-        console.log(loadding);
-        setLoadding(false);
-        
-    }
-
-
-    async function handleSearchDistrict() {
         try {
           const res = await buscaDistrito.get(`${uf}/distritos`) 
             console.log(res.data)
@@ -419,17 +389,56 @@ function SettingsInformations() {
             }
           }
 
+          function handleChangeSex(e) {
+            if(checkedSex === false) {
+              setCheckedSex(true)
+            } else {
+              setCheckedSex(false)
+            }
+          }
+          function handleChangeOptionSexual(e) {
+            if(checkedOptionSexual === false) {
+              setCheckedOptionSexual(true)
+            } else {
+              setCheckedOptionSexual(false)
+            }
+          }
+
+
+          function handleSelectSign(e) {
+            setSign(e.target.value)
+        }
+          function handleSelectDay(e) {
+            setDay(e.target.value);
+            setBirthDateUser(`${year}-${month}-${day}`)
+        }
+          function handleSelectMonth(e) {
+            setMonth(e.target.value)
+            setBirthDateUser(`${year}-${month}-${day}`)
+        }
+          function handleSelectYear(e) {
+            setYear(e.target.value)
+            setBirthDateUser(`${year}-${month}-${day}`)
+        }
+        
+
 
     return (
         <div className="settingsInformation">
-        <form action="">
+<div className="form">
     <label className="label-avatar">
                     <span><FiUpload color="#f65" size={25} /></span>
                     <input type="file" accept="image/*" onChange={handleFile}/><br />
                     <img src={avatarUrl === null ? user.avatar : avatarUrl } alt="Avatar" height={100} width={100}/>
                 </label>
 
-                <button onClick={handleUploadAvatar}>Atualizar Avatar</button>
+                <label className="label-cover">
+                    <span><FiUpload color="#f65" size={25} /></span>
+                    <input type="file" accept="image/*" onChange={handleFileCover}/><br />
+                    <img src={coverUrl === null ? user.cover : coverUrl } alt="Avatar"/>
+                </label>
+
+                <button onClick={handleUploadAvatar}>Atualizar Avatar e capa</button>
 
                 <br />
                 <br />
@@ -446,7 +455,12 @@ function SettingsInformations() {
                 <option value="Homem trans">Homem trans</option>
                 <option value="Mulher trans">Mulher trans</option>
                 <option value="Pessoa não binária">Pessoa não binária</option>
-            </select>                 
+            </select>        
+            <div className="terms">
+          <p>Mostrar no meu perfil</p>
+          <input type="checkbox" checked={checkedSex} onChange={handleChangeSex}/>
+          <br/>
+          </div>         
                 <select className={sexualOption === "" ? "empyt" : ""} value={sexualOption} onChange={handlePreferenceSexualOption} required>
                 <option value="">Selecione</option>
                 <option value="Gay">Gay</option>
@@ -460,7 +474,10 @@ function SettingsInformations() {
                 <option value="Intersexual">Intersexual</option>
                 <option value="Questionando">Questionando</option>
             </select>
-
+            <div className="terms">
+          <p>Mostrar no meu perfil</p>
+          <input type="checkbox" checked={checkedOptionSexual} onChange={handleChangeOptionSexual}/>
+          </div>
 
             </div>
 
@@ -468,6 +485,12 @@ function SettingsInformations() {
 
 
 
+<div className="data">
+        <div className="text">
+                    <h4>Nome de Exibição</h4>
+        </div>
+        <input type="text" placeholder={user.nickname} value={nickname} onChange={(e) => setNickname(e.target.value)}/>
+</div>
 <div className="data">
         <div className="text">
                     <h4>Relacionamento</h4>
@@ -481,6 +504,26 @@ function SettingsInformations() {
                     </select>
 </div>
 
+        <div className="data">
+              <div className="text">
+                    <h5>SIGNO</h5>    
+                        </div>
+                            <select className={sign === "" ? "empyt" : ""} required value={sign} onChange={handleSelectSign}>
+                                <option value="">Selecione</option>
+                                <option value="Áries">Áries </option>
+                                <option value="Touro">Touro </option>
+                                <option value="Gêmeos">Gêmeos</option>
+                                <option value="Câncer">Câncer</option>
+                                <option value="Leão">Leão</option>
+                                <option value="Virgem">Virgem</option>
+                                <option value="Libra">Libra</option>
+                                <option value="Escorpião">Escorpião</option>
+                                <option value="Sagitário">Sagitário</option>
+                                <option value="Capricórnio">Capricórnio</option>
+                                <option value="Aquário">Aquário</option>
+                                <option value="Peixes">Peixes</option>
+               </select>
+        </div>
 
 
 
@@ -490,7 +533,6 @@ function SettingsInformations() {
                 </div>                   
                     <input type="text" placeholder={user.uf} value={uf} onChange={(e) => setUf(e.target.value)} disabled/>
                     <input type="text" placeholder={user.city} value={city} onChange={(e) => setCity(e.target.value)} disabled/>
-                    <input type="text" placeholder={user.nickname} value={nickname} onChange={(e) => setNickname(e.target.value)}/>
             <button className="uf" onClick={handleEditAdress}>Alterar Endereço</button>
             </div>
 
@@ -582,7 +624,10 @@ function SettingsInformations() {
                 <option value="Questionando">Questionando</option>
                 <option value="All">Tanto faz</option>
             </select>
-
+             <br />
+            <div className="text">
+                    <h5>Selecione a idade máxima e idade mínima:</h5>
+                </div> 
             <div className="inputsAge"> 
             <select value={minAge} onChange={handleSelectMinAge} required>
                       <option>Idade Mínima</option>
@@ -717,8 +762,9 @@ function SettingsInformations() {
                       <option value="80">80</option>
                     </select>
           </div>
+          </div>
 
-          <div className="data">
+          <div className="data2">
           <div className="text">
                             <h5>DATA DE NASCIMENTO <IoCalendarOutline /></h5>
                         </div>
@@ -823,22 +869,19 @@ function SettingsInformations() {
                       <option value="30">30</option>
                       <option value="31">31</option>
                     </select>
+
+          </div>
+          <div className="text">
+            <h5>Sua idade: {idadeAtual}</h5>
           </div>
           </div>
-            </div>
-                <button onClick={handleUploadAccount}>Atualizar dados</button>
+
+                <button onClick={handleUpdateAccount}>Atualizar dados</button>
 
                 <br />
                 <br />
 
-            <label className="label-cover">
-                    <span><FiUpload color="#f65" size={25} /></span>
-                    <input type="file" accept="image/*" onChange={handleFileCover}/><br />
-                    <img src={coverUrl === null ? user.cover : coverUrl } alt="Avatar"/>
-                </label>
-              
-                <button onClick={handleUploadCover}>Atualizar Capa</button>
-    </form>
+       </div>
     </div>
     )
 }

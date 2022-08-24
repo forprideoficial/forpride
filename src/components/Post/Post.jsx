@@ -209,6 +209,7 @@ function Post() {
             
             newPost({
                 idAccount: user.id,
+                age: user.age,
                 link: photoUrlAvatar !== null ? photoUrlAvatar : "",
                 username: user.username,
                 avatar: user.avatar,
@@ -242,6 +243,7 @@ function Post() {
                 
                 newPost({
                     idAccount: user.id,
+                    age: user.age,
                     link: videoUrl !== null ? videoUrl : "",
                     username: user.username,
                     avatar: user.avatar,
@@ -271,6 +273,8 @@ function Post() {
                 }
                     newPost({
                         idAccount: user.id,
+                        age: user.age,
+                        age: user.age,
                         link: "",
                         username: user.username,
                         avatar: user.avatar,

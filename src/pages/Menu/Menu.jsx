@@ -4,10 +4,17 @@ import { IoCalendarOutline, IoList, IoRadio,IoMailUnreadOutline, IoPersonOutline
     IoInformationCircleOutline, IoLogOutOutline, IoChatbubblesOutline, IoMailOutline, IoTrashOutline, IoBusinessOutline, IoMailOpenOutline, IoStatsChartOutline, IoCloseOutline, IoWalletOutline } from "react-icons/io5"
 import {FaCrown} from "react-icons/fa"
 import "./menu.css"
+import { useContext } from "react"
+import { AuthContext } from "../../contexts/Auth"
 
 function Menu() {
+    const {logout} = useContext(AuthContext);
     const Local = localStorage.getItem("forpride");
     const userData = JSON.parse(Local);
+
+    function handleLogout() {
+        logout(userData.id)
+    }
     
     return (
         <div className="container">
@@ -62,7 +69,7 @@ function Menu() {
                 <a href="/pricing" className="Primary"><FaCrown />Seja Essencial por R$ 9,90</a>
             </div> */}
             <div className="unic3">
-                <button><IoLogOutOutline /> Sair</button>
+                <button onClick={handleLogout}><IoLogOutOutline /> Sair</button>
             </div>
 </div>
 </div>

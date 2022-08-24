@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-.settingsInformation form {
+.settingsInformation .form {
   width: 100%;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@
   background-color: var(--Black);
 }
 
-.settingsInformation form .label-avatar {
+.settingsInformation .form .label-avatar {
   width: 100px;
   height: 100px;
   display: flex;
@@ -31,23 +31,23 @@
   margin: 5px 0;
 }
 
-.settingsInformation form .label-avatar input {
+.settingsInformation .form .label-avatar input {
   display: none;
 }
 
-.settingsInformation form .label-avatar span {
+.settingsInformation .form .label-avatar span {
   z-index: 99;
   position: absolute;
   opacity: 0.7;
   transition: all 0.5s;
 }
 
-.settingsInformation form .label-avatar span:hover {
+.settingsInformation .form .label-avatar span:hover {
   opacity: 1;
   transform: scale(1.4);
 }
 
-.settingsInformation form .label-avatar img {
+.settingsInformation .form .label-avatar img {
   margin-bottom: 1em;
   border-radius: 50px;
   object-fit: cover;
@@ -55,7 +55,7 @@
   height: 100px;
 }
 
-.settingsInformation form .label-cover {
+.settingsInformation .form .label-cover {
   width: 95%;
   height: 100px;
   display: flex;
@@ -66,23 +66,23 @@
   margin: 20px 0;
 }
 
-.settingsInformation form .label-cover input {
+.settingsInformation .form .label-cover input {
   display: none;
 }
 
-.settingsInformation form .label-cover span {
+.settingsInformation .form .label-cover span {
   z-index: 99;
   position: absolute;
   opacity: 0.7;
   transition: all 0.5s;
 }
 
-.settingsInformation form .label-cover span:hover {
+.settingsInformation .form .label-cover span:hover {
   opacity: 1;
   transform: scale(1.4);
 }
 
-.settingsInformation form .label-cover img {
+.settingsInformation .form .label-cover img {
   margin-bottom: 1em;
   border-radius: 6px;
   object-fit: cover;
@@ -90,7 +90,7 @@
   height: 100px;
 }
 
-.settingsInformation form .data {
+.settingsInformation .form .data {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,31 +98,94 @@
   flex-wrap: wrap;
   width: 90%;
   margin: 10px 0;
+  background-color: var(--Background);
+  padding: 10px;
+  border-radius: 6px;
+}
+.settingsInformation .form .data .inputsAge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px 0;
+  background-color: var(--Background);
+  padding: 10px;
+  border-radius: 6px;
 }
 
-.settingsInformation form .data select {
-  width: 50%;
-  background-color: var(--Background);
+.settingsInformation .form .data select {
+  width: 70%;
+  background-color: var(--Black);
   color: var(--Primary);
   border: 1px solid var(--Primary);
   border-radius: 6px;
   padding: 5px 8px;
+  margin: 3px;
 }
+
+.settingsInformation .form .data .inputsAge select {
+  width: 40%;
+  background-color: var(--Black);
+  color: var(--Primary);
+  border: 1px solid var(--Primary);
+  border-radius: 6px;
+  padding: 5px 8px;
+  margin: 3px;
+}
+
 
 .settingsInformation .data input {
-  width: 50%;
+  width: 70%;
   background-color: var(--Background);
   color: var(--Primary);
   border: 1px solid var(--Primary);
   border-radius: 6px;
   padding: 5px 8px;
+  margin: 3px;
 }
 
 .settingsInformation .data input::placeholder {
   color: var(--Primary);
 }
+.settingsInformation .form .data2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px 0;
+  background-color: var(--Background);
+  padding: 10px 5px;
+  border-radius: 6px;
+}
 
-.settingsInformation form button {
+.settingsInformation .form .data2 select {
+  width: 30%;
+  background-color: var(--Black);
+  color: var(--Primary);
+  border: 1px solid var(--Primary);
+  border-radius: 6px;
+  padding: 5px 8px;
+  margin: 3px;
+}
+
+.settingsInformation .data2 input {
+  width: 30%;
+  background-color: var(--Background);
+  color: var(--Primary);
+  border: 1px solid var(--Primary);
+  border-radius: 6px;
+  padding: 5px 8px;
+}
+
+.settingsInformation .data2 input::placeholder {
+  color: var(--Primary);
+}
+
+.settingsInformation .form button {
   background-color: var(--Primary);
   display: flex;
   flex-direction: row;
@@ -135,7 +198,7 @@
   font-size: 16px;
 }
 
-.settingsInformation form .SearchCep {
+.settingsInformation .form .SearchCep {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -145,7 +208,7 @@
   margin: 10px 0;
 }
 
-.settingsInformation form .SearchCep input {
+.settingsInformation .form .SearchCep input {
   width: 50%;
   background-color: var(--Background2);
   color: var(--Primary);
@@ -153,7 +216,7 @@
   border-radius: 6px;
   padding: 5px 8px;
 }
-.settingsInformation form .SearchCep select {
+.settingsInformation .form .SearchCep select {
   width: 50%;
   background-color: var(--Background2);
   color: var(--Primary);
@@ -162,7 +225,7 @@
   padding: 5px 8px;
 }
 
-.settingsInformation form .SearchCep button {
+.settingsInformation .form .SearchCep button {
   background-color: var(--Primary);
   display: flex;
   flex-direction: row;
@@ -186,7 +249,16 @@
     flex-direction: column;
   }
 
-  .settingsInformation form .data {
+  .settingsInformation .form .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .settingsInformation .form .data2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,7 +268,7 @@
     margin: 10px 0;
   }
 
-  .settingsInformation form .data select {
+  .settingsInformation .form .data select {
     width: 90%;
     background-color: var(--Background2);
     color: var(--Primary);
@@ -214,7 +286,7 @@
     padding: 5px 8px;
   }
 
-  .settingsInformation form .SearchCep {
+  .settingsInformation .form .SearchCep {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -224,7 +296,7 @@
     margin: 10px 0;
   }
 
-  .settingsInformation form .SearchCep input {
+  .settingsInformation .form .SearchCep input {
     width: 90%;
     background-color: var(--Background2);
     color: var(--Primary);
@@ -232,7 +304,7 @@
     border-radius: 6px;
     padding: 5px 8px;
   }
-  .settingsInformation form .SearchCep select {
+  .settingsInformation .form .SearchCep select {
     width: 90%;
     background-color: var(--Background2);
     color: var(--Primary);
@@ -241,7 +313,7 @@
     padding: 5px 8px;
   }
 
-  .settingsInformation form .SearchCep button {
+  .settingsInformation .form .SearchCep button {
     background-color: var(--Primary);
     display: flex;
     flex-direction: row;

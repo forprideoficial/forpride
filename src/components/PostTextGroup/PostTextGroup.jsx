@@ -36,7 +36,10 @@ function PostTextGroup({nameGroup, idGroup}) {
             newPost({
                 idAccount: user.id,
                 link: "",
+                age: user.age,
                 username: user.username,
+                nickname: user.nickname,
+                avatar: user.avatar,
                 nameGroup: nameGroup,
                 nameForum: "",
                 nameEvent: "",

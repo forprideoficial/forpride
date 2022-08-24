@@ -100,7 +100,7 @@ return (
     <div className="name">
         <h4>{user.city} - {user.uf}</h4>
         <br />
-        <h5>FS: <a href="/profile"> {user.id}</a></h5>
+        <h5>FP: <a href="/profile"> {user.id}</a></h5>
         {/* <h5>Patrono: {patron !== null ?  <a href={patron.idAccount === user.id ? `/profile` : `/profile-friend/${patron.idAccount}`}>{patron.nickname}</a> :"Patrono não eocnotrado"}</h5> */}
     </div>
 

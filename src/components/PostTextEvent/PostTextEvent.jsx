@@ -36,7 +36,10 @@ function PostTextEvent({nameEvent, idEvent}) {
         newPostEvent({
                 idAccount: user.id,
                 link: "",
+                age: user.age,
                 username: user.username,
+                nickname: user.nickname,
+                avatar: user.avatar,
                 nameGroup: "",
                 nameForum: "",
                 nameEvent: nameEvent,

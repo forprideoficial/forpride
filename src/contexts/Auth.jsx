@@ -491,17 +491,118 @@ function AuthProvider({children}) {
          }
     }
 
-    async function updateAccount({id, avatar, cover, city, uf, relationship, nickname, cep, latitude, longitude, país, username, role, status, type, email, phone, online, patron}){
+    async function updateAccount({
+        id, país, viweSex, sex, age,
+        sexualOption, 
+        viewSexualOption, 
+        preference, 
+        preferenceOption,
+        birthDate, sign, phone, 
+        nickname, avatar, cover,
+        relationship, city, uf, cep, maxAge, minAge}){
         const Local = localStorage.getItem("forpride");
         const user = JSON.parse(Local)
-        const data = {avatar, cover, city, uf, relationship, nickname, cep, latitude, longitude, país, username, role, status, type, email, phone, online, patron};
-        const data2 = {avatar, cover, city, uf, relationship, nickname, cep, latitude, longitude, país, username, role, status, type, email, phone, online, patron, date:user.date , token:user.token  , expiresIn:user.expiresIn };
+        const data = {
+            país, viweSex, sex, age,
+            sexualOption, 
+            viewSexualOption, 
+            preference, 
+            preferenceOption,
+            birthDate, sign, phone, 
+            nickname, avatar, cover,
+            relationship, city, uf, cep, maxAge, minAge
+        };
+        const data2 = {
+            age: age,
+            avatar: avatar,
+            birthDate: birthDate,
+            cep: cep,
+            city: city,
+            cover: cover,
+            date: user.date,
+            email: user.email,
+            expiresIn: user.expiresIn,
+            id: user.id,
+            id2: user.id2,
+            latitude: user.latitude,
+            longitude: user.longitude,
+            nickname: nickname,
+            online: user.online,
+            patron: user.patron,
+            país: país,
+            phone: phone,
+            preference: preference,
+            preferenceOption: preferenceOption,
+            recommendation: user.recommendation,
+            relationship: relationship,
+            role: user.role,
+            sex: sex,
+            sexualOption: sexualOption,
+            sign: sign,
+            status: user.status,
+            token: user.token,
+            uf: uf,
+            username: user.username,
+            viewSexualOption: viewSexualOption,
+            maxAge: maxAge,
+            minAge: minAge,
+            viweSex: viweSex
+        };
         console.log(id)
         console.log(data)
         await api.patch(`/accounts/${id}`, data).then(res => {
             localStorage.setItem("forpride", JSON.stringify(data2));
-            NewUpdateInformationsAccount({id: user.id, idAccount:user.id, avatar, cover, relationship, nickname, city, uf, created_at: new Date(), idPatrono:user.patron , país, username})
-            window.open("/feed", "_self")
+            window.open("/profile", "_self")
+        }).catch(error => {
+            console.log(error)
+        });
+    }
+    async function updateAvatarCover({
+        id, avatar, cover}){
+        const Local = localStorage.getItem("forpride");
+        const user = JSON.parse(Local)
+        const data = { avatar, cover };
+        const data2 = {
+            age: user.age,
+            avatar: avatar,
+            birthDate: user.birthDate,
+            cep: user.cep,
+            city: user.city,
+            cover: cover,
+            date: user.date,
+            email: user.email,
+            expiresIn: user.expiresIn,
+            id: user.id,
+            id2: user.id2,
+            latitude: user.latitude,
+            longitude: user.longitude,
+            nickname: user.nickname,
+            online: user.online,
+            patron: user.patron,
+            país: user.país,
+            phone: user.phone,
+            preference: user.preference,
+            preferenceOption: user.preferenceOption,
+            recommendation: user.recommendation,
+            relationship: user.relationship,
+            role: user.role,
+            sex: user.sex,
+            sexualOption: user.sexualOption,
+            sign: user.sign,
+            status: user.status,
+            token: user.token,
+            uf: user.uf,
+            username: user.username,
+            viewSexualOption: user.viewSexualOption,
+            maxAge: user.maxAge,
+            minAge: user.minAge,
+            viweSex: user.viweSex
+        };
+        console.log(id)
+        console.log(data)
+        await api.patch(`/accounts/avatar/${id}`, data).then(res => {
+            localStorage.setItem("forpride", JSON.stringify(data2));
+            window.open("/profile", "_self")
         }).catch(error => {
             console.log(error)
         });
@@ -1533,6 +1634,7 @@ async function updateUserOnline( id, idAccount, username, type ,nickname, avatar
     return(
         <AuthContext.Provider value={{
             updateAccount,
+            updateAvatarCover,
             updateUserOnline,
             socketDataLocation,
             loginSession,

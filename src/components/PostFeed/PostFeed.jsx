@@ -211,6 +211,7 @@ function PostFeed() {
             
             newPost({
                 idAccount: user.id,
+                age: user.age,
                 link: photoUrlAvatar !== null ? photoUrlAvatar : "",
                 username: user.username,
                 nickname: user.nickname,
@@ -244,6 +245,7 @@ function PostFeed() {
                 
                 newPost({
                     idAccount: user.id,
+                    age: user.age,
                     link: videoUrl !== null ? videoUrl : "",
                     username: user.username,
                     nickname: user.nickname,
@@ -270,6 +272,7 @@ function PostFeed() {
             } else if(post === "text") {
                     newPost({
                         idAccount: user.id,
+                        age: user.age,
                         link: "",
                         username: user.username,
                         nickname: user.nickname,
