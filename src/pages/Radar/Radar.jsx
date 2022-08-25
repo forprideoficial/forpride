@@ -12,7 +12,7 @@ import { FiArrowUpCircle } from 'react-icons/fi';
 import apiGoogleReverse from '../../services/apiGoogleReverse'
 
 function Radar() {
-    const {logout, updateUserOnline, socketDataLocation, verityTimesPeiodTest} = useContext(AuthContext);
+    const {logout, updateUserOnline, verityTimesPeiodTest} = useContext(AuthContext);
 
     const Local = localStorage.getItem("forpride");
     const userData = JSON.parse(Local);
@@ -242,10 +242,6 @@ function Radar() {
      }, [userData.id])
     
 
-     if(!users) {
-         socketDataLocation();
-     }
-
      if(userData.status === "test") {
         console.log("olá, mundo")
         verityTimesPeiodTest(userData.id);
@@ -463,8 +459,8 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
                            <div className="text">
                            <h6>{users.invisible === false ? " Você está Visível" : "Você está invisível"}</h6>
                            <h6>{users.emoji === "musica" ? " Hoje você quer balada" :
-                                   users.emoji === "emoji" ? "Hoje você quer sexo" :
-                                   users.emoji === "viagem" ? "Você está aqui de viagem" : "Deseja escolher um Status?"}</h6>
+                                   users.emoji === "emoji" ? "Hoje você quer maldade" :
+                                   users.emoji === "viagem" ? "Hoje você quer conversar" : "Deseja escolher um Status?"}</h6>
 
                                    <button onClick={handleSelectStyle}>Alterar </button>
                            </div>
@@ -478,8 +474,8 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
 
                        <select value={myEmojiSelect} onChange={handleSetectTMyEmoji}>
                            <option value="">Qual seu status de hoje?</option>
-                           <option value="viagem">De viagem ✈️</option>
-                           <option value="emoji">Quero Sexo 😈</option>
+                           <option value="viagem">Quero Conversar 💬</option>
+                           <option value="emoji">Quero Maldade 😈</option>
                            <option value="musica">Partiu Balada 🎶</option>
                        </select>
 
@@ -503,8 +499,8 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
                             <div className="selectFilter">
                             <select className={emojiSelect === "" ? "" : "active"} value={emojiSelect} onChange={handleSetectTEmoji}>
                                 <option value="">Quem deseja buscar hoje?</option>
-                                <option value="viagem">De viagem ✈️</option>
-                                <option value="emoji">Que querem Sexo 😈</option>
+                                <option value="viagem">Que querem Conversar 💬</option>
+                                <option value="emoji">Que querem Maldade 😈</option>
                                 <option value="musica">Que querem Balada 🎶</option>
                             </select>
 
@@ -553,7 +549,7 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
                         }}
                         />
                                    </a >
-                                   <h4>{user.emoji === "musica" ? "🎶" : user.emoji === "emoji"? "😈" : user.emoji === "viagem" ? "✈️" :""  }</h4>           
+                                   <h4>{user.emoji === "musica" ? "🎶" : user.emoji === "emoji"? "😈" : user.emoji === "viagem" ? "💬" :""  }</h4>           
                                    <h5>{user.online === true ? <FaCircle /> : "" }</h5>
                                    </div>
                         <h6><b>{user.nickname}</b></h6>

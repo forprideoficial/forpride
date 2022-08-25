@@ -55,10 +55,12 @@ import { Welcome } from '../pages/Welcome/Welcome';
 import { ActivePlain } from '../pages/ActivePlain/ActivePlain';
 import { UpdatePlain } from '../pages/UpdatePlain/UpdatePlain';
 import { PeriodTeste } from '../pages/PeriodTeste/PeriodTeste';
+import { OnlineUser } from '../pages/OnlineUser/OnlineUser';
 
 import { SignUp } from '../pages/SignUp/SignUp';
 
 import { SuspenseAccount } from '../pages/SuspenseAccount/SuspenseAccount';
+import { SignUpConvidate } from '../pages/SignUpConvidate/SignUpConvidate';
 
 
 
@@ -74,7 +76,7 @@ function PrivateRoute({children} ) {
 
             <Routes>
             <Route path="/" element={<SignIn />}/>
-            <Route path="/signup/convite/:email/:code/:patron/:type" element={ <EntrarConvite />} />
+            <Route path="/signup/convite/:email/:patron" element={ <SignUpConvidate />} />
             <Route path="/characteristcs/:idAccount/:email/:type/:username" element={ <Characteristcs />} />
             <Route path="/preferences/:idAccount/:email/:username" element={ <Preferences />} />
 
@@ -182,6 +184,8 @@ function PrivateRoute({children} ) {
                 element={ <PrivateRoute> <Welcome /> </PrivateRoute>} />
             <Route path="/periodtest" 
                 element={ <PrivateRoute> <PeriodTeste /> </PrivateRoute>} />
+            <Route path="/usersonline" 
+                element={ <PrivateRoute> <OnlineUser /> </PrivateRoute>} />
 
 
             <Route path="/suspenseaccount" 

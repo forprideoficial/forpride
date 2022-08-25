@@ -25,7 +25,7 @@ function Feed() {
     const id = user.id
     const [myInformations, setMyInformations] = useState(false)
     const navigate = useNavigate();
-    const {inactivityTime, logout, socketDataLocation, verityTimesPeiodTest} = useContext(AuthContext);
+    const {inactivityTime, logout, verityTimesPeiodTest} = useContext(AuthContext);
 
            inactivityTime();
            useEffect(() => {
@@ -45,19 +45,21 @@ function Feed() {
                 //     window.open("/activeplain","_self");
                 //     return
                 // }
-
+                
                 const res = await api.get(`/online/one/${user.id}`)
-                 
-               if(res.data.length > 0) {
-                console.log("Usuário ja está online")
+                
+                if(res.data.length > 0) {
+                    console.log("Usuário ja está online")
+                    return
+                }
+                if(res.data.length === 0) {
+                   window.open("/usersonline","_self");
                 return
               }
-                 console.log("Cadastrando usuário")
-                 socketDataLocation()
             }
  
                loadUsersOnline()
-           }, [navigate, socketDataLocation, user.status, user.id]);
+           }, [navigate, user.status, user.id]);
 
 
            useEffect(() => {

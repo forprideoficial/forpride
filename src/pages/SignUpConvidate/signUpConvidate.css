@@ -1,0 +1,730 @@
+.content-SignUpConvidate {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--Black);
+  padding: 0px;
+}
+
+.content-SignUpConvidate .slide-SignUpConvidate {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Primary);
+}
+
+.content-SignUpConvidate .slide-SignUpConvidate .images-SignUpConvidate {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-SignUpConvidate .slide-SignUpConvidate .images-SignUpConvidate img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-SignUpConvidate .bloco {
+  width: 800px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.content-SignUpConvidate .bloco .logo {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-SignUpConvidate .bloco .logo img {
+  width: 90px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(15, 15, 15);
+  border-radius: 100px 0 0 0;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate h1 {
+  margin-top: 25px;
+  font-weight: 700;
+  color: var(--White);
+  text-align: center;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  text-align: left;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form p {
+  color: var(--Gray_font2);
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .label-avatar {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .label-avatar input {
+  display: none;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .label-avatar span {
+  z-index: 99;
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .label-avatar span:hover {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .label-avatar img {
+  margin-bottom: 1em;
+  border-radius: 50px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .text {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--Gray_font2);
+  text-align: left;
+  margin-top: 20px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .text h4 {
+  text-align: left;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form input:focus {
+  outline: none;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form input {
+  width: 90%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin-top: 10px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .inputsAge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .inputsAge select {
+  width: 40%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 10px;
+  color: var(--Primary);
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form input[type="date"] {
+  width: 90%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin-top: 10px;
+}
+
+/* .content-SignUpConvidate .bloco .signUpConvidate .form input[type="date"]::placeholder {
+    color: var(--Primary); 
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .empyt[type="date"]::placeholder {
+    color: var(--Gray_font2); 
+}
+ */
+
+/* .content-SignUpConvidate .bloco .signUpConvidate .form input[type="date"]::-webkit-datetime-edit-month-field {
+    color: var(--Primary);
+  }
+  .content-SignUpConvidate .bloco .signUpConvidate .form input[type="date"]::-webkit-datetime-edit-day-field {
+    color: var(--Primary);
+  }
+  .content-SignUpConvidate .bloco .signUpConvidate .form input[type="date"]::-webkit-datetime-edit-year-field {
+    color: var(--Primary);
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 5px;
+    border-raduis: 3px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ */
+
+.content-SignUpConvidate .bloco .signUpConvidate .form select {
+  width: 100%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin: 5px 0;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form button {
+  width: 50%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--Gray_font2);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin: 5px 0;
+  border-radius: 6px;
+  color: var(--Primary);
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .birthDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .birthDate select {
+  width: 30%;
+  height: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: var(--Primary);
+  margin: 5px 0;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .empyt {
+  color: var(--Gray_font2);
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form h6 {
+  color: var(--Gray_font2);
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form input::placeholder {
+  color: var(--Gray_font2);
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .empyt::placeholder {
+  color: var(--Gray_font2);
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 10px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .images .image {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  margin: 10px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .images .image img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid var(--White);
+  border-radius: 6px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .images .image .select {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid var(--Primary);
+  border-radius: 6px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword input {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(15, 15, 15);
+  font-size: 14px;
+  padding: 5px 10px;
+  color: var(--Primary);
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .password {
+  background-color: rgb(15, 15, 15);
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+  color: var(--Primary);
+  margin-top: 5px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons button {
+  background-color: var(--Primary);
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons button:hover {
+  background-color: var(--Primary);
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons .btn {
+  background-color: var(--White);
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: var(--Primary);
+  margin-bottom: 5px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons .btn:hover {
+  background-color: var(--Gray-Border);
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons .google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0021b;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons .google svg {
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons .facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b5998;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons .facebook svg {
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons .twitter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5baaf4;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons .twitter svg {
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons p {
+  font-weight: bold;
+  color: #fff;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .buttons a {
+  text-decoration: none;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .links {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  font-size: 14px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .create {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .links p {
+  color: #fff;
+  margin: 5px 0;
+  font-size: 14px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .create p {
+  color: #fff;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .links a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .create a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .create a:hover {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--Primary);
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .whatsapp {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(0, 247, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(18, 22, 87, 0.37);
+  backdrop-filter: blur(4px);
+  border: 2px solid rgba(0, 157, 162, 0.18);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .whatsapp h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--White);
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .whatsapp h4 svg {
+  margin-left: 5px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .terms {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--White);
+  margin-top: -10px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .form .terms p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .terms p a {
+  font-weight: 900;
+  color: var(--White);
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .terms .pointer {
+  cursor: pointer;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .form .terms input[type="checkbox"] {
+  margin-right: 10px;
+  color: var(--Primary);
+  width: 12px;
+}
+
+.content-SignUpConvidate .bloco .signUpConvidate .footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 150px;
+}
+.content-SignUpConvidate .bloco .signUpConvidate .footer img {
+  width: 70px;
+  margin-bottom: px;
+}
+
+@media (max-width: 1024px) {
+  .content-SignUpConvidate .bloco .signUpConvidate .form {
+    width: 90%;
+  }
+
+  .content-SignUpConvidate .bloco .signUpConvidate .form input {
+    width: 100%;
+  }
+
+  .content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword {
+    width: 100%;
+  }
+
+  .content-SignUpConvidate .bloco .signUpConvidate .form .buttons {
+    width: 100%;
+  }
+
+  .content-SignUpConvidate .bloco .signUpConvidate .logo img {
+    width: 45%;
+  }
+
+  @media (max-width: 900px) {
+    .content-SignUpConvidate .bloco .signUpConvidate .form {
+      width: 90%;
+    }
+
+    .content-SignUpConvidate .bloco .signUpConvidate .form input {
+      width: 100%;
+    }
+
+    .content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword {
+      width: 100%;
+    }
+
+    .content-SignUpConvidate .bloco .signUpConvidate .logo img {
+      width: 50%;
+    }
+
+    @media (max-width: 700px) {
+      .content-SignUpConvidate .bloco .signUpConvidate .form {
+        width: 90%;
+      }
+
+      .content-SignUpConvidate .bloco .signUpConvidate .form input {
+        width: 100%;
+      }
+
+      .content-SignUpConvidate .bloco .signUpConvidate .form .whatsapp {
+        width: 100%;
+      }
+
+      .content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword {
+        width: 100%;
+      }
+      .content-SignUpConvidate .bloco .signUpConvidate .logo img {
+        width: 90%;
+      }
+
+      .content-SignUpConvidate .bloco .signUpConvidate .form .links {
+        width: 100%;
+      }
+
+      @media (max-width: 550px) {
+        .content-SignUpConvidate .slide-SignUpConvidate {
+          display: none;
+        }
+
+        .content-SignUpConvidate .bloco .signUpConvidate .form {
+          width: 90%;
+        }
+
+        .content-SignUpConvidate .bloco .signUpConvidate .form input {
+          width: 100%;
+        }
+
+        .content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword {
+          width: 100%;
+        }
+        .content-SignUpConvidate .bloco .signUpConvidate .logo img {
+          width: 80%;
+        }
+
+        .content-SignUpConvidate .bloco .signUpConvidate .form .buttons p {
+          text-align: right;
+        }
+
+        .content-SignUpConvidate .bloco .signUpConvidate .footer {
+          position: relative;
+          bottom: 0;
+          margin-top: 180px;
+        }
+        .content-SignUpConvidate .bloco .signUpConvidate .footer img {
+          width: 70px;
+          margin-bottom: 20px;
+        }
+
+        .content-SignUpConvidate .bloco .signUpConvidate .form .links {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        @media (max-width: 400px) {
+          .content-SignUpConvidate .bloco .signUpConvidate .form {
+            width: 90%;
+          }
+
+          .content-SignUpConvidate .bloco .signUpConvidate .form input {
+            width: 100%;
+            font-size: 14px;
+          }
+
+          .content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword {
+            width: 100%;
+          }
+          .content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword input {
+            width: 100%;
+            font-size: 14px;
+          }
+          .content-SignUpConvidate .bloco .signUpConvidate .logo img {
+            width: 100%;
+          }
+
+          .content-SignUpConvidate .bloco .signUpConvidate .form .buttons {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .content-SignUpConvidate .bloco .signUpConvidate .form .buttons p {
+            margin: 10px;
+            font-size: 12px;
+            text-align: right;
+          }
+
+          @media (max-width: 350px) {
+            .content-SignUpConvidate .bloco .signUpConvidate .form input {
+              font-size: 14px;
+            }
+
+            .content-SignUpConvidate .bloco .signUpConvidate .form .inputPassword {
+              width: 100%;
+              font-size: 14px;
+            }
+            .content-SignUpConvidate .bloco .signUpConvidate .form .buttons p {
+              margin-left: 30px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
