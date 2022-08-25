@@ -18,6 +18,8 @@ function RegistrationEnd() {
                     <h3>Siga as seguintes orientações para aproveitar melhor o nosso site:</h3>
                     <br />
                     <div className="orientations">
+                    <h4><b> Muita atenção ao postar conteúdos sensíveis:</b></h4>
+                    <h4> - Ao postar conteúdo que contenha nudez, violência ou que possa causar desconforto. Marque a opção: Conteúdo sensível na opção de conteúdo na caixa de postagem</h4> <br />
                     <h4><b> Não utilizar termos ofensivos em:</b></h4>
                     <h4> - Conversas, postagens, comentários, respostas a comentários e em conversas pelo chat.</h4> <br />
                     <h4><b> Seja gentil e faça sempre novas amizades</b></h4> <br />
