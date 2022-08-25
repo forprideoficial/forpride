@@ -1023,9 +1023,9 @@ async function recoverPasswordNew(email, password) {
 // Fim recuperações
 
 
-async function newPost({idAccount, type, link, text, idForum, idGroup, idEvent, avatar, nickname, username, nameForum, nameGroup, nameEvent, idPatrono, typeAccount, ufAccount, cityAccount, content}) {
+async function newPost({idAccount, age, type, link, text, idForum, idGroup, idEvent, avatar, nickname, username, nameForum, nameGroup, nameEvent, idPatrono, typeAccount, ufAccount, cityAccount, content}) {
     setLoading(true)
-    await api.post("/posts", {idAccount, type, link, text, idForum, idGroup, idEvent, avatar, nickname, username, nameForum, nameGroup, nameEvent, typeAccount, ufAccount, cityAccount, content}).then( async () => {      
+    await api.post("/posts", {idAccount, age, type, link, text, idForum, idGroup, idEvent, avatar, nickname, username, nameForum, nameGroup, nameEvent, typeAccount, ufAccount, cityAccount, content}).then( async () => {      
     toast.info("Post publicado com sucesso!")
     window.location.reload(false)
         setLoading(false)
@@ -1033,9 +1033,9 @@ async function newPost({idAccount, type, link, text, idForum, idGroup, idEvent, 
         console.log("Post não foi realizado" + error)
     })
 }
-async function newPostEvent({idAccount, type, link, text, idForum, idGroup, idEvent, avatar, nickname, username, nameForum, nameGroup, nameEvent, idPatrono}) {
+async function newPostEvent({idAccount, age, type, link, text, idForum, idGroup, idEvent, avatar, nickname, username, nameForum, nameGroup, nameEvent, idPatrono}) {
     setLoading(true)
-    await api.post("/posts", {idAccount, type, link, text, idForum, idGroup, idEvent, avatar, nickname, username, nameForum, nameGroup, nameEvent }).then( async () => {      
+    await api.post("/posts", {idAccount, age, type, link, text, idForum, idGroup, idEvent, avatar, nickname, username, nameForum, nameGroup, nameEvent }).then( async () => {      
     toast.info("Post publicado com sucesso!")
         setLoading(false)
     }).catch(error => {
