@@ -22,11 +22,11 @@ function AuthProvider({children}) {
 
     
     async function createAccount({ id, país, username, role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
-        birthDate, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
+        birthDate,  age, minAge, maxAge, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
         latitude, longitude, recommendation}) {
         const data = {
             id, país, username, role, status, viweSex, sex, sexualOption, viewSexualOption, preference, preferenceOption,
-                birthDate, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
+                birthDate,  age, minAge, maxAge, sign, email, phone, password, online, patron, nickname, avatar, cover, relationship, city, uf, cep,
                 latitude, longitude, recommendation}
             
         console.log(data)
