@@ -76,6 +76,49 @@
   color: var(--White);
   text-align: left;
 }
+
+.content-SignUp .bloco .signUp .form  .infoavatar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: var(--Button);
+  padding: 20px;
+  border-radius: 6px;
+}
+.content-SignUp .bloco .signUp .form  .infoavatar .alert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 5px 0;
+  background-color: red;
+  padding: 10px;
+  border-radius: 6px;
+}
+.content-SignUp .bloco .signUp .form .alert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 5px 0;
+  background-color: red;
+  padding: 10px;
+  border-radius: 6px;
+}
+.content-SignUp .bloco .signUp .form .alert2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 5px 0;
+  background-color: var(--Primary);
+  padding: 10px;
+  border-radius: 6px;
+}
+
 .content-SignUp .bloco .signUp .form p {
   color: var(--Gray_font2);
 }

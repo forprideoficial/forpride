@@ -537,7 +537,7 @@ function handleSelectMinAge(e) {
   setMinAge(e.target.value)
 }
 
-
+const letra = email.substring(0, 1)
 
   return (
     <div className="content-SignUp">
@@ -552,7 +552,26 @@ function handleSelectMinAge(e) {
         {etapa === "1" ?
         <div className="form">
           <input type="text" placeholder="Nome de usuário (Junto e sem espaço)" value={usernameNative.toLowerCase()} onChange={ChangeMask}/>
-          <input type="text" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+          <input type="text" placeholder="E-mail" value={email.replace(/\s+/g, '')} onChange={(e) => setEmail(e.target.value)} required/>
+
+          {email.includes('@') ? "" :
+                            <div className="alert">
+                                <h5>Seu Email deve conter o @</h5>
+                            </div>
+          }
+          {letra === "" ? "": 
+          letra === letra.toUpperCase()  ? 
+           <div className="alert2">
+           <h5>A primeira letra do seu e-mail está maiúscula. Isso está certo? <br /> Caso esteja correto prossiga tranquilamente. Este é apenas um alerta</h5>
+       </div>:
+        email === email.toUpperCase()  ? 
+        <div className="alert2">
+        <h5>Seu e-mail contém letra maiúscula. Isso está certo?</h5>
+    </div> :
+                           ""
+          }
+
+
           <input type="text" value={newPhone} onChange={ChangeMaskPhone} placeholder="(XX)XXXXX-XXXX ou XXX XXXXX-XXXX" />
           <h6>Digite telefone modelo Brasil ou Portugal</h6>
           <div className="inputPassword">
@@ -563,6 +582,11 @@ function handleSelectMinAge(e) {
           <input type={passwordView === false ? "password" : "text" } placeholder="Confirmar senha" value={passwordConfirmNative} onChange={ChangeMaskConfirmPassword}/>
           <button className='password' onClick={handlePasswordView}>{passwordView === false ? <FiEye /> : <FiEyeOff /> } </button>
           </div>
+          {passwordConfirmNative === passwordNative ? "" :
+              <div className="alert">
+                <h5>As senhas não combinam!</h5>
+              </div>
+          }
           <div className="buttons">
           <button onClick={() => handleSelectEtapa("2") }> Criar conta </button>
           <br />
@@ -814,8 +838,40 @@ function handleSelectMinAge(e) {
                             <input type="file" accept="image/*" onChange={handleFile} required/><br />
                             <img src={avatarUrl === null ? profile : avatarUrl} alt="Avatar" height={100} width={100}/>
                         </label>
+                        <div className="infoavatar">
+                            <h4>Importante!</h4>
+                            <h5> <b>Sua foto de perfil deve seguir os seguintes padrões:</b> </h5>
+                            <h5>- Foto de parte do corpo ou do rosto ( Não é obrigatório foto de rosto)</h5>
+                            <br />
+                            <h5> <b>Não adicionar fotos de:</b> </h5>
+                            <h5>- Prints de fotos</h5>
+                            <h5>- Animais</h5>
+                            <h5>- Paísagem</h5>
+                            <h5>- Desenho</h5>
+                            <h5>- Emojis</h5>
+                            <h5>- Objetos</h5>
+                            <h5>- Artistas</h5>
+
+                            <div className="alert">
+                                <h5>Contas com fotos fora do pardão não serão aceitas!</h5>
+                            </div>
+                        </div>
 
 
+
+
+
+
+          <div className="buttons">
+          <button onClick={() => handleSelectEtapa("3.1")}> Avançar </button>
+          <button className='btn' onClick={() => handleSelectEtapa("2")}> Voltar </button>
+          <br />
+          </div>
+        </div>
+        : ""}
+
+{etapa === "3.1" ?
+        <div className="form">
  
                         <div className="text">
                           <h5>NOME DE EXIBIÇÃO </h5>
@@ -967,7 +1023,7 @@ function handleSelectMinAge(e) {
 
           <div className="buttons">
           <button onClick={() => handleSelectEtapa("4")}> Avançar </button>
-          <button className='btn' onClick={() => handleSelectEtapa("2")}> Voltar </button>
+          <button className='btn' onClick={() => handleSelectEtapa("3")}> Voltar </button>
           <br />
           </div>
         </div>
@@ -1064,7 +1120,7 @@ function handleSelectMinAge(e) {
 
                  <div className="buttons">
           <button onClick={handleUploadAccount}> Finalizar </button>
-          <button className='btn' onClick={() => handleSelectEtapa("3")}> Voltar </button>
+          <button className='btn' onClick={() => handleSelectEtapa("3.1")}> Voltar </button>
           <br />
           </div>
                </div>
