@@ -1161,7 +1161,7 @@ async function newReply({idAccount, idComment, text, avatar, username, nickname}
 }
 
 async function CreateInviteNewUsew({code, name, email, phone,idAccount, username, patron, type, patronNickname}) {
-    const text = `Parabens ${name}! %0AVocê foi convidado por ${patronNickname} a fazer parte de uma rede de relacionamento, exclusivo para casais, solteiros e solteiras. ForPride foi criado com o objetivo de aproximar pessoas com o mesmo pensamento de relacionamento de forma livre, segura e respeitosa. %0A%0AEsse convite é valido por 10 dias e intransferível. %0A%0APara criar seu perfil agora, acesse: %0A https://forpride.com.br/signup/${email}/${code}/${patron}/${type} %0A%0AEm caso de dúvida, fale conosco. %0AContato@forpride.com.br %0A%FORPRIDE https://www.forpride.com.br`
+    const text = `Parabens ${name}! %0AVocê foi convidado por ${patronNickname} a fazer parte de uma rede de relacionamento, exclusivo LGBTQIA+. FORPRIDE é um site de Relacionamento EXCLUSIVO para  LGBTQIA+. %0A%0AEsse convite é valido por 10 dias e intransferível. %0A%0APara criar seu perfil agora, acesse: %0A https://forpride.com.br/signup/convite/${email}/${patron} %0A%0AEm caso de dúvida, fale conosco. %0AContato@forpride.com.br %0AFORPRIDE https://www.forpride.com.br`
     
     const findAccountEmail = await api.get(`/accounts/find/${email}`);
 

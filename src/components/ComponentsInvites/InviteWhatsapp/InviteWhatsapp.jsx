@@ -16,26 +16,17 @@ function InviteWhatsapp() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
-    const [type, setType] = useState("");
-
-
-    function handleSetectType(e) {
-      setType(e.target.value)
-      console.log(e.target.value)
-    }
-
 
     function ChangeMaskPhone(e) {
       const originalValue = unMask(e.target.value);
       const maskedValue = masker(originalValue, [
         "(99)99999-9999",
         "(99)99999-999",
+        "999 99999-9999"
       ]);
   
       setPhone(maskedValue)
     }
-  
-
 
     function createInviteWhatsapp(e) {
         e.preventDefault();
@@ -53,12 +44,11 @@ function InviteWhatsapp() {
        
         const code = inviteCode.substring(0, 4)
 
-       CreateInviteNewUsew({code, name, email, phone:newPhone, username: user.username, idAccount: user.id, patron: user.id, patronNickname:user.nickname, type })
+       CreateInviteNewUsew({code, name, email, phone:newPhone, username: user.username, idAccount: user.id, patron: user.id, patronNickname:user.nickname })
 
         setEmail("")
         setPhone("")
         setName("")
-        setType("")
     }
     return (
         <>
@@ -66,18 +56,7 @@ function InviteWhatsapp() {
                 <span>Convite por whatsapp</span>
                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome"/>
                 <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
-
-                <select className={type === "" ? "" : "active"} value={type} onChange={handleSetectType}>
-                <option value="">Tipo de conta</option>
-                <option value="Homem">Homem </option>
-                <option value="Mulher">Mulher </option>
-                <option value="Casal">Casal </option>
-                <option value="Trisal">Trisal </option>
-                <option value="Transex">Transex </option>
-                <option value="Travestis">Travestis </option>
-            </select>
-
-                <input type="text" value={phone} onChange={(e) => setPhone(ChangeMaskPhone)} placeholder="Ex.: 21999888899"/>
+                <input type="text" value={phone} onChange={ChangeMaskPhone} placeholder="(XX)XXXXX-XXXX ou XXX XXXXX-XXXX" />
 
                 <button onClick={createInviteWhatsapp}> Enviar Convite</button>
 
