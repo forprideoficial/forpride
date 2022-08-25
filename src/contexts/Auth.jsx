@@ -152,7 +152,7 @@ function AuthProvider({children}) {
                 window.open("/activeplain","_self");
                 return
             }else  if(user.status  === "active") {
-                window.open("/feed","_self");
+                window.open("/usersonline","_self");
                 return
             }else
             if(user.status === "essencial") {
@@ -261,7 +261,7 @@ function AuthProvider({children}) {
   
         } else {
             toast.success(`Você ainda tem tempo. Aproveite`)
-           window.open("/feed","_self");
+           window.open("/usersonline","_self");
         }
     }
 
@@ -311,7 +311,7 @@ function AuthProvider({children}) {
                 window.open("/suspenseaccount","_self");
                 return
             }else  if(user.status  === "lifetime" || user.país === "Portugal") {
-                window.open("/feed","_self");
+                window.open("/usersonline","_self");
                 return
             }else
             if(user.status === "essencial") {
@@ -412,7 +412,7 @@ function AuthProvider({children}) {
   
         } else {
             toast.success(`Você ainda tem tempo. Aproveite`)
-           window.open("/feed","_self");
+           window.open("/usersonline","_self");
         }
     }
 
@@ -466,7 +466,7 @@ function AuthProvider({children}) {
             window.open("/update", "_self");
          }
          else {
-             window.open("/feed", "_self");
+             window.open("/usersonline", "_self");
          }
     }
 
@@ -487,7 +487,7 @@ function AuthProvider({children}) {
             window.open("/update", "_self");
          }
          else {
-             window.open("/feed", "_self");
+             window.open("/usersonline", "_self");
          }
     }
 
