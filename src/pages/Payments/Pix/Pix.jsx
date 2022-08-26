@@ -31,7 +31,7 @@ function Pix() {
 
         <p>Ao assinar, você aceita as <a href="/termscontractuals">Condições contratuais</a></p>
             <div className="chave">
-                <h3>7978df39-614f-4ec6-bf41-8052656a4bc2</h3>
+                <h3>d348d375-a8a4-4361-8e58-e9957fad8b2a</h3>
             </div>
 
             <a href={`/voucher/${id}`}>Enviar print do comprovante</a>
