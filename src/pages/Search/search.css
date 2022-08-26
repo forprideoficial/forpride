@@ -276,6 +276,9 @@
 .SearchPage .itensSearch .accounts .infos2 h5 {
   font-weight: 700;
 }
+.SearchPage .itensSearch .accounts .infos2 p{
+  margin-bottom: 5px;
+}
 .SearchPage .itensSearch .accounts .infos2 .moreInfos2 h6 {
   font-weight: 500;
 }

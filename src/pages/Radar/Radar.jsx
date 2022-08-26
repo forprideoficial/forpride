@@ -23,6 +23,7 @@ function Radar() {
     const [distancia, setDistancia] = useState([]);
     const [userOffline, setUserOffline] = useState([]);
     const [type, setType] = useState("");
+    const [sexualOption, setSexualOption] = useState("");
     const [emojiSelect, setEmojiSelect] = useState("");
     const [myType, setMyType] = useState(false);
     const [myEmojiSelect, setMyEmojiSelect] = useState("");
@@ -141,7 +142,7 @@ function Radar() {
                                city: userLocation.city,
                                equalCity: userLocation.equalCity, 
                                type:userLocation.sex,
-                               option:userLocation.sexualOption,
+                               sexualOption:userLocation.sexualOption,
                                plane: userLocation.plane,
                                emoji: userLocation.emoji,
                                song: userLocation.song,
@@ -213,7 +214,7 @@ function Radar() {
                                     city: userAccounts.city,
                                     equalCity: true, 
                                     type:userAccounts.sex,
-                                    option:userAccounts.sexualOption,
+                                    sexualOption:userAccounts.sexualOption,
                                     plane: "",
                                     emoji: "",
                                     song: "",
@@ -255,7 +256,7 @@ function Radar() {
             const idAccount = users.idAccount;
             const username = users.username;
             const type = users.sex;
-            const option = users.sexualOption;
+            const sexualOption = users.sexualOption;
             const nickname = users.nickname;
             const avatar = users.avatar;
             const relationship = users.relationship;
@@ -273,7 +274,7 @@ function Radar() {
 
 
         updateUserOnline(
-            id, idAccount, username, type, option ,nickname, avatar, relationship, lat, long, city, uf, actualCity, actualUf, equalCity, plane, emoji, song, invisible            
+            id, idAccount, username, type, sexualOption ,nickname, avatar, relationship, lat, long, city, uf, actualCity, actualUf, equalCity, plane, emoji, song, invisible            
         )
       }
     function handleSelectStyle(e) {
@@ -287,6 +288,9 @@ function Radar() {
 
     function handleSetectType(e) {
         setType(e.target.value)
+      }
+    function handleSetectSexualOption(e) {
+        setSexualOption(e.target.value)
       }
 
     function handleSetectTEmoji(e) {
@@ -355,26 +359,35 @@ function handleTop(e) {
     })
 }
 
-const searchAll = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
+const searchAll = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type && distanciaUser.sexualOption === sexualOption && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
 
 const searchDistance= distancia.filter((distanciaUser) => distanciaUser.distanceKm <= range);
 const searchType= distancia.filter((distanciaUser) =>  distanciaUser.sex === type);
+const searchSexualOption= distancia.filter((distanciaUser) =>  distanciaUser.sexualOption === sexualOption);
 const searchEmoji= distancia.filter((distanciaUser) => distanciaUser.emoji === emojiSelect );
 const filterOnline = distancia.filter((distanciaUser) => distanciaUser.online === onlineUsers);
 
 const searchTypeRange = distancia.filter((distanciaUser) => (distanciaUser.sex === type && distanciaUser.distanceKm <= range));
 const searchEmojiRange = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.distanceKm <= range));
 const filterOnlineRange = distancia.filter((distanciaUser) => distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers);
+const filterSexualOptionRange = distancia.filter((distanciaUser) => distanciaUser.distanceKm <= range && distanciaUser.sexualOption === sexualOption);
 
-const searchEmojiType = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type) );
 const searchTypeOnline= distancia.filter((distanciaUser) =>  distanciaUser.sex === type && distanciaUser.online === onlineUsers);
+const searchEmojiType = distancia.filter((distanciaUser) => (distanciaUser.sex === type && distanciaUser.emoji === emojiSelect) );
+const searchTypeSexualOption= distancia.filter((distanciaUser) =>  distanciaUser.sex === type && distanciaUser.sexualOption === sexualOption);
+
+
+const searchEmojiOnline= distancia.filter((distanciaUser) => distanciaUser.emoji === emojiSelect && distanciaUser.online === onlineUsers );
+const searchEmojiSexualOption = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sexualOption === sexualOption) );
+const searchOnlineSexualOption = distancia.filter((distanciaUser) => distanciaUser.sexualOption === sexualOption && distanciaUser.online === onlineUsers );
+
+
 
 const RangeTypeEmoji = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type && distanciaUser.distanceKm <= range ));
 const RangeEmojiOnline = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
 const RangeTypeOnline = distancia.filter((distanciaUser) => (distanciaUser.sex === type && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
 const EmojiTypeOnline = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type && distanciaUser.online === onlineUsers ));
 
-const searchEmojiOnline= distancia.filter((distanciaUser) => distanciaUser.emoji === emojiSelect && distanciaUser.online === onlineUsers );
 
 console.log(filterOnline)
 
@@ -509,19 +522,24 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
 
                             <select className={type === "" ? "" : "active"} value={type} onChange={handleSetectType}>
                                 <option value="">Tipo de conta</option>
-                                <option value="Homem">Homem </option>
-                                <option value="Mulher">Mulher </option>
-                                <option value="Homem Trans">Homem Trans </option>
-                                <option value="Mulher Trans">Mulher Trans </option>
-                                <option value="Pessoa não binária">Pessoa não binária </option>
+                                <option value="Homem">Homem</option>
+                                <option value="Mulher">Mulher</option>
+                                <option value="Homem trans">Homem trans</option>
+                                <option value="Mulher trans">Mulher trans</option>
+                                <option value="Pessoa não binária">Pessoa não binária</option>
                             </select>
-                            <select className={type === "" ? "" : "active"} value={type} onChange={handleSetectType}>
-                                <option value="">Orientação</option>
-                                <option value="Homem">Homem </option>
-                                <option value="Mulher">Mulher </option>
-                                <option value="Homem Trans">Homem Trans </option>
-                                <option value="Mulher Trans">Mulher Trans </option>
-                                <option value="Pessoa não binária">Pessoa não binária </option>
+                            <select className={sexualOption === "" ? "" : "active"} value={sexualOption} onChange={handleSetectSexualOption}>
+                                <option value="">Orientação Sexual</option>
+                                <option value="Gay">Gay</option>
+                                <option value="Lésbica">Lésbica</option>
+                                <option value="Trans/travesti">Trans/travesti</option>
+                                <option value="Bissexual">Bissexual</option>
+                                <option value="Assexual">Assexual</option>
+                                <option value="Demissexual">Demissexual</option>
+                                <option value="Pansexual">Pansexual</option>
+                                <option value="Queer">Queer</option>
+                                <option value="Intersexual">Intersexual</option>
+                                <option value="Questionando">Questionando</option>
                             </select>
 
 
@@ -535,11 +553,11 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
 }
 
 <div className="filterActive">
-                {filtro === "false" ?
+                {/* {filtro === "false" ?
             <button onClick={() => handleSetFilter("true")}> <IoOptionsOutline/></button>
                 :
             <button onClick={() => handleSetFilter("false")}><IoCloseCircleOutline/></button>
-                }
+                } */}
             </div>
 
                             

@@ -5,7 +5,7 @@ import { TopBar } from "../../components/TopBar/TopBar";
 import { Link } from "react-router-dom"
 import api from "../../services/api"
 import "./search.css"
-import { IoOptionsOutline, IoCloseCircleOutline } from "react-icons/io5";
+import { IoOptionsOutline, IoCloseCircleOutline, IoLocationOutline, IoPersonOutline } from "react-icons/io5";
 import { useFetch } from "../../hooks/useFetch";
 
 function Search() {
@@ -228,10 +228,10 @@ if(!limitData) {
                         <a href={information.id === userData.id ? "/profile" : `/profile-friend/${information.id}` } target="_blank">
                             <h5>{information.nickname} {information.país === "Brasil" ? "🇧🇷" : information.país === "Portugal" ? "🇵🇹" : ""}</h5>
                             </a>
-                            <h6>{information.username}</h6>
+                            <p>{information.username}</p>
+                            <h6><b><IoLocationOutline /> {information.city} - {information.país === "Brasil" ? `${information.uf}` : information.país === "Portugal" ? `${information.país}` : information.uf}</b></h6>
                             <div className="moreInfos2">
-                            <h6>{information.type}</h6>
-                            <h6>{information.city} - {information.país === "Brasil" ? `${information.uf}` : information.país === "Portugal" ? `${information.país}` : information.uf} </h6>
+                            <h6><IoPersonOutline /> {information.sex} - {information.sexualOption}</h6>
                             </div>
                         </div>
                         </div>

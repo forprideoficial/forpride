@@ -123,7 +123,6 @@ function OnlineUser() {
                      socket.on("connection", () => {
                         console.log("Conexão estabelecida")
                     })
-
                      await api.post("/online", data).then(() => {
                         window.open("/feed", "_self")
                     })
