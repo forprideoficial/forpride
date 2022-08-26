@@ -20,6 +20,8 @@ function SignIn() {
   const [never, setNever] = useState(false)
   const navigate = useNavigate();
 
+  const text = `Olá, queremos saber mais sobre como ingressar em sua rede social`
+  const phone = "22997835288"
  
   useEffect(() => {
       if(localStorage.getItem("forpride") !== null) {
@@ -45,6 +47,11 @@ function SignIn() {
   let never1 = false
   if(login.includes(" ")) {
     never1 = true
+  }
+
+  function handleInviteWhatsapp() {
+    window.open("https://wa.me/55"+ phone + "?text=" + text,
+    '_blank')
   }
 
   return (
@@ -83,6 +90,9 @@ function SignIn() {
           </div>
           <div className="buttons">
           <button onClick={handleCreateAccount}> Entrar </button>
+          </div>
+          <div className="whatsapp2" onClick={handleInviteWhatsapp}>
+            <h4> Entre em contato <IoLogoWhatsapp /></h4>
           </div>
           <div className="create">
           <p><a href="/signup"> Crie sua conta agora</a></p>

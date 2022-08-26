@@ -140,7 +140,8 @@ function Radar() {
                                nickname: userLocation.nickname,
                                city: userLocation.city,
                                equalCity: userLocation.equalCity, 
-                               type:userLocation.type,
+                               type:userLocation.sex,
+                               option:userLocation.sexualOption,
                                plane: userLocation.plane,
                                emoji: userLocation.emoji,
                                song: userLocation.song,
@@ -211,7 +212,8 @@ function Radar() {
                                     nickname: userAccounts.nickname,
                                     city: userAccounts.city,
                                     equalCity: true, 
-                                    type:userAccounts.type,
+                                    type:userAccounts.sex,
+                                    option:userAccounts.sexualOption,
                                     plane: "",
                                     emoji: "",
                                     song: "",
@@ -252,7 +254,8 @@ function Radar() {
             const id = users.id;
             const idAccount = users.idAccount;
             const username = users.username;
-            const type = users.type;
+            const type = users.sex;
+            const option = users.sexualOption;
             const nickname = users.nickname;
             const avatar = users.avatar;
             const relationship = users.relationship;
@@ -270,7 +273,7 @@ function Radar() {
 
 
         updateUserOnline(
-            id, idAccount, username, type ,nickname, avatar, relationship, lat, long, city, uf, actualCity, actualUf, equalCity, plane, emoji, song, invisible            
+            id, idAccount, username, type, option ,nickname, avatar, relationship, lat, long, city, uf, actualCity, actualUf, equalCity, plane, emoji, song, invisible            
         )
       }
     function handleSelectStyle(e) {
@@ -352,24 +355,24 @@ function handleTop(e) {
     })
 }
 
-const searchAll = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.type === type && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
+const searchAll = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
 
 const searchDistance= distancia.filter((distanciaUser) => distanciaUser.distanceKm <= range);
-const searchType= distancia.filter((distanciaUser) =>  distanciaUser.type === type);
+const searchType= distancia.filter((distanciaUser) =>  distanciaUser.sex === type);
 const searchEmoji= distancia.filter((distanciaUser) => distanciaUser.emoji === emojiSelect );
 const filterOnline = distancia.filter((distanciaUser) => distanciaUser.online === onlineUsers);
 
-const searchTypeRange = distancia.filter((distanciaUser) => (distanciaUser.type === type && distanciaUser.distanceKm <= range));
+const searchTypeRange = distancia.filter((distanciaUser) => (distanciaUser.sex === type && distanciaUser.distanceKm <= range));
 const searchEmojiRange = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.distanceKm <= range));
 const filterOnlineRange = distancia.filter((distanciaUser) => distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers);
 
-const searchEmojiType = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.type === type) );
-const searchTypeOnline= distancia.filter((distanciaUser) =>  distanciaUser.type === type && distanciaUser.online === onlineUsers);
+const searchEmojiType = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type) );
+const searchTypeOnline= distancia.filter((distanciaUser) =>  distanciaUser.sex === type && distanciaUser.online === onlineUsers);
 
-const RangeTypeEmoji = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.type === type && distanciaUser.distanceKm <= range ));
+const RangeTypeEmoji = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type && distanciaUser.distanceKm <= range ));
 const RangeEmojiOnline = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
-const RangeTypeOnline = distancia.filter((distanciaUser) => (distanciaUser.type === type && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
-const EmojiTypeOnline = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.type === type && distanciaUser.online === onlineUsers ));
+const RangeTypeOnline = distancia.filter((distanciaUser) => (distanciaUser.sex === type && distanciaUser.distanceKm <= range && distanciaUser.online === onlineUsers ));
+const EmojiTypeOnline = distancia.filter((distanciaUser) => (distanciaUser.emoji === emojiSelect && distanciaUser.sex === type && distanciaUser.online === onlineUsers ));
 
 const searchEmojiOnline= distancia.filter((distanciaUser) => distanciaUser.emoji === emojiSelect && distanciaUser.online === onlineUsers );
 
@@ -508,10 +511,17 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
                                 <option value="">Tipo de conta</option>
                                 <option value="Homem">Homem </option>
                                 <option value="Mulher">Mulher </option>
-                                <option value="Casal">Casal </option>
-                                <option value="Trisal">Trisal </option>
-                                <option value="Transex">Transex </option>
-                                <option value="Travestis">Travestis </option>
+                                <option value="Homem Trans">Homem Trans </option>
+                                <option value="Mulher Trans">Mulher Trans </option>
+                                <option value="Pessoa não binária">Pessoa não binária </option>
+                            </select>
+                            <select className={type === "" ? "" : "active"} value={type} onChange={handleSetectType}>
+                                <option value="">Orientação</option>
+                                <option value="Homem">Homem </option>
+                                <option value="Mulher">Mulher </option>
+                                <option value="Homem Trans">Homem Trans </option>
+                                <option value="Mulher Trans">Mulher Trans </option>
+                                <option value="Pessoa não binária">Pessoa não binária </option>
                             </select>
 
 
@@ -553,7 +563,7 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
                                    <h5>{user.online === true ? <FaCircle /> : "" }</h5>
                                    </div>
                         <h6><b>{user.nickname}</b></h6>
-                                   <h6><IoPersonOutline /> {user.type}</h6>
+                                   <h6><IoPersonOutline /> {user.sex} - {user.option}</h6>
                                    <h6><IoLocationOutline />{user.distanceKm === 0 ? "- 1Km" : ` ${user.distanceKm}Km`}</h6>
                                    <h6>{user.city}</h6>
                            </div>
