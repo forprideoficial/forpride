@@ -194,7 +194,7 @@ function SignUp() {
             const cover = "https://firebasestorage.googleapis.com/v0/b/foursome4-b925c.appspot.com/o/capa.png?alt=media&token=f49f4132-c3ba-4914-add5-150a4ffdbe29"
             const cep = ""
             const patron = "0000"
-            const status = "active"
+            const status = "pending"
             const role = "Membro"
             const online = false;
             const mylatitude = latitude2 === "" ? latitude : latitude2
