@@ -280,10 +280,17 @@ if(!limitData) {
                   <div className="buttons">
                       <button className={type === "Homem" ? "select" : ""} onClick={handleTypeMen}>Homem</button>
                       <button className={type === "Mulher" ? "select" : ""} onClick={handleTypeWoman}>Mulher</button>
-                      <button className={type === "Casal" ? "select" : ""} onClick={handleTypeCouple}>Casal</button>
-                      <button className={type === "Trisal" ? "select" : ""} onClick={handleTypeTrisal}>Trisal</button>
-                      <button className={type === "Transex" ? "select" : ""} onClick={handleTypeTransex}>Transexuais</button>
-                      <button className={type === "Travestis" ? "select" : ""} onClick={handleTypeTravestis}>Travestis</button>
+                      <button className={type === "Homem Trans" ? "select" : ""} onClick={handleTypeCouple}>Homem Trans</button>
+                      <button className={type === "Mulher Trans" ? "select" : ""} onClick={handleTypeTrisal}>Mulher Trans</button>
+                      <button className={type === "Questionando" ? "select" : ""} onClick={handleTypeTransex}>Questionando</button>
+                  </div>
+                      <h5>Que sejar:</h5>
+                  <div className="buttons">
+                      <button className={type === "Homem" ? "select" : ""} onClick={handleTypeMen}>Homem</button>
+                      <button className={type === "Mulher" ? "select" : ""} onClick={handleTypeWoman}>Mulher</button>
+                      <button className={type === "Homem Trans" ? "select" : ""} onClick={handleTypeCouple}>Homem Trans</button>
+                      <button className={type === "Mulher Trans" ? "select" : ""} onClick={handleTypeTrisal}>Mulher Trans</button>
+                      <button className={type === "Questionando" ? "select" : ""} onClick={handleTypeTransex}>Transexuais</button>
                   </div>
                       <h5>Escolha o país:</h5>
                   <div className="buttons">

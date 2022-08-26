@@ -24,6 +24,19 @@ function OnlineUser() {
     const [latitude, setLatitude] = useState("");
     const [longitude, setLongitude] = useState("");
 
+    useEffect(() => {
+        async function onlineUserUnic() {
+            const res = await api.get(`/online/one/${user.id}`)
+                
+            if(res.data.length > 0) {
+                window.open("/feed","_self");
+                return
+            }
+        }
+
+        onlineUserUnic() 
+    },[user.id])
+
 
     useEffect(() => {
         function getLocation() {
@@ -100,13 +113,12 @@ function OnlineUser() {
             toast.info("Prof favor. Ative sua localização.");
             return
         }
-        console.log({idAccount: user.id, username:user.username, type: user.type, nickname:user.nickname, avatar:user.avatar,
+        console.log({idAccount: user.id, username:user.username, type: user.sex, sexualOption:user.sexualOption, nickname:user.nickname, avatar:user.avatar,
                     relationship:user.relationship, lat: latitude.toString(), long: longitude.toString(),
                      city: city, uf: uf, actualCity: "", actualUf: "", equalCity: "", plane, emoji, song, invisible})
-        const data = ({idAccount: user.id, username:user.username, type: user.type, nickname:user.nickname, avatar:user.avatar,
+        const data = ({idAccount: user.id, username:user.username, type: user.sex, sexualOption:user.sexualOption, nickname:user.nickname, avatar:user.avatar,
                     relationship:user.relationship, lat: latitude.toString(), long: longitude.toString(),
                      city: city, uf: uf, actualCity: "", actualUf: "", equalCity: "", plane, emoji, song, invisible})
-
 
                      socket.on("connection", () => {
                         console.log("Conexão estabelecida")
