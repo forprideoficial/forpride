@@ -64,7 +64,7 @@ function Search() {
  
     function handleTypeCouple(e) {
         e.preventDefault();
-        setType("Casal")
+        setType("Homem Trans")
         setIndex(0)
         setQtd(20)
     }
@@ -78,21 +78,21 @@ function Search() {
  
     function handleTypeTrisal(e) {
         e.preventDefault();
-        setType("Trisal")
+        setType("Mulher Trans")
         setIndex(0)
         setQtd(20)
     }
  
     function handleTypeTransex(e) {
         e.preventDefault();
-        setType("Transex")
+        setType("Pessoa não binária")
         setIndex(0)
         setQtd(20)
     }
  
     function handleTypeTravestis(e) {
         e.preventDefault();
-        setType("Travestis")
+        setType("Homem Trans")
         setIndex(0)
         setQtd(20)
     }
@@ -252,13 +252,13 @@ if(!limitData) {
             </div>
 
 
-            {/* <div className="filterActive">
+            <div className="filterActive">
                 {filtro === "false" ?
             <button onClick={() => handleSetFilter("true")}> <IoOptionsOutline/></button>
                 :
             <button onClick={() => handleSetFilter("false")}><IoCloseCircleOutline/></button>
                 }
-            </div> */}
+            </div>
             {filtro === "false" ? "" :
             <div className="searchButton">
             <h3>Filtro de busca</h3>
@@ -282,16 +282,16 @@ if(!limitData) {
                       <button className={type === "Mulher" ? "select" : ""} onClick={handleTypeWoman}>Mulher</button>
                       <button className={type === "Homem Trans" ? "select" : ""} onClick={handleTypeCouple}>Homem Trans</button>
                       <button className={type === "Mulher Trans" ? "select" : ""} onClick={handleTypeTrisal}>Mulher Trans</button>
-                      <button className={type === "Questionando" ? "select" : ""} onClick={handleTypeTransex}>Questionando</button>
+                      <button className={type === "Pessoa não binária" ? "select" : ""} onClick={handleTypeTransex}>Pessoa não binária</button>
                   </div>
-                      <h5>Que sejar:</h5>
+                      {/* <h5>Que seja:</h5>
                   <div className="buttons">
                       <button className={type === "Homem" ? "select" : ""} onClick={handleTypeMen}>Homem</button>
                       <button className={type === "Mulher" ? "select" : ""} onClick={handleTypeWoman}>Mulher</button>
                       <button className={type === "Homem Trans" ? "select" : ""} onClick={handleTypeCouple}>Homem Trans</button>
                       <button className={type === "Mulher Trans" ? "select" : ""} onClick={handleTypeTrisal}>Mulher Trans</button>
                       <button className={type === "Questionando" ? "select" : ""} onClick={handleTypeTransex}>Transexuais</button>
-                  </div>
+                  </div> */}
                       <h5>Escolha o país:</h5>
                   <div className="buttons">
                       <button className={país === "Brasil" ? "select" : ""} onClick={handlePaísBrasil}>Brasil</button>

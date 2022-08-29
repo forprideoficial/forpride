@@ -528,7 +528,7 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
                                 <option value="Mulher trans">Mulher trans</option>
                                 <option value="Pessoa não binária">Pessoa não binária</option>
                             </select>
-                            <select className={sexualOption === "" ? "" : "active"} value={sexualOption} onChange={handleSetectSexualOption}>
+                            {/* <select className={sexualOption === "" ? "" : "active"} value={sexualOption} onChange={handleSetectSexualOption}>
                                 <option value="">Orientação Sexual</option>
                                 <option value="Gay">Gay</option>
                                 <option value="Lésbica">Lésbica</option>
@@ -540,7 +540,7 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
                                 <option value="Queer">Queer</option>
                                 <option value="Intersexual">Intersexual</option>
                                 <option value="Questionando">Questionando</option>
-                            </select>
+                            </select> */}
 
 
                             <div className="onOff">
@@ -553,11 +553,11 @@ const filter = (range > 0) && (emojiSelect === "") && (type === "") && (onlineUs
 }
 
 <div className="filterActive">
-                {/* {filtro === "false" ?
+                {filtro === "false" ?
             <button onClick={() => handleSetFilter("true")}> <IoOptionsOutline/></button>
                 :
             <button onClick={() => handleSetFilter("false")}><IoCloseCircleOutline/></button>
-                } */}
+                }
             </div>
 
                             
