@@ -6,10 +6,11 @@
   width: 100%;
   background-color: var(--Background);
   height: 100%;
+  color: var(--White);
 }
 .SearchPage h2 {
   margin-top: 80px;
-  color: var(--Primary);
+  color: var(--White);
 }
 .SearchPage .main {
   display: flex;
@@ -61,7 +62,14 @@
   justify-content: center;
   border-radius: 6px;
   border: none;
-  background-color: var(--White);
+  background-image: linear-gradient(
+    to right bottom,
+    #fe8b00,
+    #f57303,
+    #ea590a,
+    #de3d11,
+    #d01616
+  );
   color: var(--White);
 }
 
@@ -72,7 +80,7 @@
   padding: 7px;
   background-color: var(--Background);
   border: 1px solid var(--Primary);
-  color: var(--Primary);
+  color: var(--White);
   font-size: 14px;
   border-radius: 6px;
   margin: 3px;
@@ -117,7 +125,7 @@
 .SearchPage .searchButton h3 {
   font-weight: 700;
   margin: 10px 10px 3px 10px;
-  color: var(--Background);
+  color: var(--White);
 }
 
 .SearchPage .searchButton input::placeholder {
@@ -134,7 +142,7 @@
 .SearchPage .searchButton .filter h5 {
   font-weight: 700;
   margin: 10px 10px 3px 10px;
-  color: var(--Background);
+  color: var(--White);
   text-align: center;
 }
 .SearchPage .searchButton .filter .buttons {
