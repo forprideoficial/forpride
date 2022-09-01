@@ -64,7 +64,7 @@ function Search() {
  
     function handleTypeCouple(e) {
         e.preventDefault();
-        setType("Homem Trans")
+        setType("Homem trans")
         setIndex(0)
         setQtd(20)
     }
@@ -78,7 +78,7 @@ function Search() {
  
     function handleTypeTrisal(e) {
         e.preventDefault();
-        setType("Mulher Trans")
+        setType("Mulher trans")
         setIndex(0)
         setQtd(20)
     }
@@ -92,7 +92,7 @@ function Search() {
  
     function handleTypeTravestis(e) {
         e.preventDefault();
-        setType("Homem Trans")
+        setType("Homem trans")
         setIndex(0)
         setQtd(20)
     }
@@ -280,8 +280,8 @@ if(!limitData) {
                   <div className="buttons">
                       <button className={type === "Homem" ? "select" : ""} onClick={handleTypeMen}>Homem</button>
                       <button className={type === "Mulher" ? "select" : ""} onClick={handleTypeWoman}>Mulher</button>
-                      <button className={type === "Homem Trans" ? "select" : ""} onClick={handleTypeCouple}>Homem Trans</button>
-                      <button className={type === "Mulher Trans" ? "select" : ""} onClick={handleTypeTrisal}>Mulher Trans</button>
+                      <button className={type === "Homem trans" ? "select" : ""} onClick={handleTypeCouple}>Homem trans</button>
+                      <button className={type === "Mulher trans" ? "select" : ""} onClick={handleTypeTrisal}>Mulher trans</button>
                       <button className={type === "Pessoa não binária" ? "select" : ""} onClick={handleTypeTransex}>Pessoa não binária</button>
                   </div>
                       {/* <h5>Que seja:</h5>
