@@ -244,7 +244,9 @@ if(!limitData) {
            :
            <>
            <h5>Resultados de {index + 1} a {usersNewArray.length < qtd ? usersNewArray.length : qtd} - Todal de {usersNewArray.length}</h5>
+           {qtd === usersNewArray.length ? "" : 
             <button onClick={HandleNext}>Avançar</button>
+           }
            </>
            }
                 </div>
