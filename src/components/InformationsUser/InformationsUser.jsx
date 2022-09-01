@@ -93,8 +93,7 @@ return (
                                               date.getMonth()+1 === 10 ? "Outubro":
                                               date.getMonth()+1 === 11 ? "Novembro":
                                               date.getMonth()+1 === 12 ? "Desembro": ""} de ${date.getFullYear()}`}</h6>
-        <h6> {user !== null ? user.role : "Função não encontrada"} / {user !== null ? user.type : "Tipo de conta não encontrada"}</h6>
-        <br />
+
         <h6>Último acesso 1 dia</h6>
     </div>
     <div className="name">
@@ -106,10 +105,15 @@ return (
 
     <div className="info-user-preferences">
         <div className="informations">
-            <h5 className='title'>Preferência</h5>
-          <div className="selects">
-              <div className="itens"><h5><FiCheck />Sexo: {user.preference === "All" ? "Todos" : user.preference} - Que seja: {user.preferenceOption}</h5> </div>
-          </div>
+        <h5 className='title'>Eu sou</h5>
+                          <div className="selects">
+                          <div className="itens"><h5>{user.viweSex && user.viewSexualOption === true ? <FiCheck /> : "Não desejo mostrar" } {user.viweSex === true ? user.sex : "" } {user.viweSex === true ? "-" : "" } {user.viewSexualOption === true ? user.sexualOption : "" }</h5></div>
+                          </div>
+                          <p>-</p>
+                            <h5 className='title'>Preferencia por:</h5>
+                          <div className="selects">
+                          <div className="itens"><h5><FiCheck /> Sexo: {user.preference === "All" ? "Todos" : user.preference} - Que seja: {user.preferenceOption === "All" ? "Tanto faz" : user.preferenceOption}</h5></div>
+                          </div>
           {/* <div className="proposal">
             <h5 className='title'>Proposta</h5>
             {preferences.proposal !== "" ? <h5>{preferences.proposal}</h5> : "" }

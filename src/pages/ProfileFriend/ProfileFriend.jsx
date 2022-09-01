@@ -407,9 +407,9 @@ widthView()
                       id === "4aabed" ||
                       id === "7b9f35" 
                     ?
-                    <h3> {user.status === "premium" || user.status === "lifetime" ? <FaCrown /> : ""}  <b>{userInformations !== null ?`${userInformations.nickname}  ${user.país === "Brasil" ? "🇧🇷" : user.país === "Portugal" ? "🇵🇹" : ""} ` :"User Test"}</b>{user.role !== "Membro" ? <IoShieldCheckmark />: ""}</h3>
+                    <h3> {userInformations.status === "premium" || userInformations.status === "lifetime" ? <FaCrown /> : ""}  <b>{userInformations !== null ?`${userInformations.nickname}  ${userInformations.país === "Brasil" ? "🇧🇷" : userInformations.país === "Portugal" ? "🇵🇹" : ""} ` :"User Test"}</b>{userInformations.role !== "Membro" ? <IoShieldCheckmark />: ""}</h3>
                     :
-                    <h3> {user.status === "premium" || user.status === "lifetime" ? <FaCrown /> : ""}  <b>{userInformations !== null ? `${userInformations.nickname} - ${user.uf} ${user.país === "Brasil" ? "🇧🇷" : user.país === "Portugal" ? "🇵🇹" : ""} ` :"User Test"}</b>{user.role !== "Membro" ? <IoShieldCheckmark />: ""}</h3>
+                    <h3> {userInformations.status === "premium" || userInformations.status === "lifetime" ? <FaCrown /> : ""}  <b>{userInformations !== null ? `${userInformations.nickname} - ${userInformations.uf} ${userInformations.país === "Brasil" ? "🇧🇷" : userInformations.país === "Portugal" ? "🇵🇹" : ""} ` :"User Test"}</b>{userInformations.role !== "Membro" ? <IoShieldCheckmark />: ""}</h3>
                   }
                   
                 </div>
@@ -446,8 +446,6 @@ widthView()
                                               date.getMonth()+1 === 10 ? "Outubro":
                                               date.getMonth()+1 === 11 ? "Novembro":
                                               date.getMonth()+1 === 12 ? "Desembro": ""} de ${date.getFullYear()}`}</h6>
-                        <h6> {user !== null ? user.role : "Função não encontrada"} / {user !== null ? user.type : "Tipo de conta não encontrada"}</h6>
-                        <br />
                         
         {login.length !== 0 ?
         <h6> {dias === 0 ? "Ultimo Acesso hoje" :
@@ -475,9 +473,14 @@ widthView()
 
                        <div className="info-user-preferences">
                         <div className="informations">
-                            <h5 className='title'>Preferencia</h5>
+                            <h5 className='title'>Eu sou</h5>
                           <div className="selects">
-                          <div className="itens"><h5><FiCheck /> Sexo: {user.preference === "All" ? "Todos" : user.preference} - Que seja: {userInformations.preferenceOption}</h5></div>
+                          <div className="itens"><h5>{userInformations.viweSex && userInformations.viewSexualOption === true ? <FiCheck /> : "Não desejo mostrar" } {userInformations.viweSex === true ? userInformations.sex : "" } {userInformations.viweSex === true ? "-" : "" } {userInformations.viewSexualOption === true ? userInformations.sexualOption : "" }</h5></div>
+                          </div>
+                          <p>-</p>
+                            <h5 className='title'>Preferencia por:</h5>
+                          <div className="selects">
+                          <div className="itens"><h5><FiCheck /> Sexo: {userInformations.preference === "All" ? "Todos" : userInformations.preference} - Que seja: {userInformations.preferenceOption === "All" ? "Tanto faz" : userInformations.preferenceOption}</h5></div>
                           </div>
                           {/* <div className="proposal">
                             <h5 className='title'>Proposta</h5>
@@ -544,7 +547,7 @@ widthView()
                   {feed === "feed" ?
                   <>
                     <br /><br />
-                    <FeedPostIndividual2 idAccount={user.id} avatar={userInformations.avatar} username={user.username}/>
+                    <FeedPostIndividual2 idAccount={userInformations.id} avatar={userInformations.avatar} username={userInformations.username}/>
                   </>
                   :
                   friend === "friend" ?
@@ -588,10 +591,10 @@ widthView()
                   </div>
                   :
                   photo === "photo" ?
-                  <Photos idAccount={user.id} type={"post-photo"} />
+                  <Photos idAccount={userInformations.id} type={"post-photo"} />
                   :
                   video === "video" ?
-                   <Video idAccount={user.id} type={"post-video"} />
+                   <Video idAccount={userInformations.id} type={"post-video"} />
                    :
                    friendNew === "group" ?
                    "Nenhum grupo aqui"
